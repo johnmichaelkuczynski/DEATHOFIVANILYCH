@@ -1,47 +1,39 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { bookContent as paperContent } from "@shared/book-content";
 
-// Create a table of contents based on the Human Freedom philosophy course content
+// Create a table of contents based on the AI Logic content
 const createTableOfContents = () => {
   const tableOfContents: Array<{ id: string; title: string; level: number }> = [
-    // Core Philosophical Concepts
-    { id: "lecture-1", title: "Lecture 1: Determinism", level: 0 },
-    { id: "lecture-2", title: "Lecture 2: Predictability", level: 0 },
-    { id: "lecture-3", title: "Lecture 3: Compatibilism", level: 0 },
-    { id: "lecture-4", title: "Lecture 4: Incompatibilism", level: 0 },
+    // Core AI Logic Concepts
+    { id: "section-1", title: "Section 1: The Concept of Inference", level: 0 },
+    { id: "inference-traditional", title: "Traditional View of Inference", level: 1 },
+    { id: "inference-ai", title: "AI Perspective on Inference", level: 1 },
+    { id: "types-inference", title: "Types of Inference", level: 1 },
     
-    // Moral Responsibility
-    { id: "lecture-5", title: "Lecture 5: Determinism and Moral Responsibility", level: 0 },
-    { id: "lecture-6", title: "Lecture 6: Predictability and Moral Responsibility", level: 0 },
-    { id: "lecture-7", title: "Lecture 7: Free Will and Causal Necessity", level: 0 },
+    // Pattern Recognition vs Logic
+    { id: "entailment-patterns", title: "Entailment vs. Pattern Activation", level: 1 },
+    { id: "confirmation-confidence", title: "Confirmation vs. Confidence Scores", level: 1 },
+    { id: "validity-reliability", title: "Validity and Soundness vs. Reliability", level: 1 },
     
-    // Free Will Analysis
-    { id: "lecture-8", title: "Lecture 8: The Coherence of Free Will", level: 0 },
-    { id: "lecture-9", title: "Lecture 9: Alternative Conceptions of Free Will", level: 0 },
+    // Reasoning Systems
+    { id: "types-reasoning", title: "Types of Reasoning", level: 1 },
+    { id: "limitations-capabilities", title: "Limitations and Capabilities", level: 1 },
+    { id: "processing-types", title: "Processing Types", level: 1 },
+    { id: "knowledge-nature", title: "The Nature of Knowledge", level: 1 },
     
-    // Experimental Philosophy
-    { id: "lecture-10", title: "Lecture 10: The Libet Experiment - Description and Data", level: 0 },
-    { id: "lecture-11", title: "Lecture 11: The Libet Experiment - Analysis", level: 0 },
-    { id: "lecture-12", title: "Lecture 12: Neuroscience and Free Will", level: 0 },
+    // Section 2: AI Logic Notation
+    { id: "section-2", title: "Section 2: Notational Conventions", level: 0 },
+    { id: "traditional-review", title: "Traditional Logic Review", level: 1 },
+    { id: "ai-notation", title: "Basic AI Logic Notation", level: 1 },
+    { id: "pattern-operators", title: "Pattern Recognition Operators", level: 1 },
+    { id: "ai-operators", title: "AI Logic Operators", level: 1 },
+    { id: "ai-principles", title: "AI Logic Principles", level: 1 },
+    { id: "differences-traditional", title: "Key Differences from Traditional Logic", level: 1 },
+    { id: "model-theory", title: "Model Theoretic Considerations", level: 1 },
+    { id: "future-directions", title: "Limitations and Future Directions", level: 1 },
     
-    // Frankfurt Cases
-    { id: "lecture-13", title: "Lecture 13: Frankfurt's Analysis of Freedom", level: 0 },
-    { id: "lecture-14", title: "Lecture 14: Problems with Frankfurt's Analysis", level: 0 },
-    
-    // Nature of Freedom
-    { id: "lecture-15", title: "Lecture 15: The Actual Nature of Human Freedom", level: 0 },
-    { id: "lecture-16", title: "Lecture 16: The Nature of Human Values", level: 0 },
-    
-    // Mental Health and Freedom
-    { id: "lecture-17", title: "Lecture 17: Ego-dystonic vs Ego-syntonic Mental Illness", level: 0 },
-    { id: "lecture-18", title: "Lecture 18: Rationalization and Freedom", level: 0 },
-    
-    // Philosophical Movements
-    { id: "lecture-19", title: "Lecture 19: Existentialism - Strengths and Weaknesses", level: 0 },
-    { id: "lecture-20", title: "Lecture 20: From Freedom to Agency", level: 0 },
-    
-    // Reference Materials
-    { id: "glossary", title: "Comprehensive Glossary", level: 0 }
+    // Exercises and Applications
+    { id: "exercises", title: "Exercises and Practice Questions", level: 0 }
   ];
   
   return tableOfContents;
@@ -62,27 +54,27 @@ export default function NavigationSidebar() {
     // If not found, try to find the content by searching text
     if (!element) {
       const titleMap: { [key: string]: string } = {
-        "lecture-1": "Determinism is the doctrine that nothing is uncaused - that all events follow necessarily",
-        "lecture-2": "Predictability is closely related to, but distinct from, determinism. A system can be deterministic",
-        "lecture-3": "Compatibilism holds that free will and determinism can coexist - that our actions can be both determined and free",
-        "lecture-4": "Incompatibilism is the view that free will and determinism cannot coexist",
-        "lecture-5": "If determinism is true and all our actions are inevitable consequences of prior causes",
-        "lecture-6": "If our actions are predictable, does this undermine moral responsibility",
-        "lecture-7": "If God (or a supercomputer) can predict all of our actions with complete certainty",
-        "lecture-8": "The concept of free will appears to contain an inherent paradox",
-        "lecture-9": "All selves are minds, but not all minds are selves",
-        "lecture-10": "In the early 1980s, neuroscientist Benjamin Libet conducted an experiment",
-        "lecture-11": "The results of Libet's experiment pose a unique challenge to compatibilism",
-        "lecture-12": "According to G.E. Moore and others, freedom requires alternative possibilities",
-        "lecture-13": "According to Harry Frankfurt, freedom is not about having alternative possibilities",
-        "lecture-14": "While Frankfurt's analysis of freedom in terms of second-order desires represents",
-        "lecture-15": "Freedom, properly understood, is not about having alternative possibilities",
-        "lecture-16": "To understand human values, we must first grasp several fundamental points",
-        "lecture-17": "The relationship between mental illness and freedom raises complex questions",
-        "lecture-18": "Rationalization represents one of the most insidious threats",
-        "lecture-19": "Existentialism offers a distinctive approach to human freedom",
-        "lecture-20": "Having examined various conceptions of freedom",
-        "glossary": "Determinism: The doctrine that nothing is uncaused"
+        "section-1": "1.1 The Concept of Inference",
+        "inference-traditional": "Traditional View",
+        "inference-ai": "AI Perspective", 
+        "types-inference": "1.2 Types of Inference",
+        "entailment-patterns": "1.3 Entailment vs. Pattern Activation",
+        "confirmation-confidence": "1.4 Confirmation vs. Confidence Scores",
+        "validity-reliability": "1.5 Validity and Soundness vs. Reliability and Robustness",
+        "types-reasoning": "1.6 Types of Reasoning",
+        "limitations-capabilities": "1.7 Limitations and Capabilities",
+        "processing-types": "1.8 Processing Types",
+        "knowledge-nature": "1.9 The Nature of Knowledge",
+        "section-2": "2.0 Notational Conventions for AI Logic",
+        "traditional-review": "Traditional Logic Review",
+        "ai-notation": "2.1 Basic AI Logic Notation",
+        "pattern-operators": "Pattern Recognition Operators",
+        "ai-operators": "2.2 AI Logic Operators",
+        "ai-principles": "2.3 AI Logic Principles",
+        "differences-traditional": "2.4 Key Differences from Traditional Logic",
+        "model-theory": "2.5 Model Theoretic Considerations",
+        "future-directions": "2.6 Limitations and Future Directions",
+        "exercises": "Exercises: Traditional and AI Logic"
       };
       
       const searchText = titleMap[id];
