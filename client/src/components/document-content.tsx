@@ -158,33 +158,53 @@ export default function DocumentContent({
         .map(paragraph => {
           if (!paragraph.trim()) return '';
           
-          // Check if this is a heading and add appropriate ID
-          if (paragraph.match(/^(Week \d+:|Introduction|Basic Concepts|Applications|Key Takeaways|Boolean|Truth Tables|Material vs|Strict Implication|Symbolic Logic|Part [IVX]+:|Midterm|Final|Examination)/i)) {
+          // Check if this is a heading and add appropriate ID for AI Logic content
+          if (paragraph.match(/^(The Concept of Inference|Traditional View|AI Perspective|Types of Inference|Entailment|Pattern Activation|Confirmation|Confidence Scores|Validity|Soundness|Reliability|Robustness|Types of Reasoning|Limitations|Capabilities|Processing Types|Knowledge|Traditional Logic Review|Basic AI Logic Notation|Pattern Recognition Operators|Confidence Scoring|Pattern Similarity|Chain of Thought|AI Logic Operators|Pattern Composition|Pattern Alternatives|Pattern Negation|AI Logic Principles|Key Differences|Model Theoretic|Embedding Spaces|Activation Patterns|Confidence Landscapes|Future Directions|Meta-Logical|Completeness|Consistency|Decidability|Tractability|Models|Traditional vs AI|Formal Models|Embedding Models|Interpretation|Exercises)/i)) {
             let headingId = '';
             const text = paragraph.trim();
             
-            if (text.includes('Week 1:')) headingId = 'week1';
-            else if (text.includes('Week 2:')) headingId = 'week2';
-            else if (text.includes('Week 3:')) headingId = 'week3';
-            else if (text.includes('Week 4:')) headingId = 'week4';
-            else if (text.includes('Week 5:')) headingId = 'week5';
-            else if (text.includes('Week 6:')) headingId = 'week6';
-            else if (text.includes('Introduction to Logic')) headingId = 'intro-logic';
-            else if (text.includes('Basic Concepts')) headingId = 'basic-concepts';
-            else if (text.includes('Basic Logical Symbols')) headingId = 'logical-symbols';
-            else if (text.includes('Material vs')) headingId = 'material-strict';
-            else if (text.includes('Translation Practice')) headingId = 'translation-practice';
-            else if (text.includes('Practice Exercises')) headingId = 'practice-exercises';
-            else if (text.includes('Homework 1')) headingId = 'homework1';
-            else if (text.includes('Propositional Calculus')) headingId = 'propositional-calculus';
-            else if (text.includes('Truth Tables')) headingId = 'truth-tables';
-            else if (text.includes('Elementary Proofs')) headingId = 'elementary-proofs';
-            else if (text.includes('Boolean Algebra')) headingId = 'boolean-algebra';
-            else if (text.includes('Midterm Examination')) headingId = 'midterm';
-            else if (text.includes('Predicate Logic')) headingId = 'predicate-logic';
-            else if (text.includes('Advanced Quantification')) headingId = 'advanced-quantification';
-            else if (text.includes('Models and Proofs')) headingId = 'models-proofs';
-            else if (text.includes('Final Examination')) headingId = 'final-exam';
+            // Main concept mappings for AI Logic content
+            if (text.includes('The Concept of Inference')) headingId = 'concept-inference';
+            else if (text.includes('Traditional View')) headingId = 'traditional-view';
+            else if (text.includes('AI Perspective')) headingId = 'ai-perspective';
+            else if (text.includes('Types of Inference')) headingId = 'types-inference';
+            else if (text.includes('Entailment') && text.includes('Pattern')) headingId = 'entailment-patterns';
+            else if (text.includes('Confirmation') && text.includes('Confidence')) headingId = 'confirmation-confidence';
+            else if (text.includes('Validity') && text.includes('Soundness')) headingId = 'validity-reliability';
+            else if (text.includes('Types of Reasoning')) headingId = 'types-reasoning';
+            else if (text.includes('Limitations') && text.includes('Capabilities')) headingId = 'limitations-capabilities';
+            else if (text.includes('Processing Types')) headingId = 'processing-types';
+            else if (text.includes('Nature of Knowledge')) headingId = 'knowledge-nature';
+            
+            // Notational Conventions section
+            else if (text.includes('Traditional Logic Review')) headingId = 'traditional-review';
+            else if (text.includes('Basic AI Logic Notation')) headingId = 'ai-notation';
+            else if (text.includes('Pattern Recognition Operators')) headingId = 'pattern-operators';
+            else if (text.includes('Confidence Scoring')) headingId = 'confidence-scoring';
+            else if (text.includes('Pattern Similarity')) headingId = 'pattern-similarity';
+            else if (text.includes('Chain of Thought')) headingId = 'chain-thought';
+            else if (text.includes('AI Logic Operators')) headingId = 'ai-operators';
+            else if (text.includes('Pattern Composition')) headingId = 'pattern-composition';
+            else if (text.includes('Pattern Alternatives')) headingId = 'pattern-alternatives';
+            else if (text.includes('Pattern Negation')) headingId = 'pattern-negation';
+            else if (text.includes('AI Logic Principles')) headingId = 'ai-principles';
+            else if (text.includes('Key Differences from Traditional Logic')) headingId = 'differences-traditional';
+            else if (text.includes('Model Theoretic Considerations')) headingId = 'model-theory';
+            else if (text.includes('Embedding Spaces')) headingId = 'embedding-spaces';
+            else if (text.includes('Activation Patterns')) headingId = 'activation-patterns';
+            else if (text.includes('Confidence Landscapes')) headingId = 'confidence-landscapes';
+            else if (text.includes('Limitations and Future Directions')) headingId = 'future-directions';
+            
+            // Meta-logical and Models sections
+            else if (text.includes('Meta-Logical Principles')) headingId = 'meta-logical';
+            else if (text.includes('Completeness and Consistency')) headingId = 'completeness-consistency';
+            else if (text.includes('Soundness vs. Reliability')) headingId = 'soundness-reliability';
+            else if (text.includes('Decidability vs. Tractability')) headingId = 'decidability-tractability';
+            else if (text.includes('Models: Traditional vs. AI Systems')) headingId = 'models-systems';
+            else if (text.includes('Formal Models in Classical Logic')) headingId = 'formal-models';
+            else if (text.includes('Embedding Models in AI Systems')) headingId = 'embedding-models';
+            else if (text.includes('Interpretation vs. Activation')) headingId = 'interpretation-activation';
+            else if (text.includes('Exercises')) headingId = 'exercises';
             
             return `<h2 id="${headingId}" class="text-xl font-semibold mb-4 mt-8 text-slate-900 dark:text-slate-100">${text}</h2>`;
           }
