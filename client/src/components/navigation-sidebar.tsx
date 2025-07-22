@@ -1,10 +1,10 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { bookContent as paperContent } from "@shared/book-content";
 
-// Create a table of contents based on the AI Logic content
+// Create a table of contents based on the actual AI Logic content structure
 const createTableOfContents = () => {
   const tableOfContents: Array<{ id: string; title: string; level: number }> = [
-    // 1.0 Fundamental Concepts
+    // Section 1 - Fundamental Concepts of Logic
     { id: "section-1", title: "1.0 The Fundamental Concepts of Logic: Traditional vs. AI Approaches", level: 0 },
     { id: "concept-inference", title: "1.1 The Concept of Inference", level: 1 },
     { id: "traditional-view", title: "Traditional View", level: 2 },
@@ -18,7 +18,7 @@ const createTableOfContents = () => {
     { id: "processing-types", title: "1.8 Processing Types", level: 1 },
     { id: "knowledge-nature", title: "1.9 The Nature of Knowledge", level: 1 },
     
-    // 2.0 Notational Conventions
+    // Section 2 - Notational Conventions
     { id: "section-2", title: "2.0 Notational Conventions for AI Logic", level: 0 },
     { id: "traditional-review", title: "Traditional Logic Review", level: 1 },
     { id: "ai-notation", title: "2.1 Basic AI Logic Notation", level: 1 },
@@ -37,21 +37,7 @@ const createTableOfContents = () => {
     { id: "activation-patterns", title: "Activation Patterns", level: 2 },
     { id: "confidence-landscapes", title: "Confidence Landscapes", level: 2 },
     { id: "future-directions", title: "2.6 Limitations and Future Directions", level: 1 },
-    
-    // 3.0 Meta-Logical Principles (placeholder for future expansion)
-    { id: "meta-logical", title: "3.0 Meta-Logical Principles: Classical vs. AI Approaches", level: 0 },
-    { id: "completeness-consistency", title: "3.1 Completeness and Consistency", level: 1 },
-    { id: "soundness-reliability", title: "3.2 Soundness vs. Reliability", level: 1 },
-    { id: "decidability-tractability", title: "3.3 Decidability vs. Tractability", level: 1 },
-    
-    // 4.0 Models (placeholder for future expansion)
-    { id: "models-systems", title: "4.0 Models: Traditional vs. AI Systems", level: 0 },
-    { id: "formal-models", title: "4.1 Formal Models in Classical Logic", level: 1 },
-    { id: "embedding-models", title: "4.2 Embedding Models in AI Systems", level: 1 },
-    { id: "interpretation-activation", title: "4.3 Interpretation vs. Activation", level: 1 },
-    
-    // Exercises and Applications
-    { id: "exercises", title: "Exercises: Traditional and AI Logic", level: 0 }
+    { id: "exercises", title: "Exercises: Traditional and AI Logic", level: 1 }
   ];
   
   return tableOfContents;
