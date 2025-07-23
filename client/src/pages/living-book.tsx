@@ -19,9 +19,14 @@ import PaymentModal from "@/components/payment-modal";
 
 
 import { initializeMathRenderer } from "@/lib/math-renderer";
-import { bookContent, getFullDocumentContent } from "@shared/book-content";
+import { bookContent } from "@shared/book-content";
 import { useAuth } from "@/hooks/use-auth";
 import type { AIModel } from "@shared/schema";
+
+// Helper function to get full document content on frontend
+function getFullDocumentContent(): string {
+  return bookContent.sections.map(section => `${section.title}\n\n${section.content}`).join('\n\n');
+}
 
 export default function LivingBook() {
   const { user, logout, isAuthenticated } = useAuth();
