@@ -158,44 +158,32 @@ export default function DocumentContent({
         .map(paragraph => {
           if (!paragraph.trim()) return '';
           
-          // Check if this is a heading and add appropriate ID for Ethics content
-          if (paragraph.match(/^(\d+\.\d*\s)/)) {
+          // Check if this is a heading for Dream Psychology content - look for ALL CAPS chapter titles
+          if (paragraph.match(/^[A-Z][A-Z\s]+$/)) {
             let headingId = '';
             const text = paragraph.trim();
             
-            // Main concept mappings for Ethics content - all 16 sections
-            if (text.includes('1.0') && text.includes('What is ethics')) headingId = 'section-1';
-            else if (text.includes('2.0') && text.includes('Two kinds of goodness')) headingId = 'section-2';
-            else if (text.includes('2.1') && text.includes('Instrumental and intrinsic goodness not mutually exclusive')) headingId = 'section-2-1';
-            else if (text.includes('3.0') && text.includes('More meanings')) headingId = 'section-3';
-            else if (text.includes('3.1') && text.includes('Two kinds of intrinsic badness')) headingId = 'section-3-1';
-            else if (text.includes('4.0') && text.includes('morally complex structure')) headingId = 'section-4';
-            else if (text.includes('5.0') && text.includes('non-privative character')) headingId = 'section-5';
-            else if (text.includes('6.0') && text.includes('corollary')) headingId = 'section-6';
-            else if (text.includes('6.1') && text.includes('moral obligation to outweigh')) headingId = 'section-6-1';
-            else if (text.includes('6.2') && text.includes('right') && text.includes('good')) headingId = 'section-6-2';
-            else if (text.includes('6.3') && text.includes('wrong') && text.includes('bad')) headingId = 'section-6-3';
-            else if (text.includes('7.0') && text.includes('Ought') && text.includes('can')) headingId = 'section-7';
-            else if (text.includes('8.0') && text.includes('Legality') && text.includes('morality')) headingId = 'section-8';
-            else if (text.includes('9.0') && text.includes('moral status of passing judgment')) headingId = 'section-9';
-            else if (text.includes('10.0') && text.includes('goodness of the act vs')) headingId = 'section-10';
-            else if (text.includes('11.0') && text.includes('legal systems')) headingId = 'section-11';
-            else if (text.includes('12.0') && text.includes('condemned even though')) headingId = 'section-12';
-            else if (text.includes('13.0') && text.includes('act immorally towards oneself')) headingId = 'section-13';
-            else if (text.includes('14.0') && text.includes('metaethical principles')) headingId = 'section-14';
-            else if (text.includes('14.1') && text.includes('derive an') && text.includes('ought')) headingId = 'section-14-1';
-            else if (text.includes('14.2') && text.includes('Moore') && text.includes('open question')) headingId = 'section-14-2';
-            else if (text.includes('14.2.1') && text.includes('Commentary')) headingId = 'section-14-2-1';
-            else if (text.includes('14.3') && text.includes('Ought') && text.includes('can')) headingId = 'section-14-3';
-            else if (text.includes('14.4') && text.includes('Genetic questions')) headingId = 'section-14-4';
-            else if (text.includes('14.5') && text.includes('use to which supposed moral truths')) headingId = 'section-14-5';
-            else if (text.includes('14.6') && text.includes('implementation')) headingId = 'section-14-6';
-            else if (text.includes('15.0') && text.includes('bad reasons to reject')) headingId = 'section-15';
-            else if (text.includes('15.1') && text.includes('Discussion of (i)')) headingId = 'section-15-1';
-            else if (text.includes('15.2') && text.includes('Discussion of (ii)')) headingId = 'section-15-2';
-            else if (text.includes('15.3') && text.includes('Discussion of (iii)')) headingId = 'section-15-3';
-            else if (text.includes('15.4') && text.includes('Discussion of (iv)')) headingId = 'section-15-4';
-            else if (text.includes('16.0') && text.includes('What are ethical truths')) headingId = 'section-16';
+            // Dream Psychology chapter mappings based on content
+            if (text.includes('DREAMS HAVE A MEANING')) headingId = 'section-1';
+            else if (text.includes('THE DREAM ANALYSIS METHOD') || text.includes('DREAM ANALYSIS')) headingId = 'section-2';
+            else if (text.includes('BOTANICAL MONOGRAPH') || text.includes('MONOGRAPH')) headingId = 'section-3';
+            else if (text.includes('FULFILLMENT OF A WISH') || text.includes('WISH FULFILLMENT')) headingId = 'section-4';
+            else if (text.includes('ESSENTIAL CONTENT') || text.includes('CONTENT OF DREAMS')) headingId = 'section-5';
+            else if (text.includes('PSYCHOLOGY OF DREAM ACTIVITIES') || text.includes('DREAM ACTIVITIES')) headingId = 'section-6';
+            else if (text.includes('FORGETTING OF DREAMS') || text.includes('FORGETTING')) headingId = 'section-7';
+            else if (text.includes('UNCONSCIOUS AND CONSCIOUSNESS')) headingId = 'section-8';
+            else if (text.includes('PSYCHONEUROSES') || text.includes('THEORY OF PSYCHONEUROSES')) headingId = 'section-9';
+            else if (text.includes('SPECIAL PECULIARITY') || text.includes('UNCONSCIOUS THINKING')) headingId = 'section-10';
+            else if (text.includes('SIGNIFICANCE OF DREAMS') || text.includes('WISH FULFILLMENTS')) headingId = 'section-11';
+            else if (text.includes('ANALYSIS OF SAMPLE') || text.includes('SAMPLE DREAMS')) headingId = 'section-12';
+            else if (text.includes('FUNCTION OF THE DREAM') || text.includes('FUNCTION OF DREAM')) headingId = 'section-13';
+            else if (text.includes('DREAM SYMBOLISM') || text.includes('SYMBOLISM')) headingId = 'section-14';
+            else if (text.includes('RELATION OF THE UNCONSCIOUS')) headingId = 'section-15';
+            else if (text.includes('GUARDIAN OF SLEEP') || text.includes('DREAM AS GUARDIAN')) headingId = 'section-16';
+            else if (text.includes('TRANSFORMATION') || text.includes('DREAM THOUGHTS')) headingId = 'section-17';
+            else if (text.includes('SEX IN DREAMS')) headingId = 'section-18';
+            else if (text.includes('SEXUAL SYMBOLISM')) headingId = 'section-19';
+            else if (text.includes('ADDITIONAL NOTES') || text.includes('NOTES ON DREAM')) headingId = 'section-20';
             
             return `<h2 id="${headingId}" class="text-xl font-semibold mb-4 mt-8 text-slate-900 dark:text-slate-100">${text}</h2>`;
           }

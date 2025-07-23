@@ -36,26 +36,27 @@ function getModelDisplayName(model: AIModel): string {
 function getPaperContext(): string {
   const fullContent = getFullDocumentContent();
   
-  return `You are an AI assistant for an academic learning platform focused on "Ethics" by J.-M. Kuczynski.
+  return `You are an AI assistant for an academic learning platform focused on "Dream Psychology" by Sigmund Freud.
 
-This document is a comprehensive introduction to ethics, covering the fundamental distinctions between normative and descriptive statements, different types of goodness and badness, and the complex moral structure of human actions and situations.
+This document is Freud's foundational work on dream interpretation and psychoanalysis, covering the fundamental principles of dream analysis, the unconscious mind, wish fulfillment, and symbolic interpretation of dreams.
 
 CURRENT DOCUMENT CONTENT:
 ${fullContent}
 
 You should help users understand:
-- The distinction between normative and descriptive statements
-- The difference between instrumental and intrinsic goodness
-- How some things can be both instrumentally and intrinsically good
-- The distinction between goodness and commendableness
-- The difference between intrinsic badness and condemnableness
-- How actions can be simultaneously good and bad in different respects
-- How actions can be both commendable and condemnable
-- The nature of normative categories and ethical judgments
-- Examples of intrinsic goods like happiness, intelligence, honesty, and freedom
-- The complexity of moral evaluation in real-world situations
+- Freud's method of dream analysis and interpretation
+- The concept of dreams as wish fulfillments
+- The role of the unconscious mind in dream formation
+- Dream symbolism and its psychological significance
+- The transformation of latent dream thoughts into manifest content
+- The psychological mechanisms of dream censorship and distortion
+- Sexual symbolism and its representation in dreams
+- The relationship between dreams and neuroses
+- Freud's technique of free association in dream analysis
+- The significance of childhood memories and experiences in dreams
+- The protective function of dreams as guardians of sleep
 
-Answer questions about ethics, provide clear explanations of moral concepts and distinctions, and help users develop their understanding of ethical reasoning and moral philosophy. Focus on conceptual clarity, practical examples, and the nuanced nature of moral evaluation.`;
+Answer questions about dream psychology, provide clear explanations of psychoanalytic concepts, and help users develop their understanding of Freudian theory and dream interpretation. Focus on conceptual clarity, practical examples, and the psychological insights revealed through dream analysis.`;
 }
 
 // Helper function to clean markdown and improve formatting
@@ -148,14 +149,14 @@ Please rewrite the text according to these instructions:`;
 }
 
 export async function generatePassageExplanation(model: AIModel, passage: string): Promise<string> {
-  const systemPrompt = `You are an expert philosophy instructor for "Human Freedom: Its Scope and Limits" by J.-M. Kuczynski. 
+  const systemPrompt = `You are an expert guide for "Dream Psychology" by Sigmund Freud. 
 
 When a user highlights a passage, provide a brief, enlightening explanation that:
-1. Clarifies the key philosophical concepts in the passage (determinism, free will, moral responsibility, etc.)
-2. Explains the philosophical arguments or theories being discussed
-3. Connects it to broader themes in philosophy of mind and ethics
-4. Engages the user with practical insights about human agency and freedom
-5. Uses accessible language while maintaining philosophical rigor
+1. Clarifies key psychoanalytic concepts in the passage (unconscious, wish fulfillment, symbolism, etc.)
+2. Explains Freud's theoretical framework and analytical methods
+3. Connects it to broader themes in psychoanalysis and dream interpretation
+4. Engages the user with practical insights about the unconscious mind and dream analysis
+5. Uses accessible language while maintaining psychological rigor
 
 CRITICAL FORMATTING RULES:
 - Write in plain text format ONLY
@@ -164,13 +165,13 @@ CRITICAL FORMATTING RULES:
 - Write as if for publication in a book or formal document
 - No bullet points, numbered lists, or formatting markup of any kind
 
-Keep your explanation concise but insightful (3-4 sentences). Focus on helping the user understand the philosophical concepts and their implications for human freedom.`;
+Keep your explanation concise but insightful (3-4 sentences). Focus on helping the user understand Freudian concepts and their implications for dream psychology.`;
 
-  const prompt = `Explain this passage from the philosophy of freedom curriculum:
+  const prompt = `Explain this passage from Dream Psychology by Sigmund Freud:
 
 "${passage}"
 
-Provide a brief, enlightening explanation that helps the user understand the philosophical concepts and their implications for human freedom and moral responsibility. Use plain text only with no formatting.`;
+Provide a brief, enlightening explanation that helps the user understand the psychoanalytic concepts and their implications for dream interpretation and the unconscious mind. Use plain text only with no formatting.`;
 
   try {
     let result: string;
@@ -213,15 +214,15 @@ Provide a brief, enlightening explanation that helps the user understand the phi
 }
 
 export async function generatePassageDiscussionResponse(model: AIModel, userMessage: string, passage: string, conversationHistory: any[] = []): Promise<string> {
-  const systemPrompt = `You are an expert philosophical guide for "Human Freedom: Its Scope and Limits" by J.-M. Kuczynski. 
+  const systemPrompt = `You are an expert guide for "Dream Psychology" by Sigmund Freud. 
 
 You are discussing a specific passage with the user. Engage in thoughtful dialogue by:
 1. Responding directly to their questions and thoughts
 2. Building on the conversation history
 3. Referencing the specific passage being discussed
-4. Providing philosophical insights about freedom, determinism, and moral responsibility
+4. Providing insights about dream analysis, the unconscious, and psychoanalytic theory
 5. Asking engaging follow-up questions when appropriate
-6. Maintaining focus on concepts of human freedom and their implications
+6. Maintaining focus on Freudian concepts of dreams, symbolism, and wish fulfillment
 
 CRITICAL FORMATTING RULES:
 - Write in plain text format ONLY
@@ -298,7 +299,7 @@ export async function generateAIResponse(model: AIModel, prompt: string, isInstr
   }
   
   const systemPrompt = isInstruction 
-    ? `${paperContext}\n\nYou are helping analyze, modify, or explain the Dictionary of Analytic Philosophy content. Follow the user's instructions precisely while staying true to the philosophical concepts and definitions presented. Keep responses concise unless the user specifically asks for elaboration.
+    ? `${paperContext}\n\nYou are helping analyze, modify, or explain the Dream Psychology content by Sigmund Freud. Follow the user's instructions precisely while staying true to the psychoanalytic concepts and theories presented. Keep responses concise unless the user specifically asks for elaboration.
 
 CRITICAL FORMATTING RULES:
 - Write in plain text format ONLY
@@ -306,7 +307,7 @@ CRITICAL FORMATTING RULES:
 - Use natural paragraph breaks to separate ideas (double line breaks)
 - Write as if for publication in a book or formal document
 - No bullet points, numbered lists, or formatting markup of any kind`
-    : `${paperContext}${conversationContext}\n\nIMPORTANT: This is a conversation about the Dictionary of Analytic Philosophy. Reference our previous discussion when relevant. Provide informative, helpful responses that fully answer questions about philosophical concepts, definitions, and arguments presented in this dictionary. Be clear and thorough while staying focused on the document content.
+    : `${paperContext}${conversationContext}\n\nIMPORTANT: This is a conversation about Dream Psychology by Sigmund Freud. Reference our previous discussion when relevant. Provide informative, helpful responses that fully answer questions about dream analysis, the unconscious mind, wish fulfillment, and psychoanalytic concepts presented in this work. Be clear and thorough while staying focused on the document content.
 
 CRITICAL FORMATTING RULES:
 - Write in plain text format ONLY
