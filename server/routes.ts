@@ -54,7 +54,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json({ success: true, message: "Database connection working", testUser });
     } catch (error) {
       console.error("Database test failed:", error);
-      res.status(500).json({ success: false, error: error.message });
+      res.status(500).json({ success: false, error: error instanceof Error ? error instanceof Error ? error.message : "Unknown error" : 'Unknown error' });
     }
   });
 
@@ -77,7 +77,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
     } catch (error) {
       console.error("Admin reset failed:", error);
-      res.status(500).json({ success: false, error: error.message });
+      res.status(500).json({ success: false, error: error instanceof Error ? error instanceof Error ? error.message : "Unknown error" : 'Unknown error' });
     }
   });
 
@@ -105,7 +105,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
     } catch (error) {
       console.error("Registration error:", error);
-      res.status(500).json({ success: false, error: "Registration failed: " + error.message });
+      res.status(500).json({ success: false, error: "Registration failed: " + (error instanceof Error ? error instanceof Error ? error.message : "Unknown error" : 'Unknown error') });
     }
   });
 
@@ -175,7 +175,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
     } catch (error) {
       console.error("Login error:", error);
-      res.status(500).json({ success: false, error: "Login failed: " + error.message });
+      res.status(500).json({ success: false, error: "Login failed: " + (error instanceof Error ? error instanceof Error ? error.message : "Unknown error" : 'Unknown error') });
     }
   });
 
@@ -312,7 +312,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json({ response, isPreview });
     } catch (error) {
       console.error("Chat error:", error);
-      res.status(500).json({ error: error.message });
+      res.status(500).json({ error: error instanceof Error ? error.message : "Unknown error" });
     }
   });
 
@@ -350,7 +350,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json({ response, isPreview });
     } catch (error) {
       console.error("Instruction error:", error);
-      res.status(500).json({ error: error.message });
+      res.status(500).json({ error: error instanceof Error ? error.message : "Unknown error" });
     }
   });
 
@@ -361,7 +361,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(messages);
     } catch (error) {
       console.error("Chat history error:", error);
-      res.status(500).json({ error: error.message });
+      res.status(500).json({ error: error instanceof Error ? error.message : "Unknown error" });
     }
   });
 
@@ -372,7 +372,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json({ success: true });
     } catch (error) {
       console.error("Clear chat error:", error);
-      res.status(500).json({ error: error.message });
+      res.status(500).json({ error: error instanceof Error ? error.message : "Unknown error" });
     }
   });
 
@@ -416,7 +416,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
     } catch (error) {
       console.error("Rewrite error:", error);
-      res.status(500).json({ error: error.message });
+      res.status(500).json({ error: error instanceof Error ? error.message : "Unknown error" });
     }
   });
 
@@ -427,7 +427,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(rewrites);
     } catch (error) {
       console.error("Error fetching rewrites:", error);
-      res.status(500).json({ error: error.message });
+      res.status(500).json({ error: error instanceof Error ? error.message : "Unknown error" });
     }
   });
 
@@ -450,7 +450,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.send(pdfBuffer);
     } catch (error) {
       console.error("PDF generation error:", error);
-      res.status(500).json({ error: error.message });
+      res.status(500).json({ error: error instanceof Error ? error.message : "Unknown error" });
     }
   });
 
@@ -543,7 +543,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const { sourceText, instructions, chunkIndex, model } = quizRequestSchema.parse(req.body);
       const user = await getCurrentUser(req);
       
-      const fullQuiz = await generateQuiz(model, sourceText, instructions);
+      const fullQuiz = await generateQuiz(model, sourceText, instructions || "Generate a comprehensive quiz");
       
       // Check if user has access to full features
       let quiz = fullQuiz;
@@ -581,7 +581,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
     } catch (error) {
       console.error("Quiz generation error:", error);
-      res.status(500).json({ error: error.message });
+      res.status(500).json({ error: error instanceof Error ? error.message : "Unknown error" });
     }
   });
 
@@ -592,7 +592,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(quizzes);
     } catch (error) {
       console.error("Error fetching quizzes:", error);
-      res.status(500).json({ error: error.message });
+      res.status(500).json({ error: error instanceof Error ? error.message : "Unknown error" });
     }
   });
 
@@ -602,17 +602,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const { sourceText, instructions, chunkIndex, model } = studyGuideRequestSchema.parse(req.body);
       const user = await getCurrentUser(req);
       
-      const fullStudyGuide = await generateStudyGuide(model, sourceText, instructions);
+      const fullStudyGuide = await generateStudyGuide(model, sourceText, instructions || "Generate a comprehensive study guide");
       
       // Check if user has access to full features
       let studyGuide = fullStudyGuide;
       let isPreview = false;
       
       if (!canAccessFeature(user)) {
-        studyGuide = getPreviewResponse(fullStudyGuide.guideContent, !user);
+        studyGuide = getPreviewResponse(fullStudyGuide, !user);
         isPreview = true;
       } else {
-        studyGuide = fullStudyGuide.guideContent;
+        studyGuide = fullStudyGuide;
         // Deduct 1 credit for full response (skip for admin)
         if (!isAdmin(user)) {
           await storage.updateUserCredits(user!.id, user!.credits - 1);
@@ -621,7 +621,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       const savedStudyGuide = await storage.createStudyGuide({
         sourceText,
-        studyGuide: fullStudyGuide.guideContent,
+        studyGuide: fullStudyGuide,
         instructions: instructions || "Generate a comprehensive study guide",
         model,
         chunkIndex
@@ -637,7 +637,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
     } catch (error) {
       console.error("Study guide generation error:", error);
-      res.status(500).json({ error: error instanceof Error ? error.message : "Failed to generate study guide" });
+      res.status(500).json({ error: error instanceof Error ? error instanceof Error ? error.message : "Unknown error" : "Failed to generate study guide" });
     }
   });
 
@@ -648,7 +648,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(studyGuides);
     } catch (error) {
       console.error("Error fetching study guides:", error);
-      res.status(500).json({ error: error.message });
+      res.status(500).json({ error: error instanceof Error ? error.message : "Unknown error" });
     }
   });
 
@@ -694,7 +694,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
     } catch (error) {
       console.error("Student test generation error:", error);
-      res.status(500).json({ error: error instanceof Error ? error.message : "Failed to generate student test" });
+      res.status(500).json({ error: error instanceof Error ? error instanceof Error ? error.message : "Unknown error" : "Failed to generate student test" });
     }
   });
 
@@ -705,7 +705,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(studentTests);
     } catch (error) {
       console.error("Error fetching student tests:", error);
-      res.status(500).json({ error: error.message });
+      res.status(500).json({ error: error instanceof Error ? error.message : "Unknown error" });
     }
   });
 
@@ -782,7 +782,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
     } catch (error) {
       console.error("Test submission error:", error);
-      res.status(500).json({ error: error instanceof Error ? error.message : "Failed to submit test" });
+      res.status(500).json({ error: error instanceof Error ? error instanceof Error ? error.message : "Unknown error" : "Failed to submit test" });
     }
   });
 
