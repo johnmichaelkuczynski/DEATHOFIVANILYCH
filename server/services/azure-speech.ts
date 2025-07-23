@@ -3,20 +3,26 @@ import { Readable } from 'stream';
 interface AzureSpeechConfig {
   endpoint: string;
   key: string;
+  region: string;
 }
 
 export class AzureSpeechService {
   private config: AzureSpeechConfig;
 
   constructor() {
-    const endpoint = process.env.AZURE_SPEECH_ENDPOINT;
     const key = process.env.AZURE_SPEECH_KEY;
+    const region = process.env.AZURE_SPEECH_REGION;
     
-    if (!endpoint || !key) {
-      throw new Error('Azure Speech Service credentials not configured. Please set AZURE_SPEECH_ENDPOINT and AZURE_SPEECH_KEY environment variables.');
+    if (!key || !region) {
+      throw new Error('Azure Speech Service credentials not configured. Please set AZURE_SPEECH_KEY and AZURE_SPEECH_REGION environment variables.');
     }
 
-    this.config = { endpoint, key };
+    // Build endpoint from region
+    const endpoint = `https://${region}.tts.speech.microsoft.com`;
+
+    console.log(`Azure Speech Service initialized with region: ${region}, endpoint: ${endpoint}`);
+
+    this.config = { endpoint, key, region };
   }
 
   async synthesizeSpeech(text: string, voice: string = 'en-US-JennyNeural'): Promise<Buffer> {
