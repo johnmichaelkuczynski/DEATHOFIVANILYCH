@@ -72,7 +72,7 @@ export default function NavigationSidebar() {
           const allElements = contentArea.querySelectorAll('h1, h2, h3, h4, h5, h6, p, div');
           
           for (const searchTerm of searchTerms) {
-            for (const el of allElements) {
+            for (const el of Array.from(allElements)) {
               const textContent = el.textContent || '';
               if (textContent.toLowerCase().includes(searchTerm.toLowerCase()) && 
                   textContent.length < 200) { // Prefer headings over long paragraphs

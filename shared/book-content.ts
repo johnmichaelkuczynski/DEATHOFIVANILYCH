@@ -1,3 +1,15 @@
+interface BookSection {
+  id: string;
+  title: string;
+  content: string;
+}
+
+interface BookContent {
+  title: string;
+  author: string;
+  sections: BookSection[];
+}
+
 export const bookContent: BookContent = {
   title: "Ethics",
   author: "J.-M. Kuczynski",
@@ -359,3 +371,9 @@ According to another view, for something to be good is for it to be identical wi
     }
   ]
 };
+
+export function getFullDocumentContent(): string {
+  return bookContent.sections
+    .map(section => section.content)
+    .join('\n\n');
+}
