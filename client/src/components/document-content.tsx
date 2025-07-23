@@ -163,27 +163,16 @@ export default function DocumentContent({
             let headingId = '';
             const text = paragraph.trim();
             
-            // Dream Psychology chapter mappings based on content
+            // Dream Psychology 9 chapters mapping based on exact content
             if (text.includes('DREAMS HAVE A MEANING')) headingId = 'section-1';
-            else if (text.includes('THE DREAM ANALYSIS METHOD') || text.includes('DREAM ANALYSIS')) headingId = 'section-2';
-            else if (text.includes('BOTANICAL MONOGRAPH') || text.includes('MONOGRAPH')) headingId = 'section-3';
-            else if (text.includes('FULFILLMENT OF A WISH') || text.includes('WISH FULFILLMENT')) headingId = 'section-4';
-            else if (text.includes('ESSENTIAL CONTENT') || text.includes('CONTENT OF DREAMS')) headingId = 'section-5';
-            else if (text.includes('PSYCHOLOGY OF DREAM ACTIVITIES') || text.includes('DREAM ACTIVITIES')) headingId = 'section-6';
-            else if (text.includes('FORGETTING OF DREAMS') || text.includes('FORGETTING')) headingId = 'section-7';
-            else if (text.includes('UNCONSCIOUS AND CONSCIOUSNESS')) headingId = 'section-8';
-            else if (text.includes('PSYCHONEUROSES') || text.includes('THEORY OF PSYCHONEUROSES')) headingId = 'section-9';
-            else if (text.includes('SPECIAL PECULIARITY') || text.includes('UNCONSCIOUS THINKING')) headingId = 'section-10';
-            else if (text.includes('SIGNIFICANCE OF DREAMS') || text.includes('WISH FULFILLMENTS')) headingId = 'section-11';
-            else if (text.includes('ANALYSIS OF SAMPLE') || text.includes('SAMPLE DREAMS')) headingId = 'section-12';
-            else if (text.includes('FUNCTION OF THE DREAM') || text.includes('FUNCTION OF DREAM')) headingId = 'section-13';
-            else if (text.includes('DREAM SYMBOLISM') || text.includes('SYMBOLISM')) headingId = 'section-14';
-            else if (text.includes('RELATION OF THE UNCONSCIOUS')) headingId = 'section-15';
-            else if (text.includes('GUARDIAN OF SLEEP') || text.includes('DREAM AS GUARDIAN')) headingId = 'section-16';
-            else if (text.includes('TRANSFORMATION') || text.includes('DREAM THOUGHTS')) headingId = 'section-17';
-            else if (text.includes('SEX IN DREAMS')) headingId = 'section-18';
-            else if (text.includes('SEXUAL SYMBOLISM')) headingId = 'section-19';
-            else if (text.includes('ADDITIONAL NOTES') || text.includes('NOTES ON DREAM')) headingId = 'section-20';
+            else if (text.includes('THE DREAM MECHANISM') || text.includes('DREAM MECHANISM')) headingId = 'section-2';
+            else if (text.includes('WHY THE DREAM DISGUISES') || text.includes('DISGUISES THE DESIRES')) headingId = 'section-3';
+            else if (text.includes('DREAM ANALYSIS')) headingId = 'section-4';
+            else if (text.includes('SEX IN DREAMS')) headingId = 'section-5';
+            else if (text.includes('THE WISH IN DREAMS') || text.includes('WISH IN DREAMS')) headingId = 'section-6';
+            else if (text.includes('THE FUNCTION OF THE DREAM') || text.includes('FUNCTION OF THE DREAM')) headingId = 'section-7';
+            else if (text.includes('PRIMARY AND SECONDARY PROCESS') || text.includes('REGRESSION')) headingId = 'section-8';
+            else if (text.includes('THE UNCONSCIOUS AND CONSCIOUSNESS') || text.includes('REALITY')) headingId = 'section-9';
             
             return `<h2 id="${headingId}" class="text-xl font-semibold mb-4 mt-8 text-slate-900 dark:text-slate-100">${text}</h2>`;
           }
