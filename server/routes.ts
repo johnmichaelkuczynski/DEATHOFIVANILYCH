@@ -11,7 +11,9 @@ import { generatePDF } from "./services/pdf-generator";
 import { transcribeAudio } from "./services/speech-service";
 import { register, login, createSession, getUserFromSession, canAccessFeature, getPreviewResponse, isAdmin, hashPassword } from "./auth";
 import { createPaypalOrder, capturePaypalOrder, loadPaypalDefault, verifyPaypalTransaction } from "./safe-paypal";
-import { chatRequestSchema, instructionRequestSchema, rewriteRequestSchema, quizRequestSchema, studyGuideRequestSchema, studentTestRequestSchema, submitTestRequestSchema, registerRequestSchema, loginRequestSchema, purchaseRequestSchema, type AIModel } from "@shared/schema";
+import { chatRequestSchema, instructionRequestSchema, rewriteRequestSchema, quizRequestSchema, studyGuideRequestSchema, studentTestRequestSchema, submitTestRequestSchema, registerRequestSchema, loginRequestSchema, purchaseRequestSchema, podcastScriptRequestSchema, podcastAudioRequestSchema, type AIModel } from "@shared/schema";
+import { podcastGeneratorService } from "./services/podcast-generator";
+import { azureSpeechService } from "./services/azure-speech";
 import multer from "multer";
 
 declare module 'express-session' {
@@ -1201,6 +1203,79 @@ FEEDBACK: [explanation focusing on content accuracy]`;
       feedback
     };
   }
+
+  // Podcast generation endpoints
+  app.post("/api/generate-podcast-script", async (req, res) => {
+    try {
+      const { text, model } = podcastScriptRequestSchema.parse(req.body);
+      
+      const user = await getCurrentUser(req);
+      
+      // Check if user can access feature
+      if (!canAccessFeature(user)) {
+        return res.status(403).json({ 
+          error: "Insufficient credits. Please register and purchase credits to access this feature." 
+        });
+      }
+
+      // Generate podcast script
+      const script = await podcastGeneratorService.generatePodcastScript(text, model);
+      
+      // Deduct credits only if user is not admin
+      if (user && !isAdmin(user.username, user.email || '')) {
+        await storage.updateUserCredits(user.id, -1);
+      }
+
+      // Apply preview limits for non-premium users
+      const isPreview = !user || user.credits <= 0;
+      const responseScript = isPreview ? getPreviewResponse(script, user) : script;
+
+      res.json({ 
+        script: responseScript,
+        preview: isPreview
+      });
+
+    } catch (error) {
+      console.error("Podcast script generation error:", error);
+      res.status(500).json({ error: error instanceof Error ? error.message : "Failed to generate podcast script" });
+    }
+  });
+
+  app.post("/api/generate-podcast-audio", async (req, res) => {
+    try {
+      const { script } = podcastAudioRequestSchema.parse(req.body);
+      
+      const user = await getCurrentUser(req);
+      
+      // Check if user can access full audio feature
+      if (!canAccessFeature(user)) {
+        return res.status(403).json({ 
+          error: "Full audio access requires registration and credits. Please purchase credits to continue." 
+        });
+      }
+
+      // Generate audio using Azure Speech Service
+      const audioBuffer = await azureSpeechService.generatePodcastAudio(script);
+      
+      // Deduct additional credits for audio generation (more expensive)
+      if (user && !isAdmin(user.username, user.email || '')) {
+        await storage.updateUserCredits(user.id, -2);
+      }
+
+      // Return audio as MP3
+      res.set({
+        'Content-Type': 'audio/mpeg',
+        'Content-Length': audioBuffer.length,
+        'Content-Disposition': 'attachment; filename="podcast-summary.mp3"'
+      });
+      
+      res.send(audioBuffer);
+
+    } catch (error) {
+      console.error("Podcast audio generation error:", error);
+      res.status(500).json({ error: error instanceof Error ? error.message : "Failed to generate podcast audio" });
+    }
+  });
 
   const httpServer = createServer(app);
   return httpServer;

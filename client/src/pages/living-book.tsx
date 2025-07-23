@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BookOpen, Edit3, FileText, User, LogOut, CreditCard } from "lucide-react";
+import { BookOpen, Edit3, FileText, User, LogOut, CreditCard, Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NavigationSidebar from "@/components/navigation-sidebar";
 import DocumentContent from "@/components/document-content";
@@ -12,6 +12,7 @@ import PassageDiscussionModal from "@/components/passage-discussion-modal";
 import QuizModal from "@/components/quiz-modal";
 import StudyGuideModal from "@/components/study-guide-modal";
 import StudentTestModal from "@/components/student-test-modal";
+import PodcastSummaryModal from "@/components/podcast-summary-modal";
 
 import ChunkingModal from "@/components/chunking-modal";
 import AuthModal from "@/components/auth-modal";
@@ -54,6 +55,10 @@ export default function LivingBook() {
   const [authModalOpen, setAuthModalOpen] = useState(false);
   const [authModalTab, setAuthModalTab] = useState<"login" | "register">("login");
   const [paymentModalOpen, setPaymentModalOpen] = useState(false);
+  
+  // Podcast state
+  const [podcastSummaryModalOpen, setPodcastSummaryModalOpen] = useState(false);
+  const [podcastSummaryText, setPodcastSummaryText] = useState("");
 
 
 
@@ -102,7 +107,7 @@ export default function LivingBook() {
 
 
 
-  const handleChunkAction = (chunk: string, chunkIndex: number, action: 'quiz' | 'chat' | 'rewrite' | 'study-guide' | 'student-test') => {
+  const handleChunkAction = (chunk: string, chunkIndex: number, action: 'quiz' | 'chat' | 'rewrite' | 'study-guide' | 'student-test' | 'podcast-summary') => {
     if (action === 'quiz') {
       setSelectedTextForQuiz(chunk);
       setQuizChunkIndex(chunkIndex);
@@ -121,6 +126,9 @@ export default function LivingBook() {
       setSelectedTextForStudentTest(chunk);
       setStudentTestChunkIndex(chunkIndex);
       setStudentTestModalOpen(true);
+    } else if (action === 'podcast-summary') {
+      setPodcastSummaryText(chunk);
+      setPodcastSummaryModalOpen(true);
     }
   };
 
@@ -147,6 +155,18 @@ export default function LivingBook() {
       setSelectedTextForStudentTest(text);
       setStudentTestChunkIndex(null);
       setStudentTestModalOpen(true);
+    }
+  };
+
+  const handlePodcastSummaryFromSelection = (text: string) => {
+    const wordCount = text.split(/\s+/).length;
+    
+    if (wordCount > 1000) {
+      setPendingChunkText(text);
+      setChunkingModalOpen(true);
+    } else {
+      setPodcastSummaryText(text);
+      setPodcastSummaryModalOpen(true);
     }
   };
 
@@ -241,6 +261,21 @@ export default function LivingBook() {
                 <BookOpen className="w-4 h-4" />
                 <span className="hidden sm:inline">Study Guide</span>
                 <span className="sm:hidden">Guide</span>
+              </Button>
+
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => {
+                  const fullText = getFullDocumentContent();
+                  setPodcastSummaryText(fullText);
+                  setPodcastSummaryModalOpen(true);
+                }}
+                className="flex items-center space-x-1 sm:space-x-2 text-orange-600 border-orange-200 hover:bg-orange-50"
+              >
+                <Headphones className="w-4 h-4" />
+                <span className="hidden sm:inline">Podcast Summary</span>
+                <span className="sm:hidden">Audio</span>
               </Button>
 
               <ModelSelector 
@@ -407,6 +442,14 @@ export default function LivingBook() {
       <PaymentModal
         isOpen={paymentModalOpen}
         onClose={() => setPaymentModalOpen(false)}
+      />
+
+      {/* Podcast Summary Modal */}
+      <PodcastSummaryModal
+        isOpen={podcastSummaryModalOpen}
+        onClose={() => setPodcastSummaryModalOpen(false)}
+        selectedText={podcastSummaryText}
+        selectedModel={selectedModel}
       />
 
     </div>

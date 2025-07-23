@@ -260,7 +260,15 @@ export const submitTestRequestSchema = z.object({
   questionTypes: z.record(z.enum(["multiple_choice", "short_answer", "long_answer"])).optional(),
 });
 
+// Podcast request schemas
+export const podcastScriptRequestSchema = z.object({
+  text: z.string(),
+  model: z.enum(["deepseek", "openai", "anthropic", "perplexity"]),
+});
 
+export const podcastAudioRequestSchema = z.object({
+  script: z.string(),
+});
 
 export const registerRequestSchema = z.object({
   username: z.string().min(3).max(50),
@@ -288,6 +296,8 @@ export type RewriteRequest = z.infer<typeof rewriteRequestSchema>;
 export type QuizRequest = z.infer<typeof quizRequestSchema>;
 export type StudyGuideRequest = z.infer<typeof studyGuideRequestSchema>;
 export type StudentTestRequest = z.infer<typeof studentTestRequestSchema>;
+export type PodcastScriptRequest = z.infer<typeof podcastScriptRequestSchema>;
+export type PodcastAudioRequest = z.infer<typeof podcastAudioRequestSchema>;
 
 export type RegisterRequest = z.infer<typeof registerRequestSchema>;
 export type LoginRequest = z.infer<typeof loginRequestSchema>;

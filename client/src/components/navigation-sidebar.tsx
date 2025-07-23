@@ -2,17 +2,18 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { bookContent as paperContent } from "@shared/book-content";
 
 // Create a table of contents based on the exact 9 chapters of Dream Psychology
+// Map to the actual sections where each chapter starts based on content analysis
 const createTableOfContents = () => {
   const tableOfContents: Array<{ id: string; title: string; level: number }> = [
     { id: "section-1", title: "DREAMS HAVE A MEANING", level: 0 },
-    { id: "section-2", title: "THE DREAM MECHANISM", level: 0 },
-    { id: "section-3", title: "WHY THE DREAM DISGUISES THE DESIRES", level: 0 },
-    { id: "section-4", title: "DREAM ANALYSIS", level: 0 },
-    { id: "section-5", title: "SEX IN DREAMS", level: 0 },
-    { id: "section-6", title: "THE WISH IN DREAMS", level: 0 },
-    { id: "section-7", title: "THE FUNCTION OF THE DREAM", level: 0 },
-    { id: "section-8", title: "THE PRIMARY AND SECONDARY PROCESS—REGRESSION", level: 0 },
-    { id: "section-9", title: "THE UNCONSCIOUS AND CONSCIOUSNESS—REALITY", level: 0 }
+    { id: "section-3", title: "THE DREAM MECHANISM", level: 0 },
+    { id: "section-4", title: "WHY THE DREAM DISGUISES THE DESIRES", level: 0 },
+    { id: "section-7", title: "DREAM ANALYSIS", level: 0 },
+    { id: "section-9", title: "SEX IN DREAMS", level: 0 },
+    { id: "section-12", title: "THE WISH IN DREAMS", level: 0 },
+    { id: "section-14", title: "THE FUNCTION OF THE DREAM", level: 0 },
+    { id: "section-16", title: "THE PRIMARY AND SECONDARY PROCESS—REGRESSION", level: 0 },
+    { id: "section-18", title: "THE UNCONSCIOUS AND CONSCIOUSNESS—REALITY", level: 0 }
   ];
   
   return tableOfContents;

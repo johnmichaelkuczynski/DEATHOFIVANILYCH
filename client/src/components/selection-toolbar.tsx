@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Highlighter, X, MessageSquare, Edit3, FileText, BookOpen, GraduationCap } from "lucide-react";
+import { MessageCircle, Highlighter, X, MessageSquare, Edit3, FileText, BookOpen, GraduationCap, Headphones } from "lucide-react";
 import { useState } from "react";
 
 interface SelectionToolbarProps {
@@ -9,6 +9,7 @@ interface SelectionToolbarProps {
   onRewrite: (text: string) => void;
   onCreateStudyGuide: (text: string) => void;
   onTestMe: (text: string) => void;
+  onPodcastSummary: (text: string) => void;
   onHighlight: () => void;
   onClear: () => void;
   position?: { x: number; y: number };
@@ -21,6 +22,7 @@ export default function SelectionToolbar({
   onRewrite,
   onCreateStudyGuide,
   onTestMe,
+  onPodcastSummary,
   onHighlight, 
   onClear, 
   position 
@@ -53,6 +55,11 @@ export default function SelectionToolbar({
 
   const handleTestMe = () => {
     onTestMe(selectedText);
+    // Keep toolbar visible so user can try other actions
+  };
+
+  const handlePodcastSummary = () => {
+    onPodcastSummary(selectedText);
     // Keep toolbar visible so user can try other actions
   };
 
@@ -143,6 +150,16 @@ export default function SelectionToolbar({
       >
         <GraduationCap className="w-3 h-3" />
         <span className="text-xs">Test Me</span>
+      </Button>
+
+      <Button
+        size="sm"
+        variant="outline"
+        onClick={handlePodcastSummary}
+        className="flex items-center space-x-1 text-orange-600 border-orange-200 hover:bg-orange-50"
+      >
+        <Headphones className="w-3 h-3" />
+        <span className="text-xs">🎧 Podcast</span>
       </Button>
 
 
