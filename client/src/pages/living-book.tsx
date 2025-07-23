@@ -12,7 +12,7 @@ import PassageDiscussionModal from "@/components/passage-discussion-modal";
 import QuizModal from "@/components/quiz-modal";
 import StudyGuideModal from "@/components/study-guide-modal";
 import StudentTestModal from "@/components/student-test-modal";
-import PodcastSummaryModal from "@/components/podcast-summary-modal";
+import PodcastModal from "@/components/podcast-modal";
 
 import ChunkingModal from "@/components/chunking-modal";
 import AuthModal from "@/components/auth-modal";
@@ -445,8 +445,8 @@ export default function LivingBook() {
         onClose={() => setPaymentModalOpen(false)}
       />
 
-      {/* Podcast Summary Modal */}
-      <PodcastSummaryModal
+      {/* Podcast Modal */}
+      <PodcastModal
         isOpen={podcastSummaryModalOpen}
         onClose={() => setPodcastSummaryModalOpen(false)}
         selectedText={podcastSummaryText}

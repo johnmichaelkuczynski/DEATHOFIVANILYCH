@@ -1277,6 +1277,43 @@ FEEDBACK: [explanation focusing on content accuracy]`;
     }
   });
 
+  // Simplified direct podcast generation
+  app.post("/api/generate-podcast", async (req, res) => {
+    try {
+      const { text, model, customInstructions } = req.body;
+      
+      const user = await getCurrentUser(req);
+      
+      // Check if user can access feature
+      if (!canAccessFeature(user)) {
+        return res.status(403).json({ 
+          error: "Insufficient credits. Please register and purchase credits to access this feature." 
+        });
+      }
+
+      // Generate script with custom instructions if provided  
+      const script = await podcastGeneratorService.generatePodcastScript(text, model, customInstructions || undefined);
+      
+      // Generate audio directly
+      const audioBuffer = await azureSpeechService.generatePodcastAudio(script);
+      
+      // Create blob URL for audio
+      const audioBase64 = audioBuffer.toString('base64');
+      const audioUrl = `data:audio/mpeg;base64,${audioBase64}`;
+      
+      // Deduct credits (3 total: script + audio generation)
+      if (user && !isAdmin(user.username, user.email || '')) {
+        await storage.updateUserCredits(user.id, -3);
+      }
+
+      res.json({ audioUrl, script });
+
+    } catch (error) {
+      console.error("Podcast generation error:", error);
+      res.status(500).json({ error: error instanceof Error ? error.message : "Failed to generate podcast" });
+    }
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }

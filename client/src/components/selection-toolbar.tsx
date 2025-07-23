@@ -159,7 +159,7 @@ export default function SelectionToolbar({
         className="flex items-center space-x-1 text-orange-600 border-orange-200 hover:bg-orange-50"
       >
         <Headphones className="w-3 h-3" />
-        <span className="text-xs">🎧 Podcast</span>
+        <span className="text-xs">Podcast</span>
       </Button>
 
 

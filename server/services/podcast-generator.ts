@@ -13,8 +13,10 @@ export interface PodcastScript {
 
 export class PodcastGeneratorService {
   
-  async generatePodcastScript(text: string, model: AIModel): Promise<string> {
-    const prompt = this.createPodcastPrompt(text);
+  async generatePodcastScript(text: string, model: AIModel, customInstructions?: string): Promise<string> {
+    const prompt = customInstructions 
+      ? this.createCustomPodcastPrompt(text, customInstructions)
+      : this.createPodcastPrompt(text);
     
     try {
       let response: string;
@@ -164,6 +166,27 @@ IMPORTANT GUIDELINES:
 - Do not use any markdown formatting - write in plain text only
 
 Generate a complete podcast script now:`;
+  }
+
+  private createCustomPodcastPrompt(text: string, customInstructions: string): string {
+    return `You are creating a podcast script about a specific passage from Sigmund Freud's "Dream Psychology" based on custom user instructions.
+
+SELECTED PASSAGE:
+"${text}"
+
+USER'S CUSTOM INSTRUCTIONS:
+${customInstructions}
+
+Create a podcast script following the user's instructions. Write in a conversational podcast style, as if speaking directly to listeners. Keep the tone engaging but respectful. Focus specifically on the selected passage.
+
+IMPORTANT GUIDELINES:
+- Write in conversational podcast style
+- Make content accessible to general audiences interested in psychology  
+- Focus specifically on the selected passage, not general information about Freud
+- Do not use any markdown formatting - write in plain text only
+- Follow the user's specific instructions for content structure and focus
+
+Generate the podcast script now:`;
   }
 
   private formatPodcastScript(rawScript: string): string {
