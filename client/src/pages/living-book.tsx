@@ -358,6 +358,7 @@ export default function LivingBook() {
             onPassageDiscussion={handlePassageDiscussion}
             onCreateStudyGuide={handleCreateStudyGuideFromSelection}
             onTestMe={handleTestMeFromSelection}
+            onPodcastSummary={handlePodcastSummaryFromSelection}
           />
         </main>
 
