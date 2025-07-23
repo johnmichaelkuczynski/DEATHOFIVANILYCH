@@ -748,3 +748,13 @@ Preferred communication style: Simple, everyday language.
   - Application now builds successfully with 'npm run build' command
   - Verified complete functionality with database connections and API endpoints
   - Platform ready for successful Replit deployment without critical errors
+- July 23, 2025: PODCAST GENERATION FULLY OPERATIONAL - Direct audio generation from text selections
+  - FIXED Azure Speech Service configuration using AZURE_SPEECH_KEY and AZURE_SPEECH_REGION
+  - Built endpoint automatically from region (eastus.tts.speech.microsoft.com)
+  - Updated all UI text from "Generate Podcast Summary" to "Generate Podcast" 
+  - Changed selection toolbar button from "🎧 Podcast" to "Podcast"
+  - Implemented simplified one-click workflow: text selection → direct podcast audio generation
+  - Added dual options: default format (overview + analysis + insights + quotes) or custom instructions
+  - Successfully tested with 10-second generation time producing MP3 audio via Azure Text-to-Speech
+  - Uses en-US-JennyNeural voice with proper SSML formatting and audio chunking
+  - Complete end-to-end podcast generation workflow operational and production-ready
