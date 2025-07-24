@@ -1,19 +1,34 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { bookContent as paperContent } from "@shared/book-content";
 
-// Create a table of contents based on the exact 9 chapters of Dream Psychology
-// Map to the actual sections where each chapter starts based on content analysis
+// Create a table of contents based on the actual book content structure
 const createTableOfContents = () => {
   const tableOfContents: Array<{ id: string; title: string; level: number }> = [
-    { id: "section-1", title: "DREAMS HAVE A MEANING", level: 0 },
-    { id: "section-3", title: "THE DREAM MECHANISM", level: 0 },
-    { id: "section-4", title: "WHY THE DREAM DISGUISES THE DESIRES", level: 0 },
-    { id: "section-7", title: "DREAM ANALYSIS", level: 0 },
-    { id: "section-9", title: "SEX IN DREAMS", level: 0 },
-    { id: "section-12", title: "THE WISH IN DREAMS", level: 0 },
-    { id: "section-14", title: "THE FUNCTION OF THE DREAM", level: 0 },
-    { id: "section-16", title: "THE PRIMARY AND SECONDARY PROCESS—REGRESSION", level: 0 },
-    { id: "section-18", title: "THE UNCONSCIOUS AND CONSCIOUSNESS—REALITY", level: 0 }
+    // Part One
+    { id: "section-1", title: "Part One", level: 0 },
+    { id: "section-1", title: "Chapter I. The Bertolini", level: 1 },
+    { id: "section-1", title: "Chapter II. In Santa Croce with No Baedeker", level: 1 },
+    { id: "section-1", title: "Chapter III. Music, Violets, and the Letter \"S\"", level: 1 },
+    { id: "section-1", title: "Chapter IV. Fourth Chapter", level: 1 },
+    { id: "section-1", title: "Chapter V. Possibilities of a Pleasant Outing", level: 1 },
+    { id: "section-1", title: "Chapter VI. The Reverend Arthur Beebe, the Reverend Cuthbert Eager, Mr. Emerson, Mr. George Emerson, Miss Eleanor Lavish, Miss Charlotte Bartlett, and Miss Lucy Honeychurch Drive Out in Carriages to See a View; Italians Drive Them", level: 1 },
+    { id: "section-1", title: "Chapter VII. They Return", level: 1 },
+    
+    // Part Two
+    { id: "section-1", title: "Part Two", level: 0 },
+    { id: "section-1", title: "Chapter VIII. Medieval", level: 1 },
+    { id: "section-1", title: "Chapter IX. Lucy As a Work of Art", level: 1 },
+    { id: "section-1", title: "Chapter X. Cecil as a Humourist", level: 1 },
+    { id: "section-1", title: "Chapter XI. In Mrs. Vyse's Well-Appointed Flat", level: 1 },
+    { id: "section-1", title: "Chapter XII. Twelfth Chapter", level: 1 },
+    { id: "section-1", title: "Chapter XIII. How Miss Bartlett's Boiler Was So Tiresome", level: 1 },
+    { id: "section-1", title: "Chapter XIV. How Lucy Faced the External Situation Bravely", level: 1 },
+    { id: "section-1", title: "Chapter XV. The Disaster Within", level: 1 },
+    { id: "section-1", title: "Chapter XVI. Lying to George", level: 1 },
+    { id: "section-1", title: "Chapter XVII. Lying to Cecil", level: 1 },
+    { id: "section-1", title: "Chapter XVIII. Lying to Mr. Beebe, Mrs. Honeychurch, Freddy, and The Servants", level: 1 },
+    { id: "section-1", title: "Chapter XIX. Lying to Mr. Emerson", level: 1 },
+    { id: "section-1", title: "Chapter XX. The End of the Middle Ages", level: 1 }
   ];
   
   return tableOfContents;
