@@ -1,1036 +1,8765 @@
-interface BookSection {
-  id: string;
-  title: string;
-  content: string;
-}
-
-interface BookContent {
-  title: string;
-  author: string;
-  sections: BookSection[];
-}
-
 export const bookContent: BookContent = {
-  title: "DREAM PSYCHOLOGY",
-  author: "Sigmund Freud",
+  title: "A Room With A View",
+  author: "Zhi Systems",
   sections: [
     {
       id: "section-1",
       title: "Section 1",
-      content: `DREAMS HAVE A MEANING
+      content: `By E. M. Forster
 
-In what we may term "prescientific days" people were in no uncertainty about the interpretation of dreams. When they were recalled after awakening they were regarded as either the friendly or hostile manifestation of some higher powers, demoniacal and Divine. With the rise of scientific thought the whole of this expressive mythology was transferred to psychology; to-day there is but a small minority among educated persons who doubt that the dream is the dreamer's own psychical act.
+CONTENTS
 
-But since the downfall of the mythological hypothesis an interpretation of the dream has been wanting. The conditions of its origin; its relationship to our psychical life when we are awake; its independence of disturbances which, during the state of sleep, seem to compel notice; its many peculiarities repugnant to our waking thought; the incongruence between its images and the feelings they engender; then the dream's evanescence, the way in which, on awakening, our thoughts thrust it aside as something bizarre, and our reminiscences mutilating or rejecting it—all these and many other problems have for many hundred years demanded answers which up till now could never have been satisfactory. Before all there is the question as to the meaning of the dream, a question which is in itself double-sided. There is, firstly, the psychical significance of the dream, its position with regard to the psychical processes, as to a possible biological function; secondly, has the dream a meaning—can sense be made of each single dream as of other mental syntheses?
+Part One.
+ Chapter I. The Bertolini
+ Chapter II. In Santa Croce with No Baedeker
+ Chapter III. Music, Violets, and the Letter “S”
+ Chapter IV. Fourth Chapter
+ Chapter V. Possibilities of a Pleasant Outing
+ Chapter VI. The Reverend Arthur Beebe, the Reverend Cuthbert Eager, Mr. Emerson, Mr. George Emerson, Miss Eleanor Lavish, Miss Charlotte Bartlett, and Miss Lucy Honeychurch Drive Out in Carriages to See a View; Italians Drive Them
+ Chapter VII. They Return
 
-Three tendencies can be observed in the estimation of dreams. Many philosophers have given currency to one of these tendencies, one which at the same time preserves something of the dream's former over-valuation. The foundation of dream life is for them a peculiar state of psychical activity, which they even celebrate as elevation to some higher state. Schubert, for instance, claims: "The dream is the liberation of the spirit from the pressure of external nature, a detachment of the soul from the fetters of matter." Not all go so far as this, but many maintain that dreams have their origin in real spiritual excitations, and are the outward manifestations of spiritual powers whose free movements have been hampered during the day ("Dream Phantasies," Scherner, Volkelt). A large number of observers acknowledge that dream life is capable of extraordinary achievements—at any rate, in certain fields ("Memory").
+Part Two.
+ Chapter VIII. Medieval
+ Chapter IX. Lucy As a Work of Art
+ Chapter X. Cecil as a Humourist
+ Chapter XI. In Mrs. Vyse’s Well-Appointed Flat
+ Chapter XII. Twelfth Chapter
+ Chapter XIII. How Miss Bartlett’s Boiler Was So Tiresome
+ Chapter XIV. How Lucy Faced the External Situation Bravely
+ Chapter XV. The Disaster Within
+ Chapter XVI. Lying to George
+ Chapter XVII. Lying to Cecil
+ Chapter XVIII. Lying to Mr. Beebe, Mrs. Honeychurch, Freddy, and The Servants
+ Chapter XIX. Lying to Mr. Emerson
+ Chapter XX. The End of the Middle Ages
 
-In striking contradiction with this the majority of medical writers hardly admit that the dream is a psychical phenomenon at all. According to them dreams are provoked and initiated exclusively by stimuli proceeding from the senses or the body, which either reach the sleeper from without or are accidental disturbances of his internal organs. The dream has no greater claim to meaning and importance than the sound called forth by the ten fingers of a person quite unacquainted with music running his fingers over the keys of an instrument. The dream is to be regarded, says Binz, "as a physical process
+PART ONE
 
-always useless, frequently morbid." All the peculiarities of dream life are explicable as the incoherent effort, due to some physiological stimulus, of certain organs, or of the cortical elements of a brain otherwise asleep.
+Chapter I
+ The Bertolini
 
-But slightly affected by scientific opinion and untroubled as to the origin of dreams, the popular view holds firmly to the belief that dreams really have got a meaning, in some way they do foretell the future, whilst the meaning can be unravelled in some way or other from its oft bizarre and enigmatical content. The reading of dreams consists in replacing the events of the dream, so far as remembered, by other events. This is done either scene by scene, according to some rigid key, or the dream as a whole is replaced by something else of which it was a symbol. Serious-minded persons laugh at these efforts—"Dreams are but sea-foam!"
+“The Signora had no business to do it,” said Miss Bartlett, “no
+business at all. She promised us south rooms with a view close
+together, instead of which here are north rooms, looking into a
+courtyard, and a long way apart. Oh, Lucy!”
 
-One day I discovered to my amazement that the popular view grounded in superstition, and not the medical one, comes nearer to the truth about dreams. I arrived at new conclusions about dreams by the use of a new method of psychological investigation, one which had rendered me good service in the investigation of phobias, obsessions, illusions, and the like, and which, under the name "psycho-analysis," had found acceptance by a whole school of investigators. The manifold analogies of dream life with the most diverse conditions of psychical disease in the waking state have been rightly insisted upon by a number of medical observers. It seemed, therefore, a priori, hopeful to apply to the interpretation of dreams methods of investigation which had been tested in psychopathological processes.
+“And a Cockney, besides!” said Lucy, who had been further saddened by
+the Signora’s unexpected accent. “It might be London.” She looked at
+the two rows of English people who were sitting at the table; at the
+row of white bottles of water and red bottles of wine that ran between
+the English people; at the portraits of the late Queen and the late
+ Poet Laureate that hung behind the English people, heavily framed; at
+the notice of the English church (Rev. Cuthbert Eager, M. A. Oxon.),
+that was the only other decoration of the wall. “Charlotte, don’t you
+feel, too, that we might be in London? I can hardly believe that all
+kinds of other things are just outside. I suppose it is one’s being so
+tired.”
 
-Obsessions and those peculiar sensations of haunting dread remain as strange to normal consciousness as do dreams to our waking consciousness; their origin is as unknown to consciousness as is that of dreams. It was practical ends that impelled us, in these diseases, to fathom their origin and formation. Experience had shown us that a cure and a consequent mastery of the obsessing ideas did result when once those thoughts, the connecting links between the morbid ideas and the rest of the psychical content, were revealed which were heretofore veiled from consciousness. The procedure I employed for the interpretation of dreams thus arose from psychotherapy.
+“This meat has surely been used for soup,” said Miss Bartlett, laying
+down her fork.
 
-This procedure is readily described, although its practice demands instruction and experience. Suppose the patient is suffering from intense morbid dread. He is requested to direct his attention to the idea in question, without, however, as he has so frequently done, meditating upon it. Every impression about it, without any exception, which occurs to him should be imparted to the doctor. The statement which will be perhaps then made, that he cannot concentrate his attention upon anything at all, is to be countered by assuring him most positively that such a blank state of mind is utterly impossible. As a matter of fact, a great number of impressions will soon occur, with which others will associate themselves. These will be invariably accompanied by the expression of the observer's opinion that they have no meaning or are unimportant. It will be at once noticed that it is this self- criticism which prevented the patient from imparting the ideas, which had indeed already excluded them from consciousness. If the patient can be induced to abandon this self-criticism and to pursue the trains of thought which are yielded by concentrating the attention, most significant matter will be obtained, matter which will be presently seen to be clearly linked to the morbid idea in question. Its connection with other ideas will be manifest, and later on will permit the replacement of the morbid idea by a fresh one, which is perfectly adapted to psychical continuity.
+“I want so to see the Arno. The rooms the Signora promised us in her
+letter would have looked over the Arno. The Signora had no business to
+do it at all. Oh, it is a shame!”
 
-This is not the place to examine thoroughly the hypothesis upon which this experiment rests, or the deductions which follow from its invariable success. It must suffice to state that we obtain matter enough for the resolution of every morbid idea if we especially direct our attention to the unbidden associations which disturb our thoughts—those which are otherwise put aside by the critic as worthless refuse. If the procedure is exercised on oneself, the best plan of helping the experiment is to write down at once all one's first indistinct fancies.
+“Any nook does for me,” Miss Bartlett continued; “but it does seem hard
+that you shouldn’t have a view.”
 
-I will now point out where this method leads when I apply it to the examination of dreams. Any dream could be made use of in this way. From certain motives I, however, choose a dream of my own, which appears confused and meaningless to my memory, and one which has the advantage of brevity. Probably my dream of last night satisfies the requirements. Its content, fixed immediately after awakening, runs as follows:
+Lucy felt that she had been selfish. “Charlotte, you mustn’t spoil me:
+of course, you must look over the Arno, too. I meant that. The first
+vacant room in the front—” “You must have it,” said Miss Bartlett, part
+of whose travelling expenses were paid by Lucy’s mother—a piece of
+generosity to which she made many a tactful allusion.
 
-"Company; at table or table d'h?te Spinach is served. Mrs. E.L.,`
+“No, no. You must have it.”
+
+“I insist on it. Your mother would never forgive me, Lucy.”
+
+“She would never forgive _me_.”
+
+The ladies’ voices grew animated, and—if the sad truth be owned—a
+little peevish. They were tired, and under the guise of unselfishness
+they wrangled. Some of their neighbours interchanged glances, and one
+of them—one of the ill-bred people whom one does meet abroad—leant
+forward over the table and actually intruded into their argument. He
+said:
+
+“I have a view, I have a view.”
+
+Miss Bartlett was startled. Generally at a pension people looked them
+over for a day or two before speaking, and often did not find out that
+they would “do” till they had gone. She knew that the intruder was
+ill-bred, even before she glanced at him. He was an old man, of heavy
+build, with a fair, shaven face and large eyes. There was something
+childish in those eyes, though it was not the childishness of senility.
+ What exactly it was Miss Bartlett did not stop to consider, for her
+glance passed on to his clothes. These did not attract her. He was
+probably trying to become acquainted with them before they got into the
+swim. So she assumed a dazed expression when he spoke to her, and then
+said: “A view? Oh, a view! How delightful a view is!”
+
+“This is my son,” said the old man; “his name’s George. He has a view
+too.”
+
+“Ah,” said Miss Bartlett, repressing Lucy, who was about to speak.
+
+“What I mean,” he continued, “is that you can have our rooms, and we’ll
+have yours. We’ll change.”
+
+The better class of tourist was shocked at this, and sympathized with
+the new-comers. Miss Bartlett, in reply, opened her mouth as little as
+possible, and said “Thank you very much indeed; that is out of the
+question.”
+
+“Why?” said the old man, with both fists on the table.
+
+“Because it is quite out of the question, thank you.”
+
+“You see, we don’t like to take—” began Lucy. Her cousin again
+repressed her.
+
+“But why?” he persisted. “Women like looking at a view; men don’t.” And
+he thumped with his fists like a naughty child, and turned to his son,
+saying, “George, persuade them!”
+
+“It’s so obvious they should have the rooms,” said the son. “There’s
+nothing else to say.”
+
+He did not look at the ladies as he spoke, but his voice was perplexed
+and sorrowful. Lucy, too, was perplexed; but she saw that they were in
+for what is known as “quite a scene,” and she had an odd feeling that
+whenever these ill-bred tourists spoke the contest widened and deepened
+till it dealt, not with rooms and views, but with—well, with something
+quite different, whose existence she had not realized before. Now the
+old man attacked Miss Bartlett almost violently: Why should she not
+change? What possible objection had she? They would clear out in half
+an hour.
+
+Miss Bartlett, though skilled in the delicacies of conversation, was
+powerless in the presence of brutality. It was impossible to snub any
+one so gross. Her face reddened with displeasure. She looked around as
+much as to say, “Are you all like this?” And two little old ladies, who
+were sitting further up the table, with shawls hanging over the backs
+of the chairs, looked back, clearly indicating “We are not; we are
+genteel.”
+
+“Eat your dinner, dear,” she said to Lucy, and began to toy again with
+the meat that she had once censured.
+
+Lucy mumbled that those seemed very odd people opposite.
+
+“Eat your dinner, dear. This pension is a failure. To-morrow we will
+make a change.”
+
+Hardly had she announced this fell decision when she reversed it. The
+curtains at the end of the room parted, and revealed a clergyman, stout
+but attractive, who hurried forward to take his place at the table,
+cheerfully apologizing for his lateness. Lucy, who had not yet acquired
+decency, at once rose to her feet, exclaiming: “Oh, oh! Why, it’s Mr.
+ Beebe! Oh, how perfectly lovely! Oh, Charlotte, we must stop now,
+however bad the rooms are. Oh!”
+
+Miss Bartlett said, with more restraint:
+
+“How do you do, Mr. Beebe? I expect that you have forgotten us: Miss
+ Bartlett and Miss Honeychurch, who were at Tunbridge Wells when you
+helped the Vicar of St. Peter’s that very cold Easter.”
+
+The clergyman, who had the air of one on a holiday, did not remember
+the ladies quite as clearly as they remembered him. But he came forward
+pleasantly enough and accepted the chair into which he was beckoned by
+ Lucy.
+
+“I _am_ so glad to see you,” said the girl, who was in a state of
+spiritual starvation, and would have been glad to see the waiter if her
+cousin had permitted it. “Just fancy how small the world is. Summer
+ Street, too, makes it so specially funny.”
+
+“Miss Honeychurch lives in the parish of Summer Street,” said Miss
+ Bartlett, filling up the gap, “and she happened to tell me in the
+course of conversation that you have just accepted the living—”
+
+“Yes, I heard from mother so last week. She didn’t know that I knew you
+at Tunbridge Wells; but I wrote back at once, and I said: ‘Mr. Beebe
+is—’”
+
+“Quite right,” said the clergyman. “I move into the Rectory at Summer
+ Street next June. I am lucky to be appointed to such a charming
+neighbourhood.”
+
+“Oh, how glad I am! The name of our house is Windy Corner.” Mr. Beebe
+bowed.`
     },
     {
       id: "section-2",
       title: "Section 2",
-      content: `sitting next to me, gives me her undivided attention, and places her hand familiarly upon my knee. In defence I remove her hand. Then she says: 'But you have always had such beautiful eyes.' I then distinctly see something
+      content: `“There is mother and me generally, and my brother, though it’s not
+often we get him to ch—— The church is rather far off, I mean.”
 
-like two eyes as a sketch or as the contour of a spectacle lens "
+“Lucy, dearest, let Mr. Beebe eat his dinner.”
 
-This is the whole dream, or, at all events, all that I can remember. It appears to me not only obscure and meaningless, but more especially odd.
+“I am eating it, thank you, and enjoying it.”
 
-Mrs. E.L. is a person with whom I am scarcely on visiting terms, nor to my knowledge have I ever desired any more cordial relationship. I have not seen her for a long time, and do not think there was any mention of her recently. No emotion whatever accompanied the dream process.
+He preferred to talk to Lucy, whose playing he remembered, rather than
+to Miss Bartlett, who probably remembered his sermons. He asked the
+girl whether she knew Florence well, and was informed at some length
+that she had never been there before. It is delightful to advise a
+newcomer, and he was first in the field. “Don’t neglect the country
+round,” his advice concluded. “The first fine afternoon drive up to
+ Fiesole, and round by Settignano, or something of that sort.”
 
-Reflecting upon this dream does not make it a bit clearer to my mind. I will now, however, present the ideas, without premeditation and without criticism, which introspection yielded. I soon notice that it is an advantage to break up the dream into its elements, and to search out the ideas which link themselves to each fragment.
+“No!” cried a voice from the top of the table. “Mr. Beebe, you are
+wrong. The first fine afternoon your ladies must go to Prato.”
 
-Company; at table or table d'h?te. The recollection of the slight event with which the evening of yesterday ended is at once called up. I left a small party in the company of a friend, who offered to drive me home in his cab. "I prefer a taxi," he said; "that gives one such a pleasant occupation; there is always something to look at." When we were in the cab, and the cab-driver turned the disc so that the first sixty hellers were visible, I continued the jest. "We have hardly got in and we already owe sixty hellers. The taxi always reminds me of the table d'h?te. It makes me avaricious and selfish by continuously reminding me of my debt. It seems to me to mount up too quickly, and I am always afraid that I shall be at a disadvantage, just as I cannot resist at table d'h?te the comical fear that I am getting too little, that I must look after myself." In far-fetched connection with this I quote:
+“That lady looks so clever,” whispered Miss Bartlett to her cousin. “We
+are in luck.”
 
-"To earth, this weary earth, ye bring us, To guilt ye let us heedless go."
+And, indeed, a perfect torrent of information burst on them. People
+told them what to see, when to see it, how to stop the electric trams,
+how to get rid of the beggars, how much to give for a vellum blotter,
+how much the place would grow upon them. The Pension Bertolini had
+decided, almost enthusiastically, that they would do. Whichever way
+they looked, kind ladies smiled and shouted at them. And above all rose
+the voice of the clever lady, crying: “Prato! They must go to Prato.
+ That place is too sweetly squalid for words. I love it; I revel in
+shaking off the trammels of respectability, as you know.”
 
-Another idea about the table d'h?te. A few weeks ago I was very cross with my dear wife at the dinner-table at a Tyrolese health resort, because she was not sufficiently reserved with some neighbors with whom I wished to have absolutely nothing to do. I begged her to occupy herself rather with me than with the strangers. That is just as if I had been at a disadvantage at the table d'h?te. The contrast between the behavior of my wife at the table and that of Mrs. E.L. in the dream now strikes me: "Addresses herself entirely to me."
+The young man named George glanced at the clever lady, and then
+returned moodily to his plate. Obviously he and his father did not do.
+ Lucy, in the midst of her success, found time to wish they did. It gave
+her no extra pleasure that any one should be left in the cold; and when
+she rose to go, she turned back and gave the two outsiders a nervous
+little bow.
 
-Further, I now notice that the dream is the reproduction of a little scene which transpired between my wife and myself when I was secretly courting her. The caressing under cover of the tablecloth was an answer to a wooer's passionate letter. In the dream, however, my wife is replaced by the unfamiliar E.L.
+The father did not see it; the son acknowledged it, not by another bow,
+but by raising his eyebrows and smiling; he seemed to be smiling across
+something.
 
-Mrs. E.L. is the daughter of a man to whom I owed money! I cannot help noticing that here there is revealed an unsuspected connection between the dream content and my thoughts. If the chain of associations be followed up which proceeds from one element of the dream one is soon led back to another of its elements. The thoughts evoked by the dream stir up associations which were not noticeable in the dream itself.
+She hastened after her cousin, who had already disappeared through the
+curtains—curtains which smote one in the face, and seemed heavy with
+more than cloth. Beyond them stood the unreliable Signora, bowing
+good-evening to her guests, and supported by ’Enery, her little boy,
+and Victorier, her daughter. It made a curious little scene, this
+attempt of the Cockney to convey the grace and geniality of the South.
+ And even more curious was the drawing-room, which attempted to rival
+the solid comfort of a Bloomsbury boarding-house. Was this really
+ Italy?
 
-Is it not customary, when some one expects others to look after his interests without any advantage to themselves, to ask the innocent question satirically: "Do you think this will be done for the sake of your beautiful eyes?" Hence Mrs. E.L.'s speech in the dream. "You have always had such beautiful eyes," means nothing but "people always do everything to you for love of you; you have had everything for nothing." The contrary is, of course, the truth; I have always paid dearly for whatever kindness others have shown me. Still, the fact that I had a ride for nothing yesterday when my friend drove me home in his cab must have made an impression upon me.
+Miss Bartlett was already seated on a tightly stuffed arm-chair, which
+had the colour and the contours of a tomato. She was talking to Mr.
+ Beebe, and as she spoke, her long narrow head drove backwards and
+forwards, slowly, regularly, as though she were demolishing some
+invisible obstacle. “We are most grateful to you,” she was saying. “The
+first evening means so much. When you arrived we were in for a
+peculiarly _mauvais quart d’heure_.”
 
-In any case, the friend whose guests we were yesterday has often made me his debtor. Recently I allowed an opportunity of requiting him to go by. He has had only one present from me, an antique shawl, upon which eyes are painted all round, a so-called Occhiale, as a charm against the Malocchio.
+He expressed his regret.
 
-Moreover, he is an eye specialist. That same evening I had asked him after a patient whom I had sent to him for glasses.
+“Do you, by any chance, know the name of an old man who sat opposite us
+at dinner?”
 
-As I remarked, nearly all parts of the dream have been brought into this new connection. I still might ask why in the dream it was spinach that was served up. Because spinach called up a little scene which recently occurred at our table. A child, whose beautiful eyes are really deserving of praise, refused to eat spinach. As a child I was just the same; for a long time I loathed spinach, until in later life my tastes altered, and it became one of my favorite dishes. The mention of this dish brings my own childhood and that of my child's near together. "You should be glad that you have some spinach," his mother had said to the little gourmet. "Some children would be very glad to get spinach." Thus I am reminded of the parents' duties towards their children. Goethe's words—
+“Emerson.”
 
-"To earth, this weary earth, ye bring us, To guilt ye let us heedless go"—
+“Is he a friend of yours?”
 
-take on another meaning in this connection.
+“We are friendly—as one is in pensions.”
 
-Here I will stop in order that I may recapitulate the results of the analysis of the dream. By following the associations which were linked to the single elements of the dream torn from their context, I have been led to a series of thoughts and reminiscences where I am bound to recognize interesting expressions of my psychical life. The matter yielded by an analysis of the dream stands in intimate relationship with the dream content, but this relationship is so special that I should never have been able to have inferred the new discoveries directly from the dream itself. The dream was passionless, disconnected, and unintelligible. During the time that I am unfolding the thoughts at the back of the dream I feel intense and well- grounded emotions. The thoughts themselves fit beautifully together into chains logically bound together with certain central ideas which ever repeat themselves. Such ideas not represented in the dream itself are in this instance the antitheses selfish, unselfish, to be indebted, to work for nothing. I could draw closer the threads of the web which analysis has disclosed, and would then be able to show how they all run together into a single knot; I am debarred from making this work public by considerations of a private, not of a scientific, nature. After having cleared up many things which I do not willingly acknowledge as mine, I should have much to reveal which had better remain my secret. Why, then, do not I choose another dream whose analysis would be more suitable for publication, so that I could awaken a fairer conviction of the sense and cohesion of the results disclosed by analysis? The answer is, because every dream which I investigate leads to the same difficulties and places me under the same need of discretion; nor should I forgo this difficulty any the more were I to analyze the dream of some one else. That could only be done when opportunity allowed all concealment to be dropped without injury to those who trusted me.
+“Then I will say no more.”
 
-The conclusion which is now forced upon me is that the dream is a sort of substitution for those emotional and intellectual trains of thought which I attained after complete analysis. I do not yet know the process by which the dream arose from those thoughts, but I perceive that it is wrong to regard the dream as psychically unimportant, a purely physical process which has arisen from the activity of isolated cortical elements awakened out of sleep.
+He pressed her very slightly, and she said more.
 
-I must further remark that the dream is far shorter than the thoughts which I hold it replaces; whilst analysis discovered that the dream was provoked by an unimportant occurrence the evening before the dream.`
+“I am, as it were,” she concluded, “the chaperon of my young cousin,
+ Lucy, and it would be a serious thing if I put her under an obligation
+to people of whom we know nothing. His manner was somewhat unfortunate.
+ I hope I acted for the best.”
+
+“You acted very naturally,” said he. He seemed thoughtful, and after a
+few moments added: “All the same, I don’t think much harm would have
+come of accepting.”
+
+“No _harm_, of course. But we could not be under an obligation.”
+
+“He is rather a peculiar man.” Again he hesitated, and then said
+gently: “I think he would not take advantage of your acceptance, nor
+expect you to show gratitude. He has the merit—if it is one—of saying
+exactly what he means. He has rooms he does not value, and he thinks
+you would value them. He no more thought of putting you under an
+obligation than he thought of being polite. It is so difficult—at
+least, I find it difficult—to understand people who speak the truth.”
+
+Lucy was pleased, and said: “I was hoping that he was nice; I do so
+always hope that people will be nice.”
+
+“I think he is; nice and tiresome. I differ from him on almost every
+point of any importance, and so, I expect—I may say I hope—you will
+differ. But his is a type one disagrees with rather than deplores. When
+he first came here he not unnaturally put people’s backs up. He has no
+tact and no manners—I don’t mean by that that he has bad manners—and he
+will not keep his opinions to himself. We nearly complained about him
+to our depressing Signora, but I am glad to say we thought better of
+it.”
+
+“Am I to conclude,” said Miss Bartlett, “that he is a Socialist?”
+
+Mr. Beebe accepted the convenient word, not without a slight twitching
+of the lips.
+
+“And presumably he has brought up his son to be a Socialist, too?”
+
+“I hardly know George, for he hasn’t learnt to talk yet. He seems a
+nice creature, and I think he has brains. Of course, he has all his
+father’s mannerisms, and it is quite possible that he, too, may be a
+ Socialist.”
+
+“Oh, you relieve me,” said Miss Bartlett. “So you think I ought to have
+accepted their offer? You feel I have been narrow-minded and
+suspicious?”
+
+“Not at all,” he answered; “I never suggested that.”
+
+“But ought I not to apologize, at all events, for my apparent
+rudeness?”
+
+He replied, with some irritation, that it would be quite unnecessary,
+and got up from his seat to go to the smoking-room.
+
+“Was I a bore?” said Miss Bartlett, as soon as he had disappeared. “Why
+didn’t you talk, Lucy? He prefers young people, I’m sure. I do hope I
+haven’t monopolized him. I hoped you would have him all the evening, as
+well as all dinner-time.”
+
+“He is nice,” exclaimed Lucy. “Just what I remember. He seems to see
+good in everyone. No one would take him for a clergyman.”
+
+“My dear Lucia—”
+
+“Well, you know what I mean. And you know how clergymen generally
+laugh; Mr. Beebe laughs just like an ordinary man.”
+
+“Funny girl! How you do remind me of your mother. I wonder if she will
+approve of Mr. Beebe.”
+
+“I’m sure she will; and so will Freddy.”
+
+“I think everyone at Windy Corner will approve; it is the fashionable
+world. I am used to Tunbridge Wells, where we are all hopelessly behind
+the times.”
+
+“Yes,” said Lucy despondently.
+
+There was a haze of disapproval in the air, but whether the disapproval
+was of herself, or of Mr. Beebe, or of the fashionable world at Windy
+ Corner, or of the narrow world at Tunbridge Wells, she could not
+determine. She tried to locate it, but as usual she blundered. Miss
+ Bartlett sedulously denied disapproving of any one, and added “I am
+afraid you are finding me a very depressing companion.”
+
+And the girl again thought: “I must have been selfish or unkind; I must
+be more careful. It is so dreadful for Charlotte, being poor.”`
     },
     {
       id: "section-3",
       title: "Section 3",
-      content: `Naturally, I would not draw such far-reaching conclusions if only one analysis were known to me. Experience has shown me that when the
+      content: `Fortunately one of the little old ladies, who for some time had been
+smiling very benignly, now approached and asked if she might be allowed
+to sit where Mr. Beebe had sat. Permission granted, she began to
+chatter gently about Italy, the plunge it had been to come there, the
+gratifying success of the plunge, the improvement in her sister’s
+health, the necessity of closing the bed-room windows at night, and of
+thoroughly emptying the water-bottles in the morning. She handled her
+subjects agreeably, and they were, perhaps, more worthy of attention
+than the high discourse upon Guelfs and Ghibellines which was
+proceeding tempestuously at the other end of the room. It was a real
+catastrophe, not a mere episode, that evening of hers at Venice, when
+she had found in her bedroom something that is one worse than a flea,
+though one better than something else.
 
-associations of any dream are honestly followed such a chain of thought is revealed, the constituent parts of the dream reappear correctly and sensibly linked together; the slight suspicion that this concatenation was merely an accident of a single first observation must, therefore, be absolutely relinquished. I regard it, therefore, as my right to establish this new view by a proper nomenclature. I contrast the dream which my memory evokes with the dream and other added matter revealed by analysis: the former I call the dream's manifest content; the latter, without at first further subdivision, its latent content. I arrive at two new problems hitherto unformulated: (1) What is the psychical process which has transformed the latent content of the dream into its manifest content? (2) What is the motive or the motives which have made such transformation exigent? The process by which the change from latent to manifest content is executed I name the dream-work. In contrast with this is the work of analysis, which produces the reverse transformation. The other problems of the dream—the inquiry as to its stimuli, as to the source of its materials, as to its possible purpose, the function of dreaming, the forgetting of dreams—these I will discuss in connection with the latent dream-content.
+“But here you are as safe as in England. Signora Bertolini is so
+ English.”
 
-I shall take every care to avoid a confusion between the manifest and the latent content, for I ascribe all the contradictory as well as the incorrect accounts of dream-life to the ignorance of this latent content, now first laid bare through analysis.
+“Yet our rooms smell,” said poor Lucy. “We dread going to bed.”
 
-The conversion of the latent dream thoughts into those manifest deserves our close study as the first known example of the transformation of psychical stuff from one mode of expression into another. From a mode of expression which, moreover, is readily intelligible into another which we can only penetrate by effort and with guidance, although this new mode must be equally reckoned as an effort of our own psychical activity. From the standpoint of the relationship of latent to manifest dream-content, dreams can be divided into three classes. We can, in the first place, distinguish those dreams which have a meaning and are, at the same time, intelligible, which allow us to penetrate into our psychical life without further ado. Such dreams are numerous; they are usually short, and, as a general rule, do not seem very noticeable, because everything remarkable or exciting surprise is absent.
+“Ah, then you look into the court.” She sighed. “If only Mr. Emerson
+was more tactful! We were so sorry for you at dinner.”
 
-Their occurrence is, moreover, a strong argument against the doctrine which derives the dream from the isolated activity of certain cortical elements. All signs of a lowered or subdivided psychical activity are wanting. Yet we never raise any objection to characterizing them as dreams, nor do we confound them with the products of our waking life.
+“I think he was meaning to be kind.”
 
-A second group is formed by those dreams which are indeed self- coherent and have a distinct meaning, but appear strange because we are unable to reconcile their meaning with our mental life. That is the case when we dream, for instance, that some dear relative has died of plague when we know of no ground for expecting, apprehending, or assuming anything of the sort; we can only ask ourself wonderingly: "What brought that into my head?" To the third group those dreams belong which are void of both meaning and intelligibility; they are incoherent, complicated, and meaningless. The overwhelming number of our dreams partake of this character, and this has given rise to the contemptuous attitude towards dreams and the medical theory of their limited psychical activity. It is especially in the longer and more complicated dream-plots that signs of incoherence are seldom missing.
+“Undoubtedly he was,” said Miss Bartlett.
 
-The contrast between manifest and latent dream-content is clearly only of value for the dreams of the second and more especially for those of the third class. Here are problems which are only solved when the manifest dream is replaced by its latent content; it was an example of this kind, a complicated and unintelligible dream, that we subjected to analysis. Against our expectation we, however, struck upon reasons which prevented a complete cognizance of the latent dream thought. On the repetition of this same experience we were forced to the supposition that there is an intimate bond, with laws of its own, between the unintelligible and complicated nature of the dream and the difficulties attending communication of the thoughts connected with the dream. Before investigating the nature of this bond, it will be advantageous to turn our attention to the more readily intelligible dreams of the first class where, the manifest and latent content being identical, the dream work seems to be omitted.
+“Mr. Beebe has just been scolding me for my suspicious nature. Of
+course, I was holding back on my cousin’s account.”
 
-The investigation of these dreams is also advisable from another standpoint. The dreams of children are of this nature; they have a meaning, and are not bizarre. This, by the way, is a further objection to reducing dreams to a dissociation of cerebral activity in sleep, for why should such a lowering of psychical functions belong to the nature of sleep in adults, but not in children? We are, however, fully justified in expecting that the explanation of psychical processes in children, essentially simplified as they may be, should serve as an indispensable preparation towards the psychology of the adult.
+“Of course,” said the little old lady; and they murmured that one could
+not be too careful with a young girl.
 
-I shall therefore cite some examples of dreams which I have gathered from children. A girl of nineteen months was made to go without food for a day because she had been sick in the morning, and, according to nurse, had made herself ill through eating strawberries. During the night, after her day of fasting, she was heard calling out her name during sleep, and adding: "Tawberry, eggs, pap." She is dreaming that she is eating, and selects out of her menu exactly what she supposes she will not get much of just now.
+Lucy tried to look demure, but could not help feeling a great fool. No
+one was careful with her at home; or, at all events, she had not
+noticed it.
 
-The same kind of dream about a forbidden dish was that of a little boy of twenty-two months. The day before he was told to offer his uncle a present of a small basket of cherries, of which the child was, of course, only allowed one to taste. He woke up with the joyful news: "Hermann eaten up all the cherries."
+“About old Mr. Emerson—I hardly know. No, he is not tactful; yet, have
+you ever noticed that there are people who do things which are most
+indelicate, and yet at the same time—beautiful?”
 
-A girl of three and a half years had made during the day a sea trip which was too short for her, and she cried when she had to get out of the boat. The next morning her story was that during the night she had been on the sea, thus continuing the interrupted trip.
+“Beautiful?” said Miss Bartlett, puzzled at the word. “Are not beauty
+and delicacy the same?”
 
-A boy of five and a half years was not at all pleased with his party during a walk in the Dachstein region. Whenever a new peak came into sight he asked if that were the Dachstein, and, finally, refused to accompany the party to the waterfall. His behavior was ascribed to fatigue; but a better explanation was forthcoming when the next morning he told his dream: he had ascended the Dachstein. Obviously he expected the ascent of the Dachstein to be the object of the excursion, and was vexed by not getting a glimpse of the mountain. The dream gave him what the day had withheld.
+“So one would have thought,” said the other helplessly. “But things are
+so difficult, I sometimes think.”
 
-The dream of a girl of six was similar; her father had cut short the walk before reaching the promised objective on account of the lateness of the hour. On the way back she noticed a signpost giving the name of another place for excursions; her father promised to take her there also some other day. She greeted her father next day with the news that she had dreamt that her father had been with her to both places.
+She proceeded no further into things, for Mr. Beebe reappeared, looking
+extremely pleasant.
 
-What is common in all these dreams is obvious. They completely satisfy wishes excited during the day which remain unrealized. They are simply and undisguisedly realizations of wishes.
+“Miss Bartlett,” he cried, “it’s all right about the rooms. I’m so
+glad. Mr. Emerson was talking about it in the smoking-room, and knowing
+what I did, I encouraged him to make the offer again. He has let me
+come and ask you. He would be so pleased.”
 
-The following child-dream, not quite understandable at first sight, is nothing else than a wish realized. On account of poliomyelitis a girl, not quite`
+“Oh, Charlotte,” cried Lucy to her cousin, “we must have the rooms now.
+ The old man is just as nice and kind as he can be.”
+
+Miss Bartlett was silent.
+
+“I fear,” said Mr. Beebe, after a pause, “that I have been officious. I
+must apologize for my interference.”
+
+Gravely displeased, he turned to go. Not till then did Miss Bartlett
+reply: “My own wishes, dearest Lucy, are unimportant in comparison with
+yours. It would be hard indeed if I stopped you doing as you liked at
+ Florence, when I am only here through your kindness. If you wish me to
+turn these gentlemen out of their rooms, I will do it. Would you then,
+ Mr. Beebe, kindly tell Mr. Emerson that I accept his kind offer, and
+then conduct him to me, in order that I may thank him personally?”
+
+She raised her voice as she spoke; it was heard all over the
+drawing-room, and silenced the Guelfs and the Ghibellines. The
+clergyman, inwardly cursing the female sex, bowed, and departed with
+her message.
+
+“Remember, Lucy, I alone am implicated in this. I do not wish the
+acceptance to come from you. Grant me that, at all events.”
+
+Mr. Beebe was back, saying rather nervously:
+
+“Mr. Emerson is engaged, but here is his son instead.”
+
+The young man gazed down on the three ladies, who felt seated on the
+floor, so low were their chairs.
+
+“My father,” he said, “is in his bath, so you cannot thank him
+personally. But any message given by you to me will be given by me to
+him as soon as he comes out.”
+
+Miss Bartlett was unequal to the bath. All her barbed civilities came
+forth wrong end first. Young Mr. Emerson scored a notable triumph to
+the delight of Mr. Beebe and to the secret delight of Lucy.
+
+“Poor young man!” said Miss Bartlett, as soon as he had gone.
+
+“How angry he is with his father about the rooms! It is all he can do
+to keep polite.”
+
+“In half an hour or so your rooms will be ready,” said Mr. Beebe. Then
+looking rather thoughtfully at the two cousins, he retired to his own
+rooms, to write up his philosophic diary.
+
+“Oh, dear!” breathed the little old lady, and shuddered as if all the
+winds of heaven had entered the apartment. “Gentlemen sometimes do not
+realize—” Her voice faded away, but Miss Bartlett seemed to understand
+and a conversation developed, in which gentlemen who did not thoroughly
+realize played a principal part. Lucy, not realizing either, was
+reduced to literature. Taking up Baedeker’s Handbook to Northern Italy,
+she committed to memory the most important dates of Florentine History.
+ For she was determined to enjoy herself on the morrow. Thus the
+half-hour crept profitably away, and at last Miss Bartlett rose with a
+sigh, and said:
+
+“I think one might venture now. No, Lucy, do not stir. I will
+superintend the move.”
+
+“How you do do everything,” said Lucy.
+
+“Naturally, dear. It is my affair.”
+
+“But I would like to help you.”
+
+“No, dear.”
+
+Charlotte’s energy! And her unselfishness! She had been thus all her
+life, but really, on this Italian tour, she was surpassing herself. So
+ Lucy felt, or strove to feel. And yet—there was a rebellious spirit in
+her which wondered whether the acceptance might not have been less
+delicate and more beautiful. At all events, she entered her own room
+without any feeling of joy.
+
+“I want to explain,” said Miss Bartlett, “why it is that I have taken
+the largest room. Naturally, of course, I should have given it to you;
+but I happen to know that it belongs to the young man, and I was sure
+your mother would not like it.”
+
+Lucy was bewildered.
+
+“If you are to accept a favour it is more suitable you should be under
+an obligation to his father than to him. I am a woman of the world, in
+my small way, and I know where things lead to. However, Mr. Beebe is a
+guarantee of a sort that they will not presume on this.”
+
+“Mother wouldn’t mind I’m sure,” said Lucy, but again had the sense of
+larger and unsuspected issues.
+
+Miss Bartlett only sighed, and enveloped her in a protecting embrace as
+she wished her good-night. It gave Lucy the sensation of a fog, and
+when she reached her own room she opened the window and breathed the
+clean night air, thinking of the kind old man who had enabled her to
+see the lights dancing in the Arno and the cypresses of San Miniato,
+and the foot-hills of the Apennines, black against the rising moon.
+
+Miss Bartlett, in her room, fastened the window-shutters and locked the
+door, and then made a tour of the apartment to see where the cupboards
+led, and whether there were any oubliettes or secret entrances. It was
+then that she saw, pinned up over the washstand, a sheet of paper on
+which was scrawled an enormous note of interrogation. Nothing more.
+
+“What does it mean?” she thought, and she examined it carefully by the
+light of a candle. Meaningless at first, it gradually became menacing,
+obnoxious, portentous with evil. She was seized with an impulse to
+destroy it, but fortunately remembered that she had no right to do so,
+since it must be the property of young Mr. Emerson. So she unpinned it
+carefully, and put it between two pieces of blotting-paper to keep it
+clean for him. Then she completed her inspection of the room, sighed
+heavily according to her habit, and went to bed.
+
+Chapter II
+ In Santa Croce with No Baedeker`
     },
     {
       id: "section-4",
       title: "Section 4",
-      content: `four years of age, was brought from the country into town, and remained over night with a childless aunt in a big—for her, naturally, huge—bed. The next morning she stated that she had dreamt that the bed was much too small for her, so that she could find no place in it. To explain this dream as a wish is easy when we remember that to be "big" is a frequently expressed wish of all children. The bigness of the bed reminded Miss Little-Would-be-Big only too forcibly of her smallness. This nasty situation became righted in her dream, and she grew so big that the bed now became too small for her.
+      content: `It was pleasant to wake up in Florence, to open the eyes upon a bright
+bare room, with a floor of red tiles which look clean though they are
+not; with a painted ceiling whereon pink griffins and blue amorini
+sport in a forest of yellow violins and bassoons. It was pleasant, too,
+to fling wide the windows, pinching the fingers in unfamiliar
+fastenings, to lean out into sunshine with beautiful hills and trees
+and marble churches opposite, and close below, the Arno, gurgling
+against the embankment of the road.
 
-Even when children's dreams are complicated and polished, their comprehension as a realization of desire is fairly evident. A boy of eight dreamt that he was being driven with Achilles in a war-chariot, guided by Diomedes. The day before he was assiduously reading about great heroes. It is easy to show that he took these heroes as his models, and regretted that he was not living in those days.
+Over the river men were at work with spades and sieves on the sandy
+foreshore, and on the river was a boat, also diligently employed for
+some mysterious end. An electric tram came rushing underneath the
+window. No one was inside it, except one tourist; but its platforms
+were overflowing with Italians, who preferred to stand. Children tried
+to hang on behind, and the conductor, with no malice, spat in their
+faces to make them let go. Then soldiers appeared—good-looking,
+undersized men—wearing each a knapsack covered with mangy fur, and a
+great-coat which had been cut for some larger soldier. Beside them
+walked officers, looking foolish and fierce, and before them went
+little boys, turning somersaults in time with the band. The tramcar
+became entangled in their ranks, and moved on painfully, like a
+caterpillar in a swarm of ants. One of the little boys fell down, and
+some white bullocks came out of an archway. Indeed, if it had not been
+for the good advice of an old man who was selling button-hooks, the
+road might never have got clear.
 
-From this short collection a further characteristic of the dreams of children is manifest—their connection with the life of the day. The desires which are realized in these dreams are left over from the day or, as a rule, the day previous, and the feeling has become intently emphasized and fixed during the day thoughts. Accidental and indifferent matters, or what must appear so to the child, find no acceptance in the contents of the dream.
+Over such trivialities as these many a valuable hour may slip away, and
+the traveller who has gone to Italy to study the tactile values of
+ Giotto, or the corruption of the Papacy, may return remembering nothing
+but the blue sky and the men and women who live under it. So it was as
+well that Miss Bartlett should tap and come in, and having commented on
+ Lucy’s leaving the door unlocked, and on her leaning out of the window
+before she was fully dressed, should urge her to hasten herself, or the
+best of the day would be gone. By the time Lucy was ready her cousin
+had done her breakfast, and was listening to the clever lady among the
+crumbs.
 
-Innumerable instances of such dreams of the infantile type can be found among adults also, but, as mentioned, these are mostly exactly like the manifest content. Thus, a random selection of persons will generally respond to thirst at night-time with a dream about drinking, thus striving to get rid of the sensation and to let sleep continue. Many persons frequently have these comforting dreams before waking, just when they are called. They then dream that they are already up, that they are washing, or already in school, at the office, etc., where they ought to be at a given time. The night before an intended journey one not infrequently dreams that one has already arrived at the destination; before going to a play or to a party the dream not infrequently anticipates, in impatience, as it were, the expected pleasure. At other times the dream expresses the realization of the desire somewhat indirectly; some connection, some sequel must be known—the first step towards recognizing the desire. Thus, when a husband related to me the dream of his young wife, that her monthly period had begun, I had to bethink myself that the young wife would have expected a pregnancy if the period had been absent. The dream is then a sign of pregnancy. Its meaning is that it shows the wish realized that pregnancy should not occur just yet. Under unusual and extreme circumstances, these dreams of the infantile type become very frequent. The leader of a polar expedition tells us, for instance, that during the wintering amid the ice the crew, with their monotonous diet and slight rations, dreamt regularly, like children, of fine meals, of mountains of tobacco, and of home.
+A conversation then ensued, on not unfamiliar lines. Miss Bartlett was,
+after all, a wee bit tired, and thought they had better spend the
+morning settling in; unless Lucy would at all like to go out? Lucy
+would rather like to go out, as it was her first day in Florence, but,
+of course, she could go alone. Miss Bartlett could not allow this. Of
+course she would accompany Lucy everywhere. Oh, certainly not; Lucy
+would stop with her cousin. Oh, no! that would never do. Oh, yes!
 
-It is not uncommon that out of some long, complicated and intricate dream one specially lucid part stands out containing unmistakably the realization of a desire, but bound up with much unintelligible matter. On more frequently analyzing the seemingly more transparent dreams of adults, it is astonishing to discover that these are rarely as simple as the dreams of children, and that they cover another meaning beyond that of the realization of a wish.
+At this point the clever lady broke in.
 
-It would certainly be a simple and convenient solution of the riddle if the work of analysis made it at all possible for us to trace the meaningless and intricate dreams of adults back to the infantile type, to the realization of some intensely experienced desire of the day. But there is no warrant for such an expectation. Their dreams are generally full of the most indifferent and bizarre matter, and no trace of the realization of the wish is to be found in their content.
+“If it is Mrs. Grundy who is troubling you, I do assure you that you
+can neglect the good person. Being English, Miss Honeychurch will be
+perfectly safe. Italians understand. A dear friend of mine, Contessa
+ Baroncelli, has two daughters, and when she cannot send a maid to
+school with them, she lets them go in sailor-hats instead. Every one
+takes them for English, you see, especially if their hair is strained
+tightly behind.”
 
-Before leaving these infantile dreams, which are obviously unrealized desires, we must not fail to mention another chief characteristic of dreams, one that has been long noticed, and one which stands out most clearly in this class. I can replace any of these dreams by a phrase expressing a desire. If the sea trip had only lasted longer; if I were only washed and dressed; if I had only been allowed to keep the cherries instead of giving them to my uncle.
+Miss Bartlett was unconvinced by the safety of Contessa Baroncelli’s
+daughters. She was determined to take Lucy herself, her head not being
+so very bad. The clever lady then said that she was going to spend a
+long morning in Santa Croce, and if Lucy would come too, she would be
+delighted.
 
-But the dream gives something more than the choice, for here the desire is already realized; its realization is real and actual. The dream presentations consist chiefly, if not wholly, of scenes and mainly of visual sense images. Hence a kind of transformation is not entirely absent in this class of dreams, and this may be fairly designated as the dream work. An idea merely existing in the region of possibility is replaced by a vision of its accomplishment.
+“I will take you by a dear dirty back way, Miss Honeychurch, and if you
+bring me luck, we shall have an adventure.”
 
-II
+Lucy said that this was most kind, and at once opened the Baedeker, to
+see where Santa Croce was.
 
-THE DREAM MECHANISM
+“Tut, tut! Miss Lucy! I hope we shall soon emancipate you from
+ Baedeker. He does but touch the surface of things. As to the true
+ Italy—he does not even dream of it. The true Italy is only to be found
+by patient observation.”
 
-We are compelled to assume that such transformation of scene has also taken place in intricate dreams, though we do not know whether it has encountered any possible desire. The dream instanced at the commencement,
+This sounded very interesting, and Lucy hurried over her breakfast, and
+started with her new friend in high spirits. Italy was coming at last.
+ The Cockney Signora and her works had vanished like a bad dream.
 
-which we analyzed somewhat thoroughly, did give us occasion in two places to suspect something of the kind. Analysis brought out that my wife was occupied with others at table, and that I did not like it; in the dream itself exactly the opposite occurs, for the person who replaces my wife gives me her undivided attention. But can one wish for anything pleasanter after a disagreeable incident than that the exact contrary should have occurred, just as the dream has it? The stinging thought in the analysis, that I have never had anything for nothing, is similarly connected with the woman's remark in the dream: "You have always had such beautiful eyes." Some portion of the opposition between the latent and manifest content of the dream must be therefore derived from the realization of a wish.
+Miss Lavish—for that was the clever lady’s name—turned to the right
+along the sunny Lung’ Arno. How delightfully warm! But a wind down the
+side streets cut like a knife, didn’t it? Ponte alle
+ Grazie—particularly interesting, mentioned by Dante. San
+ Miniato—beautiful as well as interesting; the crucifix that kissed a
+murderer—Miss Honeychurch would remember the story. The men on the
+river were fishing. (Untrue; but then, so is most information.) Then
+ Miss Lavish darted under the archway of the white bullocks, and she
+stopped, and she cried:
 
-Another manifestation of the dream work which all incoherent dreams have in common is still more noticeable. Choose any instance, and compare the number of separate elements in it, or the extent of the dream, if written down, with the dream thoughts yielded by analysis, and of which but a trace can be refound in the dream itself. There can be no doubt that the dream working has resulted in an extraordinary compression or condensation. It is not at first easy to form an opinion as to the extent of the condensation; the more deeply you go into the analysis, the more deeply you are impressed by it. There will be found no factor in the dream whence the chains of associations do not lead in two or more directions, no scene which has not been pieced together out of two or more impressions and events. For instance, I once dreamt about a kind of swimming-bath where the bathers suddenly separated in all directions; at one place on the edge a person stood bending towards one of the bathers as if to drag him out. The scene was a composite one, made up out of an event that occurred at the time of puberty, and of two pictures, one of which I had seen just shortly before the dream.
+“A smell! a true Florentine smell! Every city, let me teach you, has
+its own smell.”
 
-The two pictures were The Surprise in the Bath, from Schwind's Cycle of the Melusine (note the bathers suddenly separating), and The Flood, by an Italian master. The little incident was that I once witnessed a lady, who had tarried in the swimming-bath until the men's hour, being helped out of the water by the swimming-master. The scene in the dream which was selected for analysis led to a whole group of reminiscences, each one of which had contributed to the dream content. First of all came the little episode from the time of my courting, of which I have already spoken; the pressure of a hand under the table gave rise in the dream to the "under the table," which I had subsequently to find a place for in my recollection. There was, of course, at`
+“Is it a very nice smell?” said Lucy, who had inherited from her mother
+a distaste to dirt.
+
+“One doesn’t come to Italy for niceness,” was the retort; “one comes
+for life. Buon giorno! Buon giorno!” bowing right and left. “Look at
+that adorable wine-cart! How the driver stares at us, dear, simple
+soul!”
+
+So Miss Lavish proceeded through the streets of the city of Florence,
+short, fidgety, and playful as a kitten, though without a kitten’s
+grace. It was a treat for the girl to be with any one so clever and so
+cheerful; and a blue military cloak, such as an Italian officer wears,
+only increased the sense of festivity.
+
+“Buon giorno! Take the word of an old woman, Miss Lucy: you will never
+repent of a little civility to your inferiors. _That_ is the true
+democracy. Though I am a real Radical as well. There, now you’re
+shocked.”
+
+“Indeed, I’m not!” exclaimed Lucy. “We are Radicals, too, out and out.
+ My father always voted for Mr. Gladstone, until he was so dreadful
+about Ireland.”
+
+“I see, I see. And now you have gone over to the enemy.”
+
+“Oh, please—! If my father was alive, I am sure he would vote Radical
+again now that Ireland is all right. And as it is, the glass over our
+front door was broken last election, and Freddy is sure it was the
+ Tories; but mother says nonsense, a tramp.”
+
+“Shameful! A manufacturing district, I suppose?”
+
+“No—in the Surrey hills. About five miles from Dorking, looking over
+the Weald.”
+
+Miss Lavish seemed interested, and slackened her trot.
+
+“What a delightful part; I know it so well. It is full of the very
+nicest people. Do you know Sir Harry Otway—a Radical if ever there
+was?”
+
+“Very well indeed.”
+
+“And old Mrs. Butterworth the philanthropist?”
+
+“Why, she rents a field of us! How funny!”
+
+Miss Lavish looked at the narrow ribbon of sky, and murmured: “Oh, you
+have property in Surrey?”
+
+“Hardly any,” said Lucy, fearful of being thought a snob. “Only thirty
+acres—just the garden, all downhill, and some fields.”
+
+Miss Lavish was not disgusted, and said it was just the size of her
+aunt’s Suffolk estate. Italy receded. They tried to remember the last
+name of Lady Louisa someone, who had taken a house near Summer Street
+the other year, but she had not liked it, which was odd of her. And
+just as Miss Lavish had got the name, she broke off and exclaimed:
+
+“Bless us! Bless us and save us! We’ve lost the way.”
+
+Certainly they had seemed a long time in reaching Santa Croce, the
+tower of which had been plainly visible from the landing window. But
+ Miss Lavish had said so much about knowing her Florence by heart, that
+ Lucy had followed her with no misgivings.
+
+“Lost! lost! My dear Miss Lucy, during our political diatribes we have
+taken a wrong turning. How those horrid Conservatives would jeer at us!
+ What are we to do? Two lone females in an unknown town. Now, this is
+what _I_ call an adventure.”
+
+Lucy, who wanted to see Santa Croce, suggested, as a possible solution,
+that they should ask the way there.
+
+“Oh, but that is the word of a craven! And no, you are not, not, _not_
+to look at your Baedeker. Give it to me; I shan’t let you carry it. We
+will simply drift.”`
     },
     {
       id: "section-5",
       title: "Section 5",
-      content: `the time not a word about "undivided attention." Analysis taught me that this factor is the realization of a desire through its contradictory and related to the behavior of my wife at the table d'h?te. An exactly similar and much more important episode of our courtship, one which separated us for an entire day, lies hidden behind this recent recollection. The intimacy, the hand resting upon the knee, refers to a quite different connection and to quite other persons. This element in the dream becomes again the starting-point of two distinct series of reminiscences, and so on.
+      content: `Accordingly they drifted through a series of those grey-brown streets,
+neither commodious nor picturesque, in which the eastern quarter of the
+city abounds. Lucy soon lost interest in the discontent of Lady Louisa,
+and became discontented herself. For one ravishing moment Italy
+appeared. She stood in the Square of the Annunziata and saw in the
+living terra-cotta those divine babies whom no cheap reproduction can
+ever stale. There they stood, with their shining limbs bursting from
+the garments of charity, and their strong white arms extended against
+circlets of heaven. Lucy thought she had never seen anything more
+beautiful; but Miss Lavish, with a shriek of dismay, dragged her
+forward, declaring that they were out of their path now by at least a
+mile.
 
-The stuff of the dream thoughts which has been accumulated for the formation of the dream scene must be naturally fit for this application. There must be one or more common factors. The dream work proceeds like Francis Galton with his family photographs. The different elements are put one on top of the other; what is common to the composite picture stands out clearly, the opposing details cancel each other. This process of reproduction partly explains the wavering statements, of a peculiar vagueness, in so many elements of the dream. For the interpretation of dreams this rule holds good: When analysis discloses uncertainty, as to either—or read and, taking each section of the apparent alternatives as a separate outlet for a series of impressions.
+The hour was approaching at which the continental breakfast begins, or
+rather ceases, to tell, and the ladies bought some hot chestnut paste
+out of a little shop, because it looked so typical. It tasted partly of
+the paper in which it was wrapped, partly of hair oil, partly of the
+great unknown. But it gave them strength to drift into another Piazza,
+large and dusty, on the farther side of which rose a black-and-white
+façade of surpassing ugliness. Miss Lavish spoke to it dramatically. It
+was Santa Croce. The adventure was over.
 
-When there is nothing in common between the dream thoughts, the dream work takes the trouble to create a something, in order to make a common presentation feasible in the dream. The simplest way to approximate two dream thoughts, which have as yet nothing in common, consists in making such a change in the actual expression of one idea as will meet a slight responsive recasting in the form of the other idea. The process is analogous to that of rhyme, when consonance supplies the desired common factor. A good deal of the dream work consists in the creation of those frequently very witty, but often exaggerated, digressions. These vary from the common presentation in the dream content to dream thoughts which are as varied as are the causes in form and essence which give rise to them. In the analysis of our example of a dream, I find a like case of the transformation of a thought in order that it might agree with another essentially foreign one. In following out the analysis I struck upon the thought: I should like to have something for nothing. But this formula is not serviceable to the dream.
+“Stop a minute; let those two people go on, or I shall have to speak to
+them. I do detest conventional intercourse. Nasty! they are going into
+the church, too. Oh, the Britisher abroad!”
 
-Hence it is replaced by another one: "I should like to enjoy something free of cost."1 The word "kost" (taste), with its double meaning, is appropriate to a table d'h?te; it, moreover, is in place through the special sense in the dream.
+“We sat opposite them at dinner last night. They have given us their
+rooms. They were so very kind.”
 
-At home if there is a dish which the children decline, their mother first tries gentle persuasion, with a "Just taste it." That the dream work should unhesitatingly use the double meaning of the word is certainly remarkable; ample experience has shown, however, that the occurrence is quite usual.
+“Look at their figures!” laughed Miss Lavish. “They walk through my
+ Italy like a pair of cows. It’s very naughty of me, but I would like to
+set an examination paper at Dover, and turn back every tourist who
+couldn’t pass it.”
 
-Through condensation of the dream certain constituent parts of its content are explicable which are peculiar to the dream life alone, and which are not found in the waking state. Such are the composite and mixed persons, the extraordinary mixed figures, creations comparable with the fantastic animal compositions of Orientals; a moment's thought and these are reduced to unity, whilst the fancies of the dream are ever formed anew in an inexhaustible profusion. Every one knows such images in his own dreams; manifold are their origins. I can build up a person by borrowing one feature from one person and one from another, or by giving to the form of one the name of another in my dream. I can also visualize one person, but place him in a position which has occurred to another. There is a meaning in all these cases when different persons are amalgamated into one substitute. Such cases denote an "and," a "just like," a comparison of the original person from a certain point of view, a comparison which can be also realized in the dream itself. As a rule, however, the identity of the blended persons is only discoverable by analysis, and is only indicated in the dream content by the formation of the "combined" person.
+“What would you ask us?”
 
-The same diversity in their ways of formation and the same rules for its solution hold good also for the innumerable medley of dream contents, examples of which I need scarcely adduce. Their strangeness quite disappears when we resolve not to place them on a level with the objects of perception as known to us when awake, but to remember that they represent the art of dream condensation by an exclusion of unnecessary detail. Prominence is given to the common character of the combination. Analysis must also generally supply the common features. The dream says simply: All these things have an "x" in common. The decomposition of these mixed images by analysis is often the quickest way to an interpretation of the dream. Thus I once dreamt that I was sitting with one of my former university tutors on a bench, which was undergoing a rapid continuous movement amidst other benches. This was a combination of lecture-room and moving staircase. I will not pursue the further result of the thought. Another time I was sitting in a carriage, and on my lap an object in shape like a top-hat, which, however, was made of transparent glass. The scene at once brought to my mind the
+Miss Lavish laid her hand pleasantly on Lucy’s arm, as if to suggest
+that she, at all events, would get full marks. In this exalted mood
+they reached the steps of the great church, and were about to enter it
+when Miss Lavish stopped, squeaked, flung up her arms, and cried:
 
-proverb: "He who keeps his hat in his hand will travel safely through the land." By a slight turn the glass hat reminded me of Auer's light, and I knew that I was about to invent something which was to make me as rich and independent as his invention had made my countryman, Dr. Auer, of Welsbach; then I should be able to travel instead of remaining in Vienna. In the dream I was traveling with my invention, with the, it is true, rather awkward glass top-hat. The dream work is peculiarly adept at representing two contradictory conceptions by means of the same mixed image. Thus, for instance, a woman dreamt of herself carrying a tall flower-stalk, as in the picture of the Annunciation (Chastity-Mary is her own name), but the stalk was bedecked with thick white blossoms resembling camellias (contrast with chastity: La dame aux Camelias).
+“There goes my local-colour box! I must have a word with him!”
 
-A great deal of what we have called "dream condensation" can be thus formulated. Each one of the elements of the dream content is overdetermined by the matter of the dream thoughts; it is not derived from one element of these thoughts, but from a whole series. These are not necessarily interconnected in any way, but may belong to the most diverse spheres of thought. The dream element truly represents all this disparate matter in the dream content. Analysis, moreover, discloses another side of the relationship between dream content and dream thoughts. Just as one element of the dream leads to associations with several dream thoughts, so, as a rule, the one dream thought represents more than one dream element. The threads of the association do not simply converge from the dream thoughts to the dream content, but on the way they overlap and interweave in every way.
+And in a moment she was away over the Piazza, her military cloak
+flapping in the wind; nor did she slacken speed till she caught up an
+old man with white whiskers, and nipped him playfully upon the arm.
 
-Next to the transformation of one thought in the scene (its "dramatization"), condensation is the most important and most characteristic feature of the dream work. We have as yet no clue as to the motive calling for such compression of the content.
+Lucy waited for nearly ten minutes. Then she began to get tired. The
+beggars worried her, the dust blew in her eyes, and she remembered that
+a young girl ought not to loiter in public places. She descended slowly
+into the Piazza with the intention of rejoining Miss Lavish, who was
+really almost too original. But at that moment Miss Lavish and her
+local-colour box moved also, and disappeared down a side street, both
+gesticulating largely. Tears of indignation came to Lucy’s eyes partly
+because Miss Lavish had jilted her, partly because she had taken her
+ Baedeker. How could she find her way home? How could she find her way
+about in Santa Croce? Her first morning was ruined, and she might never
+be in Florence again. A few minutes ago she had been all high spirits,
+talking as a woman of culture, and half persuading herself that she was
+full of originality. Now she entered the church depressed and
+humiliated, not even able to remember whether it was built by the
+ Franciscans or the Dominicans. Of course, it must be a wonderful
+building. But how like a barn! And how very cold! Of course, it
+contained frescoes by Giotto, in the presence of whose tactile values
+she was capable of feeling what was proper. But who was to tell her
+which they were? She walked about disdainfully, unwilling to be
+enthusiastic over monuments of uncertain authorship or date. There was
+no one even to tell her which, of all the sepulchral slabs that paved
+the nave and transepts, was the one that was really beautiful, the one
+that had been most praised by Mr. Ruskin.
 
-In the complicated and intricate dreams with which we are now concerned, condensation and dramatization do not wholly account for the difference between dream contents and dream thoughts. There is evidence of a third factor, which deserves careful consideration.
+Then the pernicious charm of Italy worked on her, and, instead of
+acquiring information, she began to be happy. She puzzled out the
+ Italian notices—the notices that forbade people to introduce dogs into
+the church—the notice that prayed people, in the interest of health and
+out of respect to the sacred edifice in which they found themselves,
+not to spit. She watched the tourists; their noses were as red as their
+ Baedekers, so cold was Santa Croce. She beheld the horrible fate that
+overtook three Papists—two he-babies and a she-baby—who began their
+career by sousing each other with the Holy Water, and then proceeded to
+the Machiavelli memorial, dripping but hallowed. Advancing towards it
+very slowly and from immense distances, they touched the stone with
+their fingers, with their handkerchiefs, with their heads, and then
+retreated. What could this mean? They did it again and again. Then Lucy
+realized that they had mistaken Machiavelli for some saint, hoping to
+acquire virtue. Punishment followed quickly. The smallest he-baby
+stumbled over one of the sepulchral slabs so much admired by Mr.
+ Ruskin, and entangled his feet in the features of a recumbent bishop.
+ Protestant as she was, Lucy darted forward. She was too late. He fell
+heavily upon the prelate’s upturned toes.
 
-When I have arrived at an understanding of the dream thoughts by my analysis I notice, above all, that the matter of the manifest is very different from that of the latent dream content. That is, I admit, only an apparent difference which vanishes on closer investigation, for in the end I find the`
+“Hateful bishop!” exclaimed the voice of old Mr. Emerson, who had
+darted forward also. “Hard in life, hard in death. Go out into the
+sunshine, little boy, and kiss your hand to the sun, for that is where
+you ought to be. Intolerable bishop!”
+
+The child screamed frantically at these words, and at these dreadful
+people who picked him up, dusted him, rubbed his bruises, and told him
+not to be superstitious.
+
+“Look at him!” said Mr. Emerson to Lucy. “Here’s a mess: a baby hurt,
+cold, and frightened! But what else can you expect from a church?”
+
+The child’s legs had become as melting wax. Each time that old Mr.
+ Emerson and Lucy set it erect it collapsed with a roar. Fortunately an
+ Italian lady, who ought to have been saying her prayers, came to the
+rescue. By some mysterious virtue, which mothers alone possess, she
+stiffened the little boy’s back-bone and imparted strength to his
+knees. He stood. Still gibbering with agitation, he walked away.
+
+“You are a clever woman,” said Mr. Emerson. “You have done more than
+all the relics in the world. I am not of your creed, but I do believe
+in those who make their fellow-creatures happy. There is no scheme of
+the universe—”
+
+He paused for a phrase.
+
+“Niente,” said the Italian lady, and returned to her prayers.
+
+“I’m not sure she understands English,” suggested Lucy.
+
+In her chastened mood she no longer despised the Emersons. She was
+determined to be gracious to them, beautiful rather than delicate, and,
+if possible, to erase Miss Bartlett’s civility by some gracious
+reference to the pleasant rooms.
+
+“That woman understands everything,” was Mr. Emerson’s reply. “But what
+are you doing here? Are you doing the church? Are you through with the
+church?”
+
+“No,” cried Lucy, remembering her grievance. “I came here with Miss
+ Lavish, who was to explain everything; and just by the door—it is too
+bad!—she simply ran away, and after waiting quite a time, I had to come
+in by myself.”
+
+“Why shouldn’t you?” said Mr. Emerson.
+
+“Yes, why shouldn’t you come by yourself?” said the son, addressing the
+young lady for the first time.
+
+“But Miss Lavish has even taken away Baedeker.”
+
+“Baedeker?” said Mr. Emerson. “I’m glad it’s _that_ you minded. It’s
+worth minding, the loss of a Baedeker. _That’s_ worth minding.”
+
+Lucy was puzzled. She was again conscious of some new idea, and was not
+sure whither it would lead her.
+
+“If you’ve no Baedeker,” said the son, “you’d better join us.” Was this
+where the idea would lead? She took refuge in her dignity.`
     },
     {
       id: "section-6",
       title: "Section 6",
-      content: `whole dream content carried out in the dream thoughts, nearly all the dream thoughts again represented in the dream content. Nevertheless, there does remain a certain amount of difference.
+      content: `“Thank you very much, but I could not think of that. I hope you do not
+suppose that I came to join on to you. I really came to help with the
+child, and to thank you for so kindly giving us your rooms last night.
+ I hope that you have not been put to any great inconvenience.”
 
-The essential content which stood out clearly and broadly in the dream must, after analysis, rest satisfied with a very subordinate r?le among the dream thoughts. These very dream thoughts which, going by my feelings, have a claim to the greatest importance are either not present at all in the dream content, or are represented by some remote allusion in some obscure region of the dream. I can thus describe these phenomena: During the dream work the psychical intensity of those thoughts and conceptions to which it properly pertains flows to others which, in my judgment, have no claim to such emphasis. There is no other process which contributes so much to concealment of the dream's meaning and to make the connection between the dream content and dream ideas irrecognizable. During this process, which I will call the dream displacement, I notice also the psychical intensity, significance, or emotional nature of the thoughts become transposed in sensory vividness. What was clearest in the dream seems to me, without further consideration, the most important; but often in some obscure element of the dream I can recognize the most direct offspring of the principal dream thought.
+“My dear,” said the old man gently, “I think that you are repeating
+what you have heard older people say. You are pretending to be touchy;
+but you are not really. Stop being so tiresome, and tell me instead
+what part of the church you want to see. To take you to it will be a
+real pleasure.”
 
-I could only designate this dream displacement as the transvaluation of psychical values. The phenomena will not have been considered in all its bearings unless I add that this displacement or transvaluation is shared by different dreams in extremely varying degrees. There are dreams which take place almost without any displacement. These have the same time, meaning, and intelligibility as we found in the dreams which recorded a desire. In other dreams not a bit of the dream idea has retained its own psychical value, or everything essential in these dream ideas has been replaced by unessentials, whilst every kind of transition between these conditions can be found. The more obscure and intricate a dream is, the greater is the part to be ascribed to the impetus of displacement in its formation.
+Now, this was abominably impertinent, and she ought to have been
+furious. But it is sometimes as difficult to lose one’s temper as it is
+difficult at other times to keep it. Lucy could not get cross. Mr.
+ Emerson was an old man, and surely a girl might humour him. On the
+other hand, his son was a young man, and she felt that a girl ought to
+be offended with him, or at all events be offended before him. It was
+at him that she gazed before replying.
 
-The example that we chose for analysis shows, at least, this much of displacement—that its content has a different center of interest from that of the dream ideas. In the forefront of the dream content the main scene appears as if a woman wished to make advances to me; in the dream idea the chief interest rests on the desire to enjoy disinterested love which shall "cost nothing"; this idea lies at the back of the talk about the beautiful eyes and the far-fetched allusion to "spinach."
+“I am not touchy, I hope. It is the Giottos that I want to see, if you
+will kindly tell me which they are.”
 
-If we abolish the dream displacement, we attain through analysis quite certain conclusions regarding two problems of the dream which are most disputed—as to what provokes a dream at all, and as to the connection of the dream with our waking life. There are dreams which at once expose their links with the events of the day; in others no trace of such a connection can be found. By the aid of analysis it can be shown that every dream, without any exception, is linked up with our impression of the day, or perhaps it would be more correct to say of the day previous to the dream. The impressions which have incited the dream may be so important that we are not surprised at our being occupied with them whilst awake; in this case we are right in saying that the dream carries on the chief interest of our waking life. More usually, however, when the dream contains anything relating to the impressions of the day, it is so trivial, unimportant, and so deserving of oblivion, that we can only recall it with an effort. The dream content appears, then, even when coherent and intelligible, to be concerned with those indifferent trifles of thought undeserving of our waking interest. The depreciation of dreams is largely due to the predominance of the indifferent and the worthless in their content.
+The son nodded. With a look of sombre satisfaction, he led the way to
+the Peruzzi Chapel. There was a hint of the teacher about him. She felt
+like a child in school who had answered a question rightly.
 
-Analysis destroys the appearance upon which this derogatory judgment is based. When the dream content discloses nothing but some indifferent impression as instigating the dream, analysis ever indicates some significant event, which has been replaced by something indifferent with which it has entered into abundant associations. Where the dream is concerned with uninteresting and unimportant conceptions, analysis reveals the numerous associative paths which connect the trivial with the momentous in the psychical estimation of the individual. It is only the action of displacement if what is indifferent obtains recognition in the dream content instead of those impressions which are really the stimulus, or instead of the things of real interest. In answering the question as to what provokes the dream, as to the connection of the dream, in the daily troubles, we must say, in terms of the insight given us by replacing the manifest latent dream content: The dream does never trouble itself about things which are not deserving of our concern during the day, and trivialities which do not trouble us during the day have no power to pursue us whilst asleep.
+The chapel was already filled with an earnest congregation, and out of
+them rose the voice of a lecturer, directing them how to worship
+ Giotto, not by tactful valuations, but by the standards of the spirit.
 
-What provoked the dream in the example which we have analyzed? The really unimportant event, that a friend invited me to a free ride in his cab.
+“Remember,” he was saying, “the facts about this church of Santa Croce;
+how it was built by faith in the full fervour of medievalism, before
+any taint of the Renaissance had appeared. Observe how Giotto in these
+frescoes—now, unhappily, ruined by restoration—is untroubled by the
+snares of anatomy and perspective. Could anything be more majestic,
+more pathetic, beautiful, true? How little, we feel, avails knowledge
+and technical cleverness against a man who truly feels!”
 
-The table d'h?te scene in the dream contains an allusion to this indifferent motive, for in conversation I had brought the taxi parallel with the table d'h? te. But I can indicate the important event which has as its substitute the trivial one. A few days before I had disbursed a large sum of money for a member of my family who is very dear to me. Small wonder, says the dream thought, if this person is grateful to me for this—this love is not cost-free. But love that shall cost nothing is one of the prime thoughts of the dream. The fact that shortly before this I had had several drives with the relative in question puts the one drive with my friend in a position to recall the connection with the other person. The indifferent impression which, by such ramifications, provokes the dream is subservient to another condition which is not true of the real source of the dream—the impression must be a recent one, everything arising from the day of the dream.
+“No!” exclaimed Mr. Emerson, in much too loud a voice for church.
+“Remember nothing of the sort! Built by faith indeed! That simply means
+the workmen weren’t paid properly. And as for the frescoes, I see no
+truth in them. Look at that fat man in blue! He must weigh as much as I
+do, and he is shooting into the sky like an air balloon.”
 
-I cannot leave the question of dream displacement without the consideration of a remarkable process in the formation of dreams in which condensation and displacement work together towards one end. In condensation we have already considered the case where two conceptions in the dream having something in common, some point of contact, are replaced in the dream content by a mixed image, where the distinct germ corresponds to what is common, and the indistinct secondary modifications to what is distinctive. If displacement is added to condensation, there is no formation of a mixed image, but a common mean which bears the same relationship to the individual elements as does the resultant in the parallelogram of forces to its components. In one of my dreams, for instance, there is talk of an injection with propyl. On first analysis I discovered an indifferent but true incident where amyl played a part as the excitant of the dream. I cannot yet vindicate the exchange of amyl for propyl. To the round of ideas of the same dream, however, there belongs the recollection of my first visit to Munich, when the Propylœa struck me. The attendant circumstances of the analysis render it admissible that the influence of this second group of conceptions caused the displacement of amyl to propyl. Propyl is, so to say, the mean idea between amyl and propylœa; it got into the dream as a kind of compromise by simultaneous condensation and displacement.
+He was referring to the fresco of the “Ascension of St. John.” Inside,
+the lecturer’s voice faltered, as well it might. The audience shifted
+uneasily, and so did Lucy. She was sure that she ought not to be with
+these men; but they had cast a spell over her. They were so serious and
+so strange that she could not remember how to behave.
 
-The need of discovering some motive for this bewildering work of the dream is even more called for in the case of displacement than in condensation.
+“Now, did this happen, or didn’t it? Yes or no?”
 
-Although the work of displacement must be held mainly responsible if`
+George replied:
+
+“It happened like this, if it happened at all. I would rather go up to
+heaven by myself than be pushed by cherubs; and if I got there I should
+like my friends to lean out of it, just as they do here.”
+
+“You will never go up,” said his father. “You and I, dear boy, will lie
+at peace in the earth that bore us, and our names will disappear as
+surely as our work survives.”
+
+“Some of the people can only see the empty grave, not the saint,
+whoever he is, going up. It did happen like that, if it happened at
+all.”
+
+“Pardon me,” said a frigid voice. “The chapel is somewhat small for two
+parties. We will incommode you no longer.”
+
+The lecturer was a clergyman, and his audience must be also his flock,
+for they held prayer-books as well as guide-books in their hands. They
+filed out of the chapel in silence. Amongst them were the two little
+old ladies of the Pension Bertolini—Miss Teresa and Miss Catherine
+ Alan.
+
+“Stop!” cried Mr. Emerson. “There’s plenty of room for us all. Stop!”
+
+The procession disappeared without a word.
+
+Soon the lecturer could be heard in the next chapel, describing the
+life of St. Francis.
+
+“George, I do believe that clergyman is the Brixton curate.”
+
+George went into the next chapel and returned, saying “Perhaps he is. I
+don’t remember.”
+
+“Then I had better speak to him and remind him who I am. It’s that Mr.
+ Eager. Why did he go? Did we talk too loud? How vexatious. I shall go
+and say we are sorry. Hadn’t I better? Then perhaps he will come back.”
+
+“He will not come back,” said George.
+
+But Mr. Emerson, contrite and unhappy, hurried away to apologize to the
+ Rev. Cuthbert Eager. Lucy, apparently absorbed in a lunette, could hear
+the lecture again interrupted, the anxious, aggressive voice of the old
+man, the curt, injured replies of his opponent. The son, who took every
+little contretemps as if it were a tragedy, was listening also.
+
+“My father has that effect on nearly everyone,” he informed her. “He
+will try to be kind.”
+
+“I hope we all try,” said she, smiling nervously.
+
+“Because we think it improves our characters. But he is kind to people
+because he loves them; and they find him out, and are offended, or
+frightened.”
+
+“How silly of them!” said Lucy, though in her heart she sympathized; “I
+think that a kind action done tactfully—”
+
+“Tact!”
+
+He threw up his head in disdain. Apparently she had given the wrong
+answer. She watched the singular creature pace up and down the chapel.
+ For a young man his face was rugged, and—until the shadows fell upon
+it—hard. Enshadowed, it sprang into tenderness. She saw him once again
+at Rome, on the ceiling of the Sistine Chapel, carrying a burden of
+acorns. Healthy and muscular, he yet gave her the feeling of greyness,
+of tragedy that might only find solution in the night. The feeling soon
+passed; it was unlike her to have entertained anything so subtle. Born
+of silence and of unknown emotion, it passed when Mr. Emerson returned,
+and she could re-enter the world of rapid talk, which was alone
+familiar to her.
+
+“Were you snubbed?” asked his son tranquilly.
+
+“But we have spoilt the pleasure of I don’t know how many people. They
+won’t come back.”
+
+“...full of innate sympathy...quickness to perceive good in
+others...vision of the brotherhood of man...” Scraps of the lecture on
+ St. Francis came floating round the partition wall.
+
+“Don’t let us spoil yours,” he continued to Lucy. “Have you looked at
+those saints?”
+
+“Yes,” said Lucy. “They are lovely. Do you know which is the tombstone
+that is praised in Ruskin?”
+
+He did not know, and suggested that they should try to guess it.
+ George, rather to her relief, refused to move, and she and the old man
+wandered not unpleasantly about Santa Croce, which, though it is like a
+barn, has harvested many beautiful things inside its walls. There were
+also beggars to avoid and guides to dodge round the pillars, and an old
+lady with her dog, and here and there a priest modestly edging to his
+ Mass through the groups of tourists. But Mr. Emerson was only half
+interested. He watched the lecturer, whose success he believed he had
+impaired, and then he anxiously watched his son.
+
+“Why will he look at that fresco?” he said uneasily. “I saw nothing in
+it.”
+
+“I like Giotto,” she replied. “It is so wonderful what they say about
+his tactile values. Though I like things like the Della Robbia babies
+better.”
+
+“So you ought. A baby is worth a dozen saints. And my baby’s worth the
+whole of Paradise, and as far as I can see he lives in Hell.”
+
+Lucy again felt that this did not do.
+
+“In Hell,” he repeated. “He’s unhappy.”
+
+“Oh, dear!” said Lucy.
+
+“How can he be unhappy when he is strong and alive? What more is one to
+give him? And think how he has been brought up—free from all the
+superstition and ignorance that lead men to hate one another in the
+name of God. With such an education as that, I thought he was bound to
+grow up happy.”
+
+She was no theologian, but she felt that here was a very foolish old
+man, as well as a very irreligious one. She also felt that her mother
+might not like her talking to that kind of person, and that Charlotte
+would object most strongly.`
     },
     {
       id: "section-7",
       title: "Section 7",
-      content: `the dream thoughts are not refound or recognized in the dream content (unless the motive of the changes be guessed), it is another and milder kind of transformation which will be considered with the dream thoughts which leads to the discovery of a new but readily understood act of the dream work. The first dream thoughts which are unravelled by analysis frequently strike one by their unusual wording. They do not appear to be expressed in the sober form which our thinking prefers; rather are they expressed symbolically by allegories and metaphors like the figurative language of the poets. It is not difficult to find the motives for this degree of constraint in the expression of dream ideas. The dream content consists chiefly of visual scenes; hence the dream ideas must, in the first place, be prepared to make use of these forms of presentation. Conceive that a political leader's or a barrister's address had to be transposed into pantomime, and it will be easy to understand the transformations to which the dream work is constrained by regard for this dramatization of the dream content.
+      content: `“What are we to do with him?” he asked. “He comes out for his holiday
+to Italy, and behaves—like that; like the little child who ought to
+have been playing, and who hurt himself upon the tombstone. Eh? What
+did you say?”
 
-Around the psychical stuff of dream thoughts there are ever found reminiscences of impressions, not infrequently of early childhood—scenes which, as a rule, have been visually grasped. Whenever possible, this portion of the dream ideas exercises a definite influence upon the modelling of the dream content; it works like a center of crystallization, by attracting and rearranging the stuff of the dream thoughts. The scene of the dream is not infrequently nothing but a modified repetition, complicated by interpolations of events that have left such an impression; the dream but very seldom reproduces accurate and unmixed reproductions of real scenes.
+Lucy had made no suggestion. Suddenly he said:
 
-The dream content does not, however, consist exclusively of scenes, but it also includes scattered fragments of visual images, conversations, and even bits of unchanged thoughts. It will be perhaps to the point if we instance in the briefest way the means of dramatization which are at the disposal of the dream work for the repetition of the dream thoughts in the peculiar language of the dream.
+“Now don’t be stupid over this. I don’t require you to fall in love
+with my boy, but I do think you might try and understand him. You are
+nearer his age, and if you let yourself go I am sure you are sensible.
+ You might help me. He has known so few women, and you have the time.
+ You stop here several weeks, I suppose? But let yourself go. You are
+inclined to get muddled, if I may judge from last night. Let yourself
+go. Pull out from the depths those thoughts that you do not understand,
+and spread them out in the sunlight and know the meaning of them. By
+understanding George you may learn to understand yourself. It will be
+good for both of you.”
 
-The dream thoughts which we learn from the analysis exhibit themselves as a psychical complex of the most complicated superstructure. Their parts stand in the most diverse relationship to each other; they form backgrounds and foregrounds, stipulations, digressions, illustrations, demonstrations, and protestations. It may be said to be almost the rule that one train of thought is followed by its contradictory. No feature known to our reason whilst awake is absent. If a dream is to grow out of all this, the
+To this extraordinary speech Lucy found no answer.
 
-psychical matter is submitted to a pressure which condenses it extremely, to an inner shrinking and displacement, creating at the same time fresh surfaces, to a selective interweaving among the constituents best adapted for the construction of these scenes. Having regard to the origin of this stuff, the term regression can be fairly applied to this process. The logical chains which hitherto held the psychical stuff together become lost in this transformation to the dream content. The dream work takes on, as it were, only the essential content of the dream thoughts for elaboration. It is left to analysis to restore the connection which the dream work has destroyed.
+“I only know what it is that’s wrong with him; not why it is.”
 
-The dream's means of expression must therefore be regarded as meager in comparison with those of our imagination, though the dream does not renounce all claims to the restitution of logical relation to the dream thoughts. It rather succeeds with tolerable frequency in replacing these by formal characters of its own.
+“And what is it?” asked Lucy fearfully, expecting some harrowing tale.
 
-By reason of the undoubted connection existing between all the parts of dream thoughts, the dream is able to embody this matter into a single scene. It upholds a logical connection as approximation in time and space, just as the painter, who groups all the poets for his picture of Parnassus who, though they have never been all together on a mountain peak, yet form ideally a community. The dream continues this method of presentation in individual dreams, and often when it displays two elements close together in the dream content it warrants some special inner connection between what they represent in the dream thoughts. It should be, moreover, observed that all the dreams of one night prove on analysis to originate from the same sphere of thought.
+“The old trouble; things won’t fit.”
 
-The causal connection between two ideas is either left without presentation, or replaced by two different long portions of dreams one after the other. This presentation is frequently a reversed one, the beginning of the dream being the deduction, and its end the hypothesis. The direct transformation of one thing into another in the dream seems to serve the relationship of cause and effect.
+“What things?”
 
-The dream never utters the alternative "either-or," but accepts both as having equal rights in the same connection. When "either-or" is used in the reproduction of dreams, it is, as I have already mentioned, to be replaced by "and."
+“The things of the universe. It is quite true. They don’t.”
 
-Conceptions which stand in opposition to one another are preferably expressed in dreams by the same element.2 There seems no "not" in dreams. Opposition between two ideas, the relation of conversion, is represented in dreams in a very remarkable way. It is expressed by the reversal of another part of the dream content just as if by way of appendix. We shall later on deal with another form of expressing disagreement. The common dream sensation of movement checked serves the purpose of representing disagreement of impulses—a conflict of the will.
+“Oh, Mr. Emerson, whatever do you mean?”
 
-Only one of the logical relationships—that of similarity, identity, agreement—is found highly developed in the mechanism of dream formation. Dream work makes use of these cases as a starting-point for condensation, drawing together everything which shows such agreement to a fresh unity.
+In his ordinary voice, so that she scarcely realized he was quoting
+poetry, he said:
 
-These short, crude observations naturally do not suffice as an estimate of the abundance of the dream's formal means of presenting the logical relationships of the dream thoughts. In this respect, individual dreams are worked up more nicely or more carelessly, our text will have been followed more or less closely, auxiliaries of the dream work will have been taken more or less into consideration. In the latter case they appear obscure, intricate, incoherent. When the dream appears openly absurd, when it contains an obvious paradox in its content, it is so of purpose. Through its apparent disregard of all logical claims, it expresses a part of the intellectual content of the dream ideas. Absurdity in the dream denotes disagreement, scorn, disdain in the dream thoughts. As this explanation is in entire disagreement with the view that the dream owes its origin to dissociated, uncritical cerebral activity, I will emphasize my view by an example:
+“‘From far, from eve and morning,
+ And yon twelve-winded sky,
+ The stuff of life to knit me
+ Blew hither: here am I’
 
-"One of my acquaintances, Mr. M , has been attacked by no less a person than Goethe in an essay with, we all maintain, unwarrantable violence. Mr. M has naturally been ruined by this attack. He complains very bitterly of this at a dinner-party, but his respect for Goethe has not diminished through this personal experience. I now attempt to clear up the chronological relations which strike me as improbable. Goethe died in 1832. As his attack upon Mr. M must, of course, have taken place before, Mr. M must have been then a very young man. It seems to me plausible that he was eighteen. I am not certain, however, what year we are actually in, and the whole calculation falls into obscurity. The attack was, moreover, contained in Goethe's well-known essay on 'Nature.'"
+George and I both know this, but why does it distress him? We know that
+we come from the winds, and that we shall return to them; that all life
+is perhaps a knot, a tangle, a blemish in the eternal smoothness. But
+why should this make us unhappy? Let us rather love one another, and
+work and rejoice. I don’t believe in this world sorrow.”
 
-The absurdity of the dream becomes the more glaring when I state that Mr. M is a young business man without any poetical or literary interests. My analysis of the dream will show what method there is in this madness.
+Miss Honeychurch assented.
 
-The dream has derived its material from three sources:`
+“Then make my boy think like us. Make him realize that by the side of
+the everlasting Why there is a Yes—a transitory Yes if you like, but a
+ Yes.”
+
+Suddenly she laughed; surely one ought to laugh. A young man melancholy
+because the universe wouldn’t fit, because life was a tangle or a wind,
+or a Yes, or something!
+
+“I’m very sorry,” she cried. “You’ll think me unfeeling, but—but—” Then
+she became matronly. “Oh, but your son wants employment. Has he no
+particular hobby? Why, I myself have worries, but I can generally
+forget them at the piano; and collecting stamps did no end of good for
+my brother. Perhaps Italy bores him; you ought to try the Alps or the
+ Lakes.”
+
+The old man’s face saddened, and he touched her gently with his hand.
+ This did not alarm her; she thought that her advice had impressed him
+and that he was thanking her for it. Indeed, he no longer alarmed her
+at all; she regarded him as a kind thing, but quite silly. Her feelings
+were as inflated spiritually as they had been an hour ago esthetically,
+before she lost Baedeker. The dear George, now striding towards them
+over the tombstones, seemed both pitiable and absurd. He approached,
+his face in the shadow. He said:
+
+“Miss Bartlett.”
+
+“Oh, good gracious me!” said Lucy, suddenly collapsing and again seeing
+the whole of life in a new perspective. “Where? Where?”
+
+“In the nave.”
+
+“I see. Those gossiping little Miss Alans must have—” She checked
+herself.
+
+“Poor girl!” exploded Mr. Emerson. “Poor girl!”
+
+She could not let this pass, for it was just what she was feeling
+herself.
+
+“Poor girl? I fail to understand the point of that remark. I think
+myself a very fortunate girl, I assure you. I’m thoroughly happy, and
+having a splendid time. Pray don’t waste time mourning over _me_.
+ There’s enough sorrow in the world, isn’t there, without trying to
+invent it. Good-bye. Thank you both so much for all your kindness. Ah,
+yes! there does come my cousin. A delightful morning! Santa Croce is a
+wonderful church.”
+
+She joined her cousin.
+
+Chapter III
+ Music, Violets, and the Letter “S”
+
+It so happened that Lucy, who found daily life rather chaotic, entered
+a more solid world when she opened the piano. She was then no longer
+either deferential or patronizing; no longer either a rebel or a slave.
+ The kingdom of music is not the kingdom of this world; it will accept
+those whom breeding and intellect and culture have alike rejected. The
+commonplace person begins to play, and shoots into the empyrean without
+effort, whilst we look up, marvelling how he has escaped us, and
+thinking how we could worship him and love him, would he but translate
+his visions into human words, and his experiences into human actions.
+ Perhaps he cannot; certainly he does not, or does so very seldom. Lucy
+had done so never.
+
+She was no dazzling _exécutante;_ her runs were not at all like strings
+of pearls, and she struck no more right notes than was suitable for one
+of her age and situation. Nor was she the passionate young lady, who
+performs so tragically on a summer’s evening with the window open.
+ Passion was there, but it could not be easily labelled; it slipped
+between love and hatred and jealousy, and all the furniture of the
+pictorial style. And she was tragical only in the sense that she was
+great, for she loved to play on the side of Victory. Victory of what
+and over what—that is more than the words of daily life can tell us.
+ But that some sonatas of Beethoven are written tragic no one can
+gainsay; yet they can triumph or despair as the player decides, and
+ Lucy had decided that they should triumph.
+
+A very wet afternoon at the Bertolini permitted her to do the thing she
+really liked, and after lunch she opened the little draped piano. A few
+people lingered round and praised her playing, but finding that she
+made no reply, dispersed to their rooms to write up their diaries or to
+sleep. She took no notice of Mr. Emerson looking for his son, nor of
+ Miss Bartlett looking for Miss Lavish, nor of Miss Lavish looking for
+her cigarette-case. Like every true performer, she was intoxicated by
+the mere feel of the notes: they were fingers caressing her own; and by
+touch, not by sound alone, did she come to her desire.
+
+Mr. Beebe, sitting unnoticed in the window, pondered this illogical
+element in Miss Honeychurch, and recalled the occasion at Tunbridge
+ Wells when he had discovered it. It was at one of those entertainments
+where the upper classes entertain the lower. The seats were filled with
+a respectful audience, and the ladies and gentlemen of the parish,
+under the auspices of their vicar, sang, or recited, or imitated the
+drawing of a champagne cork. Among the promised items was “Miss
+ Honeychurch. Piano. Beethoven,” and Mr. Beebe was wondering whether it
+would be Adelaida, or the march of The Ruins of Athens, when his
+composure was disturbed by the opening bars of Opus III. He was in
+suspense all through the introduction, for not until the pace quickens
+does one know what the performer intends. With the roar of the opening
+theme he knew that things were going extraordinarily; in the chords
+that herald the conclusion he heard the hammer strokes of victory. He
+was glad that she only played the first movement, for he could have
+paid no attention to the winding intricacies of the measures of
+nine-sixteen. The audience clapped, no less respectful. It was Mr.
+ Beebe who started the stamping; it was all that one could do.
+
+“Who is she?” he asked the vicar afterwards.
+
+“Cousin of one of my parishioners. I do not consider her choice of a
+piece happy. Beethoven is so usually simple and direct in his appeal
+that it is sheer perversity to choose a thing like that, which, if
+anything, disturbs.”
+
+“Introduce me.”
+
+“She will be delighted. She and Miss Bartlett are full of the praises
+of your sermon.”
+
+“My sermon?” cried Mr. Beebe. “Why ever did she listen to it?”`
     },
     {
       id: "section-8",
       title: "Section 8",
-      content: `Mr. M , to whom I was introduced at a dinner-party, begged me one day to examine his elder brother, who showed signs of mental trouble. In conversation with the patient, an unpleasant episode occurred. Without the slightest occasion he disclosed one of his brother's youthful escapades. I had asked the patient the year of his birth (year of death in dream), and led him to various calculations which might show up his want of memory.
+      content: `When he was introduced he understood why, for Miss Honeychurch,
+disjoined from her music stool, was only a young lady with a quantity
+of dark hair and a very pretty, pale, undeveloped face. She loved going
+to concerts, she loved stopping with her cousin, she loved iced coffee
+and meringues. He did not doubt that she loved his sermon also. But
+before he left Tunbridge Wells he made a remark to the vicar, which he
+now made to Lucy herself when she closed the little piano and moved
+dreamily towards him:
 
-A medical journal which displayed my name among others on the cover had published a ruinous review of a book by my friend F of Berlin, from the pen of a very juvenile reviewer. I communicated with the editor, who, indeed, expressed his regret, but would not promise any redress. Thereupon I broke off my connection with the paper; in my letter of resignation I expressed the hope that our personal relations would not suffer from this. Here is the real source of the dream. The derogatory reception of my friend's work had made a deep impression upon me. In my judgment, it contained a fundamental biological discovery which only now, several years later, commences to find favor among the professors.
+“If Miss Honeychurch ever takes to live as she plays, it will be very
+exciting both for us and for her.”
 
-A little while before, a patient gave me the medical history of her brother, who, exclaiming "Nature, Nature!" had gone out of his mind. The doctors considered that the exclamation arose from a study of Goethe's beautiful essay, and indicated that the patient had been overworking. I expressed the opinion that it seemed more plausible to me that the exclamation "Nature!" was to be taken in that sexual meaning known also to the less educated in our country. It seemed to me that this view had something in it, because the unfortunate youth afterwards mutilated his genital organs. The patient was eighteen years old when the attack occurred.
+Lucy at once re-entered daily life.
 
-The first person in the dream-thoughts behind the ego was my friend who had been so scandalously treated. "I now attempted to clear up the chronological relation." My friend's book deals with the chronological relations of life, and, amongst other things, correlates Goethe's duration of life with a number of days in many ways important to biology. The ego is, however, represented as a general paralytic ("I am not certain what year we are actually in"). The dream exhibits my friend as behaving like a general paralytic, and thus riots in absurdity. But the dream thoughts run ironically. "Of course he is a madman, a fool, and you are the genius who understands all about it. But shouldn't it be the other way round?" This inversion obviously took place in the dream when Goethe attacked the young man, which is absurd, whilst any one, however young, can to-day easily attack the great Goethe.
+“Oh, what a funny thing! Some one said just the same to mother, and she
+said she trusted I should never live a duet.”
 
-I am prepared to maintain that no dream is inspired by other than egoistic emotions. The ego in the dream does not, indeed, represent only my friend, but stands for myself also. I identify myself with him because the fate of his discovery appears to me typical of the acceptance of my own. If I were to publish my own theory, which gives sexuality predominance in the ? tiology of psychoneurotic disorders (see the allusion to the eighteen-year-old patient—"Nature, Nature!"), the same criticism would be leveled at me, and it would even now meet with the same contempt.
+“Doesn’t Mrs. Honeychurch like music?”
 
-When I follow out the dream thoughts closely, I ever find only scorn and contempt as correlated with the dream's absurdity. It is well known that the discovery of a cracked sheep's skull on the Lido in Venice gave Goethe the hint for the so-called vertebral theory of the skull. My friend plumes himself on having as a student raised a hubbub for the resignation of an aged professor who had done good work (including some in this very subject of comparative anatomy), but who, on account of decrepitude, had become quite incapable of teaching. The agitation my friend inspired was so successful because in the German Universities an age limit is not demanded for academic work. Age is no protection against folly. In the hospital here I had for years the honor to serve under a chief who, long fossilized, was for decades notoriously feebleminded, and was yet permitted to continue in his responsible office. A trait, after the manner of the find in the Lido, forces itself upon me here. It was to this man that some youthful colleagues in the hospital adapted the then popular slang of that day: "No Goethe has written that," "No Schiller composed that," etc.
+“She doesn’t mind it. But she doesn’t like one to get excited over
+anything; she thinks I am silly about it. She thinks—I can’t make out.
+ Once, you know, I said that I liked my own playing better than any
+one’s. She has never got over it. Of course, I didn’t mean that I
+played well; I only meant—”
 
-We have not exhausted our valuation of the dream work. In addition to condensation, displacement, and definite arrangement of the psychical matter, we must ascribe to it yet another activity—one which is, indeed, not shared by every dream. I shall not treat this position of the dream work exhaustively; I will only point out that the readiest way to arrive at a conception of it is to take for granted, probably unfairly, that it only subsequently influences the dream content which has already been built up. Its mode of action thus
+“Of course,” said he, wondering why she bothered to explain.
 
-consists in so co?rdinating the parts of the dream that these coalesce to a coherent whole, to a dream composition. The dream gets a kind of fa?ade which, it is true, does not conceal the whole of its content. There is a sort of preliminary explanation to be strengthened by interpolations and slight alterations. Such elaboration of the dream content must not be too pronounced; the misconception of the dream thoughts to which it gives rise is merely superficial, and our first piece of work in analyzing a dream is to get rid of these early attempts at interpretation.
+“Music—” said Lucy, as if attempting some generality. She could not
+complete it, and looked out absently upon Italy in the wet. The whole
+life of the South was disorganized, and the most graceful nation in
+ Europe had turned into formless lumps of clothes.
 
-The motives for this part of the dream work are easily gauged. This final elaboration of the dream is due to a regard for intelligibility—a fact at once betraying the origin of an action which behaves towards the actual dream content just as our normal psychical action behaves towards some proffered perception that is to our liking. The dream content is thus secured under the pretense of certain expectations, is perceptually classified by the supposition of its intelligibility, thereby risking its falsification, whilst, in fact, the most extraordinary misconceptions arise if the dream can be correlated with nothing familiar. Every one is aware that we are unable to look at any series of unfamiliar signs, or to listen to a discussion of unknown words, without at once making perpetual changes through our regard for intelligibility, through our falling back upon what is familiar.
+The street and the river were dirty yellow, the bridge was dirty grey,
+and the hills were dirty purple. Somewhere in their folds were
+concealed Miss Lavish and Miss Bartlett, who had chosen this afternoon
+to visit the Torre del Gallo.
 
-We can call those dreams properly made up which are the result of an elaboration in every way analogous to the psychical action of our waking life. In other dreams there is no such action; not even an attempt is made to bring about order and meaning. We regard the dream as "quite mad," because on awaking it is with this last-named part of the dream work, the dream elaboration, that we identify ourselves. So far, however, as our analysis is concerned, the dream, which resembles a medley of disconnected fragments, is of as much value as the one with a smooth and beautifully polished surface. In the former case we are spared, to some extent, the trouble of breaking down the super-elaboration of the dream content.
+“What about music?” said Mr. Beebe.
 
-All the same, it would be an error to see in the dream fa?ade nothing but the misunderstood and somewhat arbitrary elaboration of the dream carried out at the instance of our psychical life. Wishes and phantasies are not infrequently employed in the erection of this fa?ade, which were already fashioned in the dream thoughts; they are akin to those of our waking life
+“Poor Charlotte will be sopped,” was Lucy’s reply.
 
-—"day-dreams," as they are very properly called. These wishes and phantasies, which analysis discloses in our dreams at night, often present
+The expedition was typical of Miss Bartlett, who would return cold,
+tired, hungry, and angelic, with a ruined skirt, a pulpy Baedeker, and
+a tickling cough in her throat. On another day, when the whole world
+was singing and the air ran into the mouth, like wine, she would refuse
+to stir from the drawing-room, saying that she was an old thing, and no
+fit companion for a hearty girl.
 
-themselves as repetitions and refashionings of the scenes of infancy. Thus the dream fa?ade may show us directly the true core of the dream, distorted through admixture with other matter.`
+“Miss Lavish has led your cousin astray. She hopes to find the true
+ Italy in the wet I believe.”
+
+“Miss Lavish is so original,” murmured Lucy. This was a stock remark,
+the supreme achievement of the Pension Bertolini in the way of
+definition. Miss Lavish was so original. Mr. Beebe had his doubts, but
+they would have been put down to clerical narrowness. For that, and for
+other reasons, he held his peace.
+
+“Is it true,” continued Lucy in awe-struck tone, “that Miss Lavish is
+writing a book?”
+
+“They do say so.”
+
+“What is it about?”
+
+“It will be a novel,” replied Mr. Beebe, “dealing with modern Italy.
+ Let me refer you for an account to Miss Catharine Alan, who uses words
+herself more admirably than any one I know.”
+
+“I wish Miss Lavish would tell me herself. We started such friends. But
+ I don’t think she ought to have run away with Baedeker that morning in
+ Santa Croce. Charlotte was most annoyed at finding me practically
+alone, and so I couldn’t help being a little annoyed with Miss Lavish.”
+
+“The two ladies, at all events, have made it up.”
+
+He was interested in the sudden friendship between women so apparently
+dissimilar as Miss Bartlett and Miss Lavish. They were always in each
+other’s company, with Lucy a slighted third. Miss Lavish he believed he
+understood, but Miss Bartlett might reveal unknown depths of
+strangeness, though not perhaps, of meaning. Was Italy deflecting her
+from the path of prim chaperon, which he had assigned to her at
+ Tunbridge Wells? All his life he had loved to study maiden ladies; they
+were his specialty, and his profession had provided him with ample
+opportunities for the work. Girls like Lucy were charming to look at,
+but Mr. Beebe was, from rather profound reasons, somewhat chilly in his
+attitude towards the other sex, and preferred to be interested rather
+than enthralled.
+
+Lucy, for the third time, said that poor Charlotte would be sopped. The
+ Arno was rising in flood, washing away the traces of the little carts
+upon the foreshore. But in the south-west there had appeared a dull
+haze of yellow, which might mean better weather if it did not mean
+worse. She opened the window to inspect, and a cold blast entered the
+room, drawing a plaintive cry from Miss Catharine Alan, who entered at
+the same moment by the door.
+
+“Oh, dear Miss Honeychurch, you will catch a chill! And Mr. Beebe here
+besides. Who would suppose this is Italy? There is my sister actually
+nursing the hot-water can; no comforts or proper provisions.”
+
+She sidled towards them and sat down, self-conscious as she always was
+on entering a room which contained one man, or a man and one woman.
+
+“I could hear your beautiful playing, Miss Honeychurch, though I was in
+my room with the door shut. Doors shut; indeed, most necessary. No one
+has the least idea of privacy in this country. And one person catches
+it from another.”
+
+Lucy answered suitably. Mr. Beebe was not able to tell the ladies of
+his adventure at Modena, where the chambermaid burst in upon him in his
+bath, exclaiming cheerfully, “Fa niente, sono vecchia.” He contented
+himself with saying: “I quite agree with you, Miss Alan. The Italians
+are a most unpleasant people. They pry everywhere, they see everything,
+and they know what we want before we know it ourselves. We are at their
+mercy. They read our thoughts, they foretell our desires. From the
+cab-driver down to—to Giotto, they turn us inside out, and I resent it.
+ Yet in their heart of hearts they are—how superficial! They have no
+conception of the intellectual life. How right is Signora Bertolini,
+who exclaimed to me the other day: ‘Ho, Mr. Beebe, if you knew what I
+suffer over the children’s edjucaishion. _Hi_ won’t ’ave my little
+ Victorier taught by a hignorant Italian what can’t explain nothink!’”
+
+Miss Alan did not follow, but gathered that she was being mocked in an
+agreeable way. Her sister was a little disappointed in Mr. Beebe,
+having expected better things from a clergyman whose head was bald and
+who wore a pair of russet whiskers. Indeed, who would have supposed
+that tolerance, sympathy, and a sense of humour would inhabit that
+militant form?
+
+In the midst of her satisfaction she continued to sidle, and at last
+the cause was disclosed. From the chair beneath her she extracted a
+gun-metal cigarette-case, on which were powdered in turquoise the
+initials “E. L.”
+
+“That belongs to Lavish.” said the clergyman. “A good fellow, Lavish,
+but I wish she’d start a pipe.”
+
+“Oh, Mr. Beebe,” said Miss Alan, divided between awe and mirth.
+“Indeed, though it is dreadful for her to smoke, it is not quite as
+dreadful as you suppose. She took to it, practically in despair, after
+her life’s work was carried away in a landslip. Surely that makes it
+more excusable.”
+
+“What was that?” asked Lucy.`
     },
     {
       id: "section-9",
       title: "Section 9",
-      content: `Beyond these four activities there is nothing else to be discovered in the dream work. If we keep closely to the definition that dream work denotes the transference of dream thoughts to dream content, we are compelled to say that the dream work is not creative; it develops no fancies of its own, it judges nothing, decides nothing. It does nothing but prepare the matter for condensation and displacement, and refashions it for dramatization, to which must be added the inconstant last-named mechanism—that of explanatory elaboration. It is true that a good deal is found in the dream content which might be understood as the result of another and more intellectual performance; but analysis shows conclusively every time that these intellectual operations were already present in the dream thoughts, and have only been taken over by the dream content. A syllogism in the dream is nothing other than the repetition of a syllogism in the dream thoughts; it seems inoffensive if it has been transferred to the dream without alteration; it becomes absurd if in the dream work it has been transferred to other matter. A calculation in the dream content simply means that there was a calculation in the dream thoughts; whilst this is always correct, the calculation in the dream can furnish the silliest results by the condensation of its factors and the displacement of the same operations to other things. Even speeches which are found in the dream content are not new compositions; they prove to be pieced together out of speeches which have been made or heard or read; the words are faithfully copied, but the occasion of their utterance is quite overlooked, and their meaning is most violently changed.
+      content: `Mr. Beebe sat back complacently, and Miss Alan began as follows: “It
+was a novel—and I am afraid, from what I can gather, not a very nice
+novel. It is so sad when people who have abilities misuse them, and I
+must say they nearly always do. Anyhow, she left it almost finished in
+the Grotto of the Calvary at the Capuccini Hotel at Amalfi while she
+went for a little ink. She said: ‘Can I have a little ink, please?’ But
+you know what Italians are, and meanwhile the Grotto fell roaring on to
+the beach, and the saddest thing of all is that she cannot remember
+what she has written. The poor thing was very ill after it, and so got
+tempted into cigarettes. It is a great secret, but I am glad to say
+that she is writing another novel. She told Teresa and Miss Pole the
+other day that she had got up all the local colour—this novel is to be
+about modern Italy; the other was historical—but that she could not
+start till she had an idea. First she tried Perugia for an inspiration,
+then she came here—this must on no account get round. And so cheerful
+through it all! I cannot help thinking that there is something to
+admire in everyone, even if you do not approve of them.”
 
-It is, perhaps, not superfluous to support these assertions by examples:
+Miss Alan was always thus being charitable against her better
+judgement. A delicate pathos perfumed her disconnected remarks, giving
+them unexpected beauty, just as in the decaying autumn woods there
+sometimes rise odours reminiscent of spring. She felt she had made
+almost too many allowances, and apologized hurriedly for her
+toleration.
 
-A seemingly inoffensive, well-made dream of a patient. She was going to market with her cook, who carried the basket. The butcher said to her when she asked him for something: "That is all gone," and wished to give her something else, remarking; "That's very good." She declines, and goes to the greengrocer, who wants to sell her a peculiar vegetable which is bound up in bundles and of a black color. She says: "I don't know that; I won't take it."
+“All the same, she is a little too—I hardly like to say unwomanly, but
+she behaved most strangely when the Emersons arrived.”
 
-The remark "That is all gone" arose from the treatment. A few days before I said myself to the patient that the earliest reminiscences of childhood are all gone as such, but are replaced by transferences and dreams. Thus I am
-the butcher.
+Mr. Beebe smiled as Miss Alan plunged into an anecdote which he knew
+she would be unable to finish in the presence of a gentleman.
 
-The second remark, "I don't know that" arose in a very different connection. The day before she had herself called out in rebuke to the cook (who, moreover, also appears in the dream): "Behave yourself properly; I don't know that"—that is, "I don't know this kind of behavior; I won't have it." The more harmless portion of this speech was arrived at by a displacement of the dream content; in the dream thoughts only the other portion of the speech played a part, because the dream work changed an imaginary situation into utter irrecognizability and complete inoffensiveness (while in a certain sense I behave in an unseemly way to the lady). The situation resulting in this phantasy is, however, nothing but a new edition of one that actually took place.
+“I don’t know, Miss Honeychurch, if you have noticed that Miss Pole,
+the lady who has so much yellow hair, takes lemonade. That old Mr.
+ Emerson, who puts things very strangely—”
 
-A dream apparently meaningless relates to figures. "She wants to pay something; her daughter takes three florins sixty-five kreuzers out of her purse; but she says: 'What are you doing? It only cost twenty-one kreuzers.'"
+Her jaw dropped. She was silent. Mr. Beebe, whose social resources were
+endless, went out to order some tea, and she continued to Lucy in a
+hasty whisper:
 
-The dreamer was a stranger who had placed her child at school in Vienna, and who was able to continue under my treatment so long as her daughter remained at Vienna. The day before the dream the directress of the school had recommended her to keep the child another year at school. In this case she would have been able to prolong her treatment by one year. The figures in the dream become important if it be remembered that time is money. One year equals 365 days, or, expressed in kreuzers, 365 kreuzers, which is three florins sixty-five kreuzers. The twenty-one kreuzers correspond with the three weeks which remained from the day of the dream to the end of the school term, and thus to the end of the treatment. It was obviously financial considerations which had moved the lady to refuse the proposal of the directress, and which were answerable for the triviality of the amount in the dream.
+“Stomach. He warned Miss Pole of her stomach-acidity, he called it—and
+he may have meant to be kind. I must say I forgot myself and laughed;
+it was so sudden. As Teresa truly said, it was no laughing matter. But
+the point is that Miss Lavish was positively _attracted_ by his
+mentioning S., and said she liked plain speaking, and meeting different
+grades of thought. She thought they were commercial
+travellers—‘drummers’ was the word she used—and all through dinner she
+tried to prove that England, our great and beloved country, rests on
+nothing but commerce. Teresa was very much annoyed, and left the table
+before the cheese, saying as she did so: ‘There, Miss Lavish, is one
+who can confute you better than I,’ and pointed to that beautiful
+picture of Lord Tennyson. Then Miss Lavish said: ‘Tut! The early
+ Victorians.’ Just imagine! ‘Tut! The early Victorians.’ My sister had
+gone, and I felt bound to speak. I said: ‘Miss Lavish, _I_ am an early
+ Victorian; at least, that is to say, I will hear no breath of censure
+against our dear Queen.’ It was horrible speaking. I reminded her how
+the Queen had been to Ireland when she did not want to go, and I must
+say she was dumbfounded, and made no reply. But, unluckily, Mr. Emerson
+overheard this part, and called in his deep voice: ‘Quite so, quite so!
+ I honour the woman for her Irish visit.’ The woman! I tell things so
+badly; but you see what a tangle we were in by this time, all on
+account of S. having been mentioned in the first place. But that was
+not all. After dinner Miss Lavish actually came up and said: ‘Miss
+ Alan, I am going into the smoking-room to talk to those two nice men.
+ Come, too.’ Needless to say, I refused such an unsuitable invitation,
+and she had the impertinence to tell me that it would broaden my ideas,
+and said that she had four brothers, all University men, except one who
+was in the army, who always made a point of talking to commercial
+travellers.”
 
-A lady, young, but already ten years married, heard that a friend of hers, Miss Elise L , of about the same age, had become engaged. This gave rise to the following dream:
+“Let me finish the story,” said Mr. Beebe, who had returned.
 
-She was sitting with her husband in the theater; the one side of the stalls was quite empty. Her husband tells her, Elise L and her fianc? had intended coming, but could only get some cheap seats, three for one florin fifty kreuzers, and these they would not take. In her opinion, that would not have mattered very much.
+“Miss Lavish tried Miss Pole, myself, everyone, and finally said: ‘I
+shall go alone.’ She went. At the end of five minutes she returned
+unobtrusively with a green baize board, and began playing patience.”
 
-The origin of the figures from the matter of the dream thoughts and the changes the figures underwent are of interest. Whence came the one florin fifty kreuzers? From a trifling occurrence of the previous day. Her sister-in- law had received 150 florins as a present from her husband, and had quickly got rid of it by buying some ornament. Note that 150 florins is one hundred times one florin fifty kreuzers. For the three concerned with the tickets, the only link is that Elise L is exactly three months younger than the dreamer. The scene in the dream is the repetition of a little adventure for which she has often been teased by her husband. She was once in a great hurry to get tickets in time for a piece, and when she came to the theater one side of the stalls was almost empty. It was therefore quite unnecessary for her to have been in such a hurry. Nor must we overlook the absurdity of the dream that two persons should take three tickets for the theater.
+“Whatever happened?” cried Lucy.
 
-Now for the dream ideas. It was stupid to have married so early; I need not have been in so great a hurry. Elise L 's example shows me that I should have been able to get a husband later; indeed, one a hundred times better if I had but waited. I could have bought three such men with the money (dowry).
+“No one knows. No one will ever know. Miss Lavish will never dare to
+tell, and Mr. Emerson does not think it worth telling.”
 
-Footnote 1: "Ich m?chte gerne etwas geniessen ohne 'Kosten' zu haben." A a pun upon the word "kosten," which has two meanings—"taste" and "cost." In "Die Traumdeutung," third edition, p. 71 footnote, Professor Freud remarks that "the finest example of dream interpretation left us by the ancients is based upon a pun" (from "The Interpretation of Dreams," by Artemidorus Daldianus). "Moreover, dreams are so intimately bound up with language that Ferenczi truly points out that every tongue has its own language of dreams. A dream is as a rule untranslatable into other languages."— TRANSLATOR.
+“Mr. Beebe—old Mr. Emerson, is he nice or not nice? I do so want to
+know.”
 
-Footnote 2: It is worthy of remark that eminent philologists maintain that the oldest languages used the same word for expressing quite general antitheses. In C. Abel's essay, "Ueber den Gegensinn der Urworter" (1884, the following examples of such words in England are given: "gleam—gloom"; "to lock—loch"; "down—The Downs"; "to step—to stop." In his essay on "The Origin of Language" ("Linguistic Essays," p. 240), Abel says: "When the Englishman says 'without,' is not his judgment based upon the comparative juxtaposition of two opposites, 'with' and 'out'; 'with' itself originally meant 'without,' as may still be seen in 'withdraw.' 'Bid' includes the opposite sense of giving and of proffering." Abel, "The English Verbs of Command," "Linguistic Essays," p. 104; see also Freud, "Ueber den Gegensinn der Urworte"; Jahrbuch f?r Psychoanalytische und Psychopathologische Forschungen, Band II., part i., p. 179).—TRANSLATOR.
+Mr. Beebe laughed and suggested that she should settle the question for
+herself.
 
-III
+“No; but it is so difficult. Sometimes he is so silly, and then I do
+not mind him. Miss Alan, what do you think? Is he nice?”
 
-WHY THE DREAM DISGUISES THE DESIRES
+The little old lady shook her head, and sighed disapprovingly. Mr.
+ Beebe, whom the conversation amused, stirred her up by saying:
 
-In the foregoing exposition we have now learnt something of the dream work; we must regard it as a quite special psychical process, which, so far as we are aware, resembles nothing else. To the dream work has been`
+“I consider that you are bound to class him as nice, Miss Alan, after
+that business of the violets.”
+
+“Violets? Oh, dear! Who told you about the violets? How do things get
+round? A pension is a bad place for gossips. No, I cannot forget how
+they behaved at Mr. Eager’s lecture at Santa Croce. Oh, poor Miss
+ Honeychurch! It really was too bad. No, I have quite changed. I do
+_not_ like the Emersons. They are _not_ nice.”
+
+Mr. Beebe smiled nonchalantly. He had made a gentle effort to introduce
+the Emersons into Bertolini society, and the effort had failed. He was
+almost the only person who remained friendly to them. Miss Lavish, who
+represented intellect, was avowedly hostile, and now the Miss Alans,
+who stood for good breeding, were following her. Miss Bartlett,
+smarting under an obligation, would scarcely be civil. The case of Lucy
+was different. She had given him a hazy account of her adventures in
+ Santa Croce, and he gathered that the two men had made a curious and
+possibly concerted attempt to annex her, to show her the world from
+their own strange standpoint, to interest her in their private sorrows
+and joys. This was impertinent; he did not wish their cause to be
+championed by a young girl: he would rather it should fail. After all,
+he knew nothing about them, and pension joys, pension sorrows, are
+flimsy things; whereas Lucy would be his parishioner.
+
+Lucy, with one eye upon the weather, finally said that she thought the
+ Emersons were nice; not that she saw anything of them now. Even their
+seats at dinner had been moved.
+
+“But aren’t they always waylaying you to go out with them, dear?” said
+the little lady inquisitively.
+
+“Only once. Charlotte didn’t like it, and said something—quite
+politely, of course.”
+
+“Most right of her. They don’t understand our ways. They must find
+their level.”
+
+Mr. Beebe rather felt that they had gone under. They had given up their
+attempt—if it was one—to conquer society, and now the father was almost
+as silent as the son. He wondered whether he would not plan a pleasant
+day for these folk before they left—some expedition, perhaps, with Lucy
+well chaperoned to be nice to them. It was one of Mr. Beebe’s chief
+pleasures to provide people with happy memories.
+
+Evening approached while they chatted; the air became brighter; the
+colours on the trees and hills were purified, and the Arno lost its
+muddy solidity and began to twinkle. There were a few streaks of
+bluish-green among the clouds, a few patches of watery light upon the
+earth, and then the dripping façade of San Miniato shone brilliantly in
+the declining sun.
+
+“Too late to go out,” said Miss Alan in a voice of relief. “All the
+galleries are shut.”
+
+“I think I shall go out,” said Lucy. “I want to go round the town in
+the circular tram—on the platform by the driver.”
+
+Her two companions looked grave. Mr. Beebe, who felt responsible for
+her in the absence of Miss Bartlett, ventured to say:`
     },
     {
       id: "section-10",
       title: "Section 10",
-      content: `transferred that bewilderment which its product, the dream, has aroused in us. In truth, the dream work is only the first recognition of a group of psychical processes to which must be referred the origin of hysterical symptoms, the ideas of morbid dread, obsession, and illusion. Condensation, and especially displacement, are never-failing features in these other processes. The regard for appearance remains, on the other hand, peculiar to the dream work. If this explanation brings the dream into line with the formation of psychical disease, it becomes the more important to fathom the essential conditions of processes like dream building. It will be probably a surprise to hear that neither the state of sleep nor illness is among the indispensable conditions. A whole number of phenomena of the everyday life of healthy persons, forgetfulness, slips in speaking and in holding things, together with a certain class of mistakes, are due to a psychical mechanism analogous to that of the dream and the other members of this group.
+      content: `“I wish we could. Unluckily I have letters. If you do want to go out
+alone, won’t you be better on your feet?”
 
-Displacement is the core of the problem, and the most striking of all the dream performances. A thorough investigation of the subject shows that the essential condition of displacement is purely psychological; it is in the nature of a motive. We get on the track by thrashing out experiences which one cannot avoid in the analysis of dreams. I had to break off the relations of my dream thoughts in the analysis of my dream on p. 8 because I found some experiences which I do not wish strangers to know, and which I could not relate without serious damage to important considerations. I added, it would be no use were I to select another instead of that particular dream; in every dream where the content is obscure or intricate, I should hit upon dream thoughts which call for secrecy. If, however, I continue the analysis for myself, without regard to those others, for whom, indeed, so personal an event as my dream cannot matter, I arrive finally at ideas which surprise me, which I have not known to be mine, which not only appear foreign to me, but which are unpleasant, and which I would like to oppose vehemently, whilst the chain of ideas running through the analysis intrudes upon me inexorably. I can only take these circumstances into account by admitting that these thoughts are actually part of my psychical life, possessing a certain psychical intensity or energy. However, by virtue of a particular psychological condition, the thoughts could not become conscious to me. I call this particular condition "Repression." It is therefore impossible for me not to recognize some casual relationship between the obscurity of the dream content and this state of repression—this incapacity of consciousness.
+“Italians, dear, you know,” said Miss Alan.
 
-Whence I conclude that the cause of the obscurity is the desire to conceal these thoughts. Thus I arrive at the conception of the dream distortion as the deed of the dream work, and of displacement serving to disguise this object.
+“Perhaps I shall meet someone who reads me through and through!”
 
-I will test this in my own dream, and ask myself, What is the thought which, quite innocuous in its distorted form, provokes my liveliest opposition in its real form? I remember that the free drive reminded me of the last expensive drive with a member of my family, the interpretation of the dream being: I should for once like to experience affection for which I should not have to pay, and that shortly before the dream I had to make a heavy disbursement for this very person. In this connection, I cannot get away from the thought that I regret this disbursement. It is only when I acknowledge this feeling that there is any sense in my wishing in the dream for an affection that should entail no outlay. And yet I can state on my honor that I did not hesitate for a moment when it became necessary to expend that sum. The regret, the counter-current, was unconscious to me. Why it was unconscious is quite another question which would lead us far away from the answer which, though within my knowledge, belongs elsewhere.
+But they still looked disapproval, and she so far conceded to Mr. Beebe
+as to say that she would only go for a little walk, and keep to the
+street frequented by tourists.
 
-If I subject the dream of another person instead of one of my own to analysis, the result is the same; the motives for convincing others is, however, changed. In the dream of a healthy person the only way for me to enable him to accept this repressed idea is the coherence of the dream thoughts. He is at liberty to reject this explanation. But if we are dealing with a person suffering from any neurosis—say from hysteria—the recognition of these repressed ideas is compulsory by reason of their connection with the symptoms of his illness and of the improvement resulting from exchanging the symptoms for the repressed ideas. Take the patient from whom I got the last dream about the three tickets for one florin fifty kreuzers. Analysis shows that she does not think highly of her husband, that she regrets having married him, that she would be glad to change him for some one else. It is true that she maintains that she loves her husband, that her emotional life knows nothing about this depreciation (a hundred times better!), but all her symptoms lead to the same conclusion as this dream. When her repressed memories had rewakened a certain period when she was conscious that she did not love her husband, her symptoms disappeared, and therewith disappeared her resistance to the interpretation of the dream.
+“She oughtn’t really to go at all,” said Mr. Beebe, as they watched her
+from the window, “and she knows it. I put it down to too much
+ Beethoven.”
 
-This conception of repression once fixed, together with the distortion of the dream in relation to repressed psychical matter, we are in a position to give a general exposition of the principal results which the analysis of dreams supplies. We learnt that the most intelligible and meaningful dreams are unrealized desires; the desires they pictured as realized are known to consciousness, have been held over from the daytime, and are of absorbing interest. The analysis of obscure and intricate dreams discloses something very similar; the dream scene again pictures as realized some desire which regularly proceeds from the dream ideas, but the picture is unrecognizable, and is only cleared up in the analysis. The desire itself is either one repressed, foreign to consciousness, or it is closely bound up with repressed ideas. The formula for these dreams may be thus stated: They are concealed realizations of repressed desires. It is interesting to note that they are right who regard the dream as foretelling the future. Although the future which the dream shows us is not that which will occur, but that which we would like to occur. Folk psychology proceeds here according to its wont; it believes what it wishes to believe.
+Chapter IV
+ Fourth Chapter
 
-Dreams can be divided into three classes according to their relation towards the realization of desire. Firstly come those which exhibit a non- repressed, non-concealed desire; these are dreams of the infantile type, becoming ever rarer among adults. Secondly, dreams which express in veiled form some repressed desire; these constitute by far the larger number of our dreams, and they require analysis for their understanding. Thirdly, these dreams where repression exists, but without or with but slight concealment.
+Mr. Beebe was right. Lucy never knew her desires so clearly as after
+music. She had not really appreciated the clergyman’s wit, nor the
+suggestive twitterings of Miss Alan. Conversation was tedious; she
+wanted something big, and she believed that it would have come to her
+on the wind-swept platform of an electric tram. This she might not
+attempt. It was unladylike. Why? Why were most big things unladylike?
+ Charlotte had once explained to her why. It was not that ladies were
+inferior to men; it was that they were different. Their mission was to
+inspire others to achievement rather than to achieve themselves.
+ Indirectly, by means of tact and a spotless name, a lady could
+accomplish much. But if she rushed into the fray herself she would be
+first censured, then despised, and finally ignored. Poems had been
+written to illustrate this point.
 
-These dreams are invariably accompanied by a feeling of dread which brings the dream to an end. This feeling of dread here replaces dream displacement; I regarded the dream work as having prevented this in the dream of the second class. It is not very difficult to prove that what is now present as intense dread in the dream was once desire, and is now secondary to the repression.
+There is much that is immortal in this medieval lady. The dragons have
+gone, and so have the knights, but still she lingers in our midst. She
+reigned in many an early Victorian castle, and was Queen of much early
+ Victorian song. It is sweet to protect her in the intervals of
+business, sweet to pay her honour when she has cooked our dinner well.
+ But alas! the creature grows degenerate. In her heart also there are
+springing up strange desires. She too is enamoured of heavy winds, and
+vast panoramas, and green expanses of the sea. She has marked the
+kingdom of this world, how full it is of wealth, and beauty, and war—a
+radiant crust, built around the central fires, spinning towards the
+receding heavens. Men, declaring that she inspires them to it, move
+joyfully over the surface, having the most delightful meetings with
+other men, happy, not because they are masculine, but because they are
+alive. Before the show breaks up she would like to drop the august
+title of the Eternal Woman, and go there as her transitory self.
 
-There are also definite dreams with a painful content, without the presence of any anxiety in the dream. These cannot be reckoned among dreams of dread; they have, however, always been used to prove the unimportance and the psychical futility of dreams. An analysis of such an example will show that it belongs to our second class of dreams—a perfectly concealed realization of repressed desires. Analysis will demonstrate at the same time how excellently adapted is the work of displacement to the concealment of desires.`
+Lucy does not stand for the medieval lady, who was rather an ideal to
+which she was bidden to lift her eyes when feeling serious. Nor has she
+any system of revolt. Here and there a restriction annoyed her
+particularly, and she would transgress it, and perhaps be sorry that
+she had done so. This afternoon she was peculiarly restive. She would
+really like to do something of which her well-wishers disapproved. As
+she might not go on the electric tram, she went to Alinari’s shop.
+
+There she bought a photograph of Botticelli’s “Birth of Venus.” Venus,
+being a pity, spoilt the picture, otherwise so charming, and Miss
+ Bartlett had persuaded her to do without it. (A pity in art of course
+signified the nude.) Giorgione’s “Tempesta,” the “Idolino,” some of the
+ Sistine frescoes and the Apoxyomenos, were added to it. She felt a
+little calmer then, and bought Fra Angelico’s “Coronation,” Giotto’s
+“Ascension of St. John,” some Della Robbia babies, and some Guido Reni
+ Madonnas. For her taste was catholic, and she extended uncritical
+approval to every well-known name.
+
+But though she spent nearly seven lire, the gates of liberty seemed
+still unopened. She was conscious of her discontent; it was new to her
+to be conscious of it. “The world,” she thought, “is certainly full of
+beautiful things, if only I could come across them.” It was not
+surprising that Mrs. Honeychurch disapproved of music, declaring that
+it always left her daughter peevish, unpractical, and touchy.
+
+“Nothing ever happens to me,” she reflected, as she entered the Piazza
+ Signoria and looked nonchalantly at its marvels, now fairly familiar to
+her. The great square was in shadow; the sunshine had come too late to
+strike it. Neptune was already unsubstantial in the twilight, half god,
+half ghost, and his fountain plashed dreamily to the men and satyrs who
+idled together on its marge. The Loggia showed as the triple entrance
+of a cave, wherein many a deity, shadowy, but immortal, looking forth
+upon the arrivals and departures of mankind. It was the hour of
+unreality—the hour, that is, when unfamiliar things are real. An older
+person at such an hour and in such a place might think that sufficient
+was happening to him, and rest content. Lucy desired more.
+
+She fixed her eyes wistfully on the tower of the palace, which rose out
+of the lower darkness like a pillar of roughened gold. It seemed no
+longer a tower, no longer supported by earth, but some unattainable
+treasure throbbing in the tranquil sky. Its brightness mesmerized her,
+still dancing before her eyes when she bent them to the ground and
+started towards home.
+
+Then something did happen.
+
+Two Italians by the Loggia had been bickering about a debt. “Cinque
+lire,” they had cried, “cinque lire!” They sparred at each other, and
+one of them was hit lightly upon the chest. He frowned; he bent towards
+ Lucy with a look of interest, as if he had an important message for
+her. He opened his lips to deliver it, and a stream of red came out
+between them and trickled down his unshaven chin.
+
+That was all. A crowd rose out of the dusk. It hid this extraordinary
+man from her, and bore him away to the fountain. Mr. George Emerson
+happened to be a few paces away, looking at her across the spot where
+the man had been. How very odd! Across something. Even as she caught
+sight of him he grew dim; the palace itself grew dim, swayed above her,
+fell on to her softly, slowly, noiselessly, and the sky fell with it.
+
+She thought: “Oh, what have I done?”
+
+“Oh, what have I done?” she murmured, and opened her eyes.
+
+George Emerson still looked at her, but not across anything. She had
+complained of dullness, and lo! one man was stabbed, and another held
+her in his arms.
+
+They were sitting on some steps in the Uffizi Arcade. He must have
+carried her. He rose when she spoke, and began to dust his knees. She
+repeated:
+
+“Oh, what have I done?”
+
+“You fainted.”
+
+“I—I am very sorry.”
+
+“How are you now?”
+
+“Perfectly well—absolutely well.” And she began to nod and smile.
+
+“Then let us come home. There’s no point in our stopping.”
+
+He held out his hand to pull her up. She pretended not to see it. The
+cries from the fountain—they had never ceased—rang emptily. The whole
+world seemed pale and void of its original meaning.
+
+“How very kind you have been! I might have hurt myself falling. But now
+ I am well. I can go alone, thank you.”
+
+His hand was still extended.
+
+“Oh, my photographs!” she exclaimed suddenly.
+
+“What photographs?”
+
+“I bought some photographs at Alinari’s. I must have dropped them out
+there in the square.” She looked at him cautiously. “Would you add to
+your kindness by fetching them?”
+
+He added to his kindness. As soon as he had turned his back, Lucy arose
+with the running of a maniac and stole down the arcade towards the
+ Arno.
+
+“Miss Honeychurch!”
+
+She stopped with her hand on her heart.
+
+“You sit still; you aren’t fit to go home alone.”
+
+“Yes, I am, thank you so very much.”
+
+“No, you aren’t. You’d go openly if you were.”
+
+“But I had rather—”
+
+“Then I don’t fetch your photographs.”
+
+“I had rather be alone.”
+
+He said imperiously: “The man is dead—the man is probably dead; sit
+down till you are rested.” She was bewildered, and obeyed him. “And
+don’t move till I come back.”`
     },
     {
       id: "section-11",
       title: "Section 11",
-      content: `A girl dreamt that she saw lying dead before her the only surviving child
+      content: `In the distance she saw creatures with black hoods, such as appear in
+dreams. The palace tower had lost the reflection of the declining day,
+and joined itself to earth. How should she talk to Mr. Emerson when he
+returned from the shadowy square? Again the thought occurred to her,
+“Oh, what have I done?”—the thought that she, as well as the dying man,
+had crossed some spiritual boundary.
 
-of her sister amid the same surroundings as a few years before she saw the first child lying dead. She was not sensible of any pain, but naturally combatted the view that the scene represented a desire of hers. Nor was that view necessary. Years ago it was at the funeral of the child that she had last seen and spoken to the man she loved. Were the second child to die, she would be sure to meet this man again in her sister's house. She is longing to meet him, but struggles against this feeling. The day of the dream she had taken a ticket for a lecture, which announced the presence of the man she always loved. The dream is simply a dream of impatience common to those which happen before a journey, theater, or simply anticipated pleasures. The longing is concealed by the shifting of the scene to the occasion when any joyous feeling were out of place, and yet where it did once exist. Note, further, that the emotional behavior in the dream is adapted, not to the displaced, but to the real but suppressed dream ideas. The scene anticipates the long-hoped-for meeting; there is here no call for painful emotions.
+He returned, and she talked of the murder. Oddly enough, it was an easy
+topic. She spoke of the Italian character; she became almost garrulous
+over the incident that had made her faint five minutes before. Being
+strong physically, she soon overcame the horror of blood. She rose
+without his assistance, and though wings seemed to flutter inside her,
+she walked firmly enough towards the Arno. There a cabman signalled to
+them; they refused him.
 
-There has hitherto been no occasion for philosophers to bestir themselves with a psychology of repression. We must be allowed to construct some clear conception as to the origin of dreams as the first steps in this unknown territory. The scheme which we have formulated not only from a study of dreams is, it is true, already somewhat complicated, but we cannot find any simpler one that will suffice. We hold that our psychical apparatus contains two procedures for the construction of thoughts. The second one has the advantage that its products find an open path to consciousness, whilst the activity of the first procedure is unknown to itself, and can only arrive at consciousness through the second one. At the borderland of these two procedures, where the first passes over into the second, a censorship is established which only passes what pleases it, keeping back everything else. That which is rejected by the censorship is, according to our definition, in a state of repression. Under certain conditions, one of which is the sleeping state, the balance of power between the two procedures is so changed that what is repressed can no longer be kept back. In the sleeping state this may possibly occur through the negligence of the censor; what has been hitherto repressed will now succeed in finding its way to consciousness. But as the censorship is never absent, but merely off guard, certain alterations must be conceded so as to placate it. It is a compromise which becomes conscious in this case—a compromise between what one procedure has in view and the demands of the other. Repression, laxity of the censor, compromise—this is the foundation for the origin of many another psychological process, just as it is for the dream. In such compromises we can observe the processes of condensation, of displacement, the acceptance of superficial associations, which we have found in the dream work.
+“And the murderer tried to kiss him, you say—how very odd Italians
+are!—and gave himself up to the police! Mr. Beebe was saying that
+ Italians know everything, but I think they are rather childish. When my
+cousin and I were at the Pitti yesterday—What was that?”
 
-It is not for us to deny the demonic element which has played a part in constructing our explanation of dream work. The impression left is that the formation of obscure dreams proceeds as if a person had something to say which must be agreeable for another person upon whom he is dependent to hear. It is by the use of this image that we figure to ourselves the conception of the dream distortion and of the censorship, and ventured to crystallize our impression in a rather crude, but at least definite, psychological theory.
+He had thrown something into the stream.
 
-Whatever explanation the future may offer of these first and second procedures, we shall expect a confirmation of our correlate that the second procedure commands the entrance to consciousness, and can exclude the first from consciousness.
+“What did you throw in?”
 
-Once the sleeping state overcome, the censorship resumes complete sway, and is now able to revoke that which was granted in a moment of weakness. That the forgetting of dreams explains this in part, at least, we are convinced by our experience, confirmed again and again. During the relation of a dream, or during analysis of one, it not infrequently happens that some fragment of the dream is suddenly forgotten. This fragment so forgotten invariably contains the best and readiest approach to an understanding of the dream. Probably that is why it sinks into oblivion—i.e., into a renewed suppression.
+“Things I didn’t want,” he said crossly.
 
-Viewing the dream content as the representation of a realized desire, and referring its vagueness to the changes made by the censor in the repressed matter, it is no longer difficult to grasp the function of dreams. In fundamental contrast with those saws which assume that sleep is disturbed by dreams, we hold the dream as the guardian of sleep. So far as children's dreams are concerned, our view should find ready acceptance.
+“Mr. Emerson!”
 
-The sleeping state or the psychical change to sleep, whatsoever it be, is brought about by the child being sent to sleep or compelled thereto by fatigue, only assisted by the removal of all stimuli which might open other objects to the psychical apparatus. The means which serve to keep external stimuli distant are known; but what are the means we can employ to depress the internal psychical stimuli which frustrate sleep? Look at a mother getting
+“Well?”
 
-her child to sleep. The child is full of beseeching; he wants another kiss; he wants to play yet awhile. His requirements are in part met, in part drastically put off till the following day. Clearly these desires and needs, which agitate him, are hindrances to sleep. Every one knows the charming story of the bad boy (Baldwin Groller's) who awoke at night bellowing out, "I want the rhinoceros." A really good boy, instead of bellowing, would have dreamt that he was playing with the rhinoceros. Because the dream which realizes his desire is believed during sleep, it removes the desire and makes sleep possible. It cannot be denied that this belief accords with the dream image, because it is arrayed in the psychical appearance of probability; the child is without the capacity which it will acquire later to distinguish hallucinations or phantasies from reality.
+“Where are the photographs?”
 
-The adult has learnt this differentiation; he has also learnt the futility of desire, and by continuous practice manages to postpone his aspirations, until they can be granted in some roundabout method by a change in the external world. For this reason it is rare for him to have his wishes realized during sleep in the short psychical way. It is even possible that this never happens, and that everything which appears to us like a child's dream demands a much more elaborate explanation. Thus it is that for adults—for every sane person without exception—a differentiation of the psychical matter has been fashioned which the child knew not. A psychical procedure has been reached which, informed by the experience of life, exercises with jealous power a dominating and restraining influence upon psychical emotions; by its relation to consciousness, and by its spontaneous mobility, it is endowed with the greatest means of psychical power. A portion of the infantile emotions has been withheld from this procedure as useless to life, and all the thoughts which flow from these are found in the state of repression.`
+He was silent.
+
+“I believe it was my photographs that you threw away.”
+
+“I didn’t know what to do with them,” he cried, and his voice was that
+of an anxious boy. Her heart warmed towards him for the first time.
+“They were covered with blood. There! I’m glad I’ve told you; and all
+the time we were making conversation I was wondering what to do with
+them.” He pointed down-stream. “They’ve gone.” The river swirled under
+the bridge, “I did mind them so, and one is so foolish, it seemed
+better that they should go out to the sea—I don’t know; I may just mean
+that they frightened me.” Then the boy verged into a man. “For
+something tremendous has happened; I must face it without getting
+muddled. It isn’t exactly that a man has died.”
+
+Something warned Lucy that she must stop him.
+
+“It has happened,” he repeated, “and I mean to find out what it is.”
+
+“Mr. Emerson—”
+
+He turned towards her frowning, as if she had disturbed him in some
+abstract quest.
+
+“I want to ask you something before we go in.”
+
+They were close to their pension. She stopped and leant her elbows
+against the parapet of the embankment. He did likewise. There is at
+times a magic in identity of position; it is one of the things that
+have suggested to us eternal comradeship. She moved her elbows before
+saying:
+
+“I have behaved ridiculously.”
+
+He was following his own thoughts.
+
+“I was never so much ashamed of myself in my life; I cannot think what
+came over me.”
+
+“I nearly fainted myself,” he said; but she felt that her attitude
+repelled him.
+
+“Well, I owe you a thousand apologies.”
+
+“Oh, all right.”
+
+“And—this is the real point—you know how silly people are
+gossiping—ladies especially, I am afraid—you understand what I mean?”
+
+“I’m afraid I don’t.”
+
+“I mean, would you not mention it to any one, my foolish behaviour?”
+
+“Your behaviour? Oh, yes, all right—all right.”
+
+“Thank you so much. And would you—”
+
+She could not carry her request any further. The river was rushing
+below them, almost black in the advancing night. He had thrown her
+photographs into it, and then he had told her the reason. It struck her
+that it was hopeless to look for chivalry in such a man. He would do
+her no harm by idle gossip; he was trustworthy, intelligent, and even
+kind; he might even have a high opinion of her. But he lacked chivalry;
+his thoughts, like his behaviour, would not be modified by awe. It was
+useless to say to him, “And would you—” and hope that he would complete
+the sentence for himself, averting his eyes from her nakedness like the
+knight in that beautiful picture. She had been in his arms, and he
+remembered it, just as he remembered the blood on the photographs that
+she had bought in Alinari’s shop. It was not exactly that a man had
+died; something had happened to the living: they had come to a
+situation where character tells, and where childhood enters upon the
+branching paths of Youth.
+
+“Well, thank you so much,” she repeated, “How quickly these accidents
+do happen, and then one returns to the old life!”
+
+“I don’t.”
+
+Anxiety moved her to question him.
+
+His answer was puzzling: “I shall probably want to live.”
+
+“But why, Mr. Emerson? What do you mean?”
+
+“I shall want to live, I say.”
+
+Leaning her elbows on the parapet, she contemplated the River Arno,
+whose roar was suggesting some unexpected melody to her ears.
+
+Chapter V
+ Possibilities of a Pleasant Outing
+
+It was a family saying that “you never knew which way Charlotte
+ Bartlett would turn.” She was perfectly pleasant and sensible over
+ Lucy’s adventure, found the abridged account of it quite adequate, and
+paid suitable tribute to the courtesy of Mr. George Emerson. She and
+ Miss Lavish had had an adventure also. They had been stopped at the
+ Dazio coming back, and the young officials there, who seemed impudent
+and _désœuvré_, had tried to search their reticules for provisions. It
+might have been most unpleasant. Fortunately Miss Lavish was a match
+for any one.
+
+For good or for evil, Lucy was left to face her problem alone. None of
+her friends had seen her, either in the Piazza or, later on, by the
+embankment. Mr. Beebe, indeed, noticing her startled eyes at
+dinner-time, had again passed to himself the remark of “Too much
+ Beethoven.” But he only supposed that she was ready for an adventure,
+not that she had encountered it. This solitude oppressed her; she was
+accustomed to have her thoughts confirmed by others or, at all events,
+contradicted; it was too dreadful not to know whether she was thinking
+right or wrong.
+
+At breakfast next morning she took decisive action. There were two
+plans between which she had to choose. Mr. Beebe was walking up to the
+ Torre del Gallo with the Emersons and some American ladies. Would Miss
+ Bartlett and Miss Honeychurch join the party? Charlotte declined for
+herself; she had been there in the rain the previous afternoon. But she
+thought it an admirable idea for Lucy, who hated shopping, changing
+money, fetching letters, and other irksome duties—all of which Miss
+ Bartlett must accomplish this morning and could easily accomplish
+alone.
+
+“No, Charlotte!” cried the girl, with real warmth. “It’s very kind of
+ Mr. Beebe, but I am certainly coming with you. I had much rather.”
+
+“Very well, dear,” said Miss Bartlett, with a faint flush of pleasure
+that called forth a deep flush of shame on the cheeks of Lucy. How
+abominably she behaved to Charlotte, now as always! But now she should
+alter. All morning she would be really nice to her.
+
+She slipped her arm into her cousin’s, and they started off along the
+ Lung’ Arno. The river was a lion that morning in strength, voice, and
+colour. Miss Bartlett insisted on leaning over the parapet to look at
+it. She then made her usual remark, which was “How I do wish Freddy and
+your mother could see this, too!”
+
+Lucy fidgeted; it was tiresome of Charlotte to have stopped exactly
+where she did.
+
+“Look, Lucia! Oh, you are watching for the Torre del Gallo party. I
+feared you would repent you of your choice.”
+
+Serious as the choice had been, Lucy did not repent. Yesterday had been
+a muddle—queer and odd, the kind of thing one could not write down
+easily on paper—but she had a feeling that Charlotte and her shopping
+were preferable to George Emerson and the summit of the Torre del
+ Gallo. Since she could not unravel the tangle, she must take care not
+to re-enter it. She could protest sincerely against Miss Bartlett’s
+insinuations.`
     },
     {
       id: "section-12",
       title: "Section 12",
-      content: `Whilst the procedure in which we recognize our normal ego reposes upon the desire for sleep, it appears compelled by the psycho-physiological conditions of sleep to abandon some of the energy with which it was wont during the day to keep down what was repressed. This neglect is really harmless; however much the emotions of the child's spirit may be stirred, they find the approach to consciousness rendered difficult, and that to movement blocked in consequence of the state of sleep. The danger of their disturbing sleep must, however, be avoided. Moreover, we must admit that even in deep sleep some amount of free attention is exerted as a protection against sense-stimuli which might, perchance, make an awakening seem wiser than the continuance of sleep. Otherwise we could not explain the fact of our being always awakened by stimuli of certain quality. As the old physiologist Burdach pointed out, the mother is awakened by the whimpering of her child, the miller by the cessation of his mill, most people by gently calling out their names. This attention, thus on the alert, makes use of the internal stimuli arising from repressed desires, and fuses them into the dream, which as a compromise satisfies both procedures at the same time. The dream creates a form of psychical release for the wish which is either suppressed or formed by the aid of repression, inasmuch as it presents it as realized. The other procedure is also satisfied, since the continuance of the sleep is assured. Our ego here gladly behaves like a child; it makes the dream pictures believable, saying, as it were, "Quite right, but let me sleep." The contempt which, once awakened, we bear the dream, and which rests upon the absurdity and apparent illogicality of the dream, is probably nothing but the reasoning of our sleeping ego on the feelings about what was repressed; with greater right it should rest upon the incompetency of this disturber of our sleep. In sleep we are now and then aware of this contempt; the dream content transcends the censorship rather too much, we think, "It's only a dream," and sleep on.
+      content: `But though she had avoided the chief actor, the scenery unfortunately
+remained. Charlotte, with the complacency of fate, led her from the
+river to the Piazza Signoria. She could not have believed that stones,
+a Loggia, a fountain, a palace tower, would have such significance. For
+a moment she understood the nature of ghosts.
 
-It is no objection to this view if there are borderlines for the dream where its function, to preserve sleep from interruption, can no longer be maintained—as in the dreams of impending dread. It is here changed for another function—to suspend the sleep at the proper time. It acts like a conscientious night-watchman, who first does his duty by quelling disturbances so as not to waken the citizen, but equally does his duty quite properly when he awakens the street should the causes of the trouble seem to him serious and himself unable to cope with them alone.
+The exact site of the murder was occupied, not by a ghost, but by Miss
+ Lavish, who had the morning newspaper in her hand. She hailed them
+briskly. The dreadful catastrophe of the previous day had given her an
+idea which she thought would work up into a book.
 
-This function of dreams becomes especially well marked when there arises some incentive for the sense perception. That the senses aroused during sleep influence the dream is well known, and can be experimentally verified; it is one of the certain but much overestimated results of the medical investigation of dreams. Hitherto there has been an insoluble riddle connected with this discovery. The stimulus to the sense by which the investigator affects the sleeper is not properly recognized in the dream, but is intermingled with a number of indefinite interpretations, whose determination appears left to psychical free-will. There is, of course, no such psychical free- will. To an external sense-stimulus the sleeper can react in many ways. Either
+“Oh, let me congratulate you!” said Miss Bartlett. “After your despair
+of yesterday! What a fortunate thing!”
 
-he awakens or he succeeds in sleeping on. In the latter case he can make use of the dream to dismiss the external stimulus, and this, again, in more ways than one. For instance, he can stay the stimulus by dreaming of a scene which is absolutely intolerable to him. This was the means used by one who was troubled by a painful perineal abscess. He dreamt that he was on horseback, and made use of the poultice, which was intended to alleviate his pain, as a saddle, and thus got away from the cause of the trouble. Or, as is more frequently the case, the external stimulus undergoes a new rendering, which leads him to connect it with a repressed desire seeking its realization, and robs him of its reality, and is treated as if it were a part of the psychical matter. Thus, some one dreamt that he had written a comedy which embodied a definite motif; it was being performed; the first act was over amid enthusiastic applause; there was great clapping. At this moment the dreamer must have succeeded in prolonging his sleep despite the disturbance, for when he woke he no longer heard the noise; he concluded rightly that some one must have been beating a carpet or bed. The dreams which come with a loud noise just before waking have all attempted to cover the stimulus to waking by some other explanation, and thus to prolong the sleep for a little while.
+“Aha! Miss Honeychurch, come you here I am in luck. Now, you are to
+tell me absolutely everything that you saw from the beginning.” Lucy
+poked at the ground with her parasol.
 
-Whosoever has firmly accepted this censorship as the chief motive for the distortion of dreams will not be surprised to learn as the result of dream interpretation that most of the dreams of adults are traced by analysis to erotic desires. This assertion is not drawn from dreams obviously of a sexual nature, which are known to all dreamers from their own experience, and are the only ones usually described as "sexual dreams." These dreams are ever sufficiently mysterious by reason of the choice of persons who are made the objects of sex, the removal of all the barriers which cry halt to the dreamer's sexual needs in his waking state, the many strange reminders as to details of what are called perversions. But analysis discovers that, in many other dreams in whose manifest content nothing erotic can be found, the work of interpretation shows them up as, in reality, realization of sexual desires; whilst, on the other hand, that much of the thought-making when awake, the thoughts saved us as surplus from the day only, reaches presentation in dreams with the help of repressed erotic desires.
+“But perhaps you would rather not?”
 
-Towards the explanation of this statement, which is no theoretical postulate, it must be remembered that no other class of instincts has required so vast a suppression at the behest of civilization as the sexual, whilst their
-mastery by the highest psychical processes are in most persons soonest of all relinquished. Since we have learnt to understand infantile sexuality, often so vague in its expression, so invariably overlooked and misunderstood, we are justified in saying that nearly every civilized person has retained at some point or other the infantile type of sex life; thus we understand that repressed infantile sex desires furnish the most frequent and most powerful impulses for the formation of dreams.1`
+“I’m sorry—if you could manage without it, I think I would rather not.”
+
+The elder ladies exchanged glances, not of disapproval; it is suitable
+that a girl should feel deeply.
+
+“It is I who am sorry,” said Miss Lavish. “We literary hacks are
+shameless creatures. I believe there’s no secret of the human heart
+into which we wouldn’t pry.”
+
+She marched cheerfully to the fountain and back, and did a few
+calculations in realism. Then she said that she had been in the Piazza
+since eight o’clock collecting material. A good deal of it was
+unsuitable, but of course one always had to adapt. The two men had
+quarrelled over a five-franc note. For the five-franc note she should
+substitute a young lady, which would raise the tone of the tragedy, and
+at the same time furnish an excellent plot.
+
+“What is the heroine’s name?” asked Miss Bartlett.
+
+“Leonora,” said Miss Lavish; her own name was Eleanor.
+
+“I do hope she’s nice.”
+
+That desideratum would not be omitted.
+
+“And what is the plot?”
+
+Love, murder, abduction, revenge, was the plot. But it all came while
+the fountain plashed to the satyrs in the morning sun.
+
+“I hope you will excuse me for boring on like this,” Miss Lavish
+concluded. “It is so tempting to talk to really sympathetic people. Of
+course, this is the barest outline. There will be a deal of local
+colouring, descriptions of Florence and the neighbourhood, and I shall
+also introduce some humorous characters. And let me give you all fair
+warning: I intend to be unmerciful to the British tourist.”
+
+“Oh, you wicked woman,” cried Miss Bartlett. “I am sure you are
+thinking of the Emersons.”
+
+Miss Lavish gave a Machiavellian smile.
+
+“I confess that in Italy my sympathies are not with my own countrymen.
+ It is the neglected Italians who attract me, and whose lives I am going
+to paint so far as I can. For I repeat and I insist, and I have always
+held most strongly, that a tragedy such as yesterday’s is not the less
+tragic because it happened in humble life.”
+
+There was a fitting silence when Miss Lavish had concluded. Then the
+cousins wished success to her labours, and walked slowly away across
+the square.
+
+“She is my idea of a really clever woman,” said Miss Bartlett. “That
+last remark struck me as so particularly true. It should be a most
+pathetic novel.”
+
+Lucy assented. At present her great aim was not to get put into it. Her
+perceptions this morning were curiously keen, and she believed that
+ Miss Lavish had her on trial for an _ingenué_.
+
+“She is emancipated, but only in the very best sense of the word,”
+continued Miss Bartlett slowly. “None but the superficial would be
+shocked at her. We had a long talk yesterday. She believes in justice
+and truth and human interest. She told me also that she has a high
+opinion of the destiny of woman—Mr. Eager! Why, how nice! What a
+pleasant surprise!”
+
+“Ah, not for me,” said the chaplain blandly, “for I have been watching
+you and Miss Honeychurch for quite a little time.”
+
+“We were chatting to Miss Lavish.”
+
+His brow contracted.
+
+“So I saw. Were you indeed? Andate via! sono occupato!” The last remark
+was made to a vender of panoramic photographs who was approaching with
+a courteous smile. “I am about to venture a suggestion. Would you and
+ Miss Honeychurch be disposed to join me in a drive some day this week—a
+drive in the hills? We might go up by Fiesole and back by Settignano.
+ There is a point on that road where we could get down and have an
+hour’s ramble on the hillside. The view thence of Florence is most
+beautiful—far better than the hackneyed view of Fiesole. It is the view
+that Alessio Baldovinetti is fond of introducing into his pictures.
+ That man had a decided feeling for landscape. Decidedly. But who looks
+at it to-day? Ah, the world is too much for us.”
+
+Miss Bartlett had not heard of Alessio Baldovinetti, but she knew that
+ Mr. Eager was no commonplace chaplain. He was a member of the
+residential colony who had made Florence their home. He knew the people
+who never walked about with Baedekers, who had learnt to take a siesta
+after lunch, who took drives the pension tourists had never heard of,
+and saw by private influence galleries which were closed to them.
+ Living in delicate seclusion, some in furnished flats, others in
+ Renaissance villas on Fiesole’s slope, they read, wrote, studied, and
+exchanged ideas, thus attaining to that intimate knowledge, or rather
+perception, of Florence which is denied to all who carry in their
+pockets the coupons of Cook.
+
+Therefore an invitation from the chaplain was something to be proud of.
+ Between the two sections of his flock he was often the only link, and
+it was his avowed custom to select those of his migratory sheep who
+seemed worthy, and give them a few hours in the pastures of the
+permanent. Tea at a Renaissance villa? Nothing had been said about it
+yet. But if it did come to that—how Lucy would enjoy it!
+
+A few days ago and Lucy would have felt the same. But the joys of life
+were grouping themselves anew. A drive in the hills with Mr. Eager and
+ Miss Bartlett—even if culminating in a residential tea-party—was no
+longer the greatest of them. She echoed the raptures of Charlotte
+somewhat faintly. Only when she heard that Mr. Beebe was also coming
+did her thanks become more sincere.
+
+“So we shall be a _partie carrée_,” said the chaplain. “In these days
+of toil and tumult one has great needs of the country and its message
+of purity. Andate via! andate presto, presto! Ah, the town! Beautiful
+as it is, it is the town.”
+
+They assented.
+
+“This very square—so I am told—witnessed yesterday the most sordid of
+tragedies. To one who loves the Florence of Dante and Savonarola there
+is something portentous in such desecration—portentous and
+humiliating.”
+
+“Humiliating indeed,” said Miss Bartlett. “Miss Honeychurch happened to
+be passing through as it happened. She can hardly bear to speak of it.”
+ She glanced at Lucy proudly.
+
+“And how came we to have you here?” asked the chaplain paternally.
+
+Miss Bartlett’s recent liberalism oozed away at the question. “Do not
+blame her, please, Mr. Eager. The fault is mine: I left her
+unchaperoned.”
+
+“So you were here alone, Miss Honeychurch?” His voice suggested
+sympathetic reproof but at the same time indicated that a few harrowing
+details would not be unacceptable. His dark, handsome face drooped
+mournfully towards her to catch her reply.
+
+“Practically.”
+
+“One of our pension acquaintances kindly brought her home,” said Miss
+ Bartlett, adroitly concealing the sex of the preserver.
+
+“For her also it must have been a terrible experience. I trust that
+neither of you was at all—that it was not in your immediate proximity?”
+
+Of the many things Lucy was noticing to-day, not the least remarkable
+was this: the ghoulish fashion in which respectable people will nibble
+after blood. George Emerson had kept the subject strangely pure.
+
+“He died by the fountain, I believe,” was her reply.
+
+“And you and your friend—”
+
+“Were over at the Loggia.”`
     },
     {
       id: "section-13",
       title: "Section 13",
-      content: `If the dream, which is the expression of some erotic desire, succeeds in making its manifest content appear innocently asexual, it is only possible in one way. The matter of these sexual presentations cannot be exhibited as such, but must be replaced by allusions, suggestions, and similar indirect means; differing from other cases of indirect presentation, those used in dreams must be deprived of direct understanding. The means of presentation which answer these requirements are commonly termed "symbols." A special interest has been directed towards these, since it has been observed that the dreamers of the same language use the like symbols—indeed, that in certain cases community of symbol is greater than community of speech. Since the dreamers do not themselves know the meaning of the symbols they use, it remains a puzzle whence arises their relationship with what they replace and denote. The fact itself is undoubted, and becomes of importance for the technique of the interpretation of dreams, since by the aid of a knowledge of this symbolism it is possible to understand the meaning of the elements of a dream, or parts of a dream, occasionally even the whole dream itself, without having to question the dreamer as to his own ideas. We thus come near to the popular idea of an interpretation of dreams, and, on the other hand, possess again the technique of the ancients, among whom the interpretation of dreams was identical with their explanation through symbolism.
+      content: `“That must have saved you much. You have not, of course, seen the
+disgraceful illustrations which the gutter Press—This man is a public
+nuisance; he knows that I am a resident perfectly well, and yet he goes
+on worrying me to buy his vulgar views.”
 
-Though the study of dream symbolism is far removed from finality, we now possess a series of general statements and of particular observations which are quite certain. There are symbols which practically always have the same meaning: Emperor and Empress (King and Queen) always mean the parents; room, a woman2, and so on. The sexes are represented by a great variety of symbols, many of which would be at first quite incomprehensible had not the clews to the meaning been often obtained through other channels.
+Surely the vendor of photographs was in league with Lucy—in the eternal
+league of Italy with youth. He had suddenly extended his book before
+ Miss Bartlett and Mr. Eager, binding their hands together by a long
+glossy ribbon of churches, pictures, and views.
 
-There are symbols of universal circulation, found in all dreamers, of one range of speech and culture; there are others of the narrowest individual significance which an individual has built up out of his own material. In the first class those can be differentiated whose claim can be at once recognized by the replacement of sexual things in common speech (those, for instance, arising from agriculture, as reproduction, seed) from others whose sexual references appear to reach back to the earliest times and to the obscurest depths of our image-building. The power of building symbols in both these special forms of symbols has not died out. Recently discovered things, like the airship, are at once brought into universal use as sex symbols.
+“This is too much!” cried the chaplain, striking petulantly at one of
+ Fra Angelico’s angels. She tore. A shrill cry rose from the vendor. The
+book it seemed, was more valuable than one would have supposed.
 
-It would be quite an error to suppose that a profounder knowledge of dream symbolism (the "Language of Dreams") would make us independent of questioning the dreamer regarding his impressions about the dream, and would give us back the whole technique of ancient dream interpreters. Apart from individual symbols and the variations in the use of what is general, one never knows whether an element in the dream is to be understood symbolically or in its proper meaning; the whole content of the dream is certainly not to be interpreted symbolically. The knowledge of dream symbols will only help us in understanding portions of the dream content, and does not render the use of the technical rules previously given at all superfluous. But it must be of the greatest service in interpreting a dream just when the impressions of the dreamer are withheld or are insufficient.
+“Willingly would I purchase—” began Miss Bartlett.
 
-Dream symbolism proves also indispensable for understanding the so- called "typical" dreams and the dreams that "repeat themselves." Dream symbolism leads us far beyond the dream; it does not belong only to dreams, but is likewise dominant in legend, myth, and saga, in wit and in folklore. It compels us to pursue the inner meaning of the dream in these productions.
+“Ignore him,” said Mr. Eager sharply, and they all walked rapidly away
+from the square.
 
-But we must acknowledge that symbolism is not a result of the dream work, but is a peculiarity probably of our unconscious thinking, which furnishes to the dream work the matter for condensation, displacement, and dramatization.
+But an Italian can never be ignored, least of all when he has a
+grievance. His mysterious persecution of Mr. Eager became relentless;
+the air rang with his threats and lamentations. He appealed to Lucy;
+would not she intercede? He was poor—he sheltered a family—the tax on
+bread. He waited, he gibbered, he was recompensed, he was dissatisfied,
+he did not leave them until he had swept their minds clean of all
+thoughts whether pleasant or unpleasant.
 
-Footnote 1: Freud, "Three Contributions to Sexual Theory," translated by A.A. Brill (Journal of Nervous and Mental Disease Publishing Company, New York).
+Shopping was the topic that now ensued. Under the chaplain’s guidance
+they selected many hideous presents and mementoes—florid little
+picture-frames that seemed fashioned in gilded pastry; other little
+frames, more severe, that stood on little easels, and were carven out
+of oak; a blotting book of vellum; a Dante of the same material; cheap
+mosaic brooches, which the maids, next Christmas, would never tell from
+real; pins, pots, heraldic saucers, brown art-photographs; Eros and
+ Psyche in alabaster; St. Peter to match—all of which would have cost
+less in London.
 
-Footnote 2: The words from "and" to "channels" in the next sentence is a short summary of the passage in the original. As this book will be read by other than professional people the passage has not been translated, in deference to English opinion.—TRANSLATOR.
+This successful morning left no pleasant impressions on Lucy. She had
+been a little frightened, both by Miss Lavish and by Mr. Eager, she
+knew not why. And as they frightened her, she had, strangely enough,
+ceased to respect them. She doubted that Miss Lavish was a great
+artist. She doubted that Mr. Eager was as full of spirituality and
+culture as she had been led to suppose. They were tried by some new
+test, and they were found wanting. As for Charlotte—as for Charlotte
+she was exactly the same. It might be possible to be nice to her; it
+was impossible to love her.
 
-IV DREAM ANALYSIS
+“The son of a labourer; I happen to know it for a fact. A mechanic of
+some sort himself when he was young; then he took to writing for the
+ Socialistic Press. I came across him at Brixton.”
 
-Perhaps we shall now begin to suspect that dream interpretation is capable of giving us hints about the structure of our psychic apparatus which we have thus far expected in vain from philosophy. We shall not, however, follow this track, but return to our original problem as soon as we have cleared up the subject of dream-disfigurement. The question has arisen how dreams with disagreeable content can be analyzed as the fulfillment of wishes. We see now that this is possible in case dream-disfigurement has taken place, in case the disagreeable content serves only as a disguise for what is wished. Keeping in mind our assumptions in regard to the two psychic instances, we may now proceed to say: disagreeable dreams, as a matter of fact, contain something which is disagreeable to the second instance, but which at the same time fulfills a wish of the first instance. They are wish dreams in the sense that every dream originates in the first instance, while the second instance acts towards the dream only in repelling, not in a creative manner. If we limit ourselves to a consideration of what the second instance contributes to the dream, we can never understand the dream. If we do so, all the riddles which the authors have found in the dream remain unsolved.
+They were talking about the Emersons.
 
-That the dream actually has a secret meaning, which turns out to be the fulfillment of a wish, must be proved afresh for every case by means of an analysis. I therefore select several dreams which have painful contents and attempt an analysis of them. They are partly dreams of hysterical subjects, which require long preliminary statements, and now and then also an examination of the psychic processes which occur in hysteria. I cannot, however, avoid this added difficulty in the exposition.
+“How wonderfully people rise in these days!” sighed Miss Bartlett,
+fingering a model of the leaning Tower of Pisa.
 
-When I give a psychoneurotic patient analytical treatment, dreams are always, as I have said, the subject of our discussion. It must, therefore, give him all the psychological explanations through whose aid I myself have come to an understanding of his symptoms, and here I undergo an unsparing criticism, which is perhaps not less keen than that I must expect from my colleagues. Contradiction of the thesis that all dreams are the fulfillments of wishes is raised by my patients with perfect regularity. Here are several examples of the dream material which is offered me to refute this position.
+“Generally,” replied Mr. Eager, “one has only sympathy for their
+success. The desire for education and for social advance—in these
+things there is something not wholly vile. There are some working men
+whom one would be very willing to see out here in Florence—little as
+they would make of it.”
 
-"You always tell me that the dream is a wish fulfilled," begins a clever lady patient. "Now I shall tell you a dream in which the content is quite the opposite, in which a wish of mine is not fulfilled. How do you reconcile that with your theory? The dream is as follows:—
+“Is he a journalist now?” Miss Bartlett asked.
 
-"I want to give a supper, but having nothing at hand except some smoked salmon, I think of going marketing, but I remember that it is Sunday afternoon, when all the shops are closed. I next try to telephone to some caterers, but the telephone is out of order Thus I must resign my wish to
-give a supper."
+“He is not; he made an advantageous marriage.”
 
-I answer, of course, that only the analysis can decide the meaning of this dream, although I admit that at first sight it seems sensible and coherent, and looks like the opposite of a wish-fulfillment. "But what occurrence has given rise to this dream?" I ask. "You know that the stimulus for a dream always lies among the experiences of the preceding day."`
+He uttered this remark with a voice full of meaning, and ended with a
+sigh.
+
+“Oh, so he has a wife.”
+
+“Dead, Miss Bartlett, dead. I wonder—yes I wonder how he has the
+effrontery to look me in the face, to dare to claim acquaintance with
+me. He was in my London parish long ago. The other day in Santa Croce,
+when he was with Miss Honeychurch, I snubbed him. Let him beware that
+he does not get more than a snub.”
+
+“What?” cried Lucy, flushing.
+
+“Exposure!” hissed Mr. Eager.
+
+He tried to change the subject; but in scoring a dramatic point he had
+interested his audience more than he had intended. Miss Bartlett was
+full of very natural curiosity. Lucy, though she wished never to see
+the Emersons again, was not disposed to condemn them on a single word.
+
+“Do you mean,” she asked, “that he is an irreligious man? We know that
+already.”
+
+“Lucy, dear—” said Miss Bartlett, gently reproving her cousin’s
+penetration.
+
+“I should be astonished if you knew all. The boy—an innocent child at
+the time—I will exclude. God knows what his education and his inherited
+qualities may have made him.”
+
+“Perhaps,” said Miss Bartlett, “it is something that we had better not
+hear.”
+
+“To speak plainly,” said Mr. Eager, “it is. I will say no more.” For
+the first time Lucy’s rebellious thoughts swept out in words—for the
+first time in her life.
+
+“You have said very little.”
+
+“It was my intention to say very little,” was his frigid reply.
+
+He gazed indignantly at the girl, who met him with equal indignation.
+ She turned towards him from the shop counter; her breast heaved
+quickly. He observed her brow, and the sudden strength of her lips. It
+was intolerable that she should disbelieve him.
+
+“Murder, if you want to know,” he cried angrily. “That man murdered his
+wife!”
+
+“How?” she retorted.
+
+“To all intents and purposes he murdered her. That day in Santa
+ Croce—did they say anything against me?”
+
+“Not a word, Mr. Eager—not a single word.”
+
+“Oh, I thought they had been libelling me to you. But I suppose it is
+only their personal charms that makes you defend them.”
+
+“I’m not defending them,” said Lucy, losing her courage, and relapsing
+into the old chaotic methods. “They’re nothing to me.”
+
+“How could you think she was defending them?” said Miss Bartlett, much
+discomfited by the unpleasant scene. The shopman was possibly
+listening.
+
+“She will find it difficult. For that man has murdered his wife in the
+sight of God.”
+
+The addition of God was striking. But the chaplain was really trying to
+qualify a rash remark. A silence followed which might have been
+impressive, but was merely awkward. Then Miss Bartlett hastily
+purchased the Leaning Tower, and led the way into the street.
+
+“I must be going,” said he, shutting his eyes and taking out his watch.
+
+Miss Bartlett thanked him for his kindness, and spoke with enthusiasm
+of the approaching drive.
+
+“Drive? Oh, is our drive to come off?”
+
+Lucy was recalled to her manners, and after a little exertion the
+complacency of Mr. Eager was restored.
+
+“Bother the drive!” exclaimed the girl, as soon as he had departed. “It
+is just the drive we had arranged with Mr. Beebe without any fuss at
+all. Why should he invite us in that absurd manner? We might as well
+invite him. We are each paying for ourselves.”
+
+Miss Bartlett, who had intended to lament over the Emersons, was
+launched by this remark into unexpected thoughts.
+
+“If that is so, dear—if the drive we and Mr. Beebe are going with Mr.
+ Eager is really the same as the one we are going with Mr. Beebe, then I
+foresee a sad kettle of fish.”
+
+“How?”
+
+“Because Mr. Beebe has asked Eleanor Lavish to come, too.”
+
+“That will mean another carriage.”
+
+“Far worse. Mr. Eager does not like Eleanor. She knows it herself. The
+truth must be told; she is too unconventional for him.”
+
+They were now in the newspaper-room at the English bank. Lucy stood by
+the central table, heedless of Punch and the Graphic, trying to answer,
+or at all events to formulate the questions rioting in her brain. The
+well-known world had broken up, and there emerged Florence, a magic
+city where people thought and did the most extraordinary things.
+ Murder, accusations of murder, a lady clinging to one man and being
+rude to another—were these the daily incidents of her streets? Was
+there more in her frank beauty than met the eye—the power, perhaps, to
+evoke passions, good and bad, and to bring them speedily to a
+fulfillment?`
     },
     {
       id: "section-14",
       title: "Section 14",
-      content: `Analysis.—The husband of the patient, an upright and conscientious wholesale butcher, had told her the day before that he is growing too fat, and that he must, therefore, begin treatment for obesity. He was going to get up early, take exercise, keep to a strict diet, and above all accept no more invitations to suppers. She proceeds laughingly to relate how her husband at an inn table had made the acquaintance of an artist, who insisted upon painting his portrait because he, the painter, had never found such an expressive head. But her husband had answered in his rough way, that he was very thankful for the honor, but that he was quite convinced that a portion of the backside of a pretty young girl would please the artist better than his whole face1. She said that she was at the time very much in love with her husband, and teased him a good deal. She had also asked him not to send her any caviare. What does that mean?
+      content: `Happy Charlotte, who, though greatly troubled over things that did not
+matter, seemed oblivious to things that did; who could conjecture with
+admirable delicacy “where things might lead to,” but apparently lost
+sight of the goal as she approached it. Now she was crouching in the
+corner trying to extract a circular note from a kind of linen nose-bag
+which hung in chaste concealment round her neck. She had been told that
+this was the only safe way to carry money in Italy; it must only be
+broached within the walls of the English bank. As she groped she
+murmured: “Whether it is Mr. Beebe who forgot to tell Mr. Eager, or Mr.
+ Eager who forgot when he told us, or whether they have decided to leave
+ Eleanor out altogether—which they could scarcely do—but in any case we
+must be prepared. It is you they really want; I am only asked for
+appearances. You shall go with the two gentlemen, and I and Eleanor
+will follow behind. A one-horse carriage would do for us. Yet how
+difficult it is!”
 
-As a matter of fact, she had wanted for a long time to eat a caviare sandwich every forenoon, but had grudged herself the expense. Of course, she would at once get the caviare from her husband, as soon as she asked him for it. But she had begged him, on the contrary, not to send her the caviare, in order that she might tease him about it longer.
+“It is indeed,” replied the girl, with a gravity that sounded
+sympathetic.
 
-This explanation seems far-fetched to me. Unadmitted motives are in the habit of hiding behind such unsatisfactory explanations. We are reminded of subjects hypnotized by Bernheim, who carried out a posthypnotic order, and who, upon being asked for their motives, instead of answering: "I do not know why I did that," had to invent a reason that was obviously inadequate.
+“What do you think about it?” asked Miss Bartlett, flushed from the
+struggle, and buttoning up her dress.
 
-Something similar is probably the case with the caviare of my patient. I see that she is compelled to create an unfulfilled wish in life. Her dream also shows the reproduction of the wish as accomplished. But why does she need an unfulfilled wish?
+“I don’t know what I think, nor what I want.”
 
-The ideas so far produced are insufficient for the interpretation of the dream. I beg for more. After a short pause, which corresponds to the overcoming of a resistance, she reports further that the day before she had made a visit to a friend, of whom she is really jealous, because her husband is always praising this woman so much. Fortunately, this friend is very lean and thin, and her husband likes well-rounded figures. Now of what did this lean friend speak? Naturally of her wish to become somewhat stouter. She also asked my patient: "When are you going to invite us again? You always have such a good table."
+“Oh, dear, Lucy! I do hope Florence isn’t boring you. Speak the word,
+and, as you know, I would take you to the ends of the earth to-morrow.”
 
-Now the meaning of the dream is clear. I may say to the patient: "It is just as though you had thought at the time of the request: 'Of course, I'll invite you, so you can eat yourself fat at my house and become still more pleasing to my husband. I would rather give no more suppers.' The dream then tells you that you cannot give a supper, thereby fulfilling your wish not to contribute anything to the rounding out of your friend's figure. The resolution of your husband to refuse invitations to supper for the sake of getting thin teaches you that one grows fat on the things served in company." Now only some conversation is necessary to confirm the solution. The smoked salmon in the dream has not yet been traced. "How did the salmon mentioned in the dream occur to you?" "Smoked salmon is the favorite dish of this friend," she answered. I happen to know the lady, and may corroborate this by saying that she grudges herself the salmon just as much as my patient grudges herself the caviare.
+“Thank you, Charlotte,” said Lucy, and pondered over the offer.
 
-The dream admits of still another and more exact interpretation, which is necessitated only by a subordinate circumstance. The two interpretations do not contradict one another, but rather cover each other and furnish a neat example of the usual ambiguity of dreams as well as of all other psychopathological formations. We have seen that at the same time that she dreams of the denial of the wish, the patient is in reality occupied in securing an unfulfilled wish (the caviare sandwiches). Her friend, too, had expressed a wish, namely, to get fatter, and it would not surprise us if our lady had dreamt that the wish of the friend was not being fulfilled. For it is her own wish that a wish of her friend's—for increase in weight—should not be fulfilled.
+There were letters for her at the bureau—one from her brother, full of
+athletics and biology; one from her mother, delightful as only her
+mother’s letters could be. She had read in it of the crocuses which had
+been bought for yellow and were coming up puce, of the new
+parlour-maid, who had watered the ferns with essence of lemonade, of
+the semi-detached cottages which were ruining Summer Street, and
+breaking the heart of Sir Harry Otway. She recalled the free, pleasant
+life of her home, where she was allowed to do everything, and where
+nothing ever happened to her. The road up through the pine-woods, the
+clean drawing-room, the view over the Sussex Weald—all hung before her
+bright and distinct, but pathetic as the pictures in a gallery to
+which, after much experience, a traveller returns.
 
-Instead of this, however, she dreams that one of her own wishes is not fulfilled. The dream becomes capable of a new interpretation, if in the dream she does not intend herself, but her friend, if she has put herself in the place of her friend, or, as we may say, has identified herself with her friend.
+“And the news?” asked Miss Bartlett.
 
-I think she has actually done this, and as a sign of this identification she has created an unfulfilled wish in reality. But what is the meaning of this hysterical identification? To clear this up a thorough exposition is necessary. Identification is a highly important factor in the mechanism of hysterical symptoms; by this means patients are enabled in their symptoms to represent not merely their own experiences, but the experiences of a great number of other persons, and can suffer, as it were, for a whole mass of people, and fill all the parts of a drama by means of their own personalities alone. It will here be objected that this is well-known hysterical imitation, the ability of hysteric subjects to copy all the symptoms which impress them when they occur in others, as though their pity were stimulated to the point of reproduction. But this only indicates the way in which the psychic process is discharged in hysterical imitation; the way in which a psychic act proceeds and the act itself are two different things. The latter is slightly more complicated than one is apt to imagine the imitation of hysterical subjects to be: it corresponds to an unconscious concluded process, as an example will show. The physician who has a female patient with a particular kind of twitching, lodged in the company of other patients in the same room of the hospital, is not surprised when some morning he learns that this peculiar hysterical attack has found imitations. He simply says to himself: The others have seen her and have done likewise: that is psychic infection. Yes, but psychic infection proceeds in somewhat the following manner: As a rule, patients know more about one another than the physician knows about each of them, and they are concerned about each other when the visit of the doctor is over. Some of them have an attack to-day: soon it is known among the rest that a letter from home, a return of lovesickness or the like, is the cause of it. Their sympathy is aroused, and the following syllogism, which does not reach consciousness, is completed in them: "If it is possible to have this kind of an attack from such causes, I too may have this kind of an attack, for I have the same reasons." If this were a cycle capable of becoming conscious, it would perhaps express itself in fear of getting the same attack; but it takes place in another psychic sphere, and, therefore, ends in the realization of the dreaded symptom.
+“Mrs. Vyse and her son have gone to Rome,” said Lucy, giving the news
+that interested her least. “Do you know the Vyses?”
 
-Identification is therefore not a simple imitation, but a sympathy based upon the same etiological claim; it expresses an "as though," and refers to some common quality which has remained in the unconscious.
+“Oh, not that way back. We can never have too much of the dear Piazza
+ Signoria.”
 
-Identification is most often used in hysteria to express sexual community. An hysterical woman identifies herself most readily—although`
+“They’re nice people, the Vyses. So clever—my idea of what’s really
+clever. Don’t you long to be in Rome?”
+
+“I die for it!”
+
+The Piazza Signoria is too stony to be brilliant. It has no grass, no
+flowers, no frescoes, no glittering walls of marble or comforting
+patches of ruddy brick. By an odd chance—unless we believe in a
+presiding genius of places—the statues that relieve its severity
+suggest, not the innocence of childhood, nor the glorious bewilderment
+of youth, but the conscious achievements of maturity. Perseus and
+ Judith, Hercules and Thusnelda, they have done or suffered something,
+and though they are immortal, immortality has come to them after
+experience, not before. Here, not only in the solitude of Nature, might
+a hero meet a goddess, or a heroine a god.
+
+“Charlotte!” cried the girl suddenly. “Here’s an idea. What if we
+popped off to Rome to-morrow—straight to the Vyses’ hotel? For I do
+know what I want. I’m sick of Florence. No, you said you’d go to the
+ends of the earth! Do! Do!”
+
+Miss Bartlett, with equal vivacity, replied:
+
+“Oh, you droll person! Pray, what would become of your drive in the
+hills?”
+
+They passed together through the gaunt beauty of the square, laughing
+over the unpractical suggestion.
+
+Chapter VI
+ The Reverend Arthur Beebe, the Reverend Cuthbert Eager, Mr. Emerson,
+ Mr. George Emerson, Miss Eleanor Lavish, Miss Charlotte Bartlett, and
+ Miss Lucy Honeychurch Drive Out in Carriages to See a View; Italians
+ Drive Them.
+
+It was Phaethon who drove them to Fiesole that memorable day, a youth
+all irresponsibility and fire, recklessly urging his master’s horses up
+the stony hill. Mr. Beebe recognized him at once. Neither the Ages of
+ Faith nor the Age of Doubt had touched him; he was Phaethon in Tuscany
+driving a cab. And it was Persephone whom he asked leave to pick up on
+the way, saying that she was his sister—Persephone, tall and slender
+and pale, returning with the Spring to her mother’s cottage, and still
+shading her eyes from the unaccustomed light. To her Mr. Eager
+objected, saying that here was the thin edge of the wedge, and one must
+guard against imposition. But the ladies interceded, and when it had
+been made clear that it was a very great favour, the goddess was
+allowed to mount beside the god.
+
+Phaethon at once slipped the left rein over her head, thus enabling
+himself to drive with his arm round her waist. She did not mind. Mr.
+ Eager, who sat with his back to the horses, saw nothing of the
+indecorous proceeding, and continued his conversation with Lucy. The
+other two occupants of the carriage were old Mr. Emerson and Miss
+ Lavish. For a dreadful thing had happened: Mr. Beebe, without
+consulting Mr. Eager, had doubled the size of the party. And though
+ Miss Bartlett and Miss Lavish had planned all the morning how the
+people were to sit, at the critical moment when the carriages came
+round they lost their heads, and Miss Lavish got in with Lucy, while
+ Miss Bartlett, with George Emerson and Mr. Beebe, followed on behind.
+
+It was hard on the poor chaplain to have his _partie carrée_ thus
+transformed. Tea at a Renaissance villa, if he had ever meditated it,
+was now impossible. Lucy and Miss Bartlett had a certain style about
+them, and Mr. Beebe, though unreliable, was a man of parts. But a
+shoddy lady writer and a journalist who had murdered his wife in the
+sight of God—they should enter no villa at his introduction.
+
+Lucy, elegantly dressed in white, sat erect and nervous amid these
+explosive ingredients, attentive to Mr. Eager, repressive towards Miss
+ Lavish, watchful of old Mr. Emerson, hitherto fortunately asleep,
+thanks to a heavy lunch and the drowsy atmosphere of Spring. She looked
+on the expedition as the work of Fate. But for it she would have
+avoided George Emerson successfully. In an open manner he had shown
+that he wished to continue their intimacy. She had refused, not because
+she disliked him, but because she did not know what had happened, and
+suspected that he did know. And this frightened her.
+
+For the real event—whatever it was—had taken place, not in the Loggia,
+but by the river. To behave wildly at the sight of death is pardonable.
+ But to discuss it afterwards, to pass from discussion into silence, and
+through silence into sympathy, that is an error, not of a startled
+emotion, but of the whole fabric. There was really something
+blameworthy (she thought) in their joint contemplation of the shadowy
+stream, in the common impulse which had turned them to the house
+without the passing of a look or word. This sense of wickedness had
+been slight at first. She had nearly joined the party to the Torre del
+ Gallo. But each time that she avoided George it became more imperative
+that she should avoid him again. And now celestial irony, working
+through her cousin and two clergymen, did not suffer her to leave
+ Florence till she had made this expedition with him through the hills.
+
+Meanwhile Mr. Eager held her in civil converse; their little tiff was
+over.
+
+“So, Miss Honeychurch, you are travelling? As a student of art?”
+
+“Oh, dear me, no—oh, no!”
+
+“Perhaps as a student of human nature,” interposed Miss Lavish, “like
+myself?”
+
+“Oh, no. I am here as a tourist.”`
     },
     {
       id: "section-15",
       title: "Section 15",
-      content: `not exclusively—with persons with whom she has had sexual relations, or who have sexual intercourse with the same persons as herself. Language takes such a conception into consideration: two lovers are "one." In the hysterical phantasy, as well as in the dream, it is sufficient for the identification if one thinks of sexual relations, whether or not they become real. The patient, then, only follows the rules of the hysterical thought processes when she gives expression to her jealousy of her friend (which, moreover, she herself admits to be unjustified, in that she puts herself in her place and identifies herself with her by creating a symptom—the denied wish). I might further clarify the process specifically as follows: She puts herself in the place of her friend in the dream, because her friend has taken her own place relation to her husband, and because she would like to take her friend's place in the esteem of her husband2.
+      content: `“Oh, indeed,” said Mr. Eager. “Are you indeed? If you will not think me
+rude, we residents sometimes pity you poor tourists not a little—handed
+about like a parcel of goods from Venice to Florence, from Florence to
+ Rome, living herded together in pensions or hotels, quite unconscious
+of anything that is outside Baedeker, their one anxiety to get ‘done’
+or ‘through’ and go on somewhere else. The result is, they mix up
+towns, rivers, palaces in one inextricable whirl. You know the American
+girl in Punch who says: ‘Say, poppa, what did we see at Rome?’ And the
+father replies: ‘Why, guess Rome was the place where we saw the yaller
+dog.’ There’s travelling for you. Ha! ha! ha!”
 
-The contradiction to my theory of dreams in the case of another female patient, the most witty among all my dreamers, was solved in a simpler manner, although according to the scheme that the non-fulfillment of one wish signifies the fulfillment of another. I had one day explained to her that the dream is a wish of fulfillment. The next day she brought me a dream to the effect that she was traveling with her mother-in-law to their common summer resort. Now I knew that she had struggled violently against spending the summer in the neighborhood of her mother-in-law. I also knew that she had luckily avoided her mother-in-law by renting an estate in a far-distant country resort. Now the dream reversed this wished-for solution; was not this in the flattest contradiction to my theory of wish-fulfillment in the dream?
+“I quite agree,” said Miss Lavish, who had several times tried to
+interrupt his mordant wit. “The narrowness and superficiality of the
+ Anglo-Saxon tourist is nothing less than a menace.”
 
-Certainly, it was only necessary to draw the inferences from this dream in order to get at its interpretation. According to this dream, I was in the wrong. It was thus her wish that I should be in the wrong, and this wish the dream showed her as fulfilled. But the wish that I should be in the wrong, which was fulfilled in the theme of the country home, referred to a more serious matter. At that time I had made up my mind, from the material furnished by her analysis, that something of significance for her illness must have occurred at a certain time in her life. She had denied it because it was not present in her memory. We soon came to see that I was in the right. Her wish that I should be in the wrong, which is transformed into the dream, thus corresponded to the justifiable wish that those things, which at the time had only been suspected, had never occurred at all.
+“Quite so. Now, the English colony at Florence, Miss Honeychurch—and it
+is of considerable size, though, of course, not all equally—a few are
+here for trade, for example. But the greater part are students. Lady
+ Helen Laverstock is at present busy over Fra Angelico. I mention her
+name because we are passing her villa on the left. No, you can only see
+it if you stand—no, do not stand; you will fall. She is very proud of
+that thick hedge. Inside, perfect seclusion. One might have gone back
+six hundred years. Some critics believe that her garden was the scene
+of The Decameron, which lends it an additional interest, does it not?”
 
-Without an analysis, and merely by means of an assumption, I took the liberty of interpreting a little occurrence in the case of a friend, who had been my colleague through the eight classes of the Gymnasium. He once heard a lecture of mine delivered to a small assemblage, on the novel subject of the dream as the fulfillment of a wish. He went home, dreamt that he had lost all his suits—he was a lawyer—and then complained to me about it. I took refuge in the evasion: "One can't win all one's suits," but I thought to myself: "If for eight years I sat as Primus on the first bench, while he moved around somewhere in the middle of the class, may he not naturally have had a wish from his boyhood days that I, too, might for once completely disgrace myself?"
+“It does indeed!” cried Miss Lavish. “Tell me, where do they place the
+scene of that wonderful seventh day?”
 
-In the same way another dream of a more gloomy character was offered me by a female patient as a contradiction to my theory of the wish-dream.
+But Mr. Eager proceeded to tell Miss Honeychurch that on the right
+lived Mr. Someone Something, an American of the best type—so rare!—and
+that the Somebody Elses were farther down the hill. “Doubtless you know
+her monographs in the series of ‘Mediæval Byways’? He is working at
+ Gemistus Pletho. Sometimes as I take tea in their beautiful grounds I
+hear, over the wall, the electric tram squealing up the new road with
+its loads of hot, dusty, unintelligent tourists who are going to ‘do’
+ Fiesole in an hour in order that they may say they have been there, and
+ I think—think—I think how little they think what lies so near them.”
 
-The patient, a young girl, began as follows: "You remember that my sister has now only one boy, Charles: she lost the elder one, Otto, while I was still at her house. Otto was my favorite; it was I who really brought him up. I like the other little fellow, too, but of course not nearly as much as the dead one. Now I dreamt last night that I saw Charles lying dead before me. He was lying in his little coffin, his hands folded: there were candles all about, and, in short, it was just like the time of little Otto's death, which shocked me so profoundly. Now tell me, what does this mean? You know me: am I really bad enough to wish my sister to lose the only child she has left? Or does the dream mean that I wish Charles to be dead rather than Otto, whom I like so much better?"
+During this speech the two figures on the box were sporting with each
+other disgracefully. Lucy had a spasm of envy. Granted that they wished
+to misbehave, it was pleasant for them to be able to do so. They were
+probably the only people enjoying the expedition. The carriage swept
+with agonizing jolts up through the Piazza of Fiesole and into the
+ Settignano road.
 
-I assured her that this interpretation was impossible. After some reflection I was able to give her the interpretation of the dream, which I subsequently made her confirm.
+“Piano! piano!” said Mr. Eager, elegantly waving his hand over his
+head.
 
-Having become an orphan at an early age, the girl had been brought up in the house of a much older sister, and had met among the friends and visitors who came to the house, a man who made a lasting impression upon her heart. It looked for a time as though these barely expressed relations were to end in marriage, but this happy culmination was frustrated by the sister, whose motives have never found a complete explanation. After the break, the man who was loved by our patient avoided the house: she herself became independent some time after little Otto's death, to whom her affection had now turned. But she did not succeed in freeing herself from the inclination for her sister's friend in which she had become involved. Her pride commanded her to avoid him; but it was impossible for her to transfer her
+“Va bene, signore, va bene, va bene,” crooned the driver, and whipped
+his horses up again.
 
-love to the other suitors who presented themselves in order. Whenever the man whom she loved, who was a member of the literary profession, announced a lecture anywhere, she was sure to be found in the audience; she also seized every other opportunity to see him from a distance unobserved by him. I remembered that on the day before she had told me that the Professor was going to a certain concert, and that she was also going there, in order to enjoy the sight of him. This was on the day of the dream; and the concert was to take place on the day on which she told me the dream. I could now easily see the correct interpretation, and I asked her whether she could think of any event which had happened after the death of little Otto. She answered immediately: "Certainly; at that time the Professor returned after a long absence, and I saw him once more beside the coffin of little Otto." It was exactly as I had expected. I interpreted the dream in the following manner: "If now the other boy were to die, the same thing would be repeated. You would spend the day with your sister, the Professor would surely come in order to offer condolence, and you would see him again under the same circumstances as at that time. The dream signifies nothing but this wish of yours to see him again, against which you are fighting inwardly. I know that you are carrying the ticket for to-day's concert in your bag. Your dream is a dream of impatience; it has anticipated the meeting which is to take place to-day by several hours."
+Now Mr. Eager and Miss Lavish began to talk against each other on the
+subject of Alessio Baldovinetti. Was he a cause of the Renaissance, or
+was he one of its manifestations? The other carriage was left behind.
+ As the pace increased to a gallop the large, slumbering form of Mr.
+ Emerson was thrown against the chaplain with the regularity of a
+machine.
 
-In order to disguise her wish she had obviously selected a situation in which wishes of that sort are commonly suppressed—a situation which is so filled with sorrow that love is not thought of. And yet, it is very easily probable that even in the actual situation at the bier of the second, more dearly loved boy, which the dream copied faithfully, she had not been able to suppress her feelings of affection for the visitor whom she had missed for so long a time.
+“Piano! piano!” said he, with a martyred look at Lucy.
 
-A different explanation was found in the case of a similar dream of another female patient, who was distinguished in her earlier years by her quick wit and her cheerful demeanors and who still showed these qualities at least in the notion, which occurred to her in the course of treatment. In connection with a longer dream, it seemed to this lady that she saw her fifteen-year-old daughter lying dead before her in a box. She was strongly inclined to convert this dream-image into an objection to the theory of wish- fulfillment, but herself suspected that the detail of the box must lead to a different conception of the dream.3 In the course of the analysis it occurred to`
+An extra lurch made him turn angrily in his seat. Phaethon, who for
+some time had been endeavouring to kiss Persephone, had just succeeded.
+
+A little scene ensued, which, as Miss Bartlett said afterwards, was
+most unpleasant. The horses were stopped, the lovers were ordered to
+disentangle themselves, the boy was to lose his _pourboire_, the girl
+was immediately to get down.
+
+“She is my sister,” said he, turning round on them with piteous eyes.
+
+Mr. Eager took the trouble to tell him that he was a liar.
+
+Phaethon hung down his head, not at the matter of the accusation, but
+at its manner. At this point Mr. Emerson, whom the shock of stopping
+had awoke, declared that the lovers must on no account be separated,
+and patted them on the back to signify his approval. And Miss Lavish,
+though unwilling to ally him, felt bound to support the cause of
+ Bohemianism.
+
+“Most certainly I would let them be,” she cried. “But I dare say I
+shall receive scant support. I have always flown in the face of the
+conventions all my life. This is what _I_ call an adventure.”
+
+“We must not submit,” said Mr. Eager. “I knew he was trying it on. He
+is treating us as if we were a party of Cook’s tourists.”
+
+“Surely no!” said Miss Lavish, her ardour visibly decreasing.
+
+The other carriage had drawn up behind, and sensible Mr. Beebe called
+out that after this warning the couple would be sure to behave
+themselves properly.
+
+“Leave them alone,” Mr. Emerson begged the chaplain, of whom he stood
+in no awe. “Do we find happiness so often that we should turn it off
+the box when it happens to sit there? To be driven by lovers—A king
+might envy us, and if we part them it’s more like sacrilege than
+anything I know.”
+
+Here the voice of Miss Bartlett was heard saying that a crowd had begun
+to collect.
+
+Mr. Eager, who suffered from an over-fluent tongue rather than a
+resolute will, was determined to make himself heard. He addressed the
+driver again. Italian in the mouth of Italians is a deep-voiced stream,
+with unexpected cataracts and boulders to preserve it from monotony. In
+ Mr. Eager’s mouth it resembled nothing so much as an acid whistling
+fountain which played ever higher and higher, and quicker and quicker,
+and more and more shrilly, till abruptly it was turned off with a
+click.
+
+“Signorina!” said the man to Lucy, when the display had ceased. Why
+should he appeal to Lucy?
+
+“Signorina!” echoed Persephone in her glorious contralto. She pointed
+at the other carriage. Why?
+
+For a moment the two girls looked at each other. Then Persephone got
+down from the box.
+
+“Victory at last!” said Mr. Eager, smiting his hands together as the
+carriages started again.
+
+“It is not victory,” said Mr. Emerson. “It is defeat. You have parted
+two people who were happy.”
+
+Mr. Eager shut his eyes. He was obliged to sit next to Mr. Emerson, but
+he would not speak to him. The old man was refreshed by sleep, and took
+up the matter warmly. He commanded Lucy to agree with him; he shouted
+for support to his son.
+
+“We have tried to buy what cannot be bought with money. He has
+bargained to drive us, and he is doing it. We have no rights over his
+soul.”
+
+Miss Lavish frowned. It is hard when a person you have classed as
+typically British speaks out of his character.
+
+“He was not driving us well,” she said. “He jolted us.”
+
+“That I deny. It was as restful as sleeping. Aha! he is jolting us now.
+ Can you wonder? He would like to throw us out, and most certainly he is
+justified. And if I were superstitious I’d be frightened of the girl,
+too. It doesn’t do to injure young people. Have you ever heard of
+ Lorenzo de Medici?”
+
+Miss Lavish bristled.
+
+“Most certainly I have. Do you refer to Lorenzo il Magnifico, or to
+ Lorenzo, Duke of Urbino, or to Lorenzo surnamed Lorenzino on account of
+his diminutive stature?”
+
+“The Lord knows. Possibly he does know, for I refer to Lorenzo the
+poet. He wrote a line—so I heard yesterday—which runs like this: ‘Don’t
+go fighting against the Spring.’”
+
+Mr. Eager could not resist the opportunity for erudition.
+
+“Non fate guerra al Maggio,” he murmured. “‘War not with the May’ would
+render a correct meaning.”
+
+“The point is, we have warred with it. Look.” He pointed to the Val
+d’Arno, which was visible far below them, through the budding trees.
+“Fifty miles of Spring, and we’ve come up to admire them. Do you
+suppose there’s any difference between Spring in nature and Spring in
+man? But there we go, praising the one and condemning the other as
+improper, ashamed that the same laws work eternally through both.”`
     },
     {
       id: "section-16",
       title: "Section 16",
-      content: `her that on the evening before, the conversation of the company had turned upon the English word "box," and upon the numerous translations of it into German, such as box, theater box, chest, box on the ear, &c. From other components of the same dream it is now possible to add that the lady had guessed the relationship between the English word "box" and the German B? chse, and had then been haunted by the memory that B?chse (as well as "box") is used in vulgar speech to designate the female genital organ. It was therefore possible, making a certain allowance for her notions on the subject of topographical anatomy, to assume that the child in the box signified a child in the womb of the mother. At this stage of the explanation she no longer denied that the picture of the dream really corresponded to one of her wishes. Like so many other young women, she was by no means happy when she became pregnant, and admitted to me more than once the wish that her child might die before its birth; in a fit of anger following a violent scene with her husband she had even struck her abdomen with her fists in order to hit the child within. The dead child was, therefore, really the fulfillment of a wish, but a wish which had been put aside for fifteen years, and it is not surprising that the fulfillment of the wish was no longer recognized after so long an interval. For there had been many changes meanwhile.
+      content: `No one encouraged him to talk. Presently Mr. Eager gave a signal for
+the carriages to stop and marshalled the party for their ramble on the
+hill. A hollow like a great amphitheatre, full of terraced steps and
+misty olives, now lay between them and the heights of Fiesole, and the
+road, still following its curve, was about to sweep on to a promontory
+which stood out in the plain. It was this promontory, uncultivated,
+wet, covered with bushes and occasional trees, which had caught the
+fancy of Alessio Baldovinetti nearly five hundred years before. He had
+ascended it, that diligent and rather obscure master, possibly with an
+eye to business, possibly for the joy of ascending. Standing there, he
+had seen that view of the Val d’Arno and distant Florence, which he
+afterwards had introduced not very effectively into his work. But where
+exactly had he stood? That was the question which Mr. Eager hoped to
+solve now. And Miss Lavish, whose nature was attracted by anything
+problematical, had become equally enthusiastic.
 
-The group of dreams to which the two last mentioned belong, having as content the death of beloved relatives, will be considered again under the head of "Typical Dreams." I shall there be able to show by new examples that in spite of their undesirable content, all these dreams must be interpreted as wish-fulfillments. For the following dream, which again was told me in order to deter me from a hasty generalization of the theory of wishing in dreams, I am indebted, not to a patient, but to an intelligent jurist of my acquaintance. "I dream," my informant tells me, "that I am walking in front of my house with a lady on my arm. Here a closed wagon is waiting, a gentleman steps up to me, gives his authority as an agent of the police, and demands that I should follow him. I only ask for time in which to arrange my affairs. Can you possibly suppose this is a wish of mine to be arrested?" "Of course not," I must admit. "Do you happen to know upon what charge you were arrested?" "Yes; I believe for infanticide." "Infanticide? But you know that only a mother can commit this crime upon her newly born child?" "That is true."4 "And under what circumstances did you dream; what happened on the evening before?" "I would rather not tell you that; it is a delicate matter." "But I must have it, otherwise we must forgo the interpretation of the dream."
+But it is not easy to carry the pictures of Alessio Baldovinetti in
+your head, even if you have remembered to look at them before starting.
+ And the haze in the valley increased the difficulty of the quest.
 
-"Well, then, I will tell you. I spent the night, not at home, but at the house of a lady who means very much to me. When we awoke in the morning, something again passed between us. Then I went to sleep again, and dreamt what I have told you." "The woman is married?" "Yes." "And you do not wish her to conceive a child?" "No; that might betray us." "Then you do not practice normal coitus?" "I take the precaution to withdraw before ejaculation." "Am I permitted to assume that you did this trick several times during the night, and that in the morning you were not quite sure whether you had succeeded?" "That might be the case." "Then your dream is the fulfillment of a wish. By means of it you secure the assurance that you have not begotten a child, or, what amounts to the same thing, that you have killed a child. I can easily demonstrate the connecting links. Do you remember, a few days ago we were talking about the distress of matrimony (Ehenot), and about the inconsistency of permitting the practice of coitus as long as no impregnation takes place, while every delinquency after the ovum and the semen meet and a fœtus is formed is punished as a crime? In connection with this, we also recalled the medi?val controversy about the moment of time at which the soul is really lodged in the fœtus, since the concept of murder becomes admissible only from that point on. Doubtless you also know the gruesome poem by Lenau, which puts infanticide and the prevention of children on the same plane." "Strangely enough, I had happened to think of Lenau during the afternoon." "Another echo of your dream. And now I shall demonstrate to you another subordinate wish-fulfillment in your dream. You walk in front of your house with the lady on your arm. So you take her home, instead of spending the night at her house, as you do in actuality. The fact that the wish-fulfillment, which is the essence of the dream, disguises itself in such an unpleasant form, has perhaps more than one reason. From my essay on the etiology of anxiety neuroses, you will see that I note interrupted coitus as one of the factors which cause the development of neurotic fear. It would be consistent with this that if after repeated cohabitation of the kind mentioned you should be left in an uncomfortable mood, which now becomes an element in the composition of your dream. You also make use of this unpleasant state of mind to conceal the wish-fulfillment. Furthermore, the mention of infanticide has not yet been explained. Why does this crime, which is peculiar to females, occur to you?" "I shall confess to you that I was involved in such an affair years ago. Through my fault a girl tried to protect herself from the consequences of a liaison with me by securing an abortion. I had nothing to do with carrying out the plan, but I was naturally for a long time worried lest the affair might be discovered." "I understand; this recollection furnished a second reason why the supposition that you had done your trick badly must have been painful to you."
+The party sprang about from tuft to tuft of grass, their anxiety to
+keep together being only equalled by their desire to go different
+directions. Finally they split into groups. Lucy clung to Miss Bartlett
+and Miss Lavish; the Emersons returned to hold laborious converse with
+the drivers; while the two clergymen, who were expected to have topics
+in common, were left to each other.
 
-A young physician, who had heard this dream of my colleague when it was told, must have felt implicated by it, for he hastened to imitate it in a dream of his own, applying its mode of thinking to another subject. The day before he had handed in a declaration of his income, which was perfectly honest, because he had little to declare. He dreamt that an acquaintance of his came from a meeting of the tax commission and informed him that all the other declarations of income had passed uncontested, but that his own had awakened general suspicion, and that he would be punished with a heavy fine. The dream is a poorly-concealed fulfillment of the wish to be known as a physician with a large income. It likewise recalls the story of the young girl who was advised against accepting her suitor because he was a man of quick temper who would surely treat her to blows after they were married.
+The two elder ladies soon threw off the mask. In the audible whisper
+that was now so familiar to Lucy they began to discuss, not Alessio
+ Baldovinetti, but the drive. Miss Bartlett had asked Mr. George Emerson
+what his profession was, and he had answered “the railway.” She was
+very sorry that she had asked him. She had no idea that it would be
+such a dreadful answer, or she would not have asked him. Mr. Beebe had
+turned the conversation so cleverly, and she hoped that the young man
+was not very much hurt at her asking him.
 
-The answer of the girl was: "I wish he would strike me!" Her wish to be married is so strong that she takes into the bargain the discomfort which is said to be connected with matrimony, and which is predicted for her, and even raises it to a wish.`
+“The railway!” gasped Miss Lavish. “Oh, but I shall die! Of course it
+was the railway!” She could not control her mirth. “He is the image of
+a porter—on, on the South-Eastern.”
+
+“Eleanor, be quiet,” plucking at her vivacious companion. “Hush!
+ They’ll hear—the Emersons—”
+
+“I can’t stop. Let me go my wicked way. A porter—”
+
+“Eleanor!”
+
+“I’m sure it’s all right,” put in Lucy. “The Emersons won’t hear, and
+they wouldn’t mind if they did.”
+
+Miss Lavish did not seem pleased at this.
+
+“Miss Honeychurch listening!” she said rather crossly. “Pouf! Wouf! You
+naughty girl! Go away!”
+
+“Oh, Lucy, you ought to be with Mr. Eager, I’m sure.”
+
+“I can’t find them now, and I don’t want to either.”
+
+“Mr. Eager will be offended. It is your party.”
+
+“Please, I’d rather stop here with you.”
+
+“No, I agree,” said Miss Lavish. “It’s like a school feast; the boys
+have got separated from the girls. Miss Lucy, you are to go. We wish to
+converse on high topics unsuited for your ear.”
+
+The girl was stubborn. As her time at Florence drew to its close she
+was only at ease amongst those to whom she felt indifferent. Such a one
+was Miss Lavish, and such for the moment was Charlotte. She wished she
+had not called attention to herself; they were both annoyed at her
+remark and seemed determined to get rid of her.
+
+“How tired one gets,” said Miss Bartlett. “Oh, I do wish Freddy and
+your mother could be here.”
+
+Unselfishness with Miss Bartlett had entirely usurped the functions of
+enthusiasm. Lucy did not look at the view either. She would not enjoy
+anything till she was safe at Rome.
+
+“Then sit you down,” said Miss Lavish. “Observe my foresight.”
+
+With many a smile she produced two of those mackintosh squares that
+protect the frame of the tourist from damp grass or cold marble steps.
+ She sat on one; who was to sit on the other?
+
+“Lucy; without a moment’s doubt, Lucy. The ground will do for me.
+ Really I have not had rheumatism for years. If I do feel it coming on I
+shall stand. Imagine your mother’s feelings if I let you sit in the wet
+in your white linen.” She sat down heavily where the ground looked
+particularly moist. “Here we are, all settled delightfully. Even if my
+dress is thinner it will not show so much, being brown. Sit down, dear;
+you are too unselfish; you don’t assert yourself enough.” She cleared
+her throat. “Now don’t be alarmed; this isn’t a cold. It’s the tiniest
+cough, and I have had it three days. It’s nothing to do with sitting
+here at all.”
+
+There was only one way of treating the situation. At the end of five
+minutes Lucy departed in search of Mr. Beebe and Mr. Eager, vanquished
+by the mackintosh square.
+
+She addressed herself to the drivers, who were sprawling in the
+carriages, perfuming the cushions with cigars. The miscreant, a bony
+young man scorched black by the sun, rose to greet her with the
+courtesy of a host and the assurance of a relative.
+
+“Dove?” said Lucy, after much anxious thought.
+
+His face lit up. Of course he knew where. Not so far either. His arm
+swept three-fourths of the horizon. He should just think he did know
+where. He pressed his finger-tips to his forehead and then pushed them
+towards her, as if oozing with visible extract of knowledge.
+
+More seemed necessary. What was the Italian for “clergyman”?
+
+“Dove buoni uomini?” said she at last.
+
+Good? Scarcely the adjective for those noble beings! He showed her his
+cigar.
+
+“Uno—piu—piccolo,” was her next remark, implying “Has the cigar been
+given to you by Mr. Beebe, the smaller of the two good men?”
+
+She was correct as usual. He tied the horse to a tree, kicked it to
+make it stay quiet, dusted the carriage, arranged his hair, remoulded
+his hat, encouraged his moustache, and in rather less than a quarter of
+a minute was ready to conduct her. Italians are born knowing the way.
+ It would seem that the whole earth lay before them, not as a map, but
+as a chess-board, whereon they continually behold the changing pieces
+as well as the squares. Any one can find places, but the finding of
+people is a gift from God.
+
+He only stopped once, to pick her some great blue violets. She thanked
+him with real pleasure. In the company of this common man the world was
+beautiful and direct. For the first time she felt the influence of
+ Spring. His arm swept the horizon gracefully; violets, like other
+things, existed in great profusion there; “would she like to see them?”
+
+“Ma buoni uomini.”
+
+He bowed. Certainly. Good men first, violets afterwards. They proceeded
+briskly through the undergrowth, which became thicker and thicker. They
+were nearing the edge of the promontory, and the view was stealing
+round them, but the brown network of the bushes shattered it into
+countless pieces. He was occupied in his cigar, and in holding back the
+pliant boughs. She was rejoicing in her escape from dullness. Not a
+step, not a twig, was unimportant to her.
+
+“What is that?”
+
+There was a voice in the wood, in the distance behind them. The voice
+of Mr. Eager? He shrugged his shoulders. An Italian’s ignorance is
+sometimes more remarkable than his knowledge. She could not make him
+understand that perhaps they had missed the clergymen. The view was
+forming at last; she could discern the river, the golden plain, other
+hills.
+
+“Eccolo!” he exclaimed.
+
+At the same moment the ground gave way, and with a cry she fell out of
+the wood. Light and beauty enveloped her. She had fallen on to a little
+open terrace, which was covered with violets from end to end.
+
+“Courage!” cried her companion, now standing some six feet above.
+“Courage and love.”`
     },
     {
       id: "section-17",
       title: "Section 17",
-      content: `If I group the very frequently occurring dreams of this sort, which seem flatly to contradict my theory, in that they contain the denial of a wish or some occurrence decidedly unwished for, under the head of "counter wish- dreams," I observe that they may all be referred to two principles, of which one has not yet been mentioned, although it plays a large part in the dreams of human beings. One of the motives inspiring these dreams is the wish that I should appear in the wrong. These dreams regularly occur in the course of my treatment if the patient shows a resistance against me, and I can count with a large degree of certainty upon causing such a dream after I have once explained to the patient my theory that the dream is a wish-fulfillment.5 I may even expect this to be the case in a dream merely in order to fulfill the wish that I may appear in the wrong. The last dream which I shall tell from those occurring in the course of treatment again shows this very thing. A young girl who has struggled hard to continue my treatment, against the will of her relatives and the authorities whom she had consulted, dreams as follows: She is forbidden at home to come to me any more. She then reminds me of the promise I made her to treat her for nothing if necessary, and I say to her: "I can show no consideration in money matters."
+      content: `She did not answer. From her feet the ground sloped sharply into view,
+and violets ran down in rivulets and streams and cataracts, irrigating
+the hillside with blue, eddying round the tree stems collecting into
+pools in the hollows, covering the grass with spots of azure foam. But
+never again were they in such profusion; this terrace was the
+well-head, the primal source whence beauty gushed out to water the
+earth.
 
-It is not at all easy in this case to demonstrate the fulfillment of a wish, but in all cases of this kind there is a second problem, the solution of which helps also to solve the first. Where does she get the words which she puts into my mouth? Of course I have never told her anything like that, but one of her brothers, the very one who has the greatest influence over her, has been kind enough to make this remark about me. It is then the purpose of the dream that this brother should remain in the right; and she does not try to justify this brother merely in the dream; it is her purpose in life and the motive for her being ill.
+Standing at its brink, like a swimmer who prepares, was the good man.
+ But he was not the good man that she had expected, and he was alone.
 
-The other motive for counter wish-dreams is so clear that there is danger of overlooking it, as for some time happened in my own case. In the sexual make-up of many people there is a masochistic component, which has arisen through the conversion of the aggressive, sadistic component into its opposite. Such people are called "ideal" masochists, if they seek pleasure not in the bodily pain which may be inflicted upon them, but in humiliation and in chastisement of the soul. It is obvious that such persons can have counter wish-dreams and disagreeable dreams, which, however, for them are nothing but wish-fulfillment, affording satisfaction for their masochistic inclinations. Here is such a dream. A young man, who has in earlier years tormented his elder brother, towards whom he was homosexually inclined, but who had undergone a complete change of character, has the following dream, which consists of three parts: (1) He is "insulted" by his brother. (2) Two adults are caressing each other with homosexual intentions. (3) His brother has sold the enterprise whose management the young man reserved for his own future. He awakens from the last-mentioned dream with the most unpleasant feelings, and yet it is a masochistic wish-dream, which might be translated: It would serve me quite right if my brother were to make that sale against my interest, as a punishment for all the torments which he has suffered at my hands.
+George had turned at the sound of her arrival. For a moment he
+contemplated her, as one who had fallen out of heaven. He saw radiant
+joy in her face, he saw the flowers beat against her dress in blue
+waves. The bushes above them closed. He stepped quickly forward and
+kissed her.
 
-I hope that the above discussion and examples will suffice—until further objection can be raised—to make it seem credible that even dreams with a painful content are to be analyzed as the fulfillments of wishes. Nor will it seem a matter of chance that in the course of interpretation one always happens upon subjects of which one does not like to speak or think. The disagreeable sensation which such dreams arouse is simply identical with the antipathy which endeavors—usually with success—to restrain us from the
+Before she could speak, almost before she could feel, a voice called,
+“Lucy! Lucy! Lucy!” The silence of life had been broken by Miss
+ Bartlett who stood brown against the view.
 
-treatment or discussion of such subjects, and which must be overcome by all of us, if, in spite of its unpleasantness, we find it necessary to take the matter in hand. But this disagreeable sensation, which occurs also in dreams, does not preclude the existence of a wish; every one has wishes which he would not like to tell to others, which he does not want to admit even to himself. We are, on other grounds, justified in connecting the disagreeable character of all these dreams with the fact of dream disfigurement, and in concluding that these dreams are distorted, and that the wish-fulfillment in them is disguised until recognition is impossible for no other reason than that a repugnance, a will to suppress, exists in relation to the subject-matter of the dream or in relation to the wish which the dream creates. Dream disfigurement, then, turns out in reality to be an act of the censor. We shall take into consideration everything which the analysis of disagreeable dreams has brought to light if we reword our formula as follows: The dream is the (disguised) fulfillment of a (suppressed, repressed) wish.
+Chapter VII
+ They Return
 
-Now there still remain as a particular species of dreams with painful content, dreams of anxiety, the inclusion of which under dreams of wishing will find least acceptance with the uninitiated. But I can settle the problem of anxiety dreams in very short order; for what they may reveal is not a new aspect of the dream problem; it is a question in their case of understanding neurotic anxiety in general. The fear which we experience in the dream is only seemingly explained by the dream content. If we subject the content of the dream to analysis, we become aware that the dream fear is no more justified by the dream content than the fear in a phobia is justified by the idea upon which the phobia depends. For example, it is true that it is possible to fall out of a window, and that some care must be exercised when one is near a window, but it is inexplicable why the anxiety in the corresponding phobia is so great, and why it follows its victims to an extent so much greater than is warranted by its origin. The same explanation, then, which applies to the phobia applies also to the dream of anxiety. In both cases the anxiety is only superficially attached to the idea which accompanies it and comes from another source.
+Some complicated game had been playing up and down the hillside all the
+afternoon. What it was and exactly how the players had sided, Lucy was
+slow to discover. Mr. Eager had met them with a questioning eye.
+ Charlotte had repulsed him with much small talk. Mr. Emerson, seeking
+his son, was told whereabouts to find him. Mr. Beebe, who wore the
+heated aspect of a neutral, was bidden to collect the factions for the
+return home. There was a general sense of groping and bewilderment. Pan
+had been amongst them—not the great god Pan, who has been buried these
+two thousand years, but the little god Pan, who presides over social
+contretemps and unsuccessful picnics. Mr. Beebe had lost everyone, and
+had consumed in solitude the tea-basket which he had brought up as a
+pleasant surprise. Miss Lavish had lost Miss Bartlett. Lucy had lost
+ Mr. Eager. Mr. Emerson had lost George. Miss Bartlett had lost a
+mackintosh square. Phaethon had lost the game.
 
-On account of the intimate relation of dream fear to neurotic fear, discussion of the former obliges me to refer to the latter. In a little essay on "The Anxiety Neurosis,"6 I maintained that neurotic fear has its origin in the sexual life, and corresponds to a libido which has been turned away from its object and has not succeeded in being applied. From this formula, which has since proved its validity more and more clearly, we may deduce the conclusion that the content of anxiety dreams is of a sexual nature, the libido belonging to which content has been transformed into fear.
+That last fact was undeniable. He climbed on to the box shivering, with
+his collar up, prophesying the swift approach of bad weather. “Let us
+go immediately,” he told them. “The signorino will walk.”
 
-Footnote 1: To sit for the painter. Goethe: "And if he has no backside, how can the nobleman
+“All the way? He will be hours,” said Mr. Beebe.
 
-sit?"
+“Apparently. I told him it was unwise.” He would look no one in the
+face; perhaps defeat was particularly mortifying for him. He alone had
+played skilfully, using the whole of his instinct, while the others had
+used scraps of their intelligence. He alone had divined what things
+were, and what he wished them to be. He alone had interpreted the
+message that Lucy had received five days before from the lips of a
+dying man. Persephone, who spends half her life in the grave—she could
+interpret it also. Not so these English. They gain knowledge slowly,
+and perhaps too late.
 
-Footnote 2: I myself regret the introduction of such passages from the psychopathology of hysteria, which, because of their fragmentary representation and of being torn from all connection with the subject, cannot have a very enlightening influence. If these passages are capable of throwing light upon the intimate relations between the dream and the psychoneuroses, they have served the purpose for which I have taken them up.
+The thoughts of a cab-driver, however just, seldom affect the lives of
+his employers. He was the most competent of Miss Bartlett’s opponents,
+but infinitely the least dangerous. Once back in the town, he and his
+insight and his knowledge would trouble English ladies no more. Of
+course, it was most unpleasant; she had seen his black head in the
+bushes; he might make a tavern story out of it. But after all, what
+have we to do with taverns? Real menace belongs to the drawing-room. It
+was of drawing-room people that Miss Bartlett thought as she journeyed
+downwards towards the fading sun. Lucy sat beside her; Mr. Eager sat
+opposite, trying to catch her eye; he was vaguely suspicious. They
+spoke of Alessio Baldovinetti.
 
-Footnote 3: Something like the smoked salmon in the dream of the deferred supper.
+Rain and darkness came on together. The two ladies huddled together
+under an inadequate parasol. There was a lightning flash, and Miss
+ Lavish who was nervous, screamed from the carriage in front. At the
+next flash, Lucy screamed also. Mr. Eager addressed her professionally:
 
-Footnote 4: It often happens that a dream is told incompletely, and that a recollection of the omitted portions appear only in the course of the analysis. These portions subsequently fitted in, regularly furnish the key to the interpretation. Cf. below, about forgetting in dreams.
+“Courage, Miss Honeychurch, courage and faith. If I might say so, there
+is something almost blasphemous in this horror of the elements. Are we
+seriously to suppose that all these clouds, all this immense electrical
+display, is simply called into existence to extinguish you or me?”
 
-Footnote 5: Similar "counter wish-dreams" have been repeatedly reported to me within the last few years by my pupils who thus reacted to their first encounter with the "wish theory of the dream."`
+“No—of course—”
+
+“Even from the scientific standpoint the chances against our being
+struck are enormous. The steel knives, the only articles which might
+attract the current, are in the other carriage. And, in any case, we
+are infinitely safer than if we were walking. Courage—courage and
+faith.”
+
+Under the rug, Lucy felt the kindly pressure of her cousin’s hand. At
+times our need for a sympathetic gesture is so great that we care not
+what exactly it signifies or how much we may have to pay for it
+afterwards. Miss Bartlett, by this timely exercise of her muscles,
+gained more than she would have got in hours of preaching or cross
+examination.
+
+She renewed it when the two carriages stopped, half into Florence.
+
+“Mr. Eager!” called Mr. Beebe. “We want your assistance. Will you
+interpret for us?”
+
+“George!” cried Mr. Emerson. “Ask your driver which way George went.
+ The boy may lose his way. He may be killed.”
+
+“Go, Mr. Eager,” said Miss Bartlett, “don’t ask our driver; our driver
+is no help. Go and support poor Mr. Beebe—, he is nearly demented.”
+
+“He may be killed!” cried the old man. “He may be killed!”
+
+“Typical behaviour,” said the chaplain, as he quitted the carriage. “In
+the presence of reality that kind of person invariably breaks down.”
+
+“What does he know?” whispered Lucy as soon as they were alone.
+“Charlotte, how much does Mr. Eager know?”
+
+“Nothing, dearest; he knows nothing. But—” she pointed at the
+driver—“_he_ knows everything. Dearest, had we better? Shall I?” She
+took out her purse. “It is dreadful to be entangled with low-class
+people. He saw it all.” Tapping Phaethon’s back with her guide-book,
+she said, “Silenzio!” and offered him a franc.
+
+“Va bene,” he replied, and accepted it. As well this ending to his day
+as any. But Lucy, a mortal maid, was disappointed in him.
+
+There was an explosion up the road. The storm had struck the overhead
+wire of the tramline, and one of the great supports had fallen. If they
+had not stopped perhaps they might have been hurt. They chose to regard
+it as a miraculous preservation, and the floods of love and sincerity,
+which fructify every hour of life, burst forth in tumult. They
+descended from the carriages; they embraced each other. It was as
+joyful to be forgiven past unworthinesses as to forgive them. For a
+moment they realized vast possibilities of good.
+
+The older people recovered quickly. In the very height of their emotion
+they knew it to be unmanly or unladylike. Miss Lavish calculated that,
+even if they had continued, they would not have been caught in the
+accident. Mr. Eager mumbled a temperate prayer. But the drivers,
+through miles of dark squalid road, poured out their souls to the
+dryads and the saints, and Lucy poured out hers to her cousin.
+
+“Charlotte, dear Charlotte, kiss me. Kiss me again. Only you can
+understand me. You warned me to be careful. And I—I thought I was
+developing.”
+
+“Do not cry, dearest. Take your time.”
+
+“I have been obstinate and silly—worse than you know, far worse. Once
+by the river—Oh, but he isn’t killed—he wouldn’t be killed, would he?”
+
+The thought disturbed her repentance. As a matter of fact, the storm
+was worst along the road; but she had been near danger, and so she
+thought it must be near to everyone.
+
+“I trust not. One would always pray against that.”
+
+“He is really—I think he was taken by surprise, just as I was before.
+ But this time I’m not to blame; I want you to believe that. I simply
+slipped into those violets. No, I want to be really truthful. I am a
+little to blame. I had silly thoughts. The sky, you know, was gold, and
+the ground all blue, and for a moment he looked like someone in a
+book.”
+
+“In a book?”
+
+“Heroes—gods—the nonsense of schoolgirls.”
+
+“And then?”
+
+“But, Charlotte, you know what happened then.”`
     },
     {
       id: "section-18",
       title: "Section 18",
-      content: `Footnote 6: See Selected Papers on Hysteria and other Psychoneuroses, p. 133, translated by
+      content: `Miss Bartlett was silent. Indeed, she had little more to learn. With a
+certain amount of insight she drew her young cousin affectionately to
+her. All the way back Lucy’s body was shaken by deep sighs, which
+nothing could repress.
 
-A.A. Brill, Journal of Nervous and Mental Diseases, Monograph Series.
+“I want to be truthful,” she whispered. “It is so hard to be absolutely
+truthful.”
 
-V
+“Don’t be troubled, dearest. Wait till you are calmer. We will talk it
+over before bed-time in my room.”
 
-SEX IN DREAMS
+So they re-entered the city with hands clasped. It was a shock to the
+girl to find how far emotion had ebbed in others. The storm had ceased,
+and Mr. Emerson was easier about his son. Mr. Beebe had regained good
+humour, and Mr. Eager was already snubbing Miss Lavish. Charlotte alone
+she was sure of—Charlotte, whose exterior concealed so much insight and
+love.
 
-The more one is occupied with the solution of dreams, the more willing one must become to acknowledge that the majority of the dreams of adults treat of sexual material and give expression to erotic wishes. Only one who really analyzes dreams, that is to say, who pushes forward from their manifest content to the latent dream thoughts, can form an opinion on this subject—never the person who is satisfied with registering the manifest content (as, for example, N?cke in his works on sexual dreams). Let us recognize at once that this fact is not to be wondered at, but that it is in complete harmony with the fundamental assumptions of dream explanation. No other impulse has had to undergo so much suppression from the time of childhood as the sex impulse in its numerous components, from no other impulse have survived so many and such intense unconscious wishes, which now act in the sleeping state in such a manner as to produce dreams. In dream interpretation, this significance of sexual complexes must never be forgotten, nor must they, of course, be exaggerated to the point of being considered exclusive.
+The luxury of self-exposure kept her almost happy through the long
+evening. She thought not so much of what had happened as of how she
+should describe it. All her sensations, her spasms of courage, her
+moments of unreasonable joy, her mysterious discontent, should be
+carefully laid before her cousin. And together in divine confidence
+they would disentangle and interpret them all.
 
-Of many dreams it can be ascertained by a careful interpretation that they are even to be taken bisexually, inasmuch as they result in an irrefutable secondary interpretation in which they realize homosexual feelings—that is, feelings that are common to the normal sexual activity of the dreaming person. But that all dreams are to be interpreted bisexually, seems to me to be a generalization as indemonstrable as it is improbable, which I should not like to support. Above all I should not know how to dispose of the apparent fact that there are many dreams satisfying other than—in the widest sense—erotic needs, as dreams of hunger, thirst, convenience, &c. Likewise the similar assertions "that behind every dream one finds the death sentence" (Stekel), and that every dream shows "a continuation from the feminine to the masculine line" (Adler), seem to me to proceed far beyond what is admissible in the interpretation of dreams.
+“At last,” thought she, “I shall understand myself. I shan’t again be
+troubled by things that come out of nothing, and mean I don’t know
+what.”
 
-We have already asserted elsewhere that dreams which are conspicuously innocent invariably embody coarse erotic wishes, and we might confirm this by means of numerous fresh examples. But many dreams which appear indifferent, and which would never be suspected of any particular significance, can be traced back, after analysis, to unmistakably sexual wish-feelings, which are often of an unexpected nature. For example, who would suspect a sexual wish in the following dream until the interpretation had been worked out? The dreamer relates: Between two stately palaces stands a little house, receding somewhat, whose doors are closed.
+Miss Alan asked her to play. She refused vehemently. Music seemed to
+her the employment of a child. She sat close to her cousin, who, with
+commendable patience, was listening to a long story about lost luggage.
+ When it was over she capped it by a story of her own. Lucy became
+rather hysterical with the delay. In vain she tried to check, or at all
+events to accelerate, the tale. It was not till a late hour that Miss
+ Bartlett had recovered her luggage and could say in her usual tone of
+gentle reproach:
 
-My wife leads me a little way along the street up to the little house, and pushes in the door, and then I slip quickly and easily into the interior of a courtyard that slants obliquely upwards.
+“Well, dear, I at all events am ready for Bedfordshire. Come into my
+room, and I will give a good brush to your hair.”
 
-Any one who has had experience in the translating of dreams will, of course, immediately perceive that penetrating into narrow spaces, and opening locked doors, belong to the commonest sexual symbolism, and will easily find in this dream a representation of attempted coition from behind (between the two stately buttocks of the female body). The narrow slanting passage is of course the vagina; the assistance attributed to the wife of the dreamer requires the interpretation that in reality it is only consideration for the wife which is responsible for the detention from such an attempt.
+With some solemnity the door was shut, and a cane chair placed for the
+girl. Then Miss Bartlett said “So what is to be done?”
 
-Moreover, inquiry shows that on the previous day a young girl had entered the household of the dreamer who had pleased him, and who had given him the impression that she would not be altogether opposed to an approach of this sort. The little house between the two palaces is taken from a reminiscence of the Hradschin in Prague, and thus points again to the girl who is a native of that city.
+She was unprepared for the question. It had not occurred to her that
+she would have to do anything. A detailed exhibition of her emotions
+was all that she had counted upon.
 
-If with my patients I emphasize the frequency of the Oedipus dream—of
+“What is to be done? A point, dearest, which you alone can settle.”
 
-having sexual intercourse with one's mother—I get the answer: "I cannot remember such a dream." Immediately afterwards, however, there arises the recollection of another disguised and indifferent dream, which has been dreamed repeatedly by the patient, and the analysis shows it to be a dream of this same content—that is, another Oedipus dream. I can assure the reader that veiled dreams of sexual intercourse with the mother are a great deal more frequent than open ones to the same effect.
+The rain was streaming down the black windows, and the great room felt
+damp and chilly. One candle burnt trembling on the chest of drawers
+close to Miss Bartlett’s toque, which cast monstrous and fantastic
+shadows on the bolted door. A tram roared by in the dark, and Lucy felt
+unaccountably sad, though she had long since dried her eyes. She lifted
+them to the ceiling, where the griffins and bassoons were colourless
+and vague, the very ghosts of joy.
 
-There are dreams about landscapes and localities in which emphasis is always laid upon the assurance: "I have been there before." In this case the locality is always the genital organ of the mother; it can indeed be asserted with such certainty of no other locality that one "has been there before."
+“It has been raining for nearly four hours,” she said at last.
 
-A large number of dreams, often full of fear, which are concerned with passing through narrow spaces or with staying, in the water, are based upon fancies about the embryonic life, about the sojourn in the mother's womb, and about the act of birth. The following is the dream of a young man who in his fancy has already while in embryo taken advantage of his opportunity to spy upon an act of coition between his parents.
+Miss Bartlett ignored the remark.
 
-"He is in a deep shaft, in which there is a window, as in the Semmering Tunnel. At first he sees an empty landscape through this window, and then he composes a picture into it, which is immediately at hand and which fills out the empty space. The picture represents a field which is being thoroughly harrowed by an implement, and the delightful air, the accompanying idea of hard work, and the bluish-black clods of earth make a pleasant impression.
+“How do you propose to silence him?”
 
-He then goes on and sees a primary school opened ... and he is surprised that so much attention is devoted in it to the sexual feelings of the child, which makes him think of me."
+“The driver?”
 
-Here is a pretty water-dream of a female patient, which was turned to extraordinary account in the course of treatment.
+“My dear girl, no; Mr. George Emerson.”
 
-At her summer resort at the ... Lake, she hurls herself into the dark water at a place where the pale moon is reflected in the water.
+Lucy began to pace up and down the room.
 
-Dreams of this sort are parturition dreams; their interpretation is accomplished by reversing the fact reported in the manifest dream content; thus, instead of "throwing one's self into the water," read "coming out of the water," that is, "being born." The place from which one is born is recognized if one thinks of the bad sense of the French "la lune." The pale moon thus becomes the white "bottom" (Popo), which the child soon recognizes as the place from which it came. Now what can be the meaning of the patient's wishing to be born at her summer resort? I asked the dreamer this, and she answered without hesitation: "Hasn't the treatment made me as though I were born again?" Thus the dream becomes an invitation to continue the cure at this summer resort, that is, to visit her there; perhaps it also contains a very bashful allusion to the wish to become a mother herself.1`
+“I don’t understand,” she said at last.
+
+She understood very well, but she no longer wished to be absolutely
+truthful.
+
+“How are you going to stop him talking about it?”
+
+“I have a feeling that talk is a thing he will never do.”
+
+“I, too, intend to judge him charitably. But unfortunately I have met
+the type before. They seldom keep their exploits to themselves.”
+
+“Exploits?” cried Lucy, wincing under the horrible plural.
+
+“My poor dear, did you suppose that this was his first? Come here and
+listen to me. I am only gathering it from his own remarks. Do you
+remember that day at lunch when he argued with Miss Alan that liking
+one person is an extra reason for liking another?”
+
+“Yes,” said Lucy, whom at the time the argument had pleased.
+
+“Well, I am no prude. There is no need to call him a wicked young man,
+but obviously he is thoroughly unrefined. Let us put it down to his
+deplorable antecedents and education, if you wish. But we are no
+farther on with our question. What do you propose to do?”
+
+An idea rushed across Lucy’s brain, which, had she thought of it sooner
+and made it part of her, might have proved victorious.
+
+“I propose to speak to him,” said she.
+
+Miss Bartlett uttered a cry of genuine alarm.
+
+“You see, Charlotte, your kindness—I shall never forget it. But—as you
+said—it is my affair. Mine and his.”
+
+“And you are going to _implore_ him, to _beg_ him to keep silence?”
+
+“Certainly not. There would be no difficulty. Whatever you ask him he
+answers, yes or no; then it is over. I have been frightened of him. But
+now I am not one little bit.”
+
+“But we fear him for you, dear. You are so young and inexperienced, you
+have lived among such nice people, that you cannot realize what men can
+be—how they can take a brutal pleasure in insulting a woman whom her
+sex does not protect and rally round. This afternoon, for example, if I
+had not arrived, what would have happened?”
+
+“I can’t think,” said Lucy gravely.
+
+Something in her voice made Miss Bartlett repeat her question, intoning
+it more vigorously.
+
+“What would have happened if I hadn’t arrived?”
+
+“I can’t think,” said Lucy again.
+
+“When he insulted you, how would you have replied?”
+
+“I hadn’t time to think. You came.”
+
+“Yes, but won’t you tell me now what you would have done?”
+
+“I should have—” She checked herself, and broke the sentence off. She
+went up to the dripping window and strained her eyes into the darkness.
+ She could not think what she would have done.
+
+“Come away from the window, dear,” said Miss Bartlett. “You will be
+seen from the road.”
+
+Lucy obeyed. She was in her cousin’s power. She could not modulate out
+the key of self-abasement in which she had started. Neither of them
+referred again to her suggestion that she should speak to George and
+settle the matter, whatever it was, with him.
+
+Miss Bartlett became plaintive.
+
+“Oh, for a real man! We are only two women, you and I. Mr. Beebe is
+hopeless. There is Mr. Eager, but you do not trust him. Oh, for your
+brother! He is young, but I know that his sister’s insult would rouse
+in him a very lion. Thank God, chivalry is not yet dead. There are
+still left some men who can reverence woman.”
+
+As she spoke, she pulled off her rings, of which she wore several, and
+ranged them upon the pin cushion. Then she blew into her gloves and
+said:
+
+“It will be a push to catch the morning train, but we must try.”
+
+“What train?”
+
+“The train to Rome.” She looked at her gloves critically.
+
+The girl received the announcement as easily as it had been given.
+
+“When does the train to Rome go?”
+
+“At eight.”
+
+“Signora Bertolini would be upset.”
+
+“We must face that,” said Miss Bartlett, not liking to say that she had
+given notice already.
+
+“She will make us pay for a whole week’s pension.”
+
+“I expect she will. However, we shall be much more comfortable at the
+ Vyses’ hotel. Isn’t afternoon tea given there for nothing?”
+
+“Yes, but they pay extra for wine.” After this remark she remained
+motionless and silent. To her tired eyes Charlotte throbbed and swelled
+like a ghostly figure in a dream.`
     },
     {
       id: "section-19",
       title: "Section 19",
-      content: `Another dream of parturition, with its interpretation, I take from the work of E. Jones. "She stood at the seashore watching a small boy, who seemed to be hers, wading into the water. This he did till the water covered him, and she could only see his head bobbing up and down near the surface. The scene then changed to the crowded hall of a hotel. Her husband left her, and she 'entered into conversation with' a stranger." The second half of the dream was discovered in the analysis to represent a flight from her husband, and the entering into intimate relations with a third person, behind whom was plainly indicated Mr. X.'s brother mentioned in a former dream. The first part of the dream was a fairly evident birth phantasy. In dreams as in mythology, the delivery of a child from the uterine waters is commonly presented by distortion as the entry of the child into water; among many others, the births of Adonis, Osiris, Moses, and Bacchus are well-known illustrations of this.
+      content: `They began to sort their clothes for packing, for there was no time to
+lose, if they were to catch the train to Rome. Lucy, when admonished,
+began to move to and fro between the rooms, more conscious of the
+discomforts of packing by candlelight than of a subtler ill. Charlotte,
+who was practical without ability, knelt by the side of an empty trunk,
+vainly endeavouring to pave it with books of varying thickness and
+size. She gave two or three sighs, for the stooping posture hurt her
+back, and, for all her diplomacy, she felt that she was growing old.
+ The girl heard her as she entered the room, and was seized with one of
+those emotional impulses to which she could never attribute a cause.
+ She only felt that the candle would burn better, the packing go easier,
+the world be happier, if she could give and receive some human love.
+ The impulse had come before to-day, but never so strongly. She knelt
+down by her cousin’s side and took her in her arms.
 
-The bobbing up and down of the head in the water at once recalled to the patient the sensation of quickening she had experienced in her only pregnancy. Thinking of the boy going into the water induced a reverie in which she saw herself taking him out of the water, carrying him into the nursery, washing him and dressing him, and installing him in her household.
+Miss Bartlett returned the embrace with tenderness and warmth. But she
+was not a stupid woman, and she knew perfectly well that Lucy did not
+love her, but needed her to love. For it was in ominous tones that she
+said, after a long pause:
 
-The second half of the dream, therefore, represents thoughts concerning the elopement, which belonged to the first half of the underlying latent content; the first half of the dream corresponded with the second half of the latent content, the birth phantasy. Besides this inversion in order, further inversions took place in each half of the dream. In the first half the child entered the water, and then his head bobbed; in the underlying dream thoughts first the quickening occurred, and then the child left the water (a double inversion). In the second half her husband left her; in the dream thoughts she left her husband.
+“Dearest Lucy, how will you ever forgive me?”
 
-Another parturition dream is related by Abraham of a young woman looking forward to her first confinement. From a place in the floor of the house a subterranean canal leads directly into the water (parturition path, amniotic liquor). She lifts up a trap in the floor, and there immediately appears a creature dressed in a brownish fur, which almost resembles a seal. This creature changes into the younger brother of the dreamer, to whom she has always stood in maternal relationship.
+Lucy was on her guard at once, knowing by bitter experience what
+forgiving Miss Bartlett meant. Her emotion relaxed, she modified her
+embrace a little, and she said:
 
-Dreams of "saving" are connected with parturition dreams. To save, especially to save from the water, is equivalent to giving birth when dreamed by a woman; this sense is, however, modified when the dreamer is a man.
+“Charlotte dear, what do you mean? As if I have anything to forgive!”
 
-Robbers, burglars at night, and ghosts, of which we are afraid before going to bed, and which occasionally even disturb our sleep, originate in one and the same childish reminiscence. They are the nightly visitors who have awakened the child to set it on the chamber so that it may not wet the bed, or have lifted the cover in order to see clearly how the child is holding its hands while sleeping. I have been able to induce an exact recollection of the nocturnal visitor in the analysis of some of these anxiety dreams. The robbers were always the father, the ghosts more probably corresponded to feminine persons with white night-gowns.
+“You have a great deal, and I have a very great deal to forgive myself,
+too. I know well how much I vex you at every turn.”
 
-When one has become familiar with the abundant use of symbolism for the representation of sexual material in dreams, one naturally raises the question whether there are not many of these symbols which appear once and for all with a firmly established significance like the signs in stenography; and one is tempted to compile a new dream-book according to the cipher method. In this connection it may be remarked that this symbolism does not belong peculiarly to the dream, but rather to unconscious thinking, particularly that of the masses, and it is to be found in greater perfection in the folklore, in the myths, legends, and manners of speech, in the proverbial sayings, and in the current witticisms of a nation than in its dreams.
+“But no—”
 
-The dream takes advantage of this symbolism in order to give a disguised representation to its latent thoughts. Among the symbols which are used in this manner there are of course many which regularly, or almost regularly, mean the same thing. Only it is necessary to keep in mind the curious plasticity of psychic material. Now and then a symbol in the dream content may have to be interpreted not symbolically, but according to its real meaning; at another time the dreamer, owing to a peculiar set of recollections, may create for himself the right to use anything whatever as a sexual symbol, though it is not ordinarily used in that way. Nor are the most frequently used sexual symbols unambiguous every time.
+Miss Bartlett assumed her favourite role, that of the prematurely aged
+martyr.
 
-After these limitations and reservations I may call attention to the following: Emperor and Empress (King and Queen) in most cases really represent the parents of the dreamer; the dreamer himself or herself is the prince or princess. All elongated objects, sticks, tree-trunks, and umbrellas (on account of the stretching-up which might be compared to an erection! all elongated and sharp weapons, knives, daggers, and pikes, are intended to represent the male member. A frequent, not very intelligible, symbol for the same is a nail-file (on account of the rubbing and scraping?). Little cases, boxes, caskets, closets, and stoves correspond to the female part. The symbolism of lock and key has been very gracefully employed by Uhland in his song about the "Grafen Eberstein," to make a common smutty joke. The dream of walking through a row of rooms is a brothel or harem dream.
+“Ah, but yes! I feel that our tour together is hardly the success I had
+hoped. I might have known it would not do. You want someone younger and
+stronger and more in sympathy with you. I am too uninteresting and
+old-fashioned—only fit to pack and unpack your things.”
 
-Staircases, ladders, and flights of stairs, or climbing on these, either upwards or downwards, are symbolic representations of the sexual act. Smooth walls over which one is climbing, fa?ades of houses upon which one is letting oneself down, frequently under great anxiety, correspond to the erect human body, and probably repeat in the dream reminiscences of the upward climbing of little children on their parents or foster parents. "Smooth" walls are men. Often in a dream of anxiety one is holding on firmly to some projection from a house. Tables, set tables, and boards are women, perhaps on account of the opposition which does away with the bodily contours.
+“Please—”
 
-Since "bed and board" (mensa et thorus) constitute marriage, the former are often put for the latter in the dream, and as far as practicable the sexual presentation complex is transposed to the eating complex. Of articles of dress the woman's hat may frequently be definitely interpreted as the male genital. In dreams of men one often finds the cravat as a symbol for the penis; this indeed is not only because cravats hang down long, and are characteristic of the man, but also because one can select them at pleasure, a freedom which is prohibited by nature in the original of the symbol. Persons who make use of this symbol in the dream are very extravagant with cravats, and possess regular collections of them. All complicated machines and apparatus in dream are very probably genitals, in the description of which dream symbolism shows itself to be as tireless as the activity of wit. Likewise many landscapes in dreams, especially with bridges or with wooded mountains, can be readily recognized as descriptions of the genitals. Finally where one finds incomprehensible neologisms one may think of combinations made up of components having a sexual significance. Children also in the dream often`
+“My only consolation was that you found people more to your taste, and
+were often able to leave me at home. I had my own poor ideas of what a
+lady ought to do, but I hope I did not inflict them on you more than
+was necessary. You had your own way about these rooms, at all events.”
+
+“You mustn’t say these things,” said Lucy softly.
+
+She still clung to the hope that she and Charlotte loved each other,
+heart and soul. They continued to pack in silence.
+
+“I have been a failure,” said Miss Bartlett, as she struggled with the
+straps of Lucy’s trunk instead of strapping her own. “Failed to make
+you happy; failed in my duty to your mother. She has been so generous
+to me; I shall never face her again after this disaster.”
+
+“But mother will understand. It is not your fault, this trouble, and it
+isn’t a disaster either.”
+
+“It is my fault, it is a disaster. She will never forgive me, and
+rightly. For instance, what right had I to make friends with Miss
+ Lavish?”
+
+“Every right.”
+
+“When I was here for your sake? If I have vexed you it is equally true
+that I have neglected you. Your mother will see this as clearly as I
+do, when you tell her.”
+
+Lucy, from a cowardly wish to improve the situation, said:
+
+“Why need mother hear of it?”
+
+“But you tell her everything?”
+
+“I suppose I do generally.”
+
+“I dare not break your confidence. There is something sacred in it.
+ Unless you feel that it is a thing you could not tell her.”
+
+The girl would not be degraded to this.
+
+“Naturally I should have told her. But in case she should blame you in
+any way, I promise I will not, I am very willing not to. I will never
+speak of it either to her or to any one.”
+
+Her promise brought the long-drawn interview to a sudden close. Miss
+ Bartlett pecked her smartly on both cheeks, wished her good-night, and
+sent her to her own room.
+
+For a moment the original trouble was in the background. George would
+seem to have behaved like a cad throughout; perhaps that was the view
+which one would take eventually. At present she neither acquitted nor
+condemned him; she did not pass judgement. At the moment when she was
+about to judge him her cousin’s voice had intervened, and, ever since,
+it was Miss Bartlett who had dominated; Miss Bartlett who, even now,
+could be heard sighing into a crack in the partition wall; Miss
+ Bartlett, who had really been neither pliable nor humble nor
+inconsistent. She had worked like a great artist; for a time—indeed,
+for years—she had been meaningless, but at the end there was presented
+to the girl the complete picture of a cheerless, loveless world in
+which the young rush to destruction until they learn better—a
+shamefaced world of precautions and barriers which may avert evil, but
+which do not seem to bring good, if we may judge from those who have
+used them most.
+
+Lucy was suffering from the most grievous wrong which this world has
+yet discovered: diplomatic advantage had been taken of her sincerity,
+of her craving for sympathy and love. Such a wrong is not easily
+forgotten. Never again did she expose herself without due consideration
+and precaution against rebuff. And such a wrong may react disastrously
+upon the soul.
+
+The door-bell rang, and she started to the shutters. Before she reached
+them she hesitated, turned, and blew out the candle. Thus it was that,
+though she saw someone standing in the wet below, he, though he looked
+up, did not see her.
+
+To reach his room he had to go by hers. She was still dressed. It
+struck her that she might slip into the passage and just say that she
+would be gone before he was up, and that their extraordinary
+intercourse was over.
+
+Whether she would have dared to do this was never proved. At the
+critical moment Miss Bartlett opened her own door, and her voice said:
+
+“I wish one word with you in the drawing-room, Mr. Emerson, please.”
+
+Soon their footsteps returned, and Miss Bartlett said: “Good-night, Mr.
+ Emerson.”
+
+His heavy, tired breathing was the only reply; the chaperon had done
+her work.
+
+Lucy cried aloud: “It isn’t true. It can’t all be true. I want not to
+be muddled. I want to grow older quickly.”
+
+Miss Bartlett tapped on the wall.
+
+“Go to bed at once, dear. You need all the rest you can get.”
+
+In the morning they left for Rome.
+
+PART TWO
+
+Chapter VIII
+ Medieval
+
+The drawing-room curtains at Windy Corner had been pulled to meet, for
+the carpet was new and deserved protection from the August sun. They
+were heavy curtains, reaching almost to the ground, and the light that
+filtered through them was subdued and varied. A poet—none was
+present—might have quoted, “Life like a dome of many coloured glass,”
+or might have compared the curtains to sluice-gates, lowered against
+the intolerable tides of heaven. Without was poured a sea of radiance;
+within, the glory, though visible, was tempered to the capacities of
+man.
+
+Two pleasant people sat in the room. One—a boy of nineteen—was studying
+a small manual of anatomy, and peering occasionally at a bone which lay
+upon the piano. From time to time he bounced in his chair and puffed
+and groaned, for the day was hot and the print small, and the human
+frame fearfully made; and his mother, who was writing a letter, did
+continually read out to him what she had written. And continually did
+she rise from her seat and part the curtains so that a rivulet of light
+fell across the carpet, and make the remark that they were still there.
+
+“Where aren’t they?” said the boy, who was Freddy, Lucy’s brother. “I
+tell you I’m getting fairly sick.”
+
+“For goodness’ sake go out of my drawing-room, then?” cried Mrs.
+ Honeychurch, who hoped to cure her children of slang by taking it
+literally.
+
+Freddy did not move or reply.
+
+“I think things are coming to a head,” she observed, rather wanting her
+son’s opinion on the situation if she could obtain it without undue
+supplication.
+
+“Time they did.”
+
+“I am glad that Cecil is asking her this once more.”
+
+“It’s his third go, isn’t it?”`
     },
     {
       id: "section-20",
       title: "Section 20",
-      content: `signify the genitals, as men and women are in the habit of fondly referring to their genital organ as their "little one." As a very recent symbol of the male genital may be mentioned the flying machine, utilization of which is justified by its relation to flying as well as occasionally by its form. To play with a little child or to beat a little one is often the dream's representation of onanism. A number of other symbols, in part not sufficiently verified are given by Stekel, who illustrates them with examples. Right and left, according to him, are to be conceived in the dream in an ethical sense. "The right way always signifies the road to righteousness, the left the one to crime. Thus the left may signify homosexuality, incest, and perversion, while the right signifies marriage, relations with a prostitute, &c. The meaning is always determined by the individual moral view-point of the dreamer." Relatives in the dream generally play the r?le of genitals. Not to be able to catch up with a wagon is interpreted by Stekel as regret not to be able to come up to a difference in age. Baggage with which one travels is the burden of sin by which one is oppressed. Also numbers, which frequently occur in the dream, are assigned by Stekel a fixed symbolical meaning, but these interpretations seem neither sufficiently verified nor of general validity, although the interpretation in individual cases can generally be recognized as probable. In a recently published book by W. Stekel, Die Sprache des Traumes, which I was unable to utilize, there is a list of the most common sexual symbols, the object of which is to prove that all sexual symbols can be bisexually used. He states: "Is there a symbol which (if in any way permitted by the phantasy) may not be used simultaneously in the masculine and the feminine sense!" To be sure the clause in parentheses takes away much of the absoluteness of this assertion, for this is not at all permitted by the phantasy. I do not, however, think it superfluous to state that in my experience Stekel's general statement has to give way to the recognition of a greater manifoldness. Besides those symbols, which are just as frequent for the male as for the female genitals, there are others which preponderately, or almost exclusively, designate one of the sexes, and there are still others of which only the male or only the female signification is known. To use long, firm objects and weapons as symbols of the female genitals, or hollow objects (chests, pouches, &c.), as symbols of the male genitals, is indeed not allowed by the fancy.
+      content: `“Freddy I do call the way you talk unkind.”
 
-It is true that the tendency of the dream and the unconscious fancy to utilize the sexual symbol bisexually betrays an archaic trend, for in childhood a difference in the genitals is unknown, and the same genitals are attributed to both sexes.
+“I didn’t mean to be unkind.” Then he added: “But I do think Lucy might
+have got this off her chest in Italy. I don’t know how girls manage
+things, but she can’t have said ‘No’ properly before, or she wouldn’t
+have to say it again now. Over the whole thing—I can’t explain—I do
+feel so uncomfortable.”
 
-These very incomplete suggestions may suffice to stimulate others to make a more careful collection.
+“Do you indeed, dear? How interesting!”
 
-I shall now add a few examples of the application of such symbolisms in dreams, which will serve to show how impossible it becomes to interpret a dream without taking into account the symbolism of dreams, and how imperatively it obtrudes itself in many cases.
+“I feel—never mind.”
 
-The hat as a symbol of the man (of the male genital): (a fragment from the dream of a young woman who suffered from agoraphobia on account of a fear of temptation).
+He returned to his work.
 
-"I am walking in the street in summer, I wear a straw hat of peculiar shape, the middle piece of which is bent upwards and the side pieces of which hang downwards (the description became here obstructed), and in such a fashion that one is lower than the other. I am cheerful and in a confidential mood, and as I pass a troop of young officers I think to myself: None of you can have any designs upon me."
+“Just listen to what I have written to Mrs. Vyse. I said: ‘Dear Mrs.
+ Vyse.’”
 
-As she could produce no associations to the hat, I said to her: "The hat is really a male genital, with its raised middle piece and the two downward hanging side pieces." I intentionally refrained from interpreting those details concerning the unequal downward hanging of the two side pieces, although just such individualities in the determinations lead the way to the interpretation. I continued by saying that if she only had a man with such a virile genital she would not have to fear the officers—that is, she would have nothing to wish from them, for she is mainly kept from going without protection and company by her fancies of temptation. This last explanation of her fear I had already been able to give her repeatedly on the basis of other material.
+“Yes, mother, you told me. A jolly good letter.”
 
-It is quite remarkable how the dreamer behaved after this interpretation. She withdrew her description of the hat, and claimed not to have said that the two side pieces were hanging downwards. I was, however, too sure of what I had heard to allow myself to be misled, and I persisted in it. She was quiet for a while, and then found the courage to ask why it was that one of her husband's testicles was lower than the other, and whether it was the same in all men. With this the peculiar detail of the hat was explained, and the whole interpretation was accepted by her. The hat symbol was familiar to me long before the patient related this dream. From other but less transparent cases I believe that the hat may also be taken as a female genital.
+“I said: ‘Dear Mrs. Vyse, Cecil has just asked my permission about it,
+and I should be delighted, if Lucy wishes it. But—’” She stopped
+reading, “I was rather amused at Cecil asking my permission at all. He
+has always gone in for unconventionality, and parents nowhere, and so
+forth. When it comes to the point, he can’t get on without me.”
 
-The little one as the genital—to be run over as a symbol of sexual intercourse (another dream of the same agoraphobic patient).
+“Nor me.”
 
-"Her mother sends away her little daughter so that she must go alone.
+“You?”
 
-She rides with her mother to the railroad and sees her little one walking directly upon the tracks, so that she cannot avoid being run over. She hears the bones crackle. (From this she experiences a feeling of discomfort but no real horror.) She then looks out through the car window to see whether the parts cannot be seen behind. She then reproaches her mother for allowing the little one to go out alone." Analysis. It is not an easy matter to give here a complete interpretation of the dream. It forms part of a cycle of dreams, and can be fully understood only in connection with the others. For it is not easy to get the necessary material sufficiently isolated to prove the symbolism.
+Freddy nodded.
 
-The patient at first finds that the railroad journey is to be interpreted historically as an allusion to a departure from a sanatorium for nervous diseases, with the superintendent of which she naturally was in love. Her mother took her away from this place, and the physician came to the railroad station and handed her a bouquet of flowers on leaving; she felt uncomfortable because her mother witnessed this homage. Here the mother, therefore, appears as a disturber of her love affairs, which is the r?le actually played by this strict woman during her daughter's girlhood. The next thought referred to the sentence: "She then looks to see whether the parts can be seen behind." In the dream fa?ade one would naturally be compelled to think of the parts of the little daughter run over and ground up. The thought, however, turns in quite a different direction. She recalls that she once saw her father in the bath-room naked from behind; she then begins to talk about the sex differentiation, and asserts that in the man the genitals can be seen from behind, but in the woman they cannot. In this connection she now herself offers the interpretation that the little one is the genital, her little one (she has a four-year-old daughter) her own genital. She reproaches her mother for wanting her to live as though she had no genital, and recognizes this reproach in the introductory sentence of the dream; the mother sends away her little one so that she must go alone. In her phantasy going alone on the street signifies to have no man and no sexual relations (coire = to go together), and this she does not like. According to all her statements she really suffered as a girl on account of the jealousy of her mother, because she showed a
+“What do you mean?”
 
-preference for her father.`
+“He asked me for my permission also.”
+
+She exclaimed: “How very odd of him!”
+
+“Why so?” asked the son and heir. “Why shouldn’t my permission be
+asked?”
+
+“What do you know about Lucy or girls or anything? What ever did you
+say?”
+
+“I said to Cecil, ‘Take her or leave her; it’s no business of mine!’”
+
+“What a helpful answer!” But her own answer, though more normal in its
+wording, had been to the same effect.
+
+“The bother is this,” began Freddy.
+
+Then he took up his work again, too shy to say what the bother was.
+ Mrs. Honeychurch went back to the window.
+
+“Freddy, you must come. There they still are!”
+
+“I don’t see you ought to go peeping like that.”
+
+“Peeping like that! Can’t I look out of my own window?”
+
+But she returned to the writing-table, observing, as she passed her
+son, “Still page 322?” Freddy snorted, and turned over two leaves. For
+a brief space they were silent. Close by, beyond the curtains, the
+gentle murmur of a long conversation had never ceased.
+
+“The bother is this: I have put my foot in it with Cecil most awfully.”
+ He gave a nervous gulp. “Not content with ‘permission’, which I did
+give—that is to say, I said, ‘I don’t mind’—well, not content with
+that, he wanted to know whether I wasn’t off my head with joy. He
+practically put it like this: Wasn’t it a splendid thing for Lucy and
+for Windy Corner generally if he married her? And he would have an
+answer—he said it would strengthen his hand.”
+
+“I hope you gave a careful answer, dear.”
+
+“I answered ‘No’” said the boy, grinding his teeth. “There! Fly into a
+stew! I can’t help it—had to say it. I had to say no. He ought never to
+have asked me.”
+
+“Ridiculous child!” cried his mother. “You think you’re so holy and
+truthful, but really it’s only abominable conceit. Do you suppose that
+a man like Cecil would take the slightest notice of anything you say? I
+hope he boxed your ears. How dare you say no?”
+
+“Oh, do keep quiet, mother! I had to say no when I couldn’t say yes. I
+tried to laugh as if I didn’t mean what I said, and, as Cecil laughed
+too, and went away, it may be all right. But I feel my foot’s in it.
+ Oh, do keep quiet, though, and let a man do some work.”
+
+“No,” said Mrs. Honeychurch, with the air of one who has considered the
+subject, “I shall not keep quiet. You know all that has passed between
+them in Rome; you know why he is down here, and yet you deliberately
+insult him, and try to turn him out of my house.”
+
+“Not a bit!” he pleaded. “I only let out I didn’t like him. I don’t
+hate him, but I don’t like him. What I mind is that he’ll tell Lucy.”
+
+He glanced at the curtains dismally.
+
+“Well, _I_ like him,” said Mrs. Honeychurch. “I know his mother; he’s
+good, he’s clever, he’s rich, he’s well connected—Oh, you needn’t kick
+the piano! He’s well connected—I’ll say it again if you like: he’s well
+connected.” She paused, as if rehearsing her eulogy, but her face
+remained dissatisfied. She added: “And he has beautiful manners.”
+
+“I liked him till just now. I suppose it’s having him spoiling Lucy’s
+first week at home; and it’s also something that Mr. Beebe said, not
+knowing.”
+
+“Mr. Beebe?” said his mother, trying to conceal her interest. “I don’t
+see how Mr. Beebe comes in.”
+
+“You know Mr. Beebe’s funny way, when you never quite know what he
+means. He said: ‘Mr. Vyse is an ideal bachelor.’ I was very cute, I
+asked him what he meant. He said ‘Oh, he’s like me—better detached.’ I
+couldn’t make him say any more, but it set me thinking. Since Cecil has
+come after Lucy he hasn’t been so pleasant, at least—I can’t explain.”
+
+“You never can, dear. But I can. You are jealous of Cecil because he
+may stop Lucy knitting you silk ties.”
+
+The explanation seemed plausible, and Freddy tried to accept it. But at
+the back of his brain there lurked a dim mistrust. Cecil praised one
+too much for being athletic. Was that it? Cecil made one talk in one’s
+own way. This tired one. Was that it? And Cecil was the kind of fellow
+who would never wear another fellow’s cap. Unaware of his own
+profundity, Freddy checked himself. He must be jealous, or he would not
+dislike a man for such foolish reasons.
+
+“Will this do?” called his mother. “‘Dear Mrs. Vyse,—Cecil has just
+asked my permission about it, and I should be delighted if Lucy wishes
+it.’ Then I put in at the top, ‘and I have told Lucy so.’ I must write
+the letter out again—‘and I have told Lucy so. But Lucy seems very
+uncertain, and in these days young people must decide for themselves.’
+ I said that because I didn’t want Mrs. Vyse to think us old-fashioned.
+ She goes in for lectures and improving her mind, and all the time a
+thick layer of flue under the beds, and the maid’s dirty thumb-marks
+where you turn on the electric light. She keeps that flat abominably—”
+
+“Suppose Lucy marries Cecil, would she live in a flat, or in the
+country?”
+
+“Don’t interrupt so foolishly. Where was I? Oh yes—‘Young people must
+decide for themselves. I know that Lucy likes your son, because she
+tells me everything, and she wrote to me from Rome when he asked her
+first.’ No, I’ll cross that last bit out—it looks patronizing. I’ll
+stop at ‘because she tells me everything.’ Or shall I cross that out,
+too?”
+
+“Cross it out, too,” said Freddy.
+
+Mrs. Honeychurch left it in.
+
+“Then the whole thing runs: ‘Dear Mrs. Vyse.—Cecil has just asked my
+permission about it, and I should be delighted if Lucy wishes it, and I
+have told Lucy so. But Lucy seems very uncertain, and in these days
+young people must decide for themselves. I know that Lucy likes your
+son, because she tells me everything. But I do not know—’”
+
+“Look out!” cried Freddy.
+
+The curtains parted.
+
+Cecil’s first movement was one of irritation. He couldn’t bear the
+ Honeychurch habit of sitting in the dark to save the furniture.
+ Instinctively he gave the curtains a twitch, and sent them swinging
+down their poles. Light entered. There was revealed a terrace, such as
+is owned by many villas with trees each side of it, and on it a little
+rustic seat, and two flower-beds. But it was transfigured by the view
+beyond, for Windy Corner was built on the range that overlooks the
+ Sussex Weald. Lucy, who was in the little seat, seemed on the edge of a
+green magic carpet which hovered in the air above the tremulous world.
+
+Cecil entered.`
     },
     {
       id: "section-21",
       title: "Section 21",
-      content: `The "little one" has been noted as a symbol for the male or the female genitals by Stekel, who can refer in this connection to a very widespread usage of language.
+      content: `Appearing thus late in the story, Cecil must be at once described. He
+was medieval. Like a Gothic statue. Tall and refined, with shoulders
+that seemed braced square by an effort of the will, and a head that was
+tilted a little higher than the usual level of vision, he resembled
+those fastidious saints who guard the portals of a French cathedral.
+ Well educated, well endowed, and not deficient physically, he remained
+in the grip of a certain devil whom the modern world knows as
+self-consciousness, and whom the medieval, with dimmer vision,
+worshipped as asceticism. A Gothic statue implies celibacy, just as a
+ Greek statue implies fruition, and perhaps this was what Mr. Beebe
+meant. And Freddy, who ignored history and art, perhaps meant the same
+when he failed to imagine Cecil wearing another fellow’s cap.
 
-The deeper interpretation of this dream depends upon another dream of the same night in which the dreamer identifies herself with her brother. She was a "tomboy," and was always being told that she should have been born a boy. This identification with the brother shows with special clearness that "the little one" signifies the genital. The mother threatened him (her) with castration, which could only be understood as a punishment for playing with the parts, and the identification, therefore, shows that she herself had masturbated as a child, though this fact she now retained only in memory concerning her brother. An early knowledge of the male genital which she later lost she must have acquired at that time according to the assertions of this second dream. Moreover the second dream points to the infantile sexual theory that girls originate from boys through castration. After I had told her of this childish belief, she at once confirmed it with an anecdote in which the boy asks the girl: "Was it cut off?" to which the girl replied, "No, it's always been so."
+Mrs. Honeychurch left her letter on the writing table and moved towards
+her young acquaintance.
 
-The sending away of the little one, of the genital, in the first dream therefore also refers to the threatened castration. Finally she blames her mother for not having been born a boy.
+“Oh, Cecil!” she exclaimed—“oh, Cecil, do tell me!”
 
-That "being run over" symbolizes sexual intercourse would not be evident from this dream if we were not sure of it from many other sources.
+“I promessi sposi,” said he.
 
-Representation of the genital by structures, stairways, and shafts. (Dream of a young man inhibited by a father complex.)
+They stared at him anxiously.
 
-"He is taking a walk with his father in a place which is surely the Prater, for the Rotunda may be seen in front of which there is a small front structure to which is attached a captive balloon; the balloon, however, seems quite collapsed. His father asks him what this is all for; he is surprised at it, but he explains it to his father. They come into a court in which lies a large sheet of tin. His father wants to pull off a big piece of this, but first looks around to see if any one is watching. He tells his father that all he needs to do is to speak to the watchman, and then he can take without any further difficulty as much as he wants to. From this court a stairway leads down into a shaft, the walls of which are softly upholstered something like a leather pocketbook. At the end of this shaft there is a longer platform, and then a new shaft begins "
+“She has accepted me,” he said, and the sound of the thing in English
+made him flush and smile with pleasure, and look more human.
 
-Analysis. This dream belongs to a type of patient which is not favorable from a therapeutic point of view. They follow in the analysis without offering any resistances whatever up to a certain point, but from that point on they remain almost inaccessible. This dream he almost analyzed himself. "The Rotunda," he said, "is my genital, the captive balloon in front is my penis, about the weakness of which I have worried." We must, however, interpret in greater detail; the Rotunda is the buttock which is regularly associated by the child with the genital, the smaller front structure is the scrotum. In the dream his father asks him what this is all for—that is, he asks him about the purpose and arrangement of the genitals. It is quite evident that this state of affairs should be turned around, and that he should be the questioner. As such a questioning on the side of the father has never taken place in reality, we must conceive the dream thought as a wish, or take it conditionally, as follows: "If I had only asked my father for sexual enlightenment." The continuation of this thought we shall soon find in another place.
+“I am so glad,” said Mrs. Honeychurch, while Freddy proffered a hand
+that was yellow with chemicals. They wished that they also knew
+ Italian, for our phrases of approval and of amazement are so connected
+with little occasions that we fear to use them on great ones. We are
+obliged to become vaguely poetic, or to take refuge in Scriptural
+reminiscences.
 
-The court in which the tin sheet is spread out is not to be conceived symbolically in the first instance, but originates from his father's place of business. For discretionary reasons I have inserted the tin for another material in which the father deals, without, however, changing anything in the verbal expression of the dream. The dreamer had entered his father's business, and had taken a terrible dislike to the questionable practices upon which profit mainly depends. Hence the continuation of the above dream thought ("if I had only asked him") would be: "He would have deceived me just as he does his customers." For the pulling off, which serves to represent commercial dishonesty, the dreamer himself gives a second explanation—namely, onanism. This is not only entirely familiar to us, but agrees very well with the fact that the secrecy of onanism is expressed by its opposite ("Why one can do it quite openly"). It, moreover, agrees entirely with our expectations that the onanistic activity is again put off on the father, just as was the questioning in the first scene of the dream. The shaft he at once interprets as the vagina by referring to the soft upholstering of the walls. That the act of coition in the vagina is described as a going down instead of in the usual way as a going up, I have also found true in other instances2.
+“Welcome as one of the family!” said Mrs. Honeychurch, waving her hand
+at the furniture. “This is indeed a joyous day! I feel sure that you
+will make our dear Lucy happy.”
 
-The details that at the end of the first shaft there is a longer platform and then a new shaft, he himself explains biographically. He had for some time consorted with women sexually, but had then given it up because of inhibitions and now hopes to be able to take it up again with the aid of the treatment. The dream, however, becomes indistinct toward the end, and to the experienced interpreter it becomes evident that in the second scene of the dream the influence of another subject has begun to assert itself; in this his father's business and his dishonest practices signify the first vagina represented as a shaft so that one might think of a reference to the mother.
+“I hope so,” replied the young man, shifting his eyes to the ceiling.
 
-The male genital symbolized by persons and the female by a landscape.
+“We mothers—” simpered Mrs. Honeychurch, and then realized that she was
+affected, sentimental, bombastic—all the things she hated most. Why
+could she not be Freddy, who stood stiff in the middle of the room;
+looking very cross and almost handsome?
 
-(Dream of a woman of the lower class, whose husband is a policeman, reported by B. Dattner.)
+“I say, Lucy!” called Cecil, for conversation seemed to flag.
 
-... Then some one broke into the house and anxiously called for a policeman. But he went with two tramps by mutual consent into a church,3 to which led a great many stairs;4 behind the church there was a mountain,5 on top of which a dense forest.6 The policeman was furnished with a helmet, a gorget, and a cloak.7 The two vagrants, who went along with the policeman quite peaceably, had tied to their loins sack-like aprons.8 A road led from the church to the mountain. This road was overgrown on each side with grass and brushwood, which became thicker and thicker as it reached the height of the mountain, where it spread out into quite a forest.
+Lucy rose from the seat. She moved across the lawn and smiled in at
+them, just as if she was going to ask them to play tennis. Then she saw
+her brother’s face. Her lips parted, and she took him in her arms. He
+said, “Steady on!”
 
-A stairway dream.
+“Not a kiss for me?” asked her mother.
 
-(Reported and interpreted by Otto Rank.)
+Lucy kissed her also.
 
-For the following transparent pollution dream, I am indebted to the same colleague who furnished us with the dental-irritation dream.
+“Would you take them into the garden and tell Mrs. Honeychurch all
+about it?” Cecil suggested. “And I’d stop here and tell my mother.”
 
-"I am running down the stairway in the stair-house after a little girl, whom I wish to punish because she has done something to me. At the bottom of the stairs some one held the child for me. (A grown-up woman?) I grasp it, but do not know whether I have hit it, for I suddenly find myself in the middle of the stairway where I practice coitus with the child (in the air as it were). It is really no coitus, I only rub my genital on her external genital, and in doing this I see it very distinctly, as distinctly as I see her head which is lying sideways. During the sexual act I see hanging to the left and above me (also as if in the air) two small pictures, landscapes, representing a house on a green. On the smaller one my surname stood in the place where the painter's signature should be; it seemed to be intended for my birthday present. A small sign hung in front of the pictures to the effect that cheaper pictures could also be obtained. I then see myself very indistinctly lying in bed, just as I had seen myself at the foot of the stairs, and I am awakened by a feeling of dampness which came from the pollution."`
+“We go with Lucy?” said Freddy, as if taking orders.
+
+“Yes, you go with Lucy.”
+
+They passed into the sunlight. Cecil watched them cross the terrace,
+and descend out of sight by the steps. They would descend—he knew their
+ways—past the shrubbery, and past the tennis-lawn and the dahlia-bed,
+until they reached the kitchen garden, and there, in the presence of
+the potatoes and the peas, the great event would be discussed.
+
+Smiling indulgently, he lit a cigarette, and rehearsed the events that
+had led to such a happy conclusion.
+
+He had known Lucy for several years, but only as a commonplace girl who
+happened to be musical. He could still remember his depression that
+afternoon at Rome, when she and her terrible cousin fell on him out of
+the blue, and demanded to be taken to St. Peter’s. That day she had
+seemed a typical tourist—shrill, crude, and gaunt with travel. But
+ Italy worked some marvel in her. It gave her light, and—which he held
+more precious—it gave her shadow. Soon he detected in her a wonderful
+reticence. She was like a woman of Leonardo da Vinci’s, whom we love
+not so much for herself as for the things that she will not tell us.
+ The things are assuredly not of this life; no woman of Leonardo’s could
+have anything so vulgar as a “story.” She did develop most wonderfully
+day by day.
+
+So it happened that from patronizing civility he had slowly passed if
+not to passion, at least to a profound uneasiness. Already at Rome he
+had hinted to her that they might be suitable for each other. It had
+touched him greatly that she had not broken away at the suggestion. Her
+refusal had been clear and gentle; after it—as the horrid phrase
+went—she had been exactly the same to him as before. Three months
+later, on the margin of Italy, among the flower-clad Alps, he had asked
+her again in bald, traditional language. She reminded him of a Leonardo
+more than ever; her sunburnt features were shadowed by fantastic rock;
+at his words she had turned and stood between him and the light with
+immeasurable plains behind her. He walked home with her unashamed,
+feeling not at all like a rejected suitor. The things that really
+mattered were unshaken.
+
+So now he had asked her once more, and, clear and gentle as ever, she
+had accepted him, giving no coy reasons for her delay, but simply
+saying that she loved him and would do her best to make him happy. His
+mother, too, would be pleased; she had counselled the step; he must
+write her a long account.
+
+Glancing at his hand, in case any of Freddy’s chemicals had come off on
+it, he moved to the writing table. There he saw “Dear Mrs. Vyse,”
+followed by many erasures. He recoiled without reading any more, and
+after a little hesitation sat down elsewhere, and pencilled a note on
+his knee.
+
+Then he lit another cigarette, which did not seem quite as divine as
+the first, and considered what might be done to make Windy Corner
+drawing-room more distinctive. With that outlook it should have been a
+successful room, but the trail of Tottenham Court Road was upon it; he
+could almost visualize the motor-vans of Messrs. Shoolbred and Messrs.
+ Maple arriving at the door and depositing this chair, those varnished
+book-cases, that writing-table. The table recalled Mrs. Honeychurch’s
+letter. He did not want to read that letter—his temptations never lay
+in that direction; but he worried about it none the less. It was his
+own fault that she was discussing him with his mother; he had wanted
+her support in his third attempt to win Lucy; he wanted to feel that
+others, no matter who they were, agreed with him, and so he had asked
+their permission. Mrs. Honeychurch had been civil, but obtuse in
+essentials, while as for Freddy—“He is only a boy,” he reflected. “I
+represent all that he despises. Why should he want me for a
+brother-in-law?”
+
+The Honeychurches were a worthy family, but he began to realize that
+ Lucy was of another clay; and perhaps—he did not put it very
+definitely—he ought to introduce her into more congenial circles as
+soon as possible.
+
+“Mr. Beebe!” said the maid, and the new rector of Summer Street was
+shown in; he had at once started on friendly relations, owing to Lucy’s
+praise of him in her letters from Florence.
+
+Cecil greeted him rather critically.
+
+“I’ve come for tea, Mr. Vyse. Do you suppose that I shall get it?”
+
+“I should say so. Food is the thing one does get here—Don’t sit in that
+chair; young Honeychurch has left a bone in it.”
+
+“Pfui!”
+
+“I know,” said Cecil. “I know. I can’t think why Mrs. Honeychurch
+allows it.”
+
+For Cecil considered the bone and the Maples’ furniture separately; he
+did not realize that, taken together, they kindled the room into the
+life that he desired.
+
+“I’ve come for tea and for gossip. Isn’t this news?”
+
+“News? I don’t understand you,” said Cecil. “News?”
+
+Mr. Beebe, whose news was of a very different nature, prattled forward.
+
+“I met Sir Harry Otway as I came up; I have every reason to hope that I
+am first in the field. He has bought Cissie and Albert from Mr. Flack!”
+
+“Has he indeed?” said Cecil, trying to recover himself. Into what a
+grotesque mistake had he fallen! Was it likely that a clergyman and a
+gentleman would refer to his engagement in a manner so flippant? But
+his stiffness remained, and, though he asked who Cissie and Albert
+might be, he still thought Mr. Beebe rather a bounder.`
     },
     {
       id: "section-22",
       title: "Section 22",
-      content: `Interpretation. The dreamer had been in a book-store on the evening of the day of the dream, where, while he was waiting, he examined some pictures which were exhibited, which represented motives similar to the dream pictures. He stepped nearer to a small picture which particularly took his fancy in order to see the name of the artist, which, however, was quite unknown to him.
+      content: `“Unpardonable question! To have stopped a week at Windy Corner and not
+to have met Cissie and Albert, the semi-detached villas that have been
+run up opposite the church! I’ll set Mrs. Honeychurch after you.”
 
-Later in the same evening, in company, he heard about a Bohemian servant-girl who boasted that her illegitimate child "was made on the stairs." The dreamer inquired about the details of this unusual occurrence, and learned that the servant-girl went with her lover to the home of her parents, where there was no opportunity for sexual relations, and that the excited man performed the act on the stairs. In witty allusion to the mischievous expression used about wine-adulterers, the dreamer remarked, "The child really grew on the cellar steps."
+“I’m shockingly stupid over local affairs,” said the young man
+languidly. “I can’t even remember the difference between a Parish
+ Council and a Local Government Board. Perhaps there is no difference,
+or perhaps those aren’t the right names. I only go into the country to
+see my friends and to enjoy the scenery. It is very remiss of me. Italy
+and London are the only places where I don’t feel to exist on
+sufferance.”
 
-These experiences of the day, which are quite prominent in the dream content, were readily reproduced by the dreamer. But he just as readily reproduced an old fragment of infantile recollection which was also utilized by the dream. The stair-house was the house in which he had spent the greatest part of his childhood, and in which he had first become acquainted with sexual problems. In this house he used, among other things, to slide down the banister astride which caused him to become sexually excited. In the dream he also comes down the stairs very rapidly—so rapidly that, according to his own distinct assertions, he hardly touched the individual stairs, but rather "flew" or "slid down," as we used to say. Upon reference to this infantile experience, the beginning of the dream seems to represent the factor of sexual excitement. In the same house and in the adjacent residence the dreamer used to play pugnacious games with the neighboring children, in which he satisfied himself just as he did in the dream.
+Mr. Beebe, distressed at this heavy reception of Cissie and Albert,
+determined to shift the subject.
 
-If one recalls from Freud's investigation of sexual symbolism9 that in the dream stairs or climbing stairs almost regularly symbolizes coitus, the dream becomes clear. Its motive power as well as its effect, as is shown by the
+“Let me see, Mr. Vyse—I forget—what is your profession?”
 
-pollution, is of a purely libidinous nature. Sexual excitement became aroused during the sleeping state (in the dream this is represented by the rapid running or sliding down the stairs) and the sadistic thread in this is, on the basis of the pugnacious playing, indicated in the pursuing and overcoming of the child.
+“I have no profession,” said Cecil. “It is another example of my
+decadence. My attitude—quite an indefensible one—is that so long as I
+am no trouble to any one I have a right to do as I like. I know I ought
+to be getting money out of people, or devoting myself to things I don’t
+care a straw about, but somehow, I’ve not been able to begin.”
 
-The libidinous excitement becomes enhanced and urges to sexual action (represented in the dream by the grasping of the child and the conveyance of it to the middle of the stairway). Up to this point the dream would be one of pure, sexual symbolism, and obscure for the unpracticed dream interpreter. But this symbolic gratification, which would have insured undisturbed sleep, was not sufficient for the powerful libidinous excitement. The excitement leads to an orgasm, and thus the whole stairway symbolism is unmasked as a substitute for coitus. Freud lays stress on the rhythmical character of both actions as one of the reasons for the sexual utilization of the stairway symbolism, and this dream especially seems to corroborate this, for, according to the express assertion of the dreamer, the rhythm of a sexual act was the most pronounced feature in the whole dream.
+“You are very fortunate,” said Mr. Beebe. “It is a wonderful
+opportunity, the possession of leisure.”
 
-Still another remark concerning the two pictures, which, aside from their real significance, also have the value of "Weibsbilder" (literally woman- pictures, but idiomatically women). This is at once shown by the fact that the dream deals with a big and a little picture, just as the dream content presents a big (grown up) and a little girl. That cheap pictures could also be obtained points to the prostitution complex, just as the dreamer's surname on the little picture and the thought that it was intended for his birthday, point to the parent complex (to be born on the stairway—to be conceived in coitus).
+His voice was rather parochial, but he did not quite see his way to
+answering naturally. He felt, as all who have regular occupation must
+feel, that others should have it also.
 
-The indistinct final scene, in which the dreamer sees himself on the staircase landing lying in bed and feeling wet, seems to go back into childhood even beyond the infantile onanism, and manifestly has its prototype in similarly pleasurable scenes of bed-wetting.
+“I am glad that you approve. I daren’t face the healthy person—for
+example, Freddy Honeychurch.”
 
-A modified stair-dream.
+“Oh, Freddy’s a good sort, isn’t he?”
 
-To one of my very nervous patients, who was an abstainer, whose fancy was fixed on his mother, and who repeatedly dreamed of climbing stairs accompanied by his mother, I once remarked that moderate masturbation would be less harmful to him than enforced abstinence. This influence provoked the following dream:
+“Admirable. The sort who has made England what she is.”
 
-"His piano teacher reproaches him for neglecting his piano-playing, and for not practicing the Etudes of Moscheles and Clementi's Gradus ad
+Cecil wondered at himself. Why, on this day of all others, was he so
+hopelessly contrary? He tried to get right by inquiring effusively
+after Mr. Beebe’s mother, an old lady for whom he had no particular
+regard. Then he flattered the clergyman, praised his
+liberal-mindedness, his enlightened attitude towards philosophy and
+science.
 
-Parnassum." In relation to this he remarked that the Gradus is only a stairway, and that the piano itself is only a stairway as it has a scale.
+“Where are the others?” said Mr. Beebe at last, “I insist on extracting
+tea before evening service.”
 
-It is correct to say that there is no series of associations which cannot be adapted to the representation of sexual facts. I conclude with the dream of a chemist, a young man, who has been trying to give up his habit of masturbation by replacing it with intercourse with women.
+“I suppose Anne never told them you were here. In this house one is so
+coached in the servants the day one arrives. The fault of Anne is that
+she begs your pardon when she hears you perfectly, and kicks the
+chair-legs with her feet. The faults of Mary—I forget the faults of
+ Mary, but they are very grave. Shall we look in the garden?”
 
-Preliminary statement.—On the day before the dream he had given a student instruction concerning Grignard's reaction, in which magnesium is to be dissolved in absolutely pure ether under the catalytic influence of iodine. Two days before, there had been an explosion in the course of the same reaction, in which the investigator had burned his hand.
+“I know the faults of Mary. She leaves the dust-pans standing on the
+stairs.”
 
-Dream I. He is to make phenylmagnesium-bromid; he sees the apparatus with particular clearness, but he has substituted himself for the magnesium.
+“The fault of Euphemia is that she will not, simply will not, chop the
+suet sufficiently small.”
 
-He is now in a curious swaying attitude. He keeps repeating to himself, "This is the right thing, it is working, my feet are beginning to dissolve and my knees are getting soft." Then he reaches down and feels for his feet, and meanwhile (he does not know how) he takes his legs out of the crucible, and then again he says to himself, "That cannot be Yes, it must be so, it has
+They both laughed, and things began to go better.
 
-been done correctly." Then he partially awakens, and repeats the dream to himself, because he wants to tell it to me. He is distinctly afraid of the analysis of the dream. He is much excited during this semi-sleeping state, and repeats continually, "Phenyl, phenyl."
+“The faults of Freddy—” Cecil continued.
 
-II. He is in ing with his whole family; at half-past eleven. He is to be
+“Ah, he has too many. No one but his mother can remember the faults of
+ Freddy. Try the faults of Miss Honeychurch; they are not innumerable.”
 
-at the Schottenthor for a rendezvous with a certain lady, but he does not wake up until half-past eleven. He says to himself, "It is too late now; when you get there it will be half-past twelve." The next instant he sees the whole family gathered about the table—his mother and the servant girl with the soup- tureen with particular clearness. Then he says to himself, "Well, if we are eating already, I certainly can't get away."
+“She has none,” said the young man, with grave sincerity.
 
-Analysis: He feels sure that even the first dream contains a reference to the lady whom he is to meet at the rendezvous (the dream was dreamed during the night before the expected meeting). The student to whom he gave the instruction is a particularly unpleasant fellow; he had said to the chemist: "That isn't right," because the magnesium was still unaffected, and the latter answered as though he did not care anything about it: "It certainly isn't right." He himself must be this student; he is as indifferent towards his analysis as the student is towards his synthesis; the He in the dream, however, who accomplishes the operation, is myself. How unpleasant he must seem to me with his indifference towards the success achieved!
+“I quite agree. At present she has none.”
 
-Moreover, he is the material with which the analysis (synthesis) is made.`
+“At present?”
+
+“I’m not cynical. I’m only thinking of my pet theory about Miss
+ Honeychurch. Does it seem reasonable that she should play so
+wonderfully, and live so quietly? I suspect that one day she will be
+wonderful in both. The water-tight compartments in her will break down,
+and music and life will mingle. Then we shall have her heroically good,
+heroically bad—too heroic, perhaps, to be good or bad.”
+
+Cecil found his companion interesting.
+
+“And at present you think her not wonderful as far as life goes?”
+
+“Well, I must say I’ve only seen her at Tunbridge Wells, where she was
+not wonderful, and at Florence. Since I came to Summer Street she has
+been away. You saw her, didn’t you, at Rome and in the Alps. Oh, I
+forgot; of course, you knew her before. No, she wasn’t wonderful in
+ Florence either, but I kept on expecting that she would be.”
+
+“In what way?”
+
+Conversation had become agreeable to them, and they were pacing up and
+down the terrace.
+
+“I could as easily tell you what tune she’ll play next. There was
+simply the sense that she had found wings, and meant to use them. I can
+show you a beautiful picture in my Italian diary: Miss Honeychurch as a
+kite, Miss Bartlett holding the string. Picture number two: the string
+breaks.”
+
+The sketch was in his diary, but it had been made afterwards, when he
+viewed things artistically. At the time he had given surreptitious tugs
+to the string himself.
+
+“But the string never broke?”
+
+“No. I mightn’t have seen Miss Honeychurch rise, but I should certainly
+have heard Miss Bartlett fall.”
+
+“It has broken now,” said the young man in low, vibrating tones.
+
+Immediately he realized that of all the conceited, ludicrous,
+contemptible ways of announcing an engagement this was the worst. He
+cursed his love of metaphor; had he suggested that he was a star and
+that Lucy was soaring up to reach him?
+
+“Broken? What do you mean?”
+
+“I meant,” said Cecil stiffly, “that she is going to marry me.”
+
+The clergyman was conscious of some bitter disappointment which he
+could not keep out of his voice.
+
+“I am sorry; I must apologize. I had no idea you were intimate with
+her, or I should never have talked in this flippant, superficial way.
+ Mr. Vyse, you ought to have stopped me.” And down the garden he saw
+ Lucy herself; yes, he was disappointed.
+
+Cecil, who naturally preferred congratulations to apologies, drew down
+his mouth at the corners. Was this the reception his action would get
+from the world? Of course, he despised the world as a whole; every
+thoughtful man should; it is almost a test of refinement. But he was
+sensitive to the successive particles of it which he encountered.
+
+Occasionally he could be quite crude.
+
+“I am sorry I have given you a shock,” he said dryly. “I fear that
+ Lucy’s choice does not meet with your approval.”
+
+“Not that. But you ought to have stopped me. I know Miss Honeychurch
+only a little as time goes. Perhaps I oughtn’t to have discussed her so
+freely with any one; certainly not with you.”
+
+“You are conscious of having said something indiscreet?”
+
+Mr. Beebe pulled himself together. Really, Mr. Vyse had the art of
+placing one in the most tiresome positions. He was driven to use the
+prerogatives of his profession.
+
+“No, I have said nothing indiscreet. I foresaw at Florence that her
+quiet, uneventful childhood must end, and it has ended. I realized
+dimly enough that she might take some momentous step. She has taken it.
+ She has learnt—you will let me talk freely, as I have begun freely—she
+has learnt what it is to love: the greatest lesson, some people will
+tell you, that our earthly life provides.” It was now time for him to
+wave his hat at the approaching trio. He did not omit to do so. “She
+has learnt through you,” and if his voice was still clerical, it was
+now also sincere; “let it be your care that her knowledge is profitable
+to her.”
+
+“Grazie tante!” said Cecil, who did not like parsons.
+
+“Have you heard?” shouted Mrs. Honeychurch as she toiled up the sloping
+garden. “Oh, Mr. Beebe, have you heard the news?”
+
+Freddy, now full of geniality, whistled the wedding march. Youth seldom
+criticizes the accomplished fact.
+
+“Indeed I have!” he cried. He looked at Lucy. In her presence he could
+not act the parson any longer—at all events not without apology. “Mrs.
+ Honeychurch, I’m going to do what I am always supposed to do, but
+generally I’m too shy. I want to invoke every kind of blessing on them,
+grave and gay, great and small. I want them all their lives to be
+supremely good and supremely happy as husband and wife, as father and
+mother. And now I want my tea.”
+
+“You only asked for it just in time,” the lady retorted. “How dare you
+be serious at Windy Corner?”
+
+He took his tone from her. There was no more heavy beneficence, no more
+attempts to dignify the situation with poetry or the Scriptures. None
+of them dared or was able to be serious any more.`
     },
     {
       id: "section-23",
       title: "Section 23",
-      content: `For it is a question of the success of the treatment. The legs in the dream recall an impression of the previous evening. He met a lady at a dancing lesson whom he wished to conquer; he pressed her to him so closely that she once cried out. After he had stopped pressing against her legs, he felt her firm responding pressure against his lower thighs as far as just above his knees, at the place mentioned in the dream. In this situation, then, the woman is the magnesium in the retort, which is at last working. He is feminine towards me, as he is masculine towards the woman. If it will work with the woman, the treatment will also work. Feeling and becoming aware of himself in the region of his knees refers to masturbation, and corresponds to his fatigue of the previous day The rendezvous had actually been set for half-past eleven.
+      content: `An engagement is so potent a thing that sooner or later it reduces all
+who speak of it to this state of cheerful awe. Away from it, in the
+solitude of their rooms, Mr. Beebe, and even Freddy, might again be
+critical. But in its presence and in the presence of each other they
+were sincerely hilarious. It has a strange power, for it compels not
+only the lips, but the very heart. The chief parallel to compare one
+great thing with another—is the power over us of a temple of some alien
+creed. Standing outside, we deride or oppose it, or at the most feel
+sentimental. Inside, though the saints and gods are not ours, we become
+true believers, in case any true believer should be present.
 
-His wish to oversleep and to remain with his usual sexual objects (that is, with masturbation) corresponds with his resistance.
+So it was that after the gropings and the misgivings of the afternoon
+they pulled themselves together and settled down to a very pleasant
+tea-party. If they were hypocrites they did not know it, and their
+hypocrisy had every chance of setting and of becoming true. Anne,
+putting down each plate as if it were a wedding present, stimulated
+them greatly. They could not lag behind that smile of hers which she
+gave them ere she kicked the drawing-room door. Mr. Beebe chirruped.
+ Freddy was at his wittiest, referring to Cecil as the “Fiasco”—family
+honoured pun on fiance. Mrs. Honeychurch, amusing and portly, promised
+well as a mother-in-law. As for Lucy and Cecil, for whom the temple had
+been built, they also joined in the merry ritual, but waited, as
+earnest worshippers should, for the disclosure of some holier shrine of
+joy.
 
-Footnote 1: It is only of late that I have learned to value the significance of fancies and unconscious thoughts about life in the womb. They contain the explanation of the curious fear felt by so many people of being buried alive, as well as the profoundest unconscious reason for the belief in a life after death which represents nothing but a projection into the future of this mysterious life before birth. The act of birth, moreover, is the first experience with fear, and is thus the source and model of the emotion of fear.
+Chapter IX
+ Lucy As a Work of Art
 
-Footnote 2: Cf. Zentralblatt f?r psychoanalyse, I. Footnote 3: Or chapel—vagina.
+A few days after the engagement was announced Mrs. Honeychurch made
+ Lucy and her Fiasco come to a little garden-party in the neighbourhood,
+for naturally she wanted to show people that her daughter was marrying
+a presentable man.
 
-Footnote 4: Symbol of coitus. Footnote 5: Mons veneris.
+Cecil was more than presentable; he looked distinguished, and it was
+very pleasant to see his slim figure keeping step with Lucy, and his
+long, fair face responding when Lucy spoke to him. People congratulated
+ Mrs. Honeychurch, which is, I believe, a social blunder, but it pleased
+her, and she introduced Cecil rather indiscriminately to some stuffy
+dowagers.
 
-Footnote 6: Crines pubis.
+At tea a misfortune took place: a cup of coffee was upset over Lucy’s
+figured silk, and though Lucy feigned indifference, her mother feigned
+nothing of the sort but dragged her indoors to have the frock treated
+by a sympathetic maid. They were gone some time, and Cecil was left
+with the dowagers. When they returned he was not as pleasant as he had
+been.
 
-Footnote 7: Demons in cloaks and capucines are, according to the explanation of a man versed in the subject, of a phallic nature.
+“Do you go to much of this sort of thing?” he asked when they were
+driving home.
 
-Footnote 8: The two halves of the scrotum.
+“Oh, now and then,” said Lucy, who had rather enjoyed herself.
 
-Footnote 9: See Zentralblatt f?r Psychoanalyse, vol. i., p. 2.
+“Is it typical of country society?”
 
-VI
+“I suppose so. Mother, would it be?”
 
-THE WISH IN DREAMS
+“Plenty of society,” said Mrs. Honeychurch, who was trying to remember
+the hang of one of the dresses.
 
-That the dream should be nothing but a wish-fulfillment surely seemed strange to us all—and that not alone because of the contradictions offered by the anxiety dream.
+Seeing that her thoughts were elsewhere, Cecil bent towards Lucy and
+said:
 
-After learning from the first analytical explanations that the dream
+“To me it seemed perfectly appalling, disastrous, portentous.”
 
-conceals sense and psychic validity, we could hardly expect so simple a determination of this sense. According to the correct but concise definition of Aristotle, the dream is a continuation of thinking in sleep (in so far as one sleeps). Considering that during the day our thoughts produce such a diversity of psychic acts—judgments, conclusions, contradictions, expectations, intentions, &c.—why should our sleeping thoughts be forced to confine themselves to the production of wishes? Are there not, on the contrary, many dreams that present a different psychic act in dream form, e.g., a solicitude, and is not the very transparent father's dream mentioned above of just such a nature? From the gleam of light falling into his eyes while asleep the father draws the solicitous conclusion that a candle has been upset and may have set fire to the corpse; he transforms this conclusion into a dream by investing it with a senseful situation enacted in the present tense.
+“I am so sorry that you were stranded.”
 
-What part is played in this dream by the wish-fulfillment, and which are we to suspect—the predominance of the thought continued from, the waking state or of the thought incited by the new sensory impression?
+“Not that, but the congratulations. It is so disgusting, the way an
+engagement is regarded as public property—a kind of waste place where
+every outsider may shoot his vulgar sentiment. All those old women
+smirking!”
 
-All these considerations are just, and force us to enter more deeply into the part played by the wish-fulfillment in the dream, and into the significance of the waking thoughts continued in sleep.
+“One has to go through it, I suppose. They won’t notice us so much next
+time.”
 
-It is in fact the wish-fulfillment that has already induced us to separate dreams into two groups. We have found some dreams that were plainly wish- fulfillments; and others in which wish-fulfillment could not be recognized, and was frequently concealed by every available means. In this latter class of dreams we recognized the influence of the dream censor. The undisguised wish dreams were chiefly found in children, yet fleeting open-hearted wish dreams seemed (I purposely emphasize this word) to occur also in adults.
+“But my point is that their whole attitude is wrong. An
+engagement—horrid word in the first place—is a private matter, and
+should be treated as such.”
 
-We may now ask whence the wish fulfilled in the dream originates. But to what opposition or to what diversity do we refer this "whence"? I think it is to the opposition between conscious daily life and a psychic activity remaining unconscious which can only make itself noticeable during the night. I thus find a threefold possibility for the origin of a wish. Firstly, it may have been incited during the day, and owing to external circumstances failed to find gratification, there is thus left for the night an acknowledged but unfulfilled wish. Secondly, it may come to the surface during the day but be rejected, leaving an unfulfilled but suppressed wish. Or, thirdly, it may have no relation to daily life, and belong to those wishes that originate during the night from the suppression. If we now follow our scheme of the psychic apparatus, we can localize a wish of the first order in the system Forec. We may assume that a wish of the second order has been forced back from the Forec. system into the Unc. system, where alone, if anywhere, it can maintain itself; while a wish-feeling of the third order we consider altogether incapable of leaving the Unc. system. This brings up the question whether wishes arising from these different sources possess the same value for the dream, and whether they have the same power to incite a dream.
+Yet the smirking old women, however wrong individually, were racially
+correct. The spirit of the generations had smiled through them,
+rejoicing in the engagement of Cecil and Lucy because it promised the
+continuance of life on earth. To Cecil and Lucy it promised something
+quite different—personal love. Hence Cecil’s irritation and Lucy’s
+belief that his irritation was just.
 
-On reviewing the dreams which we have at our disposal for answering this question, we are at once moved to add as a fourth source of the dream- wish the actual wish incitements arising during the night, such as thirst and sexual desire. It then becomes evident that the source of the dream-wish does not affect its capacity to incite a dream. That a wish suppressed during the day asserts itself in the dream can be shown by a great many examples. I shall mention a very simple example of this class. A somewhat sarcastic young lady, whose younger friend has become engaged to be married, is asked throughout the day by her acquaintances whether she knows and what she thinks of the fianc?. She answers with unqualified praise, thereby silencing her own judgment, as she would prefer to tell the truth, namely, that he is an ordinary person. The following night she dreams that the same question is put to her, and that she replies with the formula: "In case of subsequent orders it will suffice to mention the number." Finally, we have learned from numerous analyses that the wish in all dreams that have been subject to distortion has been derived from the unconscious, and has been unable to come to perception in the waking state. Thus it would appear that all wishes are of the same value and force for the dream formation.
+“How tiresome!” she said. “Couldn’t you have escaped to tennis?”
 
-I am at present unable to prove that the state of affairs is really different, but I am strongly inclined to assume a more stringent determination of the dream-wish. Children's dreams leave no doubt that an unfulfilled wish of the day may be the instigator of the dream. But we must not forget that it is, after all, the wish of a child, that it is a wish-feeling of infantile strength only. I have a strong doubt whether an unfulfilled wish from the day would suffice to create a dream in an adult. It would rather seem that as we learn to control our impulses by intellectual activity, we more and more reject as vain the formation or retention of such intense wishes as are natural to childhood. In this, indeed, there may be individual variations; some retain the infantile type of psychic processes longer than others. The differences are here the same as those found in the gradual decline of the originally distinct visual imagination.`
+“I don’t play tennis—at least, not in public. The neighbourhood is
+deprived of the romance of me being athletic. Such romance as I have is
+that of the Inglese Italianato.”
+
+“Inglese Italianato?”
+
+“E un diavolo incarnato! You know the proverb?”
+
+She did not. Nor did it seem applicable to a young man who had spent a
+quiet winter in Rome with his mother. But Cecil, since his engagement,
+had taken to affect a cosmopolitan naughtiness which he was far from
+possessing.
+
+“Well,” said he, “I cannot help it if they do disapprove of me. There
+are certain irremovable barriers between myself and them, and I must
+accept them.”
+
+“We all have our limitations, I suppose,” said wise Lucy.
+
+“Sometimes they are forced on us, though,” said Cecil, who saw from her
+remark that she did not quite understand his position.
+
+“How?”
+
+“It makes a difference doesn’t it, whether we fully fence ourselves in,
+or whether we are fenced out by the barriers of others?”
+
+She thought a moment, and agreed that it did make a difference.
+
+“Difference?” cried Mrs. Honeychurch, suddenly alert. “I don’t see any
+difference. Fences are fences, especially when they are in the same
+place.”
+
+“We were speaking of motives,” said Cecil, on whom the interruption
+jarred.
+
+“My dear Cecil, look here.” She spread out her knees and perched her
+card-case on her lap. “This is me. That’s Windy Corner. The rest of the
+pattern is the other people. Motives are all very well, but the fence
+comes here.”
+
+“We weren’t talking of real fences,” said Lucy, laughing.
+
+“Oh, I see, dear—poetry.”
+
+She leant placidly back. Cecil wondered why Lucy had been amused.
+
+“I tell you who has no ‘fences,’ as you call them,” she said, “and
+that’s Mr. Beebe.”
+
+“A parson fenceless would mean a parson defenceless.”
+
+Lucy was slow to follow what people said, but quick enough to detect
+what they meant. She missed Cecil’s epigram, but grasped the feeling
+that prompted it.
+
+“Don’t you like Mr. Beebe?” she asked thoughtfully.
+
+“I never said so!” he cried. “I consider him far above the average. I
+only denied—” And he swept off on the subject of fences again, and was
+brilliant.
+
+“Now, a clergyman that I do hate,” said she wanting to say something
+sympathetic, “a clergyman that does have fences, and the most dreadful
+ones, is Mr. Eager, the English chaplain at Florence. He was truly
+insincere—not merely the manner unfortunate. He was a snob, and so
+conceited, and he did say such unkind things.”
+
+“What sort of things?”
+
+“There was an old man at the Bertolini whom he said had murdered his
+wife.”
+
+“Perhaps he had.”
+
+“No!”
+
+“Why ‘no’?”
+
+“He was such a nice old man, I’m sure.”
+
+Cecil laughed at her feminine inconsequence.
+
+“Well, I did try to sift the thing. Mr. Eager would never come to the
+point. He prefers it vague—said the old man had ‘practically’ murdered
+his wife—had murdered her in the sight of God.”
+
+“Hush, dear!” said Mrs. Honeychurch absently.
+
+“But isn’t it intolerable that a person whom we’re told to imitate
+should go round spreading slander? It was, I believe, chiefly owing to
+him that the old man was dropped. People pretended he was vulgar, but
+he certainly wasn’t that.”
+
+“Poor old man! What was his name?”
+
+“Harris,” said Lucy glibly.
+
+“Let’s hope that Mrs. Harris there warn’t no sich person,” said her
+mother.
+
+Cecil nodded intelligently.
+
+“Isn’t Mr. Eager a parson of the cultured type?” he asked.
+
+“I don’t know. I hate him. I’ve heard him lecture on Giotto. I hate
+him. Nothing can hide a petty nature. I _hate_ him.”
+
+“My goodness gracious me, child!” said Mrs. Honeychurch. “You’ll blow
+my head off! Whatever is there to shout over? I forbid you and Cecil to
+hate any more clergymen.”`
     },
     {
       id: "section-24",
       title: "Section 24",
-      content: `In general, however, I am of the opinion that unfulfilled wishes of the day are insufficient to produce a dream in adults. I readily admit that the wish instigators originating in conscious like contribute towards the incitement of dreams, but that is probably all. The dream would not originate if the foreconscious wish were not reinforced from another source.
+      content: `He smiled. There was indeed something rather incongruous in Lucy’s
+moral outburst over Mr. Eager. It was as if one should see the Leonardo
+on the ceiling of the Sistine. He longed to hint to her that not here
+lay her vocation; that a woman’s power and charm reside in mystery, not
+in muscular rant. But possibly rant is a sign of vitality: it mars the
+beautiful creature, but shows that she is alive. After a moment, he
+contemplated her flushed face and excited gestures with a certain
+approval. He forebore to repress the sources of youth.
 
-That source is the unconscious. I believe that the conscious wish is a dream inciter only if it succeeds in arousing a similar unconscious wish which reinforces it. Following the suggestions obtained through the psychoanalysis of the neuroses, I believe that these unconscious wishes are always active and ready for expression whenever they find an opportunity to unite themselves with an emotion from conscious life, and that they transfer their greater intensity to the lesser intensity of the latter.1 It may therefore seem that the conscious wish alone has been realized in a dream; but a slight peculiarity in the formation of this dream will put us on the track of the powerful helper from the unconscious. These ever active and, as it were, immortal wishes from the unconscious recall the legendary Titans who from time immemorial have borne the ponderous mountains which were once rolled upon them by the victorious gods, and which even now quiver from time to time from the convulsions of their mighty limbs; I say that these wishes found in the repression are of themselves of an infantile origin, as we have learned from the psychological investigation of the neuroses. I should like, therefore, to withdraw the opinion previously expressed that it is unimportant whence the dream-wish originates, and replace it by another, as follows: The wish manifested in the dream must be an infantile one. In the adult it originates in the Unc., while in the child, where no separation and censor as yet exist between Forec. and Unc., or where these are only in the process of formation, it is an unfulfilled and unrepressed wish from the waking state. I am aware that this conception cannot be generally demonstrated, but I maintain nevertheless that it can be frequently demonstrated, even when it was not suspected, and that it cannot be generally refuted.
+Nature—simplest of topics, he thought—lay around them. He praised the
+pine-woods, the deep lasts of bracken, the crimson leaves that spotted
+the hurt-bushes, the serviceable beauty of the turnpike road. The
+outdoor world was not very familiar to him, and occasionally he went
+wrong in a question of fact. Mrs. Honeychurch’s mouth twitched when he
+spoke of the perpetual green of the larch.
 
-The wish-feelings which remain from the conscious waking state are, therefore, relegated to the background in the dream formation. In the dream content I shall attribute to them only the part attributed to the material of actual sensations during sleep. If I now take into account those other psychic instigations remaining from the waking state which are not wishes, I shall only adhere to the line mapped out for me by this train of thought. We may succeed in provisionally terminating the sum of energy of our waking thoughts by deciding to go to sleep. He is a good sleeper who can do this; Napoleon I. is reputed to have been a model of this sort. But we do not always succeed in accomplishing it, or in accomplishing it perfectly.
+“I count myself a lucky person,” he concluded, “When I’m in London I
+feel I could never live out of it. When I’m in the country I feel the
+same about the country. After all, I do believe that birds and trees
+and the sky are the most wonderful things in life, and that the people
+who live amongst them must be the best. It’s true that in nine cases
+out of ten they don’t seem to notice anything. The country gentleman
+and the country labourer are each in their way the most depressing of
+companions. Yet they may have a tacit sympathy with the workings of
+ Nature which is denied to us of the town. Do you feel that, Mrs.
+ Honeychurch?”
 
-Unsolved problems, harassing cares, overwhelming impressions continue the thinking activity even during sleep, maintaining psychic processes in the system which we have termed the foreconscious. These mental processes continuing into sleep may be divided into the following groups: 1, That which has not been terminated during the day owing to casual prevention; 2, that which has been left unfinished by temporary paralysis of our mental power, i.e. the unsolved; 3, that which has been rejected and suppressed during the day. This unites with a powerful group (4) formed by that which has been excited in our Unc. during the day by the work of the foreconscious. Finally, we may add group (5) consisting of the indifferent and hence unsettled impressions of the day.
+Mrs. Honeychurch started and smiled. She had not been attending. Cecil,
+who was rather crushed on the front seat of the victoria, felt
+irritable, and determined not to say anything interesting again.
 
-We should not underrate the psychic intensities introduced into sleep by these remnants of waking life, especially those emanating from the group of the unsolved. These excitations surely continue to strive for expression during the night, and we may assume with equal certainty that the sleeping state renders impossible the usual continuation of the excitement in the foreconscious and the termination of the excitement by its becoming conscious. As far as we can normally become conscious of our mental processes, even during the night, in so far we are not asleep. I shall not venture to state what change is produced in the Forec. system by the sleeping state, but there is no doubt that the psychological character of sleep is essentially due to the change of energy in this very system, which also dominates the approach to motility, which is paralyzed during sleep. In contradistinction to this, there seems to be nothing in the psychology of the dream to warrant the assumption that sleep produces any but secondary changes in the conditions of the Unc. system. Hence, for the nocturnal excitation in the Force, there remains no other path than that followed by the wish excitements from the Unc. This excitation must seek reinforcement from the Unc., and follow the detours of the unconscious excitations. But what is the relation of the foreconscious day remnants to the dream? There is no doubt that they penetrate abundantly into the dream, that they utilize the dream content to obtrude themselves upon consciousness even during the night; indeed, they occasionally even dominate the dream content, and impel it to continue the work of the day; it is also certain that the day remnants may just as well have any other character as that of wishes; but it is highly instructive and even decisive for the theory of wish-fulfillment to see what conditions they must comply with in order to be received into the dream.
+Lucy had not attended either. Her brow was wrinkled, and she still
+looked furiously cross—the result, he concluded, of too much moral
+gymnastics. It was sad to see her thus blind to the beauties of an
+ August wood.
 
-Let us pick out one of the dreams cited above as examples, e.g., the dream in which my friend Otto seems to show the symptoms of Basedow's disease. My friend Otto's appearance occasioned me some concern during the day, and this worry, like everything else referring to this person, affected me. I may also assume that these feelings followed me into sleep. I was probably bent on finding out what was the matter with him. In the night my worry found expression in the dream which I have reported, the content of which was not only senseless, but failed to show any wish-fulfillment. But I began to investigate for the source of this incongruous expression of the solicitude felt during the day, and analysis revealed the connection. I identified my friend Otto with a certain Baron L. and myself with a Professor R. There was only one explanation for my being impelled to select just this substitution for the day thought. I must have always been prepared in the Unc. to identify myself with Professor R., as it meant the realization of one of the immortal infantile wishes, viz. that of becoming great. Repulsive ideas respecting my friend, that would certainly have been repudiated in a waking state, took advantage of the opportunity to creep into the dream, but the worry of the day likewise found some form of expression through a substitution in the dream content. The day thought, which was no wish in itself but rather a worry, had in some way to find a connection with the infantile now unconscious and suppressed wish, which then allowed it, though already properly prepared, to "originate" for consciousness. The more dominating this worry, the stronger must be the connection to be established; between the contents of the wish and that of the worry there need be no connection, nor was there one in any of our examples.
+“‘Come down, O maid, from yonder mountain height,’” he quoted, and
+touched her knee with his own.
 
-We can now sharply define the significance of the unconscious wish for the dream. It may be admitted that there is a whole class of dreams in which the incitement originates preponderatingly or even exclusively from the remnants of daily life; and I believe that even my cherished desire to become at some future time a "professor extraordinarius" would have allowed me to slumber undisturbed that night had not my worry about my friend's health`
+She flushed again and said: “What height?”
+
+“‘Come down, O maid, from yonder mountain height,
+ What pleasure lives in height (the shepherd sang).
+ In height and in the splendour of the hills?’
+
+Let us take Mrs. Honeychurch’s advice and hate clergymen no more.
+ What’s this place?”
+
+“Summer Street, of course,” said Lucy, and roused herself.
+
+The woods had opened to leave space for a sloping triangular meadow.
+ Pretty cottages lined it on two sides, and the upper and third side was
+occupied by a new stone church, expensively simple, a charming shingled
+spire. Mr. Beebe’s house was near the church. In height it scarcely
+exceeded the cottages. Some great mansions were at hand, but they were
+hidden in the trees. The scene suggested a Swiss Alp rather than the
+shrine and centre of a leisured world, and was marred only by two ugly
+little villas—the villas that had competed with Cecil’s engagement,
+having been acquired by Sir Harry Otway the very afternoon that Lucy
+had been acquired by Cecil.
+
+“Cissie” was the name of one of these villas, “Albert” of the other.
+ These titles were not only picked out in shaded Gothic on the garden
+gates, but appeared a second time on the porches, where they followed
+the semicircular curve of the entrance arch in block capitals. “Albert”
+was inhabited. His tortured garden was bright with geraniums and
+lobelias and polished shells. His little windows were chastely swathed
+in Nottingham lace. “Cissie” was to let. Three notice-boards, belonging
+to Dorking agents, lolled on her fence and announced the not surprising
+fact. Her paths were already weedy; her pocket-handkerchief of a lawn
+was yellow with dandelions.
+
+“The place is ruined!” said the ladies mechanically. “Summer Street
+will never be the same again.”
+
+As the carriage passed, “Cissie’s” door opened, and a gentleman came
+out of her.
+
+“Stop!” cried Mrs. Honeychurch, touching the coachman with her parasol.
+“Here’s Sir Harry. Now we shall know. Sir Harry, pull those things down
+at once!”
+
+Sir Harry Otway—who need not be described—came to the carriage and said
+“Mrs. Honeychurch, I meant to. I can’t, I really can’t turn out Miss
+ Flack.”
+
+“Am I not always right? She ought to have gone before the contract was
+signed. Does she still live rent free, as she did in her nephew’s
+time?”
+
+“But what can I do?” He lowered his voice. “An old lady, so very
+vulgar, and almost bedridden.”
+
+“Turn her out,” said Cecil bravely.
+
+Sir Harry sighed, and looked at the villas mournfully. He had had full
+warning of Mr. Flack’s intentions, and might have bought the plot
+before building commenced: but he was apathetic and dilatory. He had
+known Summer Street for so many years that he could not imagine it
+being spoilt. Not till Mrs. Flack had laid the foundation stone, and
+the apparition of red and cream brick began to rise did he take alarm.
+ He called on Mr. Flack, the local builder,—a most reasonable and
+respectful man—who agreed that tiles would have made more artistic
+roof, but pointed out that slates were cheaper. He ventured to differ,
+however, about the Corinthian columns which were to cling like leeches
+to the frames of the bow windows, saying that, for his part, he liked
+to relieve the façade by a bit of decoration. Sir Harry hinted that a
+column, if possible, should be structural as well as decorative.
+
+Mr. Flack replied that all the columns had been ordered, adding, “and
+all the capitals different—one with dragons in the foliage, another
+approaching to the Ionian style, another introducing Mrs. Flack’s
+initials—every one different.” For he had read his Ruskin. He built his
+villas according to his desire; and not until he had inserted an
+immovable aunt into one of them did Sir Harry buy.
+
+This futile and unprofitable transaction filled the knight with sadness
+as he leant on Mrs. Honeychurch’s carriage. He had failed in his duties
+to the country-side, and the country-side was laughing at him as well.
+ He had spent money, and yet Summer Street was spoilt as much as ever.
+ All he could do now was to find a desirable tenant for “Cissie”—someone
+really desirable.
+
+“The rent is absurdly low,” he told them, “and perhaps I am an easy
+landlord. But it is such an awkward size. It is too large for the
+peasant class and too small for any one the least like ourselves.”
+
+Cecil had been hesitating whether he should despise the villas or
+despise Sir Harry for despising them. The latter impulse seemed the
+more fruitful.
+
+“You ought to find a tenant at once,” he said maliciously. “It would be
+a perfect paradise for a bank clerk.”
+
+“Exactly!” said Sir Harry excitedly. “That is exactly what I fear, Mr.
+ Vyse. It will attract the wrong type of people. The train service has
+improved—a fatal improvement, to my mind. And what are five miles from
+a station in these days of bicycles?”
+
+“Rather a strenuous clerk it would be,” said Lucy.
+
+Cecil, who had his full share of mediaeval mischievousness, replied
+that the physique of the lower middle classes was improving at a most
+appalling rate. She saw that he was laughing at their harmless
+neighbour, and roused herself to stop him.
+
+“Sir Harry!” she exclaimed, “I have an idea. How would you like
+spinsters?”
+
+“My dear Lucy, it would be splendid. Do you know any such?”
+
+“Yes; I met them abroad.”
+
+“Gentlewomen?” he asked tentatively.
+
+“Yes, indeed, and at the present moment homeless. I heard from them
+last week—Miss Teresa and Miss Catharine Alan. I’m really not joking.
+ They are quite the right people. Mr. Beebe knows them, too. May I tell
+them to write to you?”`
     },
     {
       id: "section-25",
       title: "Section 25",
-      content: `been still active. But this worry alone would not have produced a dream; the motive power needed by the dream had to be contributed by a wish, and it was the affair of the worriment to procure for itself such wish as a motive power of the dream. To speak figuratively, it is quite possible that a day thought plays the part of the contractor (entrepreneur) in the dream. But it is known that no matter what idea the contractor may have in mind, and how desirous he may be of putting it into operation, he can do nothing without capital; he must depend upon a capitalist to defray the necessary expenses, and this capitalist, who supplies the psychic expenditure for the dream is invariably and indisputably a wish from the unconscious, no matter what the nature of the waking thought may be.
+      content: `“Indeed you may!” he cried. “Here we are with the difficulty solved
+already. How delightful it is! Extra facilities—please tell them they
+shall have extra facilities, for I shall have no agents’ fees. Oh, the
+agents! The appalling people they have sent me! One woman, when I
+wrote—a tactful letter, you know—asking her to explain her social
+position to me, replied that she would pay the rent in advance. As if
+one cares about that! And several references I took up were most
+unsatisfactory—people swindlers, or not respectable. And oh, the
+deceit! I have seen a good deal of the seamy side this last week. The
+deceit of the most promising people. My dear Lucy, the deceit!”
 
-In other cases the capitalist himself is the contractor for the dream; this, indeed, seems to be the more usual case. An unconscious wish is produced by the day's work, which in turn creates the dream. The dream processes, moreover, run parallel with all the other possibilities of the economic relationship used here as an illustration. Thus, the entrepreneur may contribute some capital himself, or several entrepreneurs may seek the aid of the same capitalist, or several capitalists may jointly supply the capital required by the entrepreneur. Thus there are dreams produced by more than one dream-wish, and many similar variations which may readily be passed over and are of no further interest to us. What we have left unfinished in this discussion of the dream-wish we shall be able to develop later.
+She nodded.
 
-The "tertium comparationis" in the comparisons just employed—i.e. the sum placed at our free disposal in proper allotment—admits of still finer application for the illustration of the dream structure. We can recognize in most dreams a center especially supplied with perceptible intensity. This is regularly the direct representation of the wish-fulfillment; for, if we undo the displacements of the dream-work by a process of retrogression, we find that the psychic intensity of the elements in the dream thoughts is replaced by the perceptible intensity of the elements in the dream content. The elements adjoining the wish-fulfillment have frequently nothing to do with its sense, but prove to be descendants of painful thoughts which oppose the wish. But, owing to their frequently artificial connection with the central element, they have acquired sufficient intensity to enable them to come to expression. Thus, the force of expression of the wish-fulfillment is diffused over a certain sphere of association, within which it raises to expression all elements, including those that are in themselves impotent. In dreams having several strong wishes we can readily separate from one another the spheres of the individual wish-fulfillments; the gaps in the dream likewise can often be explained as boundary zones.
+“My advice,” put in Mrs. Honeychurch, “is to have nothing to do with
+ Lucy and her decayed gentlewomen at all. I know the type. Preserve me
+from people who have seen better days, and bring heirlooms with them
+that make the house smell stuffy. It’s a sad thing, but I’d far rather
+let to some one who is going up in the world than to someone who has
+come down.”
 
-Although the foregoing remarks have considerably limited the significance of the day remnants for the dream, it will nevertheless be worth our while to give them some attention. For they must be a necessary ingredient in the formation of the dream, inasmuch as experience reveals the surprising fact that every dream shows in its content a connection with some impression of a recent day, often of the most indifferent kind. So far we have failed to see any necessity for this addition to the dream mixture. This necessity appears only when we follow closely the part played by the unconscious wish, and then seek information in the psychology of the neuroses. We thus learn that the unconscious idea, as such, is altogether incapable of entering into the foreconscious, and that it can exert an influence there only by uniting with a harmless idea already belonging to the foreconscious, to which it transfers its intensity and under which it allows itself to be concealed. This is the fact of transference which furnishes an explanation for so many surprising occurrences in the psychic life of neurotics.
+“I think I follow you,” said Sir Harry; “but it is, as you say, a very
+sad thing.”
 
-The idea from the foreconscious which thus obtains an unmerited abundance of intensity may be left unchanged by the transference, or it may have forced upon it a modification from the content of the transferring idea. I trust the reader will pardon my fondness for comparisons from daily life, but I feel tempted to say that the relations existing for the repressed idea are similar to the situations existing in Austria for the American dentist, who is forbidden to practise unless he gets permission from a regular physician to use his name on the public signboard and thus cover the legal requirements. Moreover, just as it is naturally not the busiest physicians who form such alliances with dental practitioners, so in the psychic life only such foreconscious or conscious ideas are chosen to cover a repressed idea as have not themselves attracted much of the attention which is operative in the foreconscious. The unconscious entangles with its connections preferentially either those impressions and ideas of the foreconscious which have been left unnoticed as indifferent, or those that have soon been deprived of this attention through rejection. It is a familiar fact from the association studies confirmed by every experience, that ideas which have formed intimate connections in one direction assume an almost negative attitude to whole groups of new connections. I once tried from this principle to develop a theory for hysterical paralysis.
+“The Misses Alan aren’t that!” cried Lucy.
 
-If we assume that the same need for the transference of the repressed ideas which we have learned to know from the analysis of the neuroses makes its influence felt in the dream as well, we can at once explain two riddles of the dream, viz. that every dream analysis shows an interweaving of a recent impression, and that this recent element is frequently of the most indifferent character. We may add what we have already learned elsewhere, that these recent and indifferent elements come so frequently into the dream content as a substitute for the most deep-lying of the dream thoughts, for the further reason that they have least to fear from the resisting censor. But while this freedom from censorship explains only the preference for trivial elements, the constant presence of recent elements points to the fact that there is a need for transference. Both groups of impressions satisfy the demand of the repression for material still free from associations, the indifferent ones because they have offered no inducement for extensive associations, and the recent ones because they have had insufficient time to form such associations.
+“Yes, they are,” said Cecil. “I haven’t met them but I should say they
+were a highly unsuitable addition to the neighbourhood.”
 
-We thus see that the day remnants, among which we may now include the indifferent impressions when they participate in the dream formation, not only borrow from the Unc. the motive power at the disposal of the repressed wish, but also offer to the unconscious something indispensable, namely, the attachment necessary to the transference. If we here attempted to penetrate more deeply into the psychic processes, we should first have to throw more light on the play of emotions between the foreconscious and the unconscious, to which, indeed, we are urged by the study of the psychoneuroses, whereas the dream itself offers no assistance in this respect.
+“Don’t listen to him, Sir Harry—he’s tiresome.”
 
-Just one further remark about the day remnants. There is no doubt that they are the actual disturbers of sleep, and not the dream, which, on the contrary, strives to guard sleep. But we shall return to this point later.
+“It’s I who am tiresome,” he replied. “I oughtn’t to come with my
+troubles to young people. But really I am so worried, and Lady Otway
+will only say that I cannot be too careful, which is quite true, but no
+real help.”
 
-We have so far discussed the dream-wish, we have traced it to the sphere of the Unc., and analyzed its relations to the day remnants, which in turn may be either wishes, psychic emotions of any other kind, or simply recent impressions. We have thus made room for any claims that may be made for the importance of conscious thought activity in dream formations in all its variations. Relying upon our thought series, it would not be at all`
+“Then may I write to my Misses Alan?”
+
+“Please!”
+
+But his eye wavered when Mrs. Honeychurch exclaimed:
+
+“Beware! They are certain to have canaries. Sir Harry, beware of
+canaries: they spit the seed out through the bars of the cages and then
+the mice come. Beware of women altogether. Only let to a man.”
+
+“Really—” he murmured gallantly, though he saw the wisdom of her
+remark.
+
+“Men don’t gossip over tea-cups. If they get drunk, there’s an end of
+them—they lie down comfortably and sleep it off. If they’re vulgar,
+they somehow keep it to themselves. It doesn’t spread so. Give me a
+man—of course, provided he’s clean.”
+
+Sir Harry blushed. Neither he nor Cecil enjoyed these open compliments
+to their sex. Even the exclusion of the dirty did not leave them much
+distinction. He suggested that Mrs. Honeychurch, if she had time,
+should descend from the carriage and inspect “Cissie” for herself. She
+was delighted. Nature had intended her to be poor and to live in such a
+house. Domestic arrangements always attracted her, especially when they
+were on a small scale.
+
+Cecil pulled Lucy back as she followed her mother.
+
+“Mrs. Honeychurch,” he said, “what if we two walk home and leave you?”
+
+“Certainly!” was her cordial reply.
+
+Sir Harry likewise seemed almost too glad to get rid of them. He beamed
+at them knowingly, said, “Aha! young people, young people!” and then
+hastened to unlock the house.
+
+“Hopeless vulgarian!” exclaimed Cecil, almost before they were out of
+earshot.
+
+“Oh, Cecil!”
+
+“I can’t help it. It would be wrong not to loathe that man.”
+
+“He isn’t clever, but really he is nice.”
+
+“No, Lucy, he stands for all that is bad in country life. In London he
+would keep his place. He would belong to a brainless club, and his wife
+would give brainless dinner parties. But down here he acts the little
+god with his gentility, and his patronage, and his sham aesthetics, and
+every one—even your mother—is taken in.”
+
+“All that you say is quite true,” said Lucy, though she felt
+discouraged. “I wonder whether—whether it matters so very much.”
+
+“It matters supremely. Sir Harry is the essence of that garden-party.
+ Oh, goodness, how cross I feel! How I do hope he’ll get some vulgar
+tenant in that villa—some woman so really vulgar that he’ll notice it.
+_Gentlefolks!_ Ugh! with his bald head and retreating chin! But let’s
+forget him.”
+
+This Lucy was glad enough to do. If Cecil disliked Sir Harry Otway and
+ Mr. Beebe, what guarantee was there that the people who really mattered
+to her would escape? For instance, Freddy. Freddy was neither clever,
+nor subtle, nor beautiful, and what prevented Cecil from saying, any
+minute, “It would be wrong not to loathe Freddy”? And what would she
+reply? Further than Freddy she did not go, but he gave her anxiety
+enough. She could only assure herself that Cecil had known Freddy some
+time, and that they had always got on pleasantly, except, perhaps,
+during the last few days, which was an accident, perhaps.
+
+“Which way shall we go?” she asked him.
+
+Nature—simplest of topics, she thought—was around them. Summer Street
+lay deep in the woods, and she had stopped where a footpath diverged
+from the highroad.
+
+“Are there two ways?”
+
+“Perhaps the road is more sensible, as we’re got up smart.”
+
+“I’d rather go through the wood,” said Cecil, with that subdued
+irritation that she had noticed in him all the afternoon. “Why is it,
+ Lucy, that you always say the road? Do you know that you have never
+once been with me in the fields or the wood since we were engaged?”
+
+“Haven’t I? The wood, then,” said Lucy, startled at his queerness, but
+pretty sure that he would explain later; it was not his habit to leave
+her in doubt as to his meaning.
+
+She led the way into the whispering pines, and sure enough he did
+explain before they had gone a dozen yards.
+
+“I had got an idea—I dare say wrongly—that you feel more at home with
+me in a room.”
+
+“A room?” she echoed, hopelessly bewildered.
+
+“Yes. Or, at the most, in a garden, or on a road. Never in the real
+country like this.”
+
+“Oh, Cecil, whatever do you mean? I have never felt anything of the
+sort. You talk as if I was a kind of poetess sort of person.”
+
+“I don’t know that you aren’t. I connect you with a view—a certain type
+of view. Why shouldn’t you connect me with a room?”
+
+She reflected a moment, and then said, laughing:
+
+“Do you know that you’re right? I do. I must be a poetess after all.
+ When I think of you it’s always as in a room. How funny!”
+
+To her surprise, he seemed annoyed.
+
+“A drawing-room, pray? With no view?”
+
+“Yes, with no view, I fancy. Why not?”
+
+“I’d rather,” he said reproachfully, “that you connected me with the
+open air.”
+
+She said again, “Oh, Cecil, whatever do you mean?”
+
+As no explanation was forthcoming, she shook off the subject as too
+difficult for a girl, and led him further into the wood, pausing every
+now and then at some particularly beautiful or familiar combination of
+the trees. She had known the wood between Summer Street and Windy
+ Corner ever since she could walk alone; she had played at losing Freddy
+in it, when Freddy was a purple-faced baby; and though she had been to
+ Italy, it had lost none of its charm.
+
+Presently they came to a little clearing among the pines—another tiny
+green alp, solitary this time, and holding in its bosom a shallow pool.
+
+She exclaimed, “The Sacred Lake!”
+
+“Why do you call it that?”
+
+“I can’t remember why. I suppose it comes out of some book. It’s only a
+puddle now, but you see that stream going through it? Well, a good deal
+of water comes down after heavy rains, and can’t get away at once, and
+the pool becomes quite large and beautiful. Then Freddy used to bathe
+there. He is very fond of it.”
+
+“And you?”
+
+He meant, “Are you fond of it?” But she answered dreamily, “I bathed
+here, too, till I was found out. Then there was a row.”
+
+At another time he might have been shocked, for he had depths of
+prudishness within him. But now? with his momentary cult of the fresh
+air, he was delighted at her admirable simplicity. He looked at her as
+she stood by the pool’s edge. She was got up smart, as she phrased it,
+and she reminded him of some brilliant flower that has no leaves of its
+own, but blooms abruptly out of a world of green.
+
+“Who found you out?”
+
+“Charlotte,” she murmured. “She was stopping with us.
+ Charlotte—Charlotte.”
+
+“Poor girl!”`
     },
     {
       id: "section-26",
       title: "Section 26",
-      content: `impossible for us to explain even those extreme cases in which the dream as a continuer of the day work brings to a happy conclusion and unsolved problem possess an example, the analysis of which might reveal the infantile or repressed wish source furnishing such alliance and successful strengthening of the efforts of the foreconscious activity. But we have not come one step nearer a solution of the riddle: Why can the unconscious furnish the motive power for the wish-fulfillment only during sleep? The answer to this question must throw light on the psychic nature of wishes; and it will be given with the aid of the diagram of the psychic apparatus.
+      content: `She smiled gravely. A certain scheme, from which hitherto he had
+shrunk, now appeared practical.
 
-We do not doubt that even this apparatus attained its present perfection through a long course of development. Let us attempt to restore it as it existed in an early phase of its activity. From assumptions, to be confirmed elsewhere, we know that at first the apparatus strove to keep as free from excitement as possible, and in its first formation, therefore, the scheme took the form of a reflex apparatus, which enabled it promptly to discharge through the motor tracts any sensible stimulus reaching it from without. But this simple function was disturbed by the wants of life, which likewise furnish the impulse for the further development of the apparatus. The wants of life first manifested themselves to it in the form of the great physical needs. The excitement aroused by the inner want seeks an outlet in motility, which may be designated as "inner changes" or as an "expression of the emotions." The hungry child cries or fidgets helplessly, but its situation remains unchanged; for the excitation proceeding from an inner want requires, not a momentary outbreak, but a force working continuously. A change can occur only if in some way a feeling of gratification is experienced—which in the case of the child must be through outside help—in order to remove the inner excitement. An essential constituent of this experience is the appearance of a certain perception (of food in our example), the memory picture of which thereafter remains associated with the memory trace of the excitation of want.
+“Lucy!”
 
-Thanks to the established connection, there results at the next appearance of this want a psychic feeling which revives the memory picture of the former perception, and thus recalls the former perception itself, i.e. it actually re-establishes the situation of the first gratification. We call such a feeling a wish; the reappearance of the perception constitutes the wish- fulfillment, and the full revival of the perception by the want excitement constitutes the shortest road to the wish-fulfillment. We may assume a primitive condition of the psychic apparatus in which this road is really followed, i.e. where the wishing merges into an hallucination, This first psychic activity therefore aims at an identity of perception, i.e. it aims at a repetition of that perception which is connected with the fulfillment of the want.
+“Yes, I suppose we ought to be going,” was her reply.
 
-This primitive mental activity must have been modified by bitter practical experience into a more expedient secondary activity. The establishment of the identity perception on the short regressive road within the apparatus does not in another respect carry with it the result which inevitably follows the revival of the same perception from without. The gratification does not take place, and the want continues. In order to equalize the internal with the external sum of energy, the former must be continually maintained, just as actually happens in the hallucinatory psychoses and in the deliriums of hunger which exhaust their psychic capacity in clinging to the object desired. In order to make more appropriate use of the psychic force, it becomes necessary to inhibit the full regression so as to prevent it from extending beyond the image of memory, whence it can select other paths leading ultimately to the establishment of the desired identity from the outer world. This inhibition and consequent deviation from the excitation becomes the task of a second system which dominates the voluntary motility, i.e. through whose activity the expenditure of motility is now devoted to previously recalled purposes. But this entire complicated mental activity which works its way from the memory picture to the establishment of the perception identity from the outer world merely represents a detour which has been forced upon the wish-fulfillment by experience.2 Thinking is indeed nothing but the equivalent of the hallucinatory wish; and if the dream be called a wish-fulfillment this becomes self-evident, as nothing but a wish can impel our psychic apparatus to activity. The dream, which in fulfilling its wishes follows the short regressive path, thereby preserves for us only an example of the primary form of the psychic apparatus which has been abandoned as inexpedient. What once ruled in the waking state when the psychic life was still young and unfit seems to have been banished into the sleeping state, just as we see again in the nursery the bow and arrow, the discarded primitive weapons of grown-up humanity. The dream is a fragment of the abandoned psychic life of the child. In the psychoses these modes of operation of the psychic apparatus, which are normally suppressed in the waking state, reassert themselves, and then betray their inability to satisfy our wants in the outer world.
+“Lucy, I want to ask something of you that I have never asked before.”
 
-The unconscious wish-feelings evidently strive to assert themselves during the day also, and the fact of transference and the psychoses teach us that they endeavor to penetrate to consciousness and dominate motility by the road leading through the system of the foreconscious. It is, therefore, the censor lying between the Unc. and the Forec., the assumption of which is forced upon us by the dream, that we have to recognize and honor as the guardian of our psychic health. But is it not carelessness on the part of this guardian to diminish its vigilance during the night and to allow the suppressed emotions of the Unc. to come to expression, thus again making possible the hallucinatory regression? I think not, for when the critical guardian goes to rest—and we have proof that his slumber is not profound— he takes care to close the gate to motility. No matter what feelings from the otherwise inhibited Unc. may roam about on the scene, they need not be interfered with; they remain harmless because they are unable to put in motion the motor apparatus which alone can exert a modifying influence upon the outer world. Sleep guarantees the security of the fortress which is under guard. Conditions are less harmless when a displacement of forces is produced, not through a nocturnal diminution in the operation of the critical censor, but through pathological enfeeblement of the latter or through pathological reinforcement of the unconscious excitations, and this while the foreconscious is charged with energy and the avenues to motility are open.
+At the serious note in his voice she stepped frankly and kindly towards
+him.
 
-The guardian is then overpowered, the unconscious excitations subdue the Forec.; through it they dominate our speech and actions, or they enforce the hallucinatory regression, thus governing an apparatus not designed for them by virtue of the attraction exerted by the perceptions on the distribution of our psychic energy. We call this condition a psychosis.`
+“What, Cecil?”
+
+“Hitherto never—not even that day on the lawn when you agreed to marry
+me—”
+
+He became self-conscious and kept glancing round to see if they were
+observed. His courage had gone.
+
+“Yes?”
+
+“Up to now I have never kissed you.”
+
+She was as scarlet as if he had put the thing most indelicately.
+
+“No—more you have,” she stammered.
+
+“Then I ask you—may I now?”
+
+“Of course, you may, Cecil. You might before. I can’t run at you, you
+know.”
+
+At that supreme moment he was conscious of nothing but absurdities. Her
+reply was inadequate. She gave such a business-like lift to her veil.
+ As he approached her he found time to wish that he could recoil. As he
+touched her, his gold pince-nez became dislodged and was flattened
+between them.
+
+Such was the embrace. He considered, with truth, that it had been a
+failure. Passion should believe itself irresistible. It should forget
+civility and consideration and all the other curses of a refined
+nature. Above all, it should never ask for leave where there is a right
+of way. Why could he not do as any labourer or navvy—nay, as any young
+man behind the counter would have done? He recast the scene. Lucy was
+standing flowerlike by the water, he rushed up and took her in his
+arms; she rebuked him, permitted him and revered him ever after for his
+manliness. For he believed that women revere men for their manliness.
+
+They left the pool in silence, after this one salutation. He waited for
+her to make some remark which should show him her inmost thoughts. At
+last she spoke, and with fitting gravity.
+
+“Emerson was the name, not Harris.”
+
+“What name?”
+
+“The old man’s.”
+
+“What old man?”
+
+“That old man I told you about. The one Mr. Eager was so unkind to.”
+
+He could not know that this was the most intimate conversation they had
+ever had.
+
+Chapter X
+ Cecil as a Humourist
+
+The society out of which Cecil proposed to rescue Lucy was perhaps no
+very splendid affair, yet it was more splendid than her antecedents
+entitled her to. Her father, a prosperous local solicitor, had built
+ Windy Corner, as a speculation at the time the district was opening up,
+and, falling in love with his own creation, had ended by living there
+himself. Soon after his marriage the social atmosphere began to alter.
+ Other houses were built on the brow of that steep southern slope and
+others, again, among the pine-trees behind, and northward on the chalk
+barrier of the downs. Most of these houses were larger than Windy
+ Corner, and were filled by people who came, not from the district, but
+from London, and who mistook the Honeychurches for the remnants of an
+indigenous aristocracy. He was inclined to be frightened, but his wife
+accepted the situation without either pride or humility. “I cannot
+think what people are doing,” she would say, “but it is extremely
+fortunate for the children.” She called everywhere; her calls were
+returned with enthusiasm, and by the time people found out that she was
+not exactly of their _milieu_, they liked her, and it did not seem to
+matter. When Mr. Honeychurch died, he had the satisfaction—which few
+honest solicitors despise—of leaving his family rooted in the best
+society obtainable.
+
+The best obtainable. Certainly many of the immigrants were rather dull,
+and Lucy realized this more vividly since her return from Italy.
+ Hitherto she had accepted their ideals without questioning—their kindly
+affluence, their inexplosive religion, their dislike of paper-bags,
+orange-peel, and broken bottles. A Radical out and out, she learnt to
+speak with horror of Suburbia. Life, so far as she troubled to conceive
+it, was a circle of rich, pleasant people, with identical interests and
+identical foes. In this circle, one thought, married, and died. Outside
+it were poverty and vulgarity for ever trying to enter, just as the
+ London fog tries to enter the pine-woods pouring through the gaps in
+the northern hills. But, in Italy, where any one who chooses may warm
+himself in equality, as in the sun, this conception of life vanished.
+ Her senses expanded; she felt that there was no one whom she might not
+get to like, that social barriers were irremovable, doubtless, but not
+particularly high. You jump over them just as you jump into a peasant’s
+olive-yard in the Apennines, and he is glad to see you. She returned
+with new eyes.
+
+So did Cecil; but Italy had quickened Cecil, not to tolerance, but to
+irritation. He saw that the local society was narrow, but, instead of
+saying, “Does that very much matter?” he rebelled, and tried to
+substitute for it the society he called broad. He did not realize that
+ Lucy had consecrated her environment by the thousand little civilities
+that create a tenderness in time, and that though her eyes saw its
+defects, her heart refused to despise it entirely. Nor did he realize a
+more important point—that if she was too great for this society, she
+was too great for all society, and had reached the stage where personal
+intercourse would alone satisfy her. A rebel she was, but not of the
+kind he understood—a rebel who desired, not a wider dwelling-room, but
+equality beside the man she loved. For Italy was offering her the most
+priceless of all possessions—her own soul.
+
+Playing bumble-puppy with Minnie Beebe, niece to the rector, and aged
+thirteen—an ancient and most honourable game, which consists in
+striking tennis-balls high into the air, so that they fall over the net
+and immoderately bounce; some hit Mrs. Honeychurch; others are lost.
+ The sentence is confused, but the better illustrates Lucy’s state of
+mind, for she was trying to talk to Mr. Beebe at the same time.
+
+“Oh, it has been such a nuisance—first he, then they—no one knowing
+what they wanted, and everyone so tiresome.”
+
+“But they really are coming now,” said Mr. Beebe. “I wrote to Miss
+ Teresa a few days ago—she was wondering how often the butcher called,
+and my reply of once a month must have impressed her favourably. They
+are coming. I heard from them this morning.
+
+“I shall hate those Miss Alans!” Mrs. Honeychurch cried. “Just because
+they’re old and silly one’s expected to say ‘How sweet!’ I hate their
+‘if’-ing and ‘but’-ing and ‘and’-ing. And poor Lucy—serve her
+right—worn to a shadow.”
+
+Mr. Beebe watched the shadow springing and shouting over the
+tennis-court. Cecil was absent—one did not play bumble-puppy when he
+was there.
+
+“Well, if they are coming—No, Minnie, not Saturn.” Saturn was a
+tennis-ball whose skin was partially unsewn. When in motion his orb was
+encircled by a ring. “If they are coming, Sir Harry will let them move
+in before the twenty-ninth, and he will cross out the clause about
+whitewashing the ceilings, because it made them nervous, and put in the
+fair wear and tear one.—That doesn’t count. I told you not Saturn.”
+
+“Saturn’s all right for bumble-puppy,” cried Freddy, joining them.
+“Minnie, don’t you listen to her.”
+
+“Saturn doesn’t bounce.”
+
+“Saturn bounces enough.”
+
+“No, he doesn’t.”
+
+“Well; he bounces better than the Beautiful White Devil.”
+
+“Hush, dear,” said Mrs. Honeychurch.
+
+“But look at Lucy—complaining of Saturn, and all the time’s got the
+ Beautiful White Devil in her hand, ready to plug it in. That’s right,
+ Minnie, go for her—get her over the shins with the racquet—get her over
+the shins!”
+
+Lucy fell, the Beautiful White Devil rolled from her hand.
+
+Mr. Beebe picked it up, and said: “The name of this ball is Vittoria
+ Corombona, please.” But his correction passed unheeded.`
     },
     {
       id: "section-27",
       title: "Section 27",
-      content: `We are now in the best position to complete our psychological construction, which has been interrupted by the introduction of the two systems, Unc. and Forec. We have still, however, ample reason for giving further consideration to the wish as the sole psychic motive power in the dream. We have explained that the reason why the dream is in every case a wish realization is because it is a product of the Unc., which knows no other aim in its activity but the fulfillment of wishes, and which has no other forces at its disposal but wish-feelings. If we avail ourselves for a moment longer of the right to elaborate from the dream interpretation such far-reaching psychological speculations, we are in duty bound to demonstrate that we are
+      content: `Freddy possessed to a high degree the power of lashing little girls to
+fury, and in half a minute he had transformed Minnie from a
+well-mannered child into a howling wilderness. Up in the house Cecil
+heard them, and, though he was full of entertaining news, he did not
+come down to impart it, in case he got hurt. He was not a coward and
+bore necessary pain as well as any man. But he hated the physical
+violence of the young. How right it was! Sure enough it ended in a cry.
 
-thereby bringing the dream into a relationship which may also comprise other psychic structures. If there exists a system of the Unc.—or something sufficiently analogous to it for the purpose of our discussion—the dream cannot be its sole manifestation; every dream may be a wish-fulfillment, but there must be other forms of abnormal wish-fulfillment beside this of dreams. Indeed, the theory of all psychoneurotic symptoms culminates in the proposition that they too must be taken as wish-fulfillments of the unconscious. Our explanation makes the dream only the first member of a group most important for the psychiatrist, an understanding of which means the solution of the purely psychological part of the psychiatric problem. But other members of this group of wish-fulfillments, e.g., the hysterical symptoms, evince one essential quality which I have so far failed to find in the dream. Thus, from the investigations frequently referred to in this treatise, I know that the formation of an hysterical symptom necessitates the combination of both streams of our psychic life. The symptom is not merely the expression of a realized unconscious wish, but it must be joined by another wish from the foreconscious which is fulfilled by the same symptom; so that the symptom is at least doubly determined, once by each one of the conflicting systems. Just as in the dream, there is no limit to further over- determination. The determination not derived from the Unc. is, as far as I can see, invariably a stream of thought in reaction against the unconscious wish, e.g., a self-punishment. Hence I may say, in general, that an hysterical symptom originates only where two contrasting wish-fulfillments, having their source in different psychic systems, are able to combine in one expression. (Compare my latest formulation of the origin of the hysterical symptoms in a treatise published by the Zeitschrift f?r Sexualwissenschaft, by Hirschfeld and others, 1908). Examples on this point would prove of little value, as nothing but a complete unveiling of the complication in question would carry conviction. I therefore content myself with the mere assertion, and will cite an example, not for conviction but for explication. The hysterical vomiting of a female patient proved, on the one hand, to be the realization of an unconscious fancy from the time of puberty, that she might be continuously pregnant and have a multitude of children, and this was subsequently united with the wish that she might have them from as many men as possible. Against this immoderate wish there arose a powerful defensive impulse. But as the vomiting might spoil the patient's figure and beauty, so that she would not find favor in the eyes of mankind, the symptom was therefore in keeping with her punitive trend of thought, and, being thus admissible from both sides, it was allowed to become a reality. This is the same manner of consenting to a wish-fulfillment which the queen of the Parthians chose for the triumvir Crassus. Believing that he had undertaken the campaign out of greed for gold, she caused molten gold to be poured into the throat of the corpse. "Now hast thou what thou hast longed for." As yet we know of the dream only that it expresses a wish-fulfillment of the unconscious; and apparently the dominating foreconscious permits this only after it has subjected the wish to some distortions. We are really in no position to demonstrate regularly a stream of thought antagonistic to the dream-wish which is realized in the dream as in its counterpart. Only now and then have we found in the dream traces of reaction formations, as, for instance, the tenderness toward friend R. in the "uncle dream." But the contribution from the foreconscious, which is missing here, may be found in another place. While the dominating system has withdrawn on the wish to sleep, the dream may bring to expression with manifold distortions a wish from the Unc., and realize this wish by producing the necessary changes of energy in the psychic apparatus, and may finally retain it through the entire duration of sleep.3
+“I wish the Miss Alans could see this,” observed Mr. Beebe, just as
+ Lucy, who was nursing the injured Minnie, was in turn lifted off her
+feet by her brother.
 
-This persistent wish to sleep on the part of the foreconscious in general facilitates the formation of the dream. Let us refer to the dream of the father who, by the gleam of light from the death chamber, was brought to the conclusion that the body has been set on fire. We have shown that one of the psychic forces decisive in causing the father to form this conclusion, instead of being awakened by the gleam of light, was the wish to prolong the life of the child seen in the dream by one moment. Other wishes proceeding from the repression probably escape us, because we are unable to analyze this dream. But as a second motive power of the dream we may mention the father's desire to sleep, for, like the life of the child, the sleep of the father is prolonged for a moment by the dream. The underlying motive is: "Let the dream go on, otherwise I must wake up." As in this dream so also in all other dreams, the wish to sleep lends its support to the unconscious wish. We reported dreams which were apparently dreams of convenience. But, properly speaking, all dreams may claim this designation. The efficacy of the wish to continue to sleep is the most easily recognized in the waking dreams, which so transform the objective sensory stimulus as to render it compatible with the continuance of sleep; they interweave this stimulus with the dream in
-order to rob it of any claims it might make as a warning to the outer world. But this wish to continue to sleep must also participate in the formation of all other dreams which may disturb the sleeping state from within only. "Now, then, sleep on; why, it's but a dream"; this is in many cases the suggestion of the Forec. to consciousness when the dream goes too far; and this also describes in a general way the attitude of our dominating psychic activity toward dreaming, though the thought remains tacit. I must draw the conclusion that throughout our entire sleeping state we are just as certain that we are dreaming as we are certain that we are sleeping. We are compelled to disregard the objection urged against this conclusion that our consciousness is never directed to a knowledge of the former, and that it is directed to a knowledge of the latter only on special occasions when the censor is unexpectedly surprised. Against this objection we may say that there are persons who are entirely conscious of their sleeping and dreaming, and who are apparently endowed with the conscious faculty of guiding their dream life. Such a dreamer, when dissatisfied with the course taken by the dream, breaks it off without awakening, and begins it anew in order to continue it with a different turn, like the popular author who, on request, gives a happier ending to his play. Or, at another time, if placed by the dream in a sexually exciting situation, he thinks in his sleep: "I do not care to continue this dream and exhaust myself by a pollution; I prefer to defer it in favor of a real situation."`
+“Who are the Miss Alans?” Freddy panted.
+
+“They have taken Cissie Villa.”
+
+“That wasn’t the name—”
+
+Here his foot slipped, and they all fell most agreeably on to the
+grass. An interval elapses.
+
+“Wasn’t what name?” asked Lucy, with her brother’s head in her lap.
+
+“Alan wasn’t the name of the people Sir Harry’s let to.”
+
+“Nonsense, Freddy! You know nothing about it.”
+
+“Nonsense yourself! I’ve this minute seen him. He said to me: ‘Ahem!
+ Honeychurch,’”—Freddy was an indifferent mimic—“‘ahem! ahem! I have at
+last procured really dee-sire-rebel tenants.’ I said, ‘ooray, old boy!’
+and slapped him on the back.”
+
+“Exactly. The Miss Alans?”
+
+“Rather not. More like Anderson.”
+
+“Oh, good gracious, there isn’t going to be another muddle!” Mrs.
+ Honeychurch exclaimed. “Do you notice, Lucy, I’m always right? I _said_
+don’t interfere with Cissie Villa. I’m always right. I’m quite uneasy
+at being always right so often.”
+
+“It’s only another muddle of Freddy’s. Freddy doesn’t even know the
+name of the people he pretends have taken it instead.”
+
+“Yes, I do. I’ve got it. Emerson.”
+
+“What name?”
+
+“Emerson. I’ll bet you anything you like.”
+
+“What a weathercock Sir Harry is,” said Lucy quietly. “I wish I had
+never bothered over it at all.”
+
+Then she lay on her back and gazed at the cloudless sky. Mr. Beebe,
+whose opinion of her rose daily, whispered to his niece that _that_ was
+the proper way to behave if any little thing went wrong.
+
+Meanwhile the name of the new tenants had diverted Mrs. Honeychurch
+from the contemplation of her own abilities.
+
+“Emerson, Freddy? Do you know what Emersons they are?”
+
+“I don’t know whether they’re any Emersons,” retorted Freddy, who was
+democratic. Like his sister and like most young people, he was
+naturally attracted by the idea of equality, and the undeniable fact
+that there are different kinds of Emersons annoyed him beyond measure.
+
+“I trust they are the right sort of person. All right, Lucy”—she was
+sitting up again—“I see you looking down your nose and thinking your
+mother’s a snob. But there is a right sort and a wrong sort, and it’s
+affectation to pretend there isn’t.”
+
+“Emerson’s a common enough name,” Lucy remarked.
+
+She was gazing sideways. Seated on a promontory herself, she could see
+the pine-clad promontories descending one beyond another into the
+ Weald. The further one descended the garden, the more glorious was this
+lateral view.
+
+“I was merely going to remark, Freddy, that I trusted they were no
+relations of Emerson the philosopher, a most trying man. Pray, does
+that satisfy you?”
+
+“Oh, yes,” he grumbled. “And you will be satisfied, too, for they’re
+friends of Cecil; so”—elaborate irony—“you and the other country
+families will be able to call in perfect safety.”
+
+“_Cecil?_” exclaimed Lucy.
+
+“Don’t be rude, dear,” said his mother placidly. “Lucy, don’t screech.
+ It’s a new bad habit you’re getting into.”
+
+“But has Cecil—”
+
+“Friends of Cecil’s,” he repeated, “‘and so really dee-sire-rebel.
+ Ahem! Honeychurch, I have just telegraphed to them.’”
+
+She got up from the grass.
+
+It was hard on Lucy. Mr. Beebe sympathized with her very much. While
+she believed that her snub about the Miss Alans came from Sir Harry
+ Otway, she had borne it like a good girl. She might well “screech” when
+she heard that it came partly from her lover. Mr. Vyse was a
+tease—something worse than a tease: he took a malicious pleasure in
+thwarting people. The clergyman, knowing this, looked at Miss
+ Honeychurch with more than his usual kindness.
+
+When she exclaimed, “But Cecil’s Emersons—they can’t possibly be the
+same ones—there is that—” he did not consider that the exclamation was
+strange, but saw in it an opportunity of diverting the conversation
+while she recovered her composure. He diverted it as follows:
+
+“The Emersons who were at Florence, do you mean? No, I don’t suppose it
+will prove to be them. It is probably a long cry from them to friends
+of Mr. Vyse’s. Oh, Mrs. Honeychurch, the oddest people! The queerest
+people! For our part we liked them, didn’t we?” He appealed to Lucy.
+“There was a great scene over some violets. They picked violets and
+filled all the vases in the room of these very Miss Alans who have
+failed to come to Cissie Villa. Poor little ladies! So shocked and so
+pleased. It used to be one of Miss Catharine’s great stories. ‘My dear
+sister loves flowers,’ it began. They found the whole room a mass of
+blue—vases and jugs—and the story ends with ‘So ungentlemanly and yet
+so beautiful.’ It is all very difficult. Yes, I always connect those
+ Florentine Emersons with violets.”
+
+“Fiasco’s done you this time,” remarked Freddy, not seeing that his
+sister’s face was very red. She could not recover herself. Mr. Beebe
+saw it, and continued to divert the conversation.
+
+“These particular Emersons consisted of a father and a son—the son a
+goodly, if not a good young man; not a fool, I fancy, but very
+immature—pessimism, et cetera. Our special joy was the father—such a
+sentimental darling, and people declared he had murdered his wife.”
+
+In his normal state Mr. Beebe would never have repeated such gossip,
+but he was trying to shelter Lucy in her little trouble. He repeated
+any rubbish that came into his head.
+
+“Murdered his wife?” said Mrs. Honeychurch. “Lucy, don’t desert us—go
+on playing bumble-puppy. Really, the Pension Bertolini must have been
+the oddest place. That’s the second murderer I’ve heard of as being
+there. Whatever was Charlotte doing to stop? By-the-by, we really must
+ask Charlotte here some time.”
+
+Mr. Beebe could recall no second murderer. He suggested that his
+hostess was mistaken. At the hint of opposition she warmed. She was
+perfectly sure that there had been a second tourist of whom the same
+story had been told. The name escaped her. What was the name? Oh, what
+was the name? She clasped her knees for the name. Something in
+ Thackeray. She struck her matronly forehead.
+
+Lucy asked her brother whether Cecil was in.
+
+“Oh, don’t go!” he cried, and tried to catch her by the ankles.
+
+“I must go,” she said gravely. “Don’t be silly. You always overdo it
+when you play.”
+
+As she left them her mother’s shout of “Harris!” shivered the tranquil
+air, and reminded her that she had told a lie and had never put it
+right. Such a senseless lie, too, yet it shattered her nerves and made
+her connect these Emersons, friends of Cecil’s, with a pair of
+nondescript tourists. Hitherto truth had come to her naturally. She saw
+that for the future she must be more vigilant, and be—absolutely
+truthful? Well, at all events, she must not tell lies. She hurried up
+the garden, still flushed with shame. A word from Cecil would soothe
+her, she was sure.
+
+“Cecil!”
+
+“Hullo!” he called, and leant out of the smoking-room window. He seemed
+in high spirits. “I was hoping you’d come. I heard you all
+bear-gardening, but there’s better fun up here. I, even I, have won a
+great victory for the Comic Muse. George Meredith’s right—the cause of
+ Comedy and the cause of Truth are really the same; and I, even I, have
+found tenants for the distressful Cissie Villa. Don’t be angry! Don’t
+be angry! You’ll forgive me when you hear it all.”
+
+He looked very attractive when his face was bright, and he dispelled
+her ridiculous forebodings at once.`
     },
     {
       id: "section-28",
       title: "Section 28",
-      content: `Footnote 1: They share this character of indestructibility with all psychic acts that are really unconscious—that is, with psychic acts belonging to the system of the unconscious only. These paths are constantly open and never fall into disuse; they conduct the discharge of the exciting process as often as it becomes endowed with unconscious excitement To speak metaphorically they suffer the same form of annihilation as the shades of the lower region in the Odyssey, who awoke to new life the moment they drank blood. The processes depending on the foreconscious system are destructible in a different way. The psychotherapy of the neuroses is based on this difference.
+      content: `“I have heard,” she said. “Freddy has told us. Naughty Cecil! I suppose
+ I must forgive you. Just think of all the trouble I took for nothing!
+ Certainly the Miss Alans are a little tiresome, and I’d rather have
+nice friends of yours. But you oughtn’t to tease one so.”
 
-Footnote 2: Le Lorrain justly extols the wish-fulfilment of the dream: "Sans fatigue s?rieuse, sans ?tre oblig? de recourir ? cette lutte opin?tre et longue qui use et corrode les jouissances poursuivies."
+“Friends of mine?” he laughed. “But, Lucy, the whole joke is to come!
+ Come here.” But she remained standing where she was. “Do you know where
+ I met these desirable tenants? In the National Gallery, when I was up
+to see my mother last week.”
 
-Footnote 3: This idea has been borrowed from The Theory of Sleep by Li?bault, who revived hypnotic investigation in our days. (Du Sommeil provoqu?, etc.; Paris, 1889.)
+“What an odd place to meet people!” she said nervously. “I don’t quite
+understand.”
 
-VII
+“In the Umbrian Room. Absolute strangers. They were admiring Luca
+ Signorelli—of course, quite stupidly. However, we got talking, and they
+refreshed me not a little. They had been to Italy.”
 
-THE FUNCTION OF THE DREAM
+“But, Cecil—” proceeded hilariously.
 
-Since we know that the foreconscious is suspended during the night by the wish to sleep, we can proceed to an intelligent investigation of the dream process. But let us first sum up the knowledge of this process already gained.
+“In the course of conversation they said that they wanted a country
+cottage—the father to live there, the son to run down for week-ends. I
+thought, ‘What a chance of scoring off Sir Harry!’ and I took their
+address and a London reference, found they weren’t actual
+blackguards—it was great sport—and wrote to him, making out—”
 
-We have shown that the waking activity leaves day remnants from which the sum of energy cannot be entirely removed; or the waking activity revives during the day one of the unconscious wishes; or both conditions occur simultaneously; we have already discovered the many variations that may take place. The unconscious wish has already made its way to the day remnants, either during the day or at any rate with the beginning of sleep, and has effected a transference to it. This produces a wish transferred to the recent material, or the suppressed recent wish comes to life again through a reinforcement from the unconscious. This wish now endeavors to make its way to consciousness on the normal path of the mental processes through the foreconscious, to which indeed it belongs through one of its constituent elements. It is confronted, however, by the censor, which is still active, and to the influence of which it now succumbs. It now takes on the distortion for which the way has already been paved by its transference to the recent material. Thus far it is in the way of becoming something resembling an obsession, delusion, or the like, i.e. a thought reinforced by a transference and distorted in expression by the censor. But its further progress is now checked through the dormant state of the foreconscious; this system has apparently protected itself against invasion by diminishing its excitements. The dream process, therefore, takes the regressive course, which has just been opened by the peculiarity of the sleeping state, and thereby follows the attraction exerted on it by the memory groups, which themselves exist in part only as visual energy not yet translated into terms of the later systems. On its way to regression the dream takes on the form of dramatization. The subject of compression will be discussed later. The dream process has now terminated the second part of its repeatedly impeded course. The first part expended itself progressively from the unconscious scenes or phantasies to the foreconscious, while the second part gravitates from the advent of the censor back to the perceptions. But when the dream process becomes a content of perception it has, so to speak, eluded the obstacle set up in the Forec. by the censor and by the sleeping state. It succeeds in drawing attention to itself and in being noticed by consciousness. For consciousness, which means to us a sensory organ for the reception of psychic qualities, may receive stimuli from two sources—first, from the periphery of the entire apparatus, viz. from the perception system, and, secondly, from the pleasure and pain stimuli, which constitute the sole psychic quality produced in the transformation of energy within the apparatus. All other processes in the system, even those in the
+“Cecil! No, it’s not fair. I’ve probably met them before—”
 
-foreconscious, are devoid of any psychic quality, and are therefore not objects of consciousness inasmuch as they do not furnish pleasure or pain for perception. We shall have to assume that those liberations of pleasure and pain automatically regulate the outlet of the occupation processes. But in order to make possible more delicate functions, it was later found necessary to render the course of the presentations more independent of the manifestations of pain. To accomplish this the Forec. system needed some qualities of its own which could attract consciousness, and most probably received them through the connection of the foreconscious processes with the memory system of the signs of speech, which is not devoid of qualities.
+He bore her down.
 
-Through the qualities of this system, consciousness, which had hitherto been a sensory organ only for the perceptions, now becomes also a sensory organ for a part of our mental processes. Thus we have now, as it were, two sensory surfaces, one directed to perceptions and the other to the foreconscious mental processes.
+“Perfectly fair. Anything is fair that punishes a snob. That old man
+will do the neighbourhood a world of good. Sir Harry is too disgusting
+with his ‘decayed gentlewomen.’ I meant to read him a lesson some time.
+ No, Lucy, the classes ought to mix, and before long you’ll agree with
+me. There ought to be intermarriage—all sorts of things. I believe in
+democracy—”
 
-I must assume that the sensory surface of consciousness devoted to the Forec. is rendered less excitable by sleep than that directed to the P-systems. The giving up of interest for the nocturnal mental processes is indeed purposeful. Nothing is to disturb the mind; the Forec. wants to sleep. But once the dream becomes a perception, it is then capable of exciting consciousness through the qualities thus gained. The sensory stimulus accomplishes what it was really destined for, namely, it directs a part of the energy at the disposal of the Forec. in the form of attention upon the stimulant. We must, therefore, admit that the dream invariably awakens us, that is, it puts into activity a part of the dormant force of the Forec. This force imparts to the dream that influence which we have designated as secondary elaboration for the sake of connection and comprehensibility. This means that the dream is treated by it like any other content of perception; it is subjected to the same ideas of expectation, as far at least as the material admits. As far as the direction is concerned in this third part of the dream, it may be said that here again the movement is progressive.
+“No, you don’t,” she snapped. “You don’t know what the word means.”
 
-To avoid misunderstanding, it will not be amiss to say a few words about the temporal peculiarities of these dream processes. In a very interesting discussion, apparently suggested by Maury's puzzling guillotine dream, Goblet tries to demonstrate that the dream requires no other time than the transition period between sleeping and awakening. The awakening requires time, as the dream takes place during that period. One is inclined to believe that the final picture of the dream is so strong that it forces the dreamer to awaken; but, as a matter of fact, this picture is strong only because the dreamer is already very near awakening when it appears. "Un r?ve c'est un r?veil qui commence."`
+He stared at her, and felt again that she had failed to be
+ Leonardesque. “No, you don’t!”
+
+Her face was inartistic—that of a peevish virago.
+
+“It isn’t fair, Cecil. I blame you—I blame you very much indeed. You
+had no business to undo my work about the Miss Alans, and make me look
+ridiculous. You call it scoring off Sir Harry, but do you realize that
+it is all at my expense? I consider it most disloyal of you.”
+
+She left him.
+
+“Temper!” he thought, raising his eyebrows.
+
+No, it was worse than temper—snobbishness. As long as Lucy thought that
+his own smart friends were supplanting the Miss Alans, she had not
+minded. He perceived that these new tenants might be of value
+educationally. He would tolerate the father and draw out the son, who
+was silent. In the interests of the Comic Muse and of Truth, he would
+bring them to Windy Corner.
+
+Chapter XI
+ In Mrs. Vyse’s Well-Appointed Flat
+
+The Comic Muse, though able to look after her own interests, did not
+disdain the assistance of Mr. Vyse. His idea of bringing the Emersons
+to Windy Corner struck her as decidedly good, and she carried through
+the negotiations without a hitch. Sir Harry Otway signed the agreement,
+met Mr. Emerson, who was duly disillusioned. The Miss Alans were duly
+offended, and wrote a dignified letter to Lucy, whom they held
+responsible for the failure. Mr. Beebe planned pleasant moments for the
+new-comers, and told Mrs. Honeychurch that Freddy must call on them as
+soon as they arrived. Indeed, so ample was the Muse’s equipment that
+she permitted Mr. Harris, never a very robust criminal, to droop his
+head, to be forgotten, and to die.
+
+Lucy—to descend from bright heaven to earth, whereon there are shadows
+because there are hills—Lucy was at first plunged into despair, but
+settled after a little thought that it did not matter the very least.
+ Now that she was engaged, the Emersons would scarcely insult her and
+were welcome into the neighbourhood. And Cecil was welcome to bring
+whom he would into the neighbourhood. Therefore Cecil was welcome to
+bring the Emersons into the neighbourhood. But, as I say, this took a
+little thinking, and—so illogical are girls—the event remained rather
+greater and rather more dreadful than it should have done. She was glad
+that a visit to Mrs. Vyse now fell due; the tenants moved into Cissie
+ Villa while she was safe in the London flat.
+
+“Cecil—Cecil darling,” she whispered the evening she arrived, and crept
+into his arms.
+
+Cecil, too, became demonstrative. He saw that the needful fire had been
+kindled in Lucy. At last she longed for attention, as a woman should,
+and looked up to him because he was a man.
+
+“So you do love me, little thing?” he murmured.
+
+“Oh, Cecil, I do, I do! I don’t know what I should do without you.”
+
+Several days passed. Then she had a letter from Miss Bartlett. A
+coolness had sprung up between the two cousins, and they had not
+corresponded since they parted in August. The coolness dated from what
+ Charlotte would call “the flight to Rome,” and in Rome it had increased
+amazingly. For the companion who is merely uncongenial in the mediaeval
+world becomes exasperating in the classical. Charlotte, unselfish in
+the Forum, would have tried a sweeter temper than Lucy’s, and once, in
+the Baths of Caracalla, they had doubted whether they could continue
+their tour. Lucy had said she would join the Vyses—Mrs. Vyse was an
+acquaintance of her mother, so there was no impropriety in the plan and
+ Miss Bartlett had replied that she was quite used to being abandoned
+suddenly. Finally nothing happened; but the coolness remained, and, for
+ Lucy, was even increased when she opened the letter and read as
+follows. It had been forwarded from Windy Corner.
+
+“TUNBRIDGE WELLS,
+“_September_.
+
+“DEAREST LUCIA,
+
+“I have news of you at last! Miss Lavish has been bicycling in your
+parts, but was not sure whether a call would be welcome. Puncturing her
+tire near Summer Street, and it being mended while she sat very
+woebegone in that pretty churchyard, she saw to her astonishment, a
+door open opposite and the younger Emerson man come out. He said his
+father had just taken the house. He _said_ he did not know that you
+lived in the neighbourhood (?). He never suggested giving Eleanor a cup
+of tea. Dear Lucy, I am much worried, and I advise you to make a clean
+breast of his past behaviour to your mother, Freddy, and Mr. Vyse, who
+will forbid him to enter the house, etc. That was a great misfortune,
+and I dare say you have told them already. Mr. Vyse is so sensitive. I
+remember how I used to get on his nerves at Rome. I am very sorry about
+it all, and should not feel easy unless I warned you.
+
+“Believe me,
+“Your anxious and loving cousin,
+“CHARLOTTE.”
+
+Lucy was much annoyed, and replied as follows:
+
+“BEAUCHAMP MANSIONS, S.W.
+
+“DEAR CHARLOTTE,
+
+“Many thanks for your warning. When Mr. Emerson forgot himself on the
+mountain, you made me promise not to tell mother, because you said she
+would blame you for not being always with me. I have kept that promise,
+and cannot possibly tell her now. I have said both to her and Cecil
+that I met the Emersons at Florence, and that they are respectable
+people—which I _do_ think—and the reason that he offered Miss Lavish no
+tea was probably that he had none himself. She should have tried at the
+ Rectory. I cannot begin making a fuss at this stage. You must see that
+it would be too absurd. If the Emersons heard I had complained of them,
+they would think themselves of importance, which is exactly what they
+are not. I like the old father, and look forward to seeing him again.
+ As for the son, I am sorry for _him_ when we meet, rather than for
+myself. They are known to Cecil, who is very well and spoke of you the
+other day. We expect to be married in January.
+
+“Miss Lavish cannot have told you much about me, for I am not at Windy
+ Corner at all, but here. Please do not put ‘Private’ outside your
+envelope again. No one opens my letters.
+
+“Yours affectionately,
+“L. M. HONEYCHURCH.”`
     },
     {
       id: "section-29",
       title: "Section 29",
-      content: `It has already been emphasized by Dugas that Goblet was forced to repudiate many facts in order to generalize his theory. There are, moreover, dreams from which we do not awaken, e.g., some dreams in which we dream that we dream. From our knowledge of the dream-work, we can by no means admit that it extends only over the period of awakening. On the contrary, we must consider it probable that the first part of the dream-work begins during the day when we are still under the domination of the foreconscious. The second phase of the dream-work, viz. the modification through the censor, the attraction by the unconscious scenes, and the penetration to perception must continue throughout the night. And we are probably always right when we assert that we feel as though we had been dreaming the whole night, although we cannot say what. I do not, however, think it necessary to assume that, up to the time of becoming conscious, the dream processes really follow the temporal sequence which we have described, viz. that there is first the transferred dream-wish, then the distortion of the censor, and consequently the change of direction to regression, and so on. We were forced to form such a succession for the sake of description; in reality, however, it is much rather a matter of simultaneously trying this path and that, and of emotions fluctuating to and fro, until finally, owing to the most expedient distribution, one particular grouping is secured which remains. From certain personal experiences, I am myself inclined to believe that the dream-work often requires more than one day and one night to produce its result; if this be true, the extraordinary art manifested in the construction of the dream loses all its marvels. In my opinion, even the regard for comprehensibility as an occurrence of perception may take effect before the dream attracts consciousness to itself. To be sure, from now on the process is accelerated, as the dream is henceforth subjected to the same treatment as any other perception. It is like fireworks, which require hours of preparation and only a moment for ignition.
+      content: `Secrecy has this disadvantage: we lose the sense of proportion; we
+cannot tell whether our secret is important or not. Were Lucy and her
+cousin closeted with a great thing which would destroy Cecil’s life if
+he discovered it, or with a little thing which he would laugh at? Miss
+ Bartlett suggested the former. Perhaps she was right. It had become a
+great thing now. Left to herself, Lucy would have told her mother and
+her lover ingenuously, and it would have remained a little thing.
+“Emerson, not Harris”; it was only that a few weeks ago. She tried to
+tell Cecil even now when they were laughing about some beautiful lady
+who had smitten his heart at school. But her body behaved so
+ridiculously that she stopped.
 
-Through the dream-work the dream process now gains either sufficient intensity to attract consciousness to itself and arouse the foreconscious, which is quite independent of the time or profundity of sleep, or, its intensity being insufficient it must wait until it meets the attention which is set in motion
+She and her secret stayed ten days longer in the deserted Metropolis
+visiting the scenes they were to know so well later on. It did her no
+harm, Cecil thought, to learn the framework of society, while society
+itself was absent on the golf-links or the moors. The weather was cool,
+and it did her no harm. In spite of the season, Mrs. Vyse managed to
+scrape together a dinner-party consisting entirely of the grandchildren
+of famous people. The food was poor, but the talk had a witty weariness
+that impressed the girl. One was tired of everything, it seemed. One
+launched into enthusiasms only to collapse gracefully, and pick oneself
+up amid sympathetic laughter. In this atmosphere the Pension Bertolini
+and Windy Corner appeared equally crude, and Lucy saw that her London
+career would estrange her a little from all that she had loved in the
+past.
 
-immediately before awakening. Most dreams seem to operate with relatively slight psychic intensities, for they wait for the awakening. This, however, explains the fact that we regularly perceive something dreamt on being suddenly aroused from a sound sleep. Here, as well as in spontaneous awakening, the first glance strikes the perception content created by the dream-work, while the next strikes the one produced from without.
+The grandchildren asked her to play the piano.
 
-But of greater theoretical interest are those dreams which are capable of waking us in the midst of sleep. We must bear in mind the expediency elsewhere universally demonstrated, and ask ourselves why the dream or the unconscious wish has the power to disturb sleep, i.e. the fulfillment of the foreconscious wish. This is probably due to certain relations of energy into which we have no insight. If we possessed such insight we should probably find that the freedom given to the dream and the expenditure of a certain amount of detached attention represent for the dream an economy in energy, keeping in view the fact that the unconscious must be held in check at night just as during the day. We know from experience that the dream, even if it interrupts sleep, repeatedly during the same night, still remains compatible with sleep. We wake up for an instant, and immediately resume our sleep. It is like driving off a fly during sleep, we awake ad hoc, and when we resume our sleep we have removed the disturbance. As demonstrated by familiar examples from the sleep of wet nurses, &c., the fulfillment of the wish to sleep is quite compatible with the retention of a certain amount of attention in a given direction.
+She played Schumann. “Now some Beethoven” called Cecil, when the
+querulous beauty of the music had died. She shook her head and played
+ Schumann again. The melody rose, unprofitably magical. It broke; it was
+resumed broken, not marching once from the cradle to the grave. The
+sadness of the incomplete—the sadness that is often Life, but should
+never be Art—throbbed in its disjected phrases, and made the nerves of
+the audience throb. Not thus had she played on the little draped piano
+at the Bertolini, and “Too much Schumann” was not the remark that Mr.
+ Beebe had passed to himself when she returned.
 
-But we must here take cognizance of an objection that is based on a better knowledge of the unconscious processes. Although we have ourselves described the unconscious wishes as always active, we have, nevertheless, asserted that they are not sufficiently strong during the day to make themselves perceptible. But when we sleep, and the unconscious wish has shown its power to form a dream, and with it to awaken the foreconscious, why, then, does this power become exhausted after the dream has been taken cognizance of? Would it not seem more probable that the dream should continually renew itself, like the troublesome fly which, when driven away, takes pleasure in returning again and again? What justifies our assertion that the dream removes the disturbance of sleep?
+When the guests were gone, and Lucy had gone to bed, Mrs. Vyse paced up
+and down the drawing-room, discussing her little party with her son.
+ Mrs. Vyse was a nice woman, but her personality, like many another’s,
+had been swamped by London, for it needs a strong head to live among
+many people. The too vast orb of her fate had crushed her; and she had
+seen too many seasons, too many cities, too many men, for her
+abilities, and even with Cecil she was mechanical, and behaved as if he
+was not one son, but, so to speak, a filial crowd.
 
-That the unconscious wishes always remain active is quite true. They represent paths which are passable whenever a sum of excitement makes use of them. Moreover, a remarkable peculiarity of the unconscious processes is the fact that they remain indestructible. Nothing can be brought to an end in the unconscious; nothing can cease or be forgotten. This impression is most strongly gained in the study of the neuroses, especially of hysteria. The unconscious stream of thought which leads to the discharge through an attack becomes passable again as soon as there is an accumulation of a sufficient amount of excitement. The mortification brought on thirty years ago, after having gained access to the unconscious affective source, operates during all these thirty years like a recent one. Whenever its memory is touched, it is revived and shows itself to be supplied with the excitement which is discharged in a motor attack. It is just here that the office of psychotherapy begins, its task being to bring about adjustment and forgetfulness for the unconscious processes. Indeed, the fading of memories and the flagging of affects, which we are apt to take as self-evident and to explain as a primary influence of time on the psychic memories, are in reality secondary changes brought about by painstaking work. It is the foreconscious that accomplishes this work; and the only course to be pursued by psychotherapy is the subjugate the Unc, to the domination of the Forec.
+“Make Lucy one of us,” she said, looking round intelligently at the end
+of each sentence, and straining her lips apart until she spoke again.
+“Lucy is becoming wonderful—wonderful.”
 
-There are, therefore, two exits for the individual unconscious emotional process. It is either left to itself, in which case it ultimately breaks through somewhere and secures for once a discharge for its excitation into motility; or it succumbs to the influence of the foreconscious, and its excitation becomes confined through this influence instead of being discharged. It is the latter process that occurs in the dream. Owing to the fact that it is directed by the conscious excitement, the energy from the Forec., which confronts the dream when grown to perception, restricts the unconscious excitement of the dream and renders it harmless as a disturbing factor. When the dreamer wakes up for a moment, he has actually chased away the fly that has threatened to disturb his sleep. We can now understand that it is really more expedient and economical to give full sway to the unconscious wish, and clear its way to regression so that it may form a dream, and then restrict and adjust this dream by means of a small expenditure of foreconscious labor, than to curb the unconscious throughout the entire period of sleep. We should, indeed, expect that the dream, even if it was not originally an expedient process, would have acquired some function in the play of forces of the psychic life. We now see what this function is. The dream has taken it upon itself to bring the liberated excitement of the Unc. back under the domination of the foreconscious; it thus affords relief for the excitement of the Unc. and acts as a safety-valve for`
+“Her music always was wonderful.”
+
+“Yes, but she is purging off the Honeychurch taint, most excellent
+ Honeychurches, but you know what I mean. She is not always quoting
+servants, or asking one how the pudding is made.”
+
+“Italy has done it.”
+
+“Perhaps,” she murmured, thinking of the museum that represented Italy
+to her. “It is just possible. Cecil, mind you marry her next January.
+ She is one of us already.”
+
+“But her music!” he exclaimed. “The style of her! How she kept to
+ Schumann when, like an idiot, I wanted Beethoven. Schumann was right
+for this evening. Schumann was the thing. Do you know, mother, I shall
+have our children educated just like Lucy. Bring them up among honest
+country folks for freshness, send them to Italy for subtlety, and
+then—not till then—let them come to London. I don’t believe in these
+ London educations—” He broke off, remembering that he had had one
+himself, and concluded, “At all events, not for women.”
+
+“Make her one of us,” repeated Mrs. Vyse, and processed to bed.
+
+As she was dozing off, a cry—the cry of nightmare—rang from Lucy’s
+room. Lucy could ring for the maid if she liked but Mrs. Vyse thought
+it kind to go herself. She found the girl sitting upright with her hand
+on her cheek.
+
+“I am so sorry, Mrs. Vyse—it is these dreams.”
+
+“Bad dreams?”
+
+“Just dreams.”
+
+The elder lady smiled and kissed her, saying very distinctly: “You
+should have heard us talking about you, dear. He admires you more than
+ever. Dream of that.”
+
+Lucy returned the kiss, still covering one cheek with her hand. Mrs.
+ Vyse recessed to bed. Cecil, whom the cry had not awoke, snored.
+ Darkness enveloped the flat.
+
+Chapter XII
+ Twelfth Chapter
+
+It was a Saturday afternoon, gay and brilliant after abundant rains,
+and the spirit of youth dwelt in it, though the season was now autumn.
+ All that was gracious triumphed. As the motorcars passed through Summer
+ Street they raised only a little dust, and their stench was soon
+dispersed by the wind and replaced by the scent of the wet birches or
+of the pines. Mr. Beebe, at leisure for life’s amenities, leant over
+his Rectory gate. Freddy leant by him, smoking a pendant pipe.
+
+“Suppose we go and hinder those new people opposite for a little.”
+
+“M’m.”
+
+“They might amuse you.”
+
+Freddy, whom his fellow-creatures never amused, suggested that the new
+people might be feeling a bit busy, and so on, since they had only just
+moved in.
+
+“I suggested we should hinder them,” said Mr. Beebe. “They are worth
+it.” Unlatching the gate, he sauntered over the triangular green to
+ Cissie Villa. “Hullo!” he cried, shouting in at the open door, through
+which much squalor was visible.
+
+A grave voice replied, “Hullo!”
+
+“I’ve brought someone to see you.”
+
+“I’ll be down in a minute.”
+
+The passage was blocked by a wardrobe, which the removal men had failed
+to carry up the stairs. Mr. Beebe edged round it with difficulty. The
+sitting-room itself was blocked with books.
+
+“Are these people great readers?” Freddy whispered. “Are they that
+sort?”
+
+“I fancy they know how to read—a rare accomplishment. What have they
+got? Byron. Exactly. A Shropshire Lad. Never heard of it. The Way of
+ All Flesh. Never heard of it. Gibbon. Hullo! dear George reads German.
+ Um—um—Schopenhauer, Nietzsche, and so we go on. Well, I suppose your
+generation knows its own business, Honeychurch.”
+
+“Mr. Beebe, look at that,” said Freddy in awestruck tones.
+
+On the cornice of the wardrobe, the hand of an amateur had painted this
+inscription: “Mistrust all enterprises that require new clothes.”
+
+“I know. Isn’t it jolly? I like that. I’m certain that’s the old man’s
+doing.”
+
+“How very odd of him!”
+
+“Surely you agree?”
+
+But Freddy was his mother’s son and felt that one ought not to go on
+spoiling the furniture.
+
+“Pictures!” the clergyman continued, scrambling about the room.
+“Giotto—they got that at Florence, I’ll be bound.”
+
+“The same as Lucy’s got.”
+
+“Oh, by-the-by, did Miss Honeychurch enjoy London?”
+
+“She came back yesterday.”
+
+“I suppose she had a good time?”
+
+“Yes, very,” said Freddy, taking up a book. “She and Cecil are thicker
+than ever.”
+
+“That’s good hearing.”
+
+“I wish I wasn’t such a fool, Mr. Beebe.”
+
+Mr. Beebe ignored the remark.
+
+“Lucy used to be nearly as stupid as I am, but it’ll be very different
+now, mother thinks. She will read all kinds of books.”
+
+“So will you.”
+
+“Only medical books. Not books that you can talk about afterwards.
+ Cecil is teaching Lucy Italian, and he says her playing is wonderful.
+ There are all kinds of things in it that we have never noticed. Cecil
+says—”
+
+“What on earth are those people doing upstairs? Emerson—we think we’ll
+come another time.”
+
+George ran down-stairs and pushed them into the room without speaking.
+
+“Let me introduce Mr. Honeychurch, a neighbour.”`
     },
     {
       id: "section-30",
       title: "Section 30",
-      content: `the latter, and at the same time it insures the sleep of the foreconscious at a slight expenditure of the waking state. Like the other psychic formations of its group, the dream offers itself as a compromise serving simultaneously both systems by fulfilling both wishes in so far as they are compatible with each other. A glance at Robert's "elimination theory," will show that we must agree with this author in his main point, viz. in the determination of the function of the dream, though we differ from him in our hypotheses and in our treatment of the dream process.
+      content: `Then Freddy hurled one of the thunderbolts of youth. Perhaps he was
+shy, perhaps he was friendly, or perhaps he thought that George’s face
+wanted washing. At all events he greeted him with, “How d’ye do? Come
+and have a bathe.”
 
-The above qualification—in so far as the two wishes are compatible with each other—contains a suggestion that there may be cases in which the function of the dream suffers shipwreck. The dream process is in the first instance admitted as a wish-fulfillment of the unconscious, but if this tentative wish-fulfillment disturbs the foreconscious to such an extent that the latter can no longer maintain its rest, the dream then breaks the compromise and fails to perform the second part of its task. It is then at once broken off, and replaced by complete wakefulness. Here, too, it is not really the fault of the dream, if, while ordinarily the guardian of sleep, it is here compelled to appear as the disturber of sleep, nor should this cause us to entertain any doubts as to its efficacy. This is not the only case in the organism in which an otherwise efficacious arrangement became inefficacious and disturbing as soon as some element is changed in the conditions of its origin; the disturbance then serves at least the new purpose of announcing the change, and calling into play against it the means of adjustment of the organism. In this connection, I naturally bear in mind the case of the anxiety dream, and in order not to have the appearance of trying to exclude this testimony against the theory of wish-fulfillment wherever I encounter it, I will attempt an explanation of the anxiety dream, at least offering some suggestions.
+“Oh, all right,” said George, impassive.
 
-That a psychic process developing anxiety may still be a wish- fulfillment has long ceased to impress us as a contradiction. We may explain this occurrence by the fact that the wish belongs to one system (the Unc.), while by the other system (the Forec.), this wish has been rejected and suppressed. The subjection of the Unc. by the Forec. is not complete even in perfect psychic health; the amount of this suppression shows the degree of our psychic normality. Neurotic symptoms show that there is a conflict between the two systems; the symptoms are the results of a compromise of this conflict, and they temporarily put an end to it. On the one hand, they afford the Unc. an outlet for the discharge of its excitement, and serve it as a
+Mr. Beebe was highly entertained.
 
-sally port, while, on the other hand, they give the Forec. the capability of dominating the Unc. to some extent. It is highly instructive to consider, e.g., the significance of any hysterical phobia or of an agoraphobia. Suppose a neurotic incapable of crossing the street alone, which we would justly call a "symptom." We attempt to remove this symptom by urging him to the action which he deems himself incapable of. The result will be an attack of anxiety, just as an attack of anxiety in the street has often been the cause of establishing an agoraphobia. We thus learn that the symptom has been constituted in order to guard against the outbreak of the anxiety. The phobia is thrown before the anxiety like a fortress on the frontier.
+“‘How d’ye do? how d’ye do? Come and have a bathe,’” he chuckled.
+“That’s the best conversational opening I’ve ever heard. But I’m afraid
+it will only act between men. Can you picture a lady who has been
+introduced to another lady by a third lady opening civilities with ‘How
+do you do? Come and have a bathe’? And yet you will tell me that the
+sexes are equal.”
 
-Unless we enter into the part played by the affects in these processes, which can be done here only imperfectly, we cannot continue our discussion. Let us therefore advance the proposition that the reason why the suppression of the unconscious becomes absolutely necessary is because, if the discharge of presentation should be left to itself, it would develop an affect in the Unc. which originally bore the character of pleasure, but which, since the appearance of the repression, bears the character of pain. The aim, as well as the result, of the suppression is to stop the development of this pain. The suppression extends over the unconscious ideation, because the liberation of pain might emanate from the ideation. The foundation is here laid for a very definite assumption concerning the nature of the affective development. It is regarded as a motor or secondary activity, the key to the innervation of which is located in the presentations of the Unc. Through the domination of the Forec. these presentations become, as it were, throttled and inhibited at the exit of the emotion-developing impulses. The danger, which is due to the fact that the Forec. ceases to occupy the energy, therefore consists in the fact that the unconscious excitations liberate such an affect as—in consequence of the repression that has previously taken place—can only be perceived as pain or anxiety.
+“I tell you that they shall be,” said Mr. Emerson, who had been slowly
+descending the stairs. “Good afternoon, Mr. Beebe. I tell you they
+shall be comrades, and George thinks the same.”
 
-This danger is released through the full sway of the dream process. The determinations for its realization consist in the fact that repressions have taken place, and that the suppressed emotional wishes shall become sufficiently strong. They thus stand entirely without the psychological realm of the dream structure. Were it not for the fact that our subject is connected through just one factor, namely, the freeing of the Unc. during sleep, with the subject of the development of anxiety, I could dispense with discussion of the anxiety dream, and thus avoid all obscurities connected with it.
+“We are to raise ladies to our level?” the clergyman inquired.
 
-As I have often repeated, the theory of the anxiety belongs to the psychology of the neuroses. I would say that the anxiety in the dream is an anxiety problem and not a dream problem. We have nothing further to do with it after having once demonstrated its point of contact with the subject of the dream process. There is only one thing left for me to do. As I have asserted that the neurotic anxiety originates from sexual sources, I can subject anxiety dreams to analysis in order to demonstrate the sexual material in their dream thoughts.
+“The Garden of Eden,” pursued Mr. Emerson, still descending, “which you
+place in the past, is really yet to come. We shall enter it when we no
+longer despise our bodies.”
 
-For good reasons I refrain from citing here any of the numerous examples placed at my disposal by neurotic patients, but prefer to give anxiety dreams from young persons.`
+Mr. Beebe disclaimed placing the Garden of Eden anywhere.
+
+“In this—not in other things—we men are ahead. We despise the body less
+than women do. But not until we are comrades shall we enter the
+garden.”
+
+“I say, what about this bathe?” murmured Freddy, appalled at the mass
+of philosophy that was approaching him.
+
+“I believed in a return to Nature once. But how can we return to Nature
+when we have never been with her? To-day, I believe that we must
+discover Nature. After many conquests we shall attain simplicity. It is
+our heritage.”
+
+“Let me introduce Mr. Honeychurch, whose sister you will remember at
+ Florence.”
+
+“How do you do? Very glad to see you, and that you are taking George
+for a bathe. Very glad to hear that your sister is going to marry.
+ Marriage is a duty. I am sure that she will be happy, for we know Mr.
+ Vyse, too. He has been most kind. He met us by chance in the National
+ Gallery, and arranged everything about this delightful house. Though I
+hope I have not vexed Sir Harry Otway. I have met so few Liberal
+landowners, and I was anxious to compare his attitude towards the game
+laws with the Conservative attitude. Ah, this wind! You do well to
+bathe. Yours is a glorious country, Honeychurch!”
+
+“Not a bit!” mumbled Freddy. “I must—that is to say, I have to—have the
+pleasure of calling on you later on, my mother says, I hope.”
+
+“_Call_, my lad? Who taught us that drawing-room twaddle? Call on your
+grandmother! Listen to the wind among the pines! Yours is a glorious
+country.”
+
+Mr. Beebe came to the rescue.
+
+“Mr. Emerson, he will call, I shall call; you or your son will return
+our calls before ten days have elapsed. I trust that you have realized
+about the ten days’ interval. It does not count that I helped you with
+the stair-eyes yesterday. It does not count that they are going to
+bathe this afternoon.”
+
+“Yes, go and bathe, George. Why do you dawdle talking? Bring them back
+to tea. Bring back some milk, cakes, honey. The change will do you
+good. George has been working very hard at his office. I can’t believe
+he’s well.”
+
+George bowed his head, dusty and sombre, exhaling the peculiar smell of
+one who has handled furniture.
+
+“Do you really want this bathe?” Freddy asked him. “It is only a pond,
+don’t you know. I dare say you are used to something better.”
+
+“Yes—I have said ‘Yes’ already.”
+
+Mr. Beebe felt bound to assist his young friend, and led the way out of
+the house and into the pine-woods. How glorious it was! For a little
+time the voice of old Mr. Emerson pursued them dispensing good wishes
+and philosophy. It ceased, and they only heard the fair wind blowing
+the bracken and the trees. Mr. Beebe, who could be silent, but who
+could not bear silence, was compelled to chatter, since the expedition
+looked like a failure, and neither of his companions would utter a
+word. He spoke of Florence. George attended gravely, assenting or
+dissenting with slight but determined gestures that were as
+inexplicable as the motions of the tree-tops above their heads.
+
+“And what a coincidence that you should meet Mr. Vyse! Did you realize
+that you would find all the Pension Bertolini down here?”
+
+“I did not. Miss Lavish told me.”
+
+“When I was a young man, I always meant to write a ‘History of
+ Coincidence.’”
+
+No enthusiasm.
+
+“Though, as a matter of fact, coincidences are much rarer than we
+suppose. For example, it isn’t purely coincidentally that you are here
+now, when one comes to reflect.”
+
+To his relief, George began to talk.
+
+“It is. I have reflected. It is Fate. Everything is Fate. We are flung
+together by Fate, drawn apart by Fate—flung together, drawn apart. The
+twelve winds blow us—we settle nothing—”
+
+“You have not reflected at all,” rapped the clergyman. “Let me give you
+a useful tip, Emerson: attribute nothing to Fate. Don’t say, ‘I didn’t
+do this,’ for you did it, ten to one. Now I’ll cross-question you.
+ Where did you first meet Miss Honeychurch and myself?”
+
+“Italy.”
+
+“And where did you meet Mr. Vyse, who is going to marry Miss
+ Honeychurch?”
+
+“National Gallery.”
+
+“Looking at Italian art. There you are, and yet you talk of coincidence
+and Fate. You naturally seek out things Italian, and so do we and our
+friends. This narrows the field immeasurably we meet again in it.”
+
+“It is Fate that I am here,” persisted George. “But you can call it
+ Italy if it makes you less unhappy.”
+
+Mr. Beebe slid away from such heavy treatment of the subject. But he
+was infinitely tolerant of the young, and had no desire to snub George.
+
+“And so for this and for other reasons my ‘History of Coincidence’ is
+still to write.”
+
+Silence.
+
+Wishing to round off the episode, he added; “We are all so glad that
+you have come.”
+
+Silence.
+
+“Here we are!” called Freddy.
+
+“Oh, good!” exclaimed Mr. Beebe, mopping his brow.
+
+“In there’s the pond. I wish it was bigger,” he added apologetically.
+
+They climbed down a slippery bank of pine-needles. There lay the pond,
+set in its little alp of green—only a pond, but large enough to contain
+the human body, and pure enough to reflect the sky. On account of the
+rains, the waters had flooded the surrounding grass, which showed like
+a beautiful emerald path, tempting these feet towards the central pool.
+
+“It’s distinctly successful, as ponds go,” said Mr. Beebe. “No
+apologies are necessary for the pond.”
+
+George sat down where the ground was dry, and drearily unlaced his
+boots.
+
+“Aren’t those masses of willow-herb splendid? I love willow-herb in
+seed. What’s the name of this aromatic plant?”
+
+No one knew, or seemed to care.
+
+“These abrupt changes of vegetation—this little spongeous tract of
+water plants, and on either side of it all the growths are tough or
+brittle—heather, bracken, hurts, pines. Very charming, very charming.”
+
+“Mr. Beebe, aren’t you bathing?” called Freddy, as he stripped himself.
+
+Mr. Beebe thought he was not.
+
+“Water’s wonderful!” cried Freddy, prancing in.
+
+“Water’s water,” murmured George. Wetting his hair first—a sure sign of
+apathy—he followed Freddy into the divine, as indifferent as if he were
+a statue and the pond a pail of soapsuds. It was necessary to use his
+muscles. It was necessary to keep clean. Mr. Beebe watched them, and
+watched the seeds of the willow-herb dance chorically above their
+heads.
+
+“Apooshoo, apooshoo, apooshoo,” went Freddy, swimming for two strokes
+in either direction, and then becoming involved in reeds or mud.
+
+“Is it worth it?” asked the other, Michelangelesque on the flooded
+margin.
+
+The bank broke away, and he fell into the pool before he had weighed
+the question properly.
+
+“Hee-poof—I’ve swallowed a pollywog, Mr. Beebe, water’s wonderful,
+water’s simply ripping.”
+
+“Water’s not so bad,” said George, reappearing from his plunge, and
+sputtering at the sun.
+
+“Water’s wonderful. Mr. Beebe, do.”
+
+“Apooshoo, kouf.”`
     },
     {
       id: "section-31",
       title: "Section 31",
-      content: `Personally, I have had no real anxiety dream for decades, but I recall one from my seventh or eighth year which I subjected to interpretation about thirty years later. The dream was very vivid, and showed me my beloved mother, with peculiarly calm sleeping countenance, carried into the room and laid on the bed by two (or three) persons with birds' beaks. I awoke crying and screaming, and disturbed my parents. The very tall figures— draped in a peculiar manner—with beaks, I had taken from the illustrations of Philippson's bible; I believe they represented deities with heads of sparrowhawks from an Egyptian tomb relief. The analysis also introduced the reminiscence of a naughty janitor's boy, who used to play with us children on the meadow in front of the house; I would add that his name was Philip. I feel that I first heard from this boy the vulgar word signifying sexual intercourse, which is replaced among the educated by the Latin "coitus," but to which the dream distinctly alludes by the selection of the birds' heads. I must have suspected the sexual significance of the word from the facial expression of my worldly-wise teacher. My mother's features in the dream were copied from the countenance of my grandfather, whom I had seen a few days before his death snoring in the state of coma. The interpretation of the secondary elaboration in the dream must therefore have been that my mother was dying; the tomb relief, too, agrees with this. In this anxiety I awoke, and could not calm myself until I had awakened my parents. I remember that I suddenly became calm on coming face to face with my mother, as if I needed the assurance that my mother was not dead. But this secondary interpretation of the dream had been effected only under the influence of the developed anxiety. I was not frightened because I dreamed that my mother was dying, but I interpreted the dream in this manner in the foreconscious elaboration because I was already under the domination of the anxiety. The latter, however, could be traced by means of the repression to an obscure obviously sexual desire, which had found its satisfying expression in the visual content of the dream.
+      content: `Mr. Beebe, who was hot, and who always acquiesced where possible,
+looked around him. He could detect no parishioners except the
+pine-trees, rising up steeply on all sides, and gesturing to each other
+against the blue. How glorious it was! The world of motor-cars and
+rural Deans receded inimitably. Water, sky, evergreens, a wind—these
+things not even the seasons can touch, and surely they lie beyond the
+intrusion of man?
 
-A man twenty-seven years old who had been severely ill for a year had had many terrifying dreams between the ages of eleven and thirteen. He thought that a man with an ax was running after him; he wished to run, but felt paralyzed and could not move from the spot. This may be taken as a good example of a very common, and apparently sexually indifferent, anxiety dream. In the analysis the dreamer first thought of a story told him by his uncle, which chronologically was later than the dream, viz. that he was attacked at night by a suspicious-looking individual. This occurrence led him to believe that he himself might have already heard of a similar episode at the time of the dream. In connection with the ax he recalled that during that period of his life he once hurt his hand with an ax while chopping wood. This immediately led to his relations with his younger brother, whom he used to maltreat and knock down. In particular, he recalled an occasion when he struck his brother on the head with his boot until he bled, whereupon his mother remarked: "I fear he will kill him some day." While he was seemingly thinking of the subject of violence, a reminiscence from his ninth year suddenly occurred to him. His parents came home late and went to bed while he was feigning sleep. He soon heard panting and other noises that appeared strange to him, and he could also make out the position of his parents in bed. His further associations showed that he had established an analogy between this relation between his parents and his own relation toward his younger brother. He subsumed what occurred between his parents under the conception "violence and wrestling," and thus reached a sadistic conception of the coitus act, as often happens among children. The fact that he often noticed blood on his mother's bed corroborated his conception.
+“I may as well wash too”; and soon his garments made a third little
+pile on the sward, and he too asserted the wonder of the water.
 
-That the sexual intercourse of adults appears strange to children who observe it, and arouses fear in them, I dare say is a fact of daily experience. I have explained this fear by the fact that sexual excitement is not mastered by their understanding, and is probably also inacceptable to them because their parents are involved in it. For the same son this excitement is converted into fear. At a still earlier period of life sexual emotion directed toward the parent of opposite sex does not meet with repression but finds free expression, as we have seen before.
+It was ordinary water, nor was there very much of it, and, as Freddy
+said, it reminded one of swimming in a salad. The three gentlemen
+rotated in the pool breast high, after the fashion of the nymphs in
+ Götterdämmerung. But either because the rains had given a freshness or
+because the sun was shedding a most glorious heat, or because two of
+the gentlemen were young in years and the third young in spirit—for
+some reason or other a change came over them, and they forgot Italy and
+ Botany and Fate. They began to play. Mr. Beebe and Freddy splashed each
+other. A little deferentially, they splashed George. He was quiet: they
+feared they had offended him. Then all the forces of youth burst out.
+ He smiled, flung himself at them, splashed them, ducked them, kicked
+them, muddied them, and drove them out of the pool.
 
-For the night terrors with hallucinations (pavor nocturnus) frequently found in children, I would unhesitatingly give the same explanation. Here, too, we are certainly dealing with the incomprehensible and rejected sexual feelings, which, if noted, would probably show a temporal periodicity, for an enhancement of the sexual libido may just as well be produced accidentally through emotional impressions as through the spontaneous and gradual processes of development.
+“Race you round it, then,” cried Freddy, and they raced in the
+sunshine, and George took a short cut and dirtied his shins, and had to
+bathe a second time. Then Mr. Beebe consented to run—a memorable sight.
 
-I lack the necessary material to sustain these explanations from observation. On the other hand, the pediatrists seem to lack the point of view which alone makes comprehensible the whole series of phenomena, on the somatic as well as on the psychic side. To illustrate by a comical example how one wearing the blinders of medical mythology may miss the understanding of such cases I will relate a case which I found in a thesis on pavor nocturnus by Debacker, 1881. A thirteen-year-old boy of delicate health began to become anxious and dreamy; his sleep became restless, and about once a week it was interrupted by an acute attack of anxiety with hallucinations. The memory of these dreams was invariably very distinct.
+They ran to get dry, they bathed to get cool, they played at being
+ Indians in the willow-herbs and in the bracken, they bathed to get
+clean. And all the time three little bundles lay discreetly on the
+sward, proclaiming:
 
-Thus, he related that the devil shouted at him: "Now we have you, now we have you," and this was followed by an odor of sulphur; the fire burned his skin. This dream aroused him, terror-stricken. He was unable to scream at first; then his voice returned, and he was heard to say distinctly: "No, no, not me; why, I have done nothing," or, "Please don't, I shall never do it again." Occasionally, also, he said: "Albert has not done that." Later he avoided undressing, because, as he said, the fire attacked him only when he was undressed. From amid these evil dreams, which menaced his health, he was sent into the country, where he recovered within a year and a half, but at the age of fifteen he once confessed: "Je n'osais pas l'avouer, mais j'?prouvais continuellement des picotements et des surexcitations aux parties; ? la fin, cela m'?nervait tant que plusieurs fois, j'ai pens? me jeter par la fen?tre au dortoir."
+“No. We are what matters. Without us shall no enterprise begin. To us
+shall all flesh turn in the end.”
 
-It is certainly not difficult to suspect: 1, that the boy had practiced masturbation in former years, that he probably denied it, and was threatened with severe punishment for his wrongdoing (his confession: Je ne le ferai plus; his denial: Albert n'a jamais fait ?a). 2, That under the pressure of puberty the temptation to self-abuse through the tickling of the genitals was reawakened. 3, That now, however, a struggle of repression arose in him, suppressing the libido and changing it into fear, which subsequently took the form of the punishments with which he was then threatened.
+“A try! A try!” yelled Freddy, snatching up George’s bundle and placing
+it beside an imaginary goal-post.
 
-Let us, however, quote the conclusions drawn by our author. This observation shows: 1, That the influence of puberty may produce in a boy of delicate health a condition of extreme weakness, and that it may lead to a very marked cerebral an?mia.
+“Socker rules,” George retorted, scattering Freddy’s bundle with a
+kick.
 
-This cerebral an?mia produces a transformation of character, demonomaniacal hallucinations, and very violent nocturnal, perhaps also diurnal, states of anxiety.
+“Goal!”
 
-Demonomania and the self-reproaches of the day can be traced to the influences of religious education which the subject underwent as a child.`
+“Goal!”
+
+“Pass!”
+
+“Take care my watch!” cried Mr. Beebe.
+
+Clothes flew in all directions.
+
+“Take care my hat! No, that’s enough, Freddy. Dress now. No, I say!”
+
+But the two young men were delirious. Away they twinkled into the
+trees, Freddy with a clerical waistcoat under his arm, George with a
+wide-awake hat on his dripping hair.
+
+“That’ll do!” shouted Mr. Beebe, remembering that after all he was in
+his own parish. Then his voice changed as if every pine-tree was a
+ Rural Dean. “Hi! Steady on! I see people coming you fellows!”
+
+Yells, and widening circles over the dappled earth.
+
+“Hi! hi! _Ladies!_”
+
+Neither George nor Freddy was truly refined. Still, they did not hear
+ Mr. Beebe’s last warning or they would have avoided Mrs. Honeychurch,
+ Cecil, and Lucy, who were walking down to call on old Mrs. Butterworth.
+ Freddy dropped the waistcoat at their feet, and dashed into some
+bracken. George whooped in their faces, turned and scudded away down
+the path to the pond, still clad in Mr. Beebe’s hat.
+
+“Gracious alive!” cried Mrs. Honeychurch. “Whoever were those
+unfortunate people? Oh, dears, look away! And poor Mr. Beebe, too!
+ Whatever has happened?”
+
+“Come this way immediately,” commanded Cecil, who always felt that he
+must lead women, though he knew not whither, and protect them, though
+he knew not against what. He led them now towards the bracken where
+ Freddy sat concealed.
+
+“Oh, poor Mr. Beebe! Was that his waistcoat we left in the path? Cecil,
+ Mr. Beebe’s waistcoat—”
+
+No business of ours, said Cecil, glancing at Lucy, who was all parasol
+and evidently “minded.”
+
+“I fancy Mr. Beebe jumped back into the pond.”
+
+“This way, please, Mrs. Honeychurch, this way.”
+
+They followed him up the bank attempting the tense yet nonchalant
+expression that is suitable for ladies on such occasions.
+
+“Well, _I_ can’t help it,” said a voice close ahead, and Freddy reared
+a freckled face and a pair of snowy shoulders out of the fronds. “I
+can’t be trodden on, can I?”
+
+“Good gracious me, dear; so it’s you! What miserable management! Why
+not have a comfortable bath at home, with hot and cold laid on?”
+
+“Look here, mother, a fellow must wash, and a fellow’s got to dry, and
+if another fellow—”
+
+“Dear, no doubt you’re right as usual, but you are in no position to
+argue. Come, Lucy.” They turned. “Oh, look—don’t look! Oh, poor Mr.
+ Beebe! How unfortunate again—”
+
+For Mr. Beebe was just crawling out of the pond, on whose surface
+garments of an intimate nature did float; while George, the world-weary
+ George, shouted to Freddy that he had hooked a fish.
+
+“And me, I’ve swallowed one,” answered he of the bracken. “I’ve
+swallowed a pollywog. It wriggleth in my tummy. I shall die—Emerson you
+beast, you’ve got on my bags.”
+
+“Hush, dears,” said Mrs. Honeychurch, who found it impossible to remain
+shocked. “And do be sure you dry yourselves thoroughly first. All these
+colds come of not drying thoroughly.”
+
+“Mother, do come away,” said Lucy. “Oh for goodness’ sake, do come.”
+
+“Hullo!” cried George, so that again the ladies stopped.
+
+He regarded himself as dressed. Barefoot, bare-chested, radiant and
+personable against the shadowy woods, he called:
+
+“Hullo, Miss Honeychurch! Hullo!”
+
+“Bow, Lucy; better bow. Whoever is it? I shall bow.”
+
+Miss Honeychurch bowed.
+
+That evening and all that night the water ran away. On the morrow the
+pool had shrunk to its old size and lost its glory. It had been a call
+to the blood and to the relaxed will, a passing benediction whose
+influence did not pass, a holiness, a spell, a momentary chalice for
+youth.
+
+Chapter XIII
+ How Miss Bartlett’s Boiler Was So Tiresome
+
+How often had Lucy rehearsed this bow, this interview! But she had
+always rehearsed them indoors, and with certain accessories, which
+surely we have a right to assume. Who could foretell that she and
+ George would meet in the rout of a civilization, amidst an army of
+coats and collars and boots that lay wounded over the sunlit earth? She
+had imagined a young Mr. Emerson, who might be shy or morbid or
+indifferent or furtively impudent. She was prepared for all of these.
+ But she had never imagined one who would be happy and greet her with
+the shout of the morning star.
+
+Indoors herself, partaking of tea with old Mrs. Butterworth, she
+reflected that it is impossible to foretell the future with any degree
+of accuracy, that it is impossible to rehearse life. A fault in the
+scenery, a face in the audience, an irruption of the audience on to the
+stage, and all our carefully planned gestures mean nothing, or mean too
+much. “I will bow,” she had thought. “I will not shake hands with him.
+ That will be just the proper thing.” She had bowed—but to whom? To
+gods, to heroes, to the nonsense of school-girls! She had bowed across
+the rubbish that cumbers the world.
+
+So ran her thoughts, while her faculties were busy with Cecil. It was
+another of those dreadful engagement calls. Mrs. Butterworth had wanted
+to see him, and he did not want to be seen. He did not want to hear
+about hydrangeas, why they change their colour at the seaside. He did
+not want to join the C. O. S. When cross he was always elaborate, and
+made long, clever answers where “Yes” or “No” would have done. Lucy
+soothed him and tinkered at the conversation in a way that promised
+well for their married peace. No one is perfect, and surely it is wiser
+to discover the imperfections before wedlock. Miss Bartlett, indeed,
+though not in word, had taught the girl that this our life contains
+nothing satisfactory. Lucy, though she disliked the teacher, regarded
+the teaching as profound, and applied it to her lover.
+
+“Lucy,” said her mother, when they got home, “is anything the matter
+with Cecil?”
+
+The question was ominous; up till now Mrs. Honeychurch had behaved with
+charity and restraint.`
     },
     {
       id: "section-32",
       title: "Section 32",
-      content: `All manifestations disappeared as a result of a lengthy sojourn in the country, bodily exercise, and the return of physical strength after the termination of the period of puberty.
+      content: `“No, I don’t think so, mother; Cecil’s all right.”
 
-A predisposing influence for the origin of the cerebral condition of the boy may be attributed to heredity and to the father's chronic syphilitic state.
+“Perhaps he’s tired.”
 
-The concluding remarks of the author read: "Nous avons fait entrer cette observation dans le cadre des d?lires apyr?tiques d'inanition, car c'est ? l'isch? mie c?r?brale que nous rattachons cet ?tat particulier."
+Lucy compromised: perhaps Cecil was a little tired.
 
-VIII
+“Because otherwise”—she pulled out her bonnet-pins with gathering
+displeasure—“because otherwise I cannot account for him.”
 
-THE PRIMARY AND SECONDARY PROCESS— REGRESSION
+“I do think Mrs. Butterworth is rather tiresome, if you mean that.”
 
-In venturing to attempt to penetrate more deeply into the psychology of the dream processes, I have undertaken a difficult task, to which, indeed, my power of description is hardly equal. To reproduce in description by a succession of words the simultaneousness of so complex a chain of events, and in doing so to appear unbiassed throughout the exposition, goes fairly beyond my powers. I have now to atone for the fact that I have been unable in my description of the dream psychology to follow the historic development of my views. The view-points for my conception of the dream were reached through earlier investigations in the psychology of the neuroses, to which I am not supposed to refer here, but to which I am repeatedly forced to refer, whereas I should prefer to proceed in the opposite direction, and, starting from the dream, to establish a connection with the psychology of the neuroses. I am well aware of all the inconveniences arising for the reader from this difficulty, but I know of no way to avoid them.
+“Cecil has told you to think so. You were devoted to her as a little
+girl, and nothing will describe her goodness to you through the typhoid
+fever. No—it is just the same thing everywhere.”
 
-As I am dissatisfied with this state of affairs, I am glad to dwell upon another view-point which seems to raise the value of my efforts. As has been shown in the introduction to the first chapter, I found myself confronted with a theme which had been marked by the sharpest contradictions on the part of the authorities. After our elaboration of the dream problems we found room for most of these contradictions. We have been forced, however, to take decided exception to two of the views pronounced, viz. that the dream is a senseless and that it is a somatic process; apart from these cases we have had to accept all the contradictory views in one place or another of the complicated argument, and we have been able to demonstrate that they had discovered something that was correct. That the dream continues the impulses and interests of the waking state has been quite generally confirmed through the discovery of the latent thoughts of the dream. These thoughts concern themselves only with things that seem important and of momentous interest to us. The dream never occupies itself with trifles. But we have also concurred with the contrary view, viz., that the dream gathers up the indifferent remnants from the day, and that not until it has in some measure withdrawn itself from the waking activity can an important event of the day be taken up by the dream. We found this holding true for the dream content, which gives the dream thought its changed expression by means of disfigurement. We have said that from the nature of the association mechanism the dream process more easily takes possession of recent or indifferent material which has not yet been seized by the waking mental activity; and by reason of the censor it transfers the psychic intensity from the important but also disagreeable to the indifferent material. The hypermnesia of the dream and the resort to infantile material have become main supports in our theory. In our theory of the dream we have attributed to the wish originating from the infantile the part of an indispensable motor for the formation of the dream. We naturally could not think of doubting the experimentally demonstrated significance of the objective sensory stimuli during sleep; but we have brought this material into the same relation to the dream-wish as the thought remnants from the waking activity. There was no need of disputing the fact that the dream interprets the objective sensory stimuli after the manner of an illusion; but we have supplied the motive for this interpretation which has been left undecided by the authorities. The interpretation follows in such a manner that the perceived object is rendered harmless as a sleep disturber and becomes available for the wish-fulfillment.
+“Let me just put your bonnet away, may I?”
 
-Though we do not admit as special sources of the dream the subjective state of excitement of the sensory organs during sleep, which seems to have been demonstrated by Trumbull Ladd, we are nevertheless able to explain this excitement through the regressive revival of active memories behind the dream. A modest part in our conception has also been assigned to the inner organic sensations which are wont to be taken as the cardinal point in the explanation of the dream. These—the sensation of falling, flying, or inhibition—stand as an ever ready material to be used by the dream-work to express the dream thought as often as need arises.
+“Surely he could answer her civilly for one half-hour?”
 
-That the dream process is a rapid and momentary one seems to be true for the perception through consciousness of the already prepared dream content; the preceding parts of the dream process probably take a slow, fluctuating course. We have solved the riddle of the superabundant dream content compressed within the briefest moment by explaining that this is due to the appropriation of almost fully formed structures from the psychic life. That the dream is disfigured and distorted by memory we found to be correct, but not troublesome, as this is only the last manifest operation in the work of disfigurement which has been active from the beginning of the dream-work. In the bitter and seemingly irreconcilable controversy as to whether the psychic life sleeps at night or can make the same use of all its capabilities as during the day, we have been able to agree with both sides, though not fully with either. We have found proof that the dream thoughts represent a most complicated intellectual activity, employing almost every means furnished by the psychic apparatus; still it cannot be denied that these dream thoughts have originated during the day, and it is indispensable to assume that there is a sleeping state of the psychic life. Thus, even the theory of partial sleep has come into play; but the characteristics of the sleeping state have been found not in the dilapidation of the psychic connections but in the cessation of the psychic system dominating the day, arising from its desire to sleep. The withdrawal from the outer world retains its significance also for our conception; though not the only factor, it nevertheless helps the regression to make possible the representation of the dream. That we should reject the voluntary guidance of the presentation course is uncontestable; but the psychic life does not thereby become aimless, for we have seen that after the abandonment of the desired end-presentation undesired ones gain the mastery. The loose associative connection in the dream we have not only recognized, but we have placed under its control a far greater territory than`
+“Cecil has a very high standard for people,” faltered Lucy, seeing
+trouble ahead. “It’s part of his ideals—it is really that that makes
+him sometimes seem—”
+
+“Oh, rubbish! If high ideals make a young man rude, the sooner he gets
+rid of them the better,” said Mrs. Honeychurch, handing her the bonnet.
+
+“Now, mother! I’ve seen you cross with Mrs. Butterworth yourself!”
+
+“Not in that way. At times I could wring her neck. But not in that way.
+ No. It is the same with Cecil all over.”
+
+“By-the-by—I never told you. I had a letter from Charlotte while I was
+away in London.”
+
+This attempt to divert the conversation was too puerile, and Mrs.
+ Honeychurch resented it.
+
+“Since Cecil came back from London, nothing appears to please him.
+ Whenever I speak he winces;—I see him, Lucy; it is useless to
+contradict me. No doubt I am neither artistic nor literary nor
+intellectual nor musical, but I cannot help the drawing-room furniture;
+your father bought it and we must put up with it, will Cecil kindly
+remember.”
+
+“I—I see what you mean, and certainly Cecil oughtn’t to. But he does
+not mean to be uncivil—he once explained—it is the _things_ that upset
+him—he is easily upset by ugly things—he is not uncivil to _people_.”
+
+“Is it a thing or a person when Freddy sings?”
+
+“You can’t expect a really musical person to enjoy comic songs as we
+do.”
+
+“Then why didn’t he leave the room? Why sit wriggling and sneering and
+spoiling everyone’s pleasure?”
+
+“We mustn’t be unjust to people,” faltered Lucy. Something had
+enfeebled her, and the case for Cecil, which she had mastered so
+perfectly in London, would not come forth in an effective form. The two
+civilizations had clashed—Cecil hinted that they might—and she was
+dazzled and bewildered, as though the radiance that lies behind all
+civilization had blinded her eyes. Good taste and bad taste were only
+catchwords, garments of diverse cut; and music itself dissolved to a
+whisper through pine-trees, where the song is not distinguishable from
+the comic song.
+
+She remained in much embarrassment, while Mrs. Honeychurch changed her
+frock for dinner; and every now and then she said a word, and made
+things no better. There was no concealing the fact, Cecil had meant to
+be supercilious, and he had succeeded. And Lucy—she knew not why—wished
+that the trouble could have come at any other time.
+
+“Go and dress, dear; you’ll be late.”
+
+“All right, mother—”
+
+“Don’t say ‘All right’ and stop. Go.”
+
+She obeyed, but loitered disconsolately at the landing window. It faced
+north, so there was little view, and no view of the sky. Now, as in the
+winter, the pine-trees hung close to her eyes. One connected the
+landing window with depression. No definite problem menaced her, but
+she sighed to herself, “Oh, dear, what shall I do, what shall I do?” It
+seemed to her that everyone else was behaving very badly. And she ought
+not to have mentioned Miss Bartlett’s letter. She must be more careful;
+her mother was rather inquisitive, and might have asked what it was
+about. Oh, dear, what should she do?—and then Freddy came bounding
+upstairs, and joined the ranks of the ill-behaved.
+
+“I say, those are topping people.”
+
+“My dear baby, how tiresome you’ve been! You have no business to take
+them bathing in the Sacred Lake; it’s much too public. It was all right
+for you but most awkward for everyone else. Do be more careful. You
+forget the place is growing half suburban.”
+
+“I say, is anything on to-morrow week?”
+
+“Not that I know of.”
+
+“Then I want to ask the Emersons up to Sunday tennis.”
+
+“Oh, I wouldn’t do that, Freddy, I wouldn’t do that with all this
+muddle.”
+
+“What’s wrong with the court? They won’t mind a bump or two, and I’ve
+ordered new balls.”
+
+“I meant _it’s_ better not. I really mean it.”
+
+He seized her by the elbows and humorously danced her up and down the
+passage. She pretended not to mind, but she could have screamed with
+temper. Cecil glanced at them as he proceeded to his toilet and they
+impeded Mary with her brood of hot-water cans. Then Mrs. Honeychurch
+opened her door and said: “Lucy, what a noise you’re making! I have
+something to say to you. Did you say you had had a letter from
+ Charlotte?” and Freddy ran away.
+
+“Yes. I really can’t stop. I must dress too.”
+
+“How’s Charlotte?”
+
+“All right.”
+
+“Lucy!”
+
+The unfortunate girl returned.
+
+“You’ve a bad habit of hurrying away in the middle of one’s sentences.
+ Did Charlotte mention her boiler?”
+
+“Her _what?_”
+
+“Don’t you remember that her boiler was to be had out in October, and
+her bath cistern cleaned out, and all kinds of terrible to-doings?”
+
+“I can’t remember all Charlotte’s worries,” said Lucy bitterly. “I
+shall have enough of my own, now that you are not pleased with Cecil.”
+
+Mrs. Honeychurch might have flamed out. She did not. She said: “Come
+here, old lady—thank you for putting away my bonnet—kiss me.” And,
+though nothing is perfect, Lucy felt for the moment that her mother and
+ Windy Corner and the Weald in the declining sun were perfect.
+
+So the grittiness went out of life. It generally did at Windy Corner.
+ At the last minute, when the social machine was clogged hopelessly, one
+member or other of the family poured in a drop of oil. Cecil despised
+their methods—perhaps rightly. At all events, they were not his own.
+
+Dinner was at half-past seven. Freddy gabbled the grace, and they drew
+up their heavy chairs and fell to. Fortunately, the men were hungry.
+ Nothing untoward occurred until the pudding. Then Freddy said:
+
+“Lucy, what’s Emerson like?”
+
+“I saw him in Florence,” said Lucy, hoping that this would pass for a
+reply.
+
+“Is he the clever sort, or is he a decent chap?”
+
+“Ask Cecil; it is Cecil who brought him here.”
+
+“He is the clever sort, like myself,” said Cecil.
+
+Freddy looked at him doubtfully.
+
+“How well did you know them at the Bertolini?” asked Mrs. Honeychurch.
+
+“Oh, very slightly. I mean, Charlotte knew them even less than I did.”
+
+“Oh, that reminds me—you never told me what Charlotte said in her
+letter.”
+
+“One thing and another,” said Lucy, wondering whether she would get
+through the meal without a lie. “Among other things, that an awful
+friend of hers had been bicycling through Summer Street, wondered if
+she’d come up and see us, and mercifully didn’t.”
+
+“Lucy, I do call the way you talk unkind.”`
     },
     {
       id: "section-33",
       title: "Section 33",
-      content: `could have been supposed; we have, however, found it merely the feigned substitute for another correct and senseful one. To be sure we, too, have called the dream absurd; but we have been able to learn from examples how wise the dream really is when it simulates absurdity. We do not deny any of the functions that have been attributed to the dream. That the dream relieves the mind like a valve, and that, according to Robert's assertion, all kinds of harmful material are rendered harmless through representation in the dream, not only exactly coincides with our theory of the twofold wish-fulfillment in the dream, but, in his own wording, becomes even more comprehensible for us than for Robert himself. The free indulgence of the psychic in the play of its faculties finds expression with us in the non-interference with the dream on the part of the foreconscious activity. The "return to the embryonal state of psychic life in the dream" and the observation of Havelock Ellis, "an archaic world of vast emotions and imperfect thoughts," appear to us as happy anticipations of our deductions to the effect that primitive modes of work suppressed during the day participate in the formation of the dream; and with us, as with Delage, the suppressed material becomes the mainspring of the dreaming.
+      content: `“She was a novelist,” said Lucy craftily. The remark was a happy one,
+for nothing roused Mrs. Honeychurch so much as literature in the hands
+of females. She would abandon every topic to inveigh against those
+women who (instead of minding their houses and their children) seek
+notoriety by print. Her attitude was: “If books must be written, let
+them be written by men”; and she developed it at great length, while
+ Cecil yawned and Freddy played at “This year, next year, now, never,”
+with his plum-stones, and Lucy artfully fed the flames of her mother’s
+wrath. But soon the conflagration died down, and the ghosts began to
+gather in the darkness. There were too many ghosts about. The original
+ghost—that touch of lips on her cheek—had surely been laid long ago; it
+could be nothing to her that a man had kissed her on a mountain once.
+ But it had begotten a spectral family—Mr. Harris, Miss Bartlett’s
+letter, Mr. Beebe’s memories of violets—and one or other of these was
+bound to haunt her before Cecil’s very eyes. It was Miss Bartlett who
+returned now, and with appalling vividness.
 
-We have fully recognized the r?le which Scherner ascribes to the dream phantasy, and even his interpretation; but we have been obliged, so to speak, to conduct them to another department in the problem. It is not the dream that produces the phantasy but the unconscious phantasy that takes the greatest part in the formation of the dream thoughts. We are indebted to Scherner for his clew to the source of the dream thoughts, but almost everything that he ascribes to the dream-work is attributable to the activity of the unconscious, which is at work during the day, and which supplies incitements not only for dreams but for neurotic symptoms as well. We have had to separate the dream-work from this activity as being something entirely different and far more restricted. Finally, we have by no means abandoned the relation of the dream to mental disturbances, but, on the contrary, we have given it a more solid foundation on new ground.
+“I have been thinking, Lucy, of that letter of Charlotte’s. How is
+she?”
 
-Thus held together by the new material of our theory as by a superior unity, we find the most varied and most contradictory conclusions of the authorities fitting into our structure; some of them are differently disposed, only a few of them are entirely rejected. But our own structure is still unfinished. For, disregarding the many obscurities which we have necessarily encountered in our advance into the darkness of psychology, we are now apparently embarrassed by a new contradiction. On the one hand, we have allowed the dream thoughts to proceed from perfectly normal mental operations, while, on the other hand, we have found among the dream thoughts a number of entirely abnormal mental processes which extend likewise to the dream contents. These, consequently, we have repeated in the interpretation of the dream. All that we have termed the "dream-work" seems so remote from the psychic processes recognized by us as correct, that the severest judgments of the authors as to the low psychic activity of dreaming seem to us well founded.
+“I tore the thing up.”
 
-Perhaps only through still further advance can enlightenment and improvement be brought about. I shall pick out one of the constellations leading to the formation of dreams.
+“Didn’t she say how she was? How does she sound? Cheerful?”
 
-We have learned that the dream replaces a number of thoughts derived from daily life which are perfectly formed logically. We cannot therefore doubt that these thoughts originate from our normal mental life. All the qualities which we esteem in our mental operations, and which distinguish these as complicated activities of a high order, we find repeated in the dream thoughts. There is, however, no need of assuming that this mental work is performed during sleep, as this would materially impair the conception of the psychic state of sleep we have hitherto adhered to. These thoughts may just as well have originated from the day, and, unnoticed by our consciousness from their inception, they may have continued to develop until they stood complete at the onset of sleep. If we are to conclude anything from this state of affairs, it will at most prove that the most complex mental operations are possible without the co?peration of consciousness, which we have already learned independently from every psychoanalysis of persons suffering from hysteria or obsessions. These dream thoughts are in themselves surely not incapable of consciousness; if they have not become conscious to us during the day, this may have various reasons. The state of becoming conscious depends on the exercise of a certain psychic function, viz. attention, which seems to be extended only in a definite quantity, and which may have been withdrawn from the stream of thought in Question by other aims. Another way in which such mental streams are kept from consciousness is the following:—Our conscious reflection teaches us that when exercising attention we pursue a definite course. But if that course leads us to an idea which does not hold its own with the critic, we discontinue and cease to apply our attention. Now, apparently, the stream of thought thus started and
-abandoned may spin on without regaining attention unless it reaches a spot of especially marked intensity which forces the return of attention. An initial rejection, perhaps consciously brought about by the judgment on the ground of incorrectness or unfitness for the actual purpose of the mental act, may therefore account for the fact that a mental process continues until the onset of sleep unnoticed by consciousness.
+“Oh, yes I suppose so—no—not very cheerful, I suppose.”
 
-Let us recapitulate by saying that we call such a stream of thought a foreconscious one, that we believe it to be perfectly correct, and that it may just as well be a more neglected one or an interrupted and suppressed one. Let us also state frankly in what manner we conceive this presentation course. We believe that a certain sum of excitement, which we call occupation energy, is displaced from an end-presentation along the association paths selected by that end-presentation. A "neglected" stream of thought has received no such occupation, and from a "suppressed" or "rejected" one this occupation has been withdrawn; both have thus been left to their own emotions. The end-stream of thought stocked with energy is under certain conditions able to draw to itself the attention of consciousness, through which means it then receives a "surplus of energy." We shall be obliged somewhat later to elucidate our assumption concerning the nature and activity of consciousness.
+“Then, depend upon it, it _is_ the boiler. I know myself how water
+preys upon one’s mind. I would rather anything else—even a misfortune
+with the meat.”
 
-A train of thought thus incited in the Forec. may either disappear spontaneously or continue. The former issue we conceive as follows: It diffuses its energy through all the association paths emanating from it, and throws the entire chain of ideas into a state of excitement which, after lasting for a while, subsides through the transformation of the excitement requiring an outlet into dormant energy.1 If this first issue is brought about the process has no further significance for the dream formation. But other end- presentations are lurking in our foreconscious that originate from the sources of our unconscious and from the ever active wishes. These may take possession of the excitations in the circle of thought thus left to itself, establish a connection between it and the unconscious wish, and transfer to it the energy inherent in the unconscious wish. Henceforth the neglected or suppressed train of thought is in a position to maintain itself, although this reinforcement does not help it to gain access to consciousness. We may say that the hitherto foreconscious train of thought has been drawn into the unconscious.`
+Cecil laid his hand over his eyes.
+
+“So would I,” asserted Freddy, backing his mother up—backing up the
+spirit of her remark rather than the substance.
+
+“And I have been thinking,” she added rather nervously, “surely we
+could squeeze Charlotte in here next week, and give her a nice holiday
+while the plumbers at Tunbridge Wells finish. I have not seen poor
+ Charlotte for so long.”
+
+It was more than her nerves could stand. And she could not protest
+violently after her mother’s goodness to her upstairs.
+
+“Mother, no!” she pleaded. “It’s impossible. We can’t have Charlotte on
+the top of the other things; we’re squeezed to death as it is. Freddy’s
+got a friend coming Tuesday, there’s Cecil, and you’ve promised to take
+in Minnie Beebe because of the diphtheria scare. It simply can’t be
+done.”
+
+“Nonsense! It can.”
+
+“If Minnie sleeps in the bath. Not otherwise.”
+
+“Minnie can sleep with you.”
+
+“I won’t have her.”
+
+“Then, if you’re so selfish, Mr. Floyd must share a room with Freddy.”
+
+“Miss Bartlett, Miss Bartlett, Miss Bartlett,” moaned Cecil, again
+laying his hand over his eyes.
+
+“It’s impossible,” repeated Lucy. “I don’t want to make difficulties,
+but it really isn’t fair on the maids to fill up the house so.”
+
+Alas!
+
+“The truth is, dear, you don’t like Charlotte.”
+
+“No, I don’t. And no more does Cecil. She gets on our nerves. You
+haven’t seen her lately, and don’t realize how tiresome she can be,
+though so good. So please, mother, don’t worry us this last summer; but
+spoil us by not asking her to come.”
+
+“Hear, hear!” said Cecil.
+
+Mrs. Honeychurch, with more gravity than usual, and with more feeling
+than she usually permitted herself, replied: “This isn’t very kind of
+you two. You have each other and all these woods to walk in, so full of
+beautiful things; and poor Charlotte has only the water turned off and
+plumbers. You are young, dears, and however clever young people are,
+and however many books they read, they will never guess what it feels
+like to grow old.”
+
+Cecil crumbled his bread.
+
+“I must say Cousin Charlotte was very kind to me that year I called on
+my bike,” put in Freddy. “She thanked me for coming till I felt like
+such a fool, and fussed round no end to get an egg boiled for my tea
+just right.”
+
+“I know, dear. She is kind to everyone, and yet Lucy makes this
+difficulty when we try to give her some little return.”
+
+But Lucy hardened her heart. It was no good being kind to Miss
+ Bartlett. She had tried herself too often and too recently. One might
+lay up treasure in heaven by the attempt, but one enriched neither Miss
+ Bartlett nor any one else upon earth. She was reduced to saying: “I
+can’t help it, mother. I don’t like Charlotte. I admit it’s horrid of
+me.”
+
+“From your own account, you told her as much.”
+
+“Well, she would leave Florence so stupidly. She flurried—”
+
+The ghosts were returning; they filled Italy, they were even usurping
+the places she had known as a child. The Sacred Lake would never be the
+same again, and, on Sunday week, something would even happen to Windy
+ Corner. How would she fight against ghosts? For a moment the visible
+world faded away, and memories and emotions alone seemed real.
+
+“I suppose Miss Bartlett must come, since she boils eggs so well,” said
+ Cecil, who was in rather a happier frame of mind, thanks to the
+admirable cooking.
+
+“I didn’t mean the egg was _well_ boiled,” corrected Freddy, “because
+in point of fact she forgot to take it off, and as a matter of fact I
+don’t care for eggs. I only meant how jolly kind she seemed.”
+
+Cecil frowned again. Oh, these Honeychurches! Eggs, boilers,
+hydrangeas, maids—of such were their lives compact. “May me and Lucy
+get down from our chairs?” he asked, with scarcely veiled insolence.
+“We don’t want no dessert.”
+
+Chapter XIV
+ How Lucy Faced the External Situation Bravely
+
+Of course Miss Bartlett accepted. And, equally of course, she felt sure
+that she would prove a nuisance, and begged to be given an inferior
+spare room—something with no view, anything. Her love to Lucy. And,
+equally of course, George Emerson could come to tennis on the Sunday
+week.
+
+Lucy faced the situation bravely, though, like most of us, she only
+faced the situation that encompassed her. She never gazed inwards. If
+at times strange images rose from the depths, she put them down to
+nerves. When Cecil brought the Emersons to Summer Street, it had upset
+her nerves. Charlotte would burnish up past foolishness, and this might
+upset her nerves. She was nervous at night. When she talked to
+ George—they met again almost immediately at the Rectory—his voice moved
+her deeply, and she wished to remain near him. How dreadful if she
+really wished to remain near him! Of course, the wish was due to
+nerves, which love to play such perverse tricks upon us. Once she had
+suffered from “things that came out of nothing and meant she didn’t
+know what.” Now Cecil had explained psychology to her one wet
+afternoon, and all the troubles of youth in an unknown world could be
+dismissed.
+
+It is obvious enough for the reader to conclude, “She loves young
+ Emerson.” A reader in Lucy’s place would not find it obvious. Life is
+easy to chronicle, but bewildering to practice, and we welcome “nerves”
+or any other shibboleth that will cloak our personal desire. She loved
+ Cecil; George made her nervous; will the reader explain to her that the
+phrases should have been reversed?
+
+But the external situation—she will face that bravely.
+
+The meeting at the Rectory had passed off well enough. Standing between
+ Mr. Beebe and Cecil, she had made a few temperate allusions to Italy,
+and George had replied. She was anxious to show that she was not shy,
+and was glad that he did not seem shy either.
+
+“A nice fellow,” said Mr. Beebe afterwards “He will work off his
+crudities in time. I rather mistrust young men who slip into life
+gracefully.”
+
+Lucy said, “He seems in better spirits. He laughs more.”
+
+“Yes,” replied the clergyman. “He is waking up.”`
     },
     {
       id: "section-34",
       title: "Section 34",
-      content: `Other constellations for the dream formation would result if the foreconscious train of thought had from the beginning been connected with the unconscious wish, and for that reason met with rejection by the dominating end-occupation; or if an unconscious wish were made active for other—possibly somatic—reasons and of its own accord sought a transference to the psychic remnants not occupied by the Forec. All three cases finally combine in one issue, so that there is established in the foreconscious a stream of thought which, having been abandoned by the foreconscious occupation, receives occupation from the unconscious wish.
+      content: `That was all. But, as the week wore on, more of her defences fell, and
+she entertained an image that had physical beauty. In spite of the
+clearest directions, Miss Bartlett contrived to bungle her arrival. She
+was due at the South-Eastern station at Dorking, whither Mrs.
+ Honeychurch drove to meet her. She arrived at the London and Brighton
+station, and had to hire a cab up. No one was at home except Freddy and
+his friend, who had to stop their tennis and to entertain her for a
+solid hour. Cecil and Lucy turned up at four o’clock, and these, with
+little Minnie Beebe, made a somewhat lugubrious sextette upon the upper
+lawn for tea.
 
-The stream of thought is henceforth subjected to a series of transformations which we no longer recognize as normal psychic processes and which give us a surprising result, viz. a psychopathological formation. Let us emphasize and group the same.
+“I shall never forgive myself,” said Miss Bartlett, who kept on rising
+from her seat, and had to be begged by the united company to remain. “I
+have upset everything. Bursting in on young people! But I insist on
+paying for my cab up. Grant that, at any rate.”
 
-The intensities of the individual ideas become capable of discharge in their entirety, and, proceeding from one conception to the other, they thus form single presentations endowed with marked intensity. Through the repeated recurrence of this process the intensity of an entire train of ideas may ultimately be gathered in a single presentation element. This is the principle of compression or condensation. It is condensation that is mainly responsible for the strange impression of the dream, for we know of nothing analogous to it in the normal psychic life accessible to consciousness. We find here, also, presentations which possess great psychic significance as junctions or as end-results of whole chains of thought; but this validity does not manifest itself in any character conspicuous enough for internal perception; hence, what has been presented in it does not become in any way more intensive. In the process of condensation the entire psychic connection becomes transformed into the intensity of the presentation content. It is the same as in a book where we space or print in heavy type any word upon which particular stress is laid for the understanding of the text. In speech the same word would be pronounced loudly and deliberately and with emphasis. The first comparison leads us at once to an example taken from the chapter on "The Dream-Work" (trimethylamine in the dream of Irma's injection). Historians of art call our attention to the fact that the most ancient historical sculptures follow a similar principle in expressing the rank of the persons represented by the size of the statue. The king is made two or three times as large as his retinue or the vanquished enemy. A piece of art, however, from the Roman period makes use of more subtle means to accomplish the same purpose. The figure of the emperor is placed in the center in a firmly erect posture; special care is bestowed on the proper modelling of his figure; his enemies are seen cowering at his feet; but he is no longer represented a giant among dwarfs. However, the bowing of the subordinate to his superior in our own days is only an echo of that ancient principle of representation.
+“Our visitors never do such dreadful things,” said Lucy, while her
+brother, in whose memory the boiled egg had already grown
+unsubstantial, exclaimed in irritable tones: “Just what I’ve been
+trying to convince Cousin Charlotte of, Lucy, for the last half hour.”
 
-The direction taken by the condensations of the dream is prescribed on the one hand by the true foreconscious relations of the dream thoughts, an the other hand by the attraction of the visual reminiscences in the unconscious.
+“I do not feel myself an ordinary visitor,” said Miss Bartlett, and
+looked at her frayed glove.
 
-The success of the condensation work produces those intensities which are required for penetration into the perception systems.
+“All right, if you’d really rather. Five shillings, and I gave a bob to
+the driver.”
 
-Through this free transferability of the intensities, moreover, and in the service of condensation, intermediary presentations—compromises, as it were—are formed (cf. the numerous examples). This, likewise, is something unheard of in the normal presentation course, where it is above all a question of selection and retention of the "proper" presentation element. On the other hand, composite and compromise formations occur with extraordinary frequency when we are trying to find the linguistic expression for foreconscious thoughts; these are considered "slips of the tongue."
+Miss Bartlett looked in her purse. Only sovereigns and pennies. Could
+any one give her change? Freddy had half a quid and his friend had four
+half-crowns. Miss Bartlett accepted their moneys and then said: “But
+who am I to give the sovereign to?”
 
-The presentations which transfer their intensities to one another are very loosely connected, and are joined together by such forms of association as are spurned in our serious thought and are utilized in the production of the effect of wit only. Among these we particularly find associations of the sound and consonance types.
+“Let’s leave it all till mother comes back,” suggested Lucy.
 
-Contradictory thoughts do not strive to eliminate one another, but remain side by side. They often unite to produce condensation as if no contradiction existed, or they form compromises for which we should never forgive our thoughts, but which we frequently approve of in our actions.
+“No, dear; your mother may take quite a long drive now that she is not
+hampered with me. We all have our little foibles, and mine is the
+prompt settling of accounts.”
 
-These are some of the most conspicuous abnormal processes to which the thoughts which have previously been rationally formed are subjected in the course of the dream-work. As the main feature of these processes we recognize the high importance attached to the fact of rendering the occupation energy mobile and capable of discharge; the content and the actual significance of the psychic elements, to which these energies adhere, become a matter of secondary importance. One might possibly think that the condensation and compromise formation is effected only in the service of regression, when occasion arises for changing thoughts into pictures. But the analysis and—still more distinctly—the synthesis of dreams which lack regression toward pictures, e.g. the dream "Autodidasker—Conversation with Court-Councilor N.," present the same processes of displacement and condensation as the others.
+Here Freddy’s friend, Mr. Floyd, made the one remark of his that need
+be quoted: he offered to toss Freddy for Miss Bartlett’s quid. A
+solution seemed in sight, and even Cecil, who had been ostentatiously
+drinking his tea at the view, felt the eternal attraction of Chance,
+and turned round.
 
-Hence we cannot refuse to acknowledge that the two kinds of essentially different psychic processes participate in the formation of the dream; one forms perfectly correct dream thoughts which are equivalent to normal thoughts, while the other treats these ideas in a highly surprising and incorrect manner. The latter process we have already set apart as the dream- work proper. What have we now to advance concerning this latter psychic process?
+But this did not do, either.
 
-We should be unable to answer this question here if we had not penetrated considerably into the psychology of the neuroses and especially of hysteria. From this we learn that the same incorrect psychic processes—as well as others that have not been enumerated—control the formation of hysterical symptoms. In hysteria, too, we at once find a series of perfectly correct thoughts equivalent to our conscious thoughts, of whose existence, however, in this form we can learn nothing and which we can only subsequently reconstruct. If they have forced their way anywhere to our perception, we discover from the analysis of the symptom formed that these normal thoughts have been subjected to abnormal treatment and have been transformed into the symptom by means of condensation and compromise formation, through superficial associations, under cover of contradictions, and eventually over the road of regression. In view of the complete identity found between the peculiarities of the dream-work and of the psychic activity forming the psychoneurotic symptoms, we shall feel justified in transferring to the dream the conclusions urged upon us by hysteria.
+“Please—please—I know I am a sad spoil-sport, but it would make me
+wretched. I should practically be robbing the one who lost.”
 
-From the theory of hysteria we borrow the proposition that such an abnormal psychic elaboration of a normal train of thought takes place only when the latter has been used for the transference of an unconscious wish which dates from the infantile life and is in a state of repression. In accordance with this proposition we have construed the theory of the dream on the assumption that the actuating dream-wish invariably originates in the unconscious, which, as we ourselves have admitted, cannot be universally demonstrated though it cannot be refuted. But in order to explain the real meaning of the term repression, which we have employed so freely, we shall be obliged to make some further addition to our psychological construction.`
+“Freddy owes me fifteen shillings,” interposed Cecil. “So it will work
+out right if you give the pound to me.”
+
+“Fifteen shillings,” said Miss Bartlett dubiously. “How is that, Mr.
+ Vyse?”
+
+“Because, don’t you see, Freddy paid your cab. Give me the pound, and
+we shall avoid this deplorable gambling.”
+
+Miss Bartlett, who was poor at figures, became bewildered and rendered
+up the sovereign, amidst the suppressed gurgles of the other youths.
+ For a moment Cecil was happy. He was playing at nonsense among his
+peers. Then he glanced at Lucy, in whose face petty anxieties had
+marred the smiles. In January he would rescue his Leonardo from this
+stupefying twaddle.
+
+“But I don’t see that!” exclaimed Minnie Beebe who had narrowly watched
+the iniquitous transaction. “I don’t see why Mr. Vyse is to have the
+quid.”
+
+“Because of the fifteen shillings and the five,” they said solemnly.
+“Fifteen shillings and five shillings make one pound, you see.”
+
+“But I don’t see—”
+
+They tried to stifle her with cake.
+
+“No, thank you. I’m done. I don’t see why—Freddy, don’t poke me. Miss
+ Honeychurch, your brother’s hurting me. Ow! What about Mr. Floyd’s ten
+shillings? Ow! No, I don’t see and I never shall see why Miss
+ What’s-her-name shouldn’t pay that bob for the driver.”
+
+“I had forgotten the driver,” said Miss Bartlett, reddening. “Thank
+you, dear, for reminding me. A shilling was it? Can any one give me
+change for half a crown?”
+
+“I’ll get it,” said the young hostess, rising with decision.
+
+“Cecil, give me that sovereign. No, give me up that sovereign. I’ll get
+ Euphemia to change it, and we’ll start the whole thing again from the
+beginning.”
+
+“Lucy—Lucy—what a nuisance I am!” protested Miss Bartlett, and followed
+her across the lawn. Lucy tripped ahead, simulating hilarity. When they
+were out of earshot Miss Bartlett stopped her wails and said quite
+briskly: “Have you told him about him yet?”
+
+“No, I haven’t,” replied Lucy, and then could have bitten her tongue
+for understanding so quickly what her cousin meant. “Let me see—a
+sovereign’s worth of silver.”
+
+She escaped into the kitchen. Miss Bartlett’s sudden transitions were
+too uncanny. It sometimes seemed as if she planned every word she spoke
+or caused to be spoken; as if all this worry about cabs and change had
+been a ruse to surprise the soul.
+
+“No, I haven’t told Cecil or any one,” she remarked, when she returned.
+“I promised you I shouldn’t. Here is your money—all shillings, except
+two half-crowns. Would you count it? You can settle your debt nicely
+now.”
+
+Miss Bartlett was in the drawing-room, gazing at the photograph of St.
+ John ascending, which had been framed.
+
+“How dreadful!” she murmured, “how more than dreadful, if Mr. Vyse
+should come to hear of it from some other source.”
+
+“Oh, no, Charlotte,” said the girl, entering the battle. “George
+ Emerson is all right, and what other source is there?”
+
+Miss Bartlett considered. “For instance, the driver. I saw him looking
+through the bushes at you, remember he had a violet between his teeth.”
+
+Lucy shuddered a little. “We shall get the silly affair on our nerves
+if we aren’t careful. How could a Florentine cab-driver ever get hold
+of Cecil?”
+
+“We must think of every possibility.”
+
+“Oh, it’s all right.”
+
+“Or perhaps old Mr. Emerson knows. In fact, he is certain to know.”
+
+“I don’t care if he does. I was grateful to you for your letter, but
+even if the news does get round, I think I can trust Cecil to laugh at
+it.”
+
+“To contradict it?”
+
+“No, to laugh at it.” But she knew in her heart that she could not
+trust him, for he desired her untouched.
+
+“Very well, dear, you know best. Perhaps gentlemen are different to
+what they were when I was young. Ladies are certainly different.”
+
+“Now, Charlotte!” She struck at her playfully. “You kind, anxious
+thing. What _would_ you have me do? First you say ‘Don’t tell’; and
+then you say, ‘Tell’. Which is it to be? Quick!”
+
+Miss Bartlett sighed “I am no match for you in conversation, dearest. I
+blush when I think how I interfered at Florence, and you so well able
+to look after yourself, and so much cleverer in all ways than I am. You
+will never forgive me.”
+
+“Shall we go out, then. They will smash all the china if we don’t.”
+
+For the air rang with the shrieks of Minnie, who was being scalped with
+a teaspoon.
+
+“Dear, one moment—we may not have this chance for a chat again. Have
+you seen the young one yet?”
+
+“Yes, I have.”
+
+“What happened?”
+
+“We met at the Rectory.”
+
+“What line is he taking up?”
+
+“No line. He talked about Italy, like any other person. It is really
+all right. What advantage would he get from being a cad, to put it
+bluntly? I do wish I could make you see it my way. He really won’t be
+any nuisance, Charlotte.”
+
+“Once a cad, always a cad. That is my poor opinion.”
+
+Lucy paused. “Cecil said one day—and I thought it so profound—that
+there are two kinds of cads—the conscious and the subconscious.” She
+paused again, to be sure of doing justice to Cecil’s profundity.
+ Through the window she saw Cecil himself, turning over the pages of a
+novel. It was a new one from Smith’s library. Her mother must have
+returned from the station.
+
+“Once a cad, always a cad,” droned Miss Bartlett.`
     },
     {
       id: "section-35",
       title: "Section 35",
-      content: `We have above elaborated the fiction of a primitive psychic apparatus, whose work is regulated by the efforts to avoid accumulation of excitement and as far as possible to maintain itself free from excitement. For this reason it was constructed after the plan of a reflex apparatus; the motility, originally the path for the inner bodily change, formed a discharging path standing at its disposal. We subsequently discussed the psychic results of a feeling of gratification, and we might at the same time have introduced the second assumption, viz. that accumulation of excitement—following certain modalities that do not concern us—is perceived as pain and sets the apparatus in motion in order to reproduce a feeling of gratification in which the diminution of the excitement is perceived as pleasure. Such a current in the apparatus which emanates from pain and strives for pleasure we call a wish.
+      content: `“What I mean by subconscious is that Emerson lost his head. I fell into
+all those violets, and he was silly and surprised. I don’t think we
+ought to blame him very much. It makes such a difference when you see a
+person with beautiful things behind him unexpectedly. It really does;
+it makes an enormous difference, and he lost his head: he doesn’t
+admire me, or any of that nonsense, one straw. Freddy rather likes him,
+and has asked him up here on Sunday, so you can judge for yourself. He
+has improved; he doesn’t always look as if he’s going to burst into
+tears. He is a clerk in the General Manager’s office at one of the big
+railways—not a porter! and runs down to his father for week-ends. Papa
+was to do with journalism, but is rheumatic and has retired. There! Now
+for the garden.” She took hold of her guest by the arm. “Suppose we
+don’t talk about this silly Italian business any more. We want you to
+have a nice restful visit at Windy Corner, with no worriting.”
 
-We have said that nothing but a wish is capable of setting the apparatus in motion, and that the discharge of excitement in the apparatus is regulated automatically by the perception of pleasure and pain. The first wish must have been an hallucinatory occupation of the memory for gratification. But this hallucination, unless it were maintained to the point of exhaustion, proved incapable of bringing about a cessation of the desire and consequently of securing the pleasure connected with gratification.
+Lucy thought this rather a good speech. The reader may have detected an
+unfortunate slip in it. Whether Miss Bartlett detected the slip one
+cannot say, for it is impossible to penetrate into the minds of elderly
+people. She might have spoken further, but they were interrupted by the
+entrance of her hostess. Explanations took place, and in the midst of
+them Lucy escaped, the images throbbing a little more vividly in her
+brain.
 
-Thus there was required a second activity—in our terminology the activity of a second system—which should not permit the memory occupation to advance to perception and therefrom to restrict the psychic forces, but should lead the excitement emanating from the craving stimulus by a devious path over the spontaneous motility which ultimately should so change the outer world as to allow the real perception of the object of gratification to take place. Thus far we have elaborated the plan of the psychic apparatus; these two systems are the germ of the Unc. and Forec, which we include in the fully developed apparatus.
+Chapter XV
+ The Disaster Within
 
-In order to be in a position successfully to change the outer world through the motility, there is required the accumulation of a large sum of experiences in the memory systems as well as a manifold fixation of the relations which are evoked in this memory material by different end- presentations. We now proceed further with our assumption. The manifold activity of the second system, tentatively sending forth and retracting energy, must on the one hand have full command over all memory material, but on the other hand it would be a superfluous expenditure for it to send to the individual mental paths large quantities of energy which would thus flow off to no purpose, diminishing the quantity available for the transformation of the outer world. In the interests of expediency I therefore postulate that the second system succeeds in maintaining the greater part of the occupation energy in a dormant state and in using but a small portion for the purposes of displacement. The mechanism of these processes is entirely unknown to me; any one who wishes to follow up these ideas must try to find the physical analogies and prepare the way for a demonstration of the process of motion in the stimulation of the neuron. I merely hold to the idea that the activity of the first ¨-system is directed to the free outflow of the quantities of excitement, and that the second system brings about an inhibition of this outflow through the energies emanating from it, i.e. it produces a transformation into dormant energy, probably by raising the level. I therefore assume that under the control of the second system as compared with the first, the course of the excitement is bound to entirely different mechanical conditions. After the second system has finished its tentative mental work, it removes the inhibition and congestion of the excitements and allows these excitements to flow off to the motility.
+The Sunday after Miss Bartlett’s arrival was a glorious day, like most
+of the days of that year. In the Weald, autumn approached, breaking up
+the green monotony of summer, touching the parks with the grey bloom of
+mist, the beech-trees with russet, the oak-trees with gold. Up on the
+heights, battalions of black pines witnessed the change, themselves
+unchangeable. Either country was spanned by a cloudless sky, and in
+either arose the tinkle of church bells.
 
-An interesting train of thought now presents itself if we consider the relations of this inhibition of discharge by the second system to the regulation through the principle of pain. Let us now seek the counterpart of the primary feeling of gratification, namely, the objective feeling of fear. A perceptive stimulus acts on the primitive apparatus, becoming the source of a painful emotion. This will then be followed by irregular motor manifestations until one of these withdraws the apparatus from perception and at the same time from pain, but on the reappearance of the perception this manifestation will immediately repeat itself (perhaps as a movement of flight) until the perception has again disappeared. But there will here remain no tendency again to occupy the perception of the source of pain in the form of an hallucination or in any other form. On the contrary, there will be a tendency in the primary apparatus to abandon the painful memory picture as soon as it is in any way awakened, as the overflow of its excitement would surely produce (more precisely, begin to produce) pain. The deviation from memory, which is but a repetition of the former flight from perception, is facilitated also by the fact that, unlike perception, memory does not possess sufficient quality to excite consciousness and thereby to attract to itself new energy. This easy and regularly occurring deviation of the psychic process from the former painful memory presents to us the model and the first example of psychic repression. As is generally known, much of this deviation from the painful, much of the behavior of the ostrich, can be readily demonstrated even in the normal psychic life of adults.
+The garden of Windy Corners was deserted except for a red book, which
+lay sunning itself upon the gravel path. From the house came incoherent
+sounds, as of females preparing for worship. “The men say they won’t
+go”—“Well, I don’t blame them”—Minnie says, “need she go?”—“Tell her,
+no nonsense”—“Anne! Mary! Hook me behind!”—“Dearest Lucia, may I
+trespass upon you for a pin?” For Miss Bartlett had announced that she
+at all events was one for church.
 
-By virtue of the principle of pain the first system is therefore altogether incapable of introducing anything unpleasant into the mental associations.
+The sun rose higher on its journey, guided, not by Phaethon, but by
+ Apollo, competent, unswerving, divine. Its rays fell on the ladies
+whenever they advanced towards the bedroom windows; on Mr. Beebe down
+at Summer Street as he smiled over a letter from Miss Catharine Alan;
+on George Emerson cleaning his father’s boots; and lastly, to complete
+the catalogue of memorable things, on the red book mentioned
+previously. The ladies move, Mr. Beebe moves, George moves, and
+movement may engender shadow. But this book lies motionless, to be
+caressed all the morning by the sun and to raise its covers slightly,
+as though acknowledging the caress.
 
-The system cannot do anything but wish. If this remained so the mental activity of the second system, which should have at its disposal all the memories stored up by experiences, would be hindered. But two ways are now opened: the work of the second system either frees itself completely from the principle of pain and continues its course, paying no heed to the painful reminiscence, or it contrives to occupy the painful memory in such a manner as to preclude the liberation of pain. We may reject the first possibility, as the principle of pain also manifests itself as a regulator for the emotional discharge of the second system; we are, therefore, directed to the second possibility, namely, that this system occupies a reminiscence in such a manner as to inhibit its discharge and hence, also, to inhibit the discharge comparable to a motor innervation for the development of pain. Thus from two starting points we are led to the hypothesis that occupation through the second system is at the same time an inhibition for the emotional discharge, viz. from a consideration of the principle of pain and from the principle of the smallest expenditure of innervation. Let us, however, keep to the fact—this is the key to the theory of repression—that the second system is capable of occupying an idea only when it is in position to check the development of pain emanating from it. Whatever withdraws itself from this inhibition also remains inaccessible for the second system and would soon be abandoned by virtue of the principle of pain. The inhibition of pain, however, need not be complete; it must be permitted to begin, as it indicates to the second system the nature of the memory and possibly its defective adaptation for the purpose sought by the mind.
+Presently Lucy steps out of the drawing-room window. Her new cerise
+dress has been a failure, and makes her look tawdry and wan. At her
+throat is a garnet brooch, on her finger a ring set with rubies—an
+engagement ring. Her eyes are bent to the Weald. She frowns a
+little—not in anger, but as a brave child frowns when he is trying not
+to cry. In all that expanse no human eye is looking at her, and she may
+frown unrebuked and measure the spaces that yet survive between Apollo
+and the western hills.
 
-The psychic process which is admitted by the first system only I shall now call the primary process; and the one resulting from the inhibition of the second system I shall call the secondary process. I show by another point for what purpose the second system is obliged to correct the primary process.`
+“Lucy! Lucy! What’s that book? Who’s been taking a book out of the
+shelf and leaving it about to spoil?”
+
+“It’s only the library book that Cecil’s been reading.”
+
+“But pick it up, and don’t stand idling there like a flamingo.”
+
+Lucy picked up the book and glanced at the title listlessly, Under a
+ Loggia. She no longer read novels herself, devoting all her spare time
+to solid literature in the hope of catching Cecil up. It was dreadful
+how little she knew, and even when she thought she knew a thing, like
+the Italian painters, she found she had forgotten it. Only this morning
+she had confused Francesco Francia with Piero della Francesca, and
+ Cecil had said, “What! you aren’t forgetting your Italy already?” And
+this too had lent anxiety to her eyes when she saluted the dear view
+and the dear garden in the foreground, and above them, scarcely
+conceivable elsewhere, the dear sun.
+
+“Lucy—have you a sixpence for Minnie and a shilling for yourself?”
+
+She hastened in to her mother, who was rapidly working herself into a
+ Sunday fluster.
+
+“It’s a special collection—I forget what for. I do beg, no vulgar
+clinking in the plate with halfpennies; see that Minnie has a nice
+bright sixpence. Where is the child? Minnie! That book’s all warped.
+(Gracious, how plain you look!) Put it under the Atlas to press.
+ Minnie!”
+
+“Oh, Mrs. Honeychurch—” from the upper regions.
+
+“Minnie, don’t be late. Here comes the horse”—it was always the horse,
+never the carriage. “Where’s Charlotte? Run up and hurry her. Why is
+she so long? She had nothing to do. She never brings anything but
+blouses. Poor Charlotte—How I do detest blouses! Minnie!”
+
+Paganism is infectious—more infectious than diphtheria or piety—and the
+ Rector’s niece was taken to church protesting. As usual, she didn’t see
+why. Why shouldn’t she sit in the sun with the young men? The young
+men, who had now appeared, mocked her with ungenerous words. Mrs.
+ Honeychurch defended orthodoxy, and in the midst of the confusion Miss
+ Bartlett, dressed in the very height of the fashion, came strolling
+down the stairs.
+
+“Dear Marian, I am very sorry, but I have no small change—nothing but
+sovereigns and half crowns. Could any one give me—”
+
+“Yes, easily. Jump in. Gracious me, how smart you look! What a lovely
+frock! You put us all to shame.”
+
+“If I did not wear my best rags and tatters now, when should I wear
+them?” said Miss Bartlett reproachfully. She got into the victoria and
+placed herself with her back to the horse. The necessary roar ensued,
+and then they drove off.
+
+“Good-bye! Be good!” called out Cecil.
+
+Lucy bit her lip, for the tone was sneering. On the subject of “church
+and so on” they had had rather an unsatisfactory conversation. He had
+said that people ought to overhaul themselves, and she did not want to
+overhaul herself; she did not know it was done. Honest orthodoxy Cecil
+respected, but he always assumed that honesty is the result of a
+spiritual crisis; he could not imagine it as a natural birthright, that
+might grow heavenward like flowers. All that he said on this subject
+pained her, though he exuded tolerance from every pore; somehow the
+ Emersons were different.
+
+She saw the Emersons after church. There was a line of carriages down
+the road, and the Honeychurch vehicle happened to be opposite Cissie
+ Villa. To save time, they walked over the green to it, and found father
+and son smoking in the garden.
+
+“Introduce me,” said her mother. “Unless the young man considers that
+he knows me already.”
+
+He probably did; but Lucy ignored the Sacred Lake and introduced them
+formally. Old Mr. Emerson claimed her with much warmth, and said how
+glad he was that she was going to be married. She said yes, she was
+glad too; and then, as Miss Bartlett and Minnie were lingering behind
+with Mr. Beebe, she turned the conversation to a less disturbing topic,
+and asked him how he liked his new house.
+
+“Very much,” he replied, but there was a note of offence in his voice;
+she had never known him offended before. He added: “We find, though,
+that the Miss Alans were coming, and that we have turned them out.
+ Women mind such a thing. I am very much upset about it.”
+
+“I believe that there was some misunderstanding,” said Mrs. Honeychurch
+uneasily.`
     },
     {
       id: "section-36",
       title: "Section 36",
-      content: `The primary process strives for a discharge of the excitement in order to establish a perception identity with the sum of excitement thus gathered; the secondary process has abandoned this intention and undertaken instead the task of bringing about a thought identity. All thinking is only a circuitous path from the memory of gratification taken as an end-presentation to the identical occupation of the same memory, which is again to be attained on the track of the motor experiences. The state of thinking must take an interest in the connecting paths between the presentations without allowing itself to be misled by their intensities. But it is obvious that condensations and intermediate or compromise formations occurring in the presentations impede the attainment of this end-identity; by substituting one idea for the other they deviate from the path which otherwise would have been continued from the original idea. Such processes are therefore carefully avoided in the secondary thinking. Nor is it difficult to understand that the principle of pain also impedes the progress of the mental stream in its pursuit of the thought identity, though, indeed, it offers to the mental stream the most important points of departure. Hence the tendency of the thinking process must be to free itself more and more from exclusive adjustment by the principle of pain, and through the working of the mind to restrict the affective development to that minimum which is necessary as a signal. This refinement of the activity must have been attained through a recent over-occupation of energy brought about by consciousness. But we are aware that this refinement is seldom completely successful even in the most normal psychic life and that our thoughts ever remain accessible to falsification through the interference of the principle of pain.
+      content: `“Our landlord was told that we should be a different type of person,”
+said George, who seemed disposed to carry the matter further. “He
+thought we should be artistic. He is disappointed.”
 
-This, however, is not the breach in the functional efficiency of our psychic apparatus through which the thoughts forming the material of the secondary mental work are enabled to make their way into the primary psychic process—with which formula we may now describe the work leading to the dream and to the hysterical symptoms. This case of insufficiency results from the union of the two factors from the history of our evolution; one of which belongs solely to the psychic apparatus and has exerted a determining influence on the relation of the two systems, while the other operates fluctuatingly and introduces motive forces of organic origin into the psychic life. Both originate in the infantile life and result from the transformation which our psychic and somatic organism has undergone since the infantile period.
+“And I wonder whether we ought to write to the Miss Alans and offer to
+give it up. What do you think?” He appealed to Lucy.
 
-When I termed one of the psychic processes in the psychic apparatus the primary process, I did so not only in consideration of the order of precedence and capability, but also as admitting the temporal relations to a share in the nomenclature. As far as our knowledge goes there is no psychic apparatus
+“Oh, stop now you have come,” said Lucy lightly. She must avoid
+censuring Cecil. For it was on Cecil that the little episode turned,
+though his name was never mentioned.
 
-possessing only the primary process, and in so far it is a theoretic fiction; but so much is based on fact that the primary processes are present in the apparatus from the beginning, while the secondary processes develop gradually in the course of life, inhibiting and covering the primary ones, and gaining complete mastery over them perhaps only at the height of life. Owing to this retarded appearance of the secondary processes, the essence of our being, consisting in unconscious wish feelings, can neither be seized nor inhibited by the foreconscious, whose part is once for all restricted to the indication of the most suitable paths for the wish feelings originating in the unconscious. These unconscious wishes establish for all subsequent psychic efforts a compulsion to which they have to submit and which they must strive if possible to divert from its course and direct to higher aims. In consequence of this retardation of the foreconscious occupation a large sphere of the memory material remains inaccessible.
+“So George says. He says that the Miss Alans must go to the wall. Yet
+it does seem so unkind.”
 
-Among these indestructible and unincumbered wish feelings originating from the infantile life, there are also some, the fulfillments of which have entered into a relation of contradiction to the end-presentation of the secondary thinking. The fulfillment of these wishes would no longer produce an affect of pleasure but one of pain; and it is just this transformation of affect that constitutes the nature of what we designate as "repression," in which we recognize the infantile first step of passing adverse sentence or of rejecting through reason. To investigate in what way and through what motive forces such a transformation can be produced constitutes the problem of repression, which we need here only skim over. It will suffice to remark that such a transformation of affect occurs in the course of development (one may think of the appearance in infantile life of disgust which was originally absent), and that it is connected with the activity of the secondary system.
+“There is only a certain amount of kindness in the world,” said George,
+watching the sunlight flash on the panels of the passing carriages.
 
-The memories from which the unconscious wish brings about the emotional discharge have never been accessible to the Forec., and for that reason their emotional discharge cannot be inhibited. It is just on account of this affective development that these ideas are not even now accessible to the foreconscious thoughts to which they have transferred their wishing power.
+“Yes!” exclaimed Mrs. Honeychurch. “That’s exactly what I say. Why all
+this twiddling and twaddling over two Miss Alans?”
 
-On the contrary, the principle of pain comes into play, and causes the Forec. to deviate from these thoughts of transference. The latter, left to themselves, are "repressed," and thus the existence of a store of infantile memories, from the very beginning withdrawn from the Forec., becomes the preliminary condition of repression.`
+“There is a certain amount of kindness, just as there is a certain
+amount of light,” he continued in measured tones. “We cast a shadow on
+something wherever we stand, and it is no good moving from place to
+place to save things; because the shadow always follows. Choose a place
+where you won’t do harm—yes, choose a place where you won’t do very
+much harm, and stand in it for all you are worth, facing the sunshine.”
+
+“Oh, Mr. Emerson, I see you’re clever!”
+
+“Eh—?”
+
+“I see you’re going to be clever. I hope you didn’t go behaving like
+that to poor Freddy.”
+
+George’s eyes laughed, and Lucy suspected that he and her mother would
+get on rather well.
+
+“No, I didn’t,” he said. “He behaved that way to me. It is his
+philosophy. Only he starts life with it; and I have tried the Note of
+ Interrogation first.”
+
+“What _do_ you mean? No, never mind what you mean. Don’t explain. He
+looks forward to seeing you this afternoon. Do you play tennis? Do you
+mind tennis on Sunday—?”
+
+“George mind tennis on Sunday! George, after his education, distinguish
+between Sunday—”
+
+“Very well, George doesn’t mind tennis on Sunday. No more do I. That’s
+settled. Mr. Emerson, if you could come with your son we should be so
+pleased.”
+
+He thanked her, but the walk sounded rather far; he could only potter
+about in these days.
+
+She turned to George: “And then he wants to give up his house to the
+ Miss Alans.”
+
+“I know,” said George, and put his arm round his father’s neck. The
+kindness that Mr. Beebe and Lucy had always known to exist in him came
+out suddenly, like sunlight touching a vast landscape—a touch of the
+morning sun? She remembered that in all his perversities he had never
+spoken against affection.
+
+Miss Bartlett approached.
+
+“You know our cousin, Miss Bartlett,” said Mrs. Honeychurch pleasantly.
+“You met her with my daughter in Florence.”
+
+“Yes, indeed!” said the old man, and made as if he would come out of
+the garden to meet the lady. Miss Bartlett promptly got into the
+victoria. Thus entrenched, she emitted a formal bow. It was the pension
+ Bertolini again, the dining-table with the decanters of water and wine.
+ It was the old, old battle of the room with the view.
+
+George did not respond to the bow. Like any boy, he blushed and was
+ashamed; he knew that the chaperon remembered. He said: “I—I’ll come up
+to tennis if I can manage it,” and went into the house. Perhaps
+anything that he did would have pleased Lucy, but his awkwardness went
+straight to her heart; men were not gods after all, but as human and as
+clumsy as girls; even men might suffer from unexplained desires, and
+need help. To one of her upbringing, and of her destination, the
+weakness of men was a truth unfamiliar, but she had surmised it at
+ Florence, when George threw her photographs into the River Arno.
+
+“George, don’t go,” cried his father, who thought it a great treat for
+people if his son would talk to them. “George has been in such good
+spirits today, and I am sure he will end by coming up this afternoon.”
+
+Lucy caught her cousin’s eye. Something in its mute appeal made her
+reckless. “Yes,” she said, raising her voice, “I do hope he will.” Then
+she went to the carriage and murmured, “The old man hasn’t been told; I
+knew it was all right.” Mrs. Honeychurch followed her, and they drove
+away.
+
+Satisfactory that Mr. Emerson had not been told of the Florence
+escapade; yet Lucy’s spirits should not have leapt up as if she had
+sighted the ramparts of heaven. Satisfactory; yet surely she greeted it
+with disproportionate joy. All the way home the horses’ hoofs sang a
+tune to her: “He has not told, he has not told.” Her brain expanded the
+melody: “He has not told his father—to whom he tells all things. It was
+not an exploit. He did not laugh at me when I had gone.” She raised her
+hand to her cheek. “He does not love me. No. How terrible if he did!
+ But he has not told. He will not tell.”
+
+She longed to shout the words: “It is all right. It’s a secret between
+us two for ever. Cecil will never hear.” She was even glad that Miss
+ Bartlett had made her promise secrecy, that last dark evening at
+ Florence, when they had knelt packing in his room. The secret, big or
+little, was guarded.
+
+Only three English people knew of it in the world. Thus she interpreted
+her joy. She greeted Cecil with unusual radiance, because she felt so
+safe. As he helped her out of the carriage, she said:
+
+“The Emersons have been so nice. George Emerson has improved
+enormously.”
+
+“How are my protégés?” asked Cecil, who took no real interest in them,
+and had long since forgotten his resolution to bring them to Windy
+ Corner for educational purposes.
+
+“Protégés!” she exclaimed with some warmth. For the only relationship
+which Cecil conceived was feudal: that of protector and protected. He
+had no glimpse of the comradeship after which the girl’s soul yearned.
+
+“You shall see for yourself how your protégés are. George Emerson is
+coming up this afternoon. He is a most interesting man to talk to. Only
+don’t—” She nearly said, “Don’t protect him.” But the bell was ringing
+for lunch, and, as often happened, Cecil had paid no great attention to
+her remarks. Charm, not argument, was to be her forte.
+
+Lunch was a cheerful meal. Generally Lucy was depressed at meals. Some
+one had to be soothed—either Cecil or Miss Bartlett or a Being not
+visible to the mortal eye—a Being who whispered to her soul: “It will
+not last, this cheerfulness. In January you must go to London to
+entertain the grandchildren of celebrated men.” But to-day she felt she
+had received a guarantee. Her mother would always sit there, her
+brother here. The sun, though it had moved a little since the morning,
+would never be hidden behind the western hills. After luncheon they
+asked her to play. She had seen Gluck’s Armide that year, and played
+from memory the music of the enchanted garden—the music to which Renaud
+approaches, beneath the light of an eternal dawn, the music that never
+gains, never wanes, but ripples for ever like the tideless seas of
+fairyland. Such music is not for the piano, and her audience began to
+get restive, and Cecil, sharing the discontent, called out: “Now play
+us the other garden—the one in Parsifal.”
+
+She closed the instrument.
+
+“Not very dutiful,” said her mother’s voice.
+
+Fearing that she had offended Cecil, she turned quickly round. There
+ George was. He had crept in without interrupting her.
+
+“Oh, I had no idea!” she exclaimed, getting very red; and then, without
+a word of greeting, she reopened the piano. Cecil should have the
+ Parsifal, and anything else that he liked.
+
+“Our performer has changed her mind,” said Miss Bartlett, perhaps
+implying, she will play the music to Mr. Emerson. Lucy did not know
+what to do nor even what she wanted to do. She played a few bars of the
+ Flower Maidens’ song very badly and then she stopped.
+
+“I vote tennis,” said Freddy, disgusted at the scrappy entertainment.
+
+“Yes, so do I.” Once more she closed the unfortunate piano. “I vote you
+have a men’s four.”
+
+“All right.”`
     },
     {
       id: "section-37",
       title: "Section 37",
-      content: `In the most favorable case the development of pain terminates as soon as the energy has been withdrawn from the thoughts of transference in the Forec., and this effect characterizes the intervention of the principle of pain as expedient. It is different, however, if the repressed unconscious wish receives an organic enforcement which it can lend to its thoughts of transference and through which it can enable them to make an effort towards penetration with their excitement, even after they have been abandoned by the occupation of the Forec. A defensive struggle then ensues, inasmuch as the Forec. reinforces the antagonism against the repressed ideas, and subsequently this leads to a penetration by the thoughts of transference (the carriers of the unconscious wish) in some form of compromise through symptom formation. But from the moment that the suppressed thoughts are powerfully occupied by the unconscious wish-feeling and abandoned by the foreconscious occupation, they succumb to the primary psychic process and strive only for motor discharge; or, if the path be free, for hallucinatory revival of the desired perception identity. We have previously found, empirically, that the incorrect processes described are enacted only with thoughts that exist in the repression. We now grasp another part of the connection. These incorrect processes are those that are primary in the psychic apparatus; they appear wherever thoughts abandoned by the foreconscious occupation are left to themselves, and can fill themselves with the uninhibited energy, striving for discharge from the unconscious. We may add a few further observations to support the view that these processes designated "incorrect" are really not falsifications of the normal defective thinking, but the modes of activity of the psychic apparatus when freed from inhibition. Thus we see that the transference of the foreconscious excitement to the motility takes place according to the same processes, and that the connection of the foreconscious presentations with words readily manifest the same displacements and mixtures which are ascribed to inattention. Finally, I should like to adduce proof that an increase of work necessarily results from the inhibition of these primary courses from the fact that we gain a comical effect, a surplus to be discharged through laughter, if we allow these streams of thought to come to consciousness.
+      content: `“Not for me, thank you,” said Cecil. “I will not spoil the set.” He
+never realized that it may be an act of kindness in a bad player to
+make up a fourth.
 
-The theory of the psychoneuroses asserts with complete certainty that only sexual wish-feelings from the infantile life experience repression (emotional transformation) during the developmental period of childhood. These are capable of returning to activity at a later period of development, and then have the faculty of being revived, either as a consequence of the sexual constitution, which is really formed from the original bisexuality, or in consequence of unfavorable influences of the sexual life; and they thus supply the motive power for all psychoneurotic symptom formations. It is only by the introduction of these sexual forces that the gaps still demonstrable in the theory of repression can be filled. I will leave it undecided whether the postulate of the sexual and infantile may also be asserted for the theory of the dream; I leave this here unfinished because I have already passed a step beyond the demonstrable in assuming that the dream-wish invariably originates from the unconscious.2 Nor will I further investigate the difference in the play of the psychic forces in the dream formation and in the formation of the hysterical symptoms, for to do this we ought to possess a more explicit knowledge of one of the members to be compared. But I regard another point as important, and will here confess that it was on account of this very point that I have just undertaken this entire discussion concerning the two psychic systems, their modes of operation, and the repression. For it is now immaterial whether I have conceived the psychological relations in question with approximate correctness, or, as is easily possible in such a difficult matter, in an erroneous and fragmentary manner. Whatever changes may be made in the interpretation of the psychic censor and of the correct and of the abnormal elaboration of the dream content, the fact nevertheless remains that such processes are active in dream formation, and that essentially they show the closest analogy to the processes observed in the formation of the hysterical symptoms. The dream is not a pathological phenomenon, and it does not leave behind an enfeeblement of the mental faculties. The objection that no deduction can be drawn regarding the dreams of healthy persons from my own dreams and from those of neurotic patients may be rejected without comment. Hence, when we draw conclusions from the phenomena as to their motive forces, we recognize that the psychic mechanism made use of by the neuroses is not created by a morbid disturbance of the psychic life, but is found ready in the normal structure of the psychic apparatus. The two psychic systems, the censor crossing between them, the inhibition and the covering of the one activity by the other, the relations of both to consciousness—or whatever may offer a more correct interpretation of the actual conditions in their stead—all these belong to the normal structure of our psychic instrument, and the dream points out for us one of the roads leading to a knowledge of this structure. If,
+“Oh, come along Cecil. I’m bad, Floyd’s rotten, and so I dare say’s
+ Emerson.”
 
-in addition to our knowledge, we wish to be contented with a minimum perfectly established, we shall say that the dream gives us proof that the suppressed, material continues to exist even in the normal person and remains capable of psychic activity. The dream itself is one of the manifestations of this suppressed material; theoretically, this is true in all cases; according to substantial experience it is true in at least a great number of such as most conspicuously display the prominent characteristics of dream life. The suppressed psychic material, which in the waking state has been prevented from expression and cut off from internal perception by the antagonistic adjustment of the contradictions, finds ways and means of obtruding itself on consciousness during the night under the domination of the compromise formations.
+George corrected him: “I am not bad.”
 
-"Flectere si nequeo superos, Acheronta movebo."
+One looked down one’s nose at this. “Then certainly I won’t play,” said
+ Cecil, while Miss Bartlett, under the impression that she was snubbing
+ George, added: “I agree with you, Mr. Vyse. You had much better not
+play. Much better not.”
 
-At any rate the interpretation of dreams is the via regia to a knowledge of the unconscious in the psychic life.
+Minnie, rushing in where Cecil feared to tread, announced that she
+would play. “I shall miss every ball anyway, so what does it matter?”
+ But Sunday intervened and stamped heavily upon the kindly suggestion.
 
-In following the analysis of the dream we have made some progress toward an understanding of the composition of this most marvelous and most mysterious of instruments; to be sure, we have not gone very far, but enough of a beginning has been made to allow us to advance from other so-called pathological formations further into the analysis of the unconscious. Disease—at least that which is justly termed functional—is not due to the destruction of this apparatus, and the establishment of new splittings in its interior; it is rather to be explained dynamically through the strengthening and weakening of the components in the play of forces by which so many activities are concealed during the normal function. We have been able to show in another place how the composition of the apparatus from the two systems permits a subtilization even of the normal activity which would be impossible for a single system.
+“Then it will have to be Lucy,” said Mrs. Honeychurch; “you must fall
+back on Lucy. There is no other way out of it. Lucy, go and change your
+frock.”
 
-Footnote 1: Cf. the significant observations by J. Bueuer in our Studies on Hysteria, 1895, and 2nd ed. 1909.`
+Lucy’s Sabbath was generally of this amphibious nature. She kept it
+without hypocrisy in the morning, and broke it without reluctance in
+the afternoon. As she changed her frock, she wondered whether Cecil was
+sneering at her; really she must overhaul herself and settle everything
+up before she married him.
+
+Mr. Floyd was her partner. She liked music, but how much better tennis
+seemed. How much better to run about in comfortable clothes than to sit
+at the piano and feel girt under the arms. Once more music appeared to
+her the employment of a child. George served, and surprised her by his
+anxiety to win. She remembered how he had sighed among the tombs at
+ Santa Croce because things wouldn’t fit; how after the death of that
+obscure Italian he had leant over the parapet by the Arno and said to
+her: “I shall want to live, I tell you.” He wanted to live now, to win
+at tennis, to stand for all he was worth in the sun—the sun which had
+begun to decline and was shining in her eyes; and he did win.
+
+Ah, how beautiful the Weald looked! The hills stood out above its
+radiance, as Fiesole stands above the Tuscan Plain, and the South
+ Downs, if one chose, were the mountains of Carrara. She might be
+forgetting her Italy, but she was noticing more things in her England.
+ One could play a new game with the view, and try to find in its
+innumerable folds some town or village that would do for Florence. Ah,
+how beautiful the Weald looked!
+
+But now Cecil claimed her. He chanced to be in a lucid critical mood,
+and would not sympathize with exaltation. He had been rather a nuisance
+all through the tennis, for the novel that he was reading was so bad
+that he was obliged to read it aloud to others. He would stroll round
+the precincts of the court and call out: “I say, listen to this, Lucy.
+ Three split infinitives.”
+
+“Dreadful!” said Lucy, and missed her stroke. When they had finished
+their set, he still went on reading; there was some murder scene, and
+really everyone must listen to it. Freddy and Mr. Floyd were obliged to
+hunt for a lost ball in the laurels, but the other two acquiesced.
+
+“The scene is laid in Florence.”
+
+“What fun, Cecil! Read away. Come, Mr. Emerson, sit down after all your
+energy.” She had “forgiven” George, as she put it, and she made a point
+of being pleasant to him.
+
+He jumped over the net and sat down at her feet asking: “You—and are
+you tired?”
+
+“Of course I’m not!”
+
+“Do you mind being beaten?”
+
+She was going to answer, “No,” when it struck her that she did mind, so
+she answered, “Yes.” She added merrily, “I don’t see _you’re_ such a
+splendid player, though. The light was behind you, and it was in my
+eyes.”
+
+“I never said I was.”
+
+“Why, you did!”
+
+“You didn’t attend.”
+
+“You said—oh, don’t go in for accuracy at this house. We all
+exaggerate, and we get very angry with people who don’t.”
+
+“‘The scene is laid in Florence,’” repeated Cecil, with an upward note.
+
+Lucy recollected herself.
+
+“‘Sunset. Leonora was speeding—’”
+
+Lucy interrupted. “Leonora? Is Leonora the heroine? Who’s the book by?”
+
+“Joseph Emery Prank. ‘Sunset. Leonora speeding across the square. Pray
+the saints she might not arrive too late. Sunset—the sunset of Italy.
+ Under Orcagna’s Loggia—the Loggia de’ Lanzi, as we sometimes call it
+now—’”
+
+Lucy burst into laughter. “‘Joseph Emery Prank’ indeed! Why it’s Miss
+ Lavish! It’s Miss Lavish’s novel, and she’s publishing it under
+somebody else’s name.”
+
+“Who may Miss Lavish be?”
+
+“Oh, a dreadful person—Mr. Emerson, you remember Miss Lavish?”
+
+Excited by her pleasant afternoon, she clapped her hands.
+
+George looked up. “Of course I do. I saw her the day I arrived at
+ Summer Street. It was she who told me that you lived here.”
+
+“Weren’t you pleased?” She meant “to see Miss Lavish,” but when he bent
+down to the grass without replying, it struck her that she could mean
+something else. She watched his head, which was almost resting against
+her knee, and she thought that the ears were reddening. “No wonder the
+novel’s bad,” she added. “I never liked Miss Lavish. But I suppose one
+ought to read it as one’s met her.”
+
+“All modern books are bad,” said Cecil, who was annoyed at her
+inattention, and vented his annoyance on literature. “Every one writes
+for money in these days.”
+
+“Oh, Cecil—!”
+
+“It is so. I will inflict Joseph Emery Prank on you no longer.”
+
+Cecil, this afternoon seemed such a twittering sparrow. The ups and
+downs in his voice were noticeable, but they did not affect her. She
+had dwelt amongst melody and movement, and her nerves refused to answer
+to the clang of his. Leaving him to be annoyed, she gazed at the black
+head again. She did not want to stroke it, but she saw herself wanting
+to stroke it; the sensation was curious.
+
+“How do you like this view of ours, Mr. Emerson?”
+
+“I never notice much difference in views.”
+
+“What do you mean?”
+
+“Because they’re all alike. Because all that matters in them is
+distance and air.”
+
+“H’m!” said Cecil, uncertain whether the remark was striking or not.
+
+“My father”—he looked up at her (and he was a little flushed)—“says
+that there is only one perfect view—the view of the sky straight over
+our heads, and that all these views on earth are but bungled copies of
+it.”
+
+“I expect your father has been reading Dante,” said Cecil, fingering
+the novel, which alone permitted him to lead the conversation.
+
+“He told us another day that views are really crowds—crowds of trees
+and houses and hills—and are bound to resemble each other, like human
+crowds—and that the power they have over us is sometimes supernatural,
+for the same reason.”
+
+Lucy’s lips parted.
+
+“For a crowd is more than the people who make it up. Something gets
+added to it—no one knows how—just as something has got added to those
+hills.”
+
+He pointed with his racquet to the South Downs.
+
+“What a splendid idea!” she murmured. “I shall enjoy hearing your
+father talk again. I’m so sorry he’s not so well.”
+
+“No, he isn’t well.”
+
+“There’s an absurd account of a view in this book,” said Cecil. “Also
+that men fall into two classes—those who forget views and those who
+remember them, even in small rooms.”
+
+“Mr. Emerson, have you any brothers or sisters?”
+
+“None. Why?”
+
+“You spoke of ‘us.’”
+
+“My mother, I was meaning.”
+
+Cecil closed the novel with a bang.
+
+“Oh, Cecil—how you made me jump!”
+
+“I will inflict Joseph Emery Prank on you no longer.”
+
+“I can just remember us all three going into the country for the day
+and seeing as far as Hindhead. It is the first thing that I remember.”
+
+Cecil got up; the man was ill-bred—he hadn’t put on his coat after
+tennis—he didn’t do. He would have strolled away if Lucy had not
+stopped him.
+
+“Cecil, do read the thing about the view.”
+
+“Not while Mr. Emerson is here to entertain us.”
+
+“No—read away. I think nothing’s funnier than to hear silly things read
+out loud. If Mr. Emerson thinks us frivolous, he can go.”
+
+This struck Cecil as subtle, and pleased him. It put their visitor in
+the position of a prig. Somewhat mollified, he sat down again.`
     },
     {
       id: "section-38",
       title: "Section 38",
-      content: `Footnote 2: Here, as in other places, there are gaps in the treatment of the subject, which I have left intentionally, because to fill them up would require on the one hand too great effort, and on the other hand an extensive reference to material that is foreign to the dream. Thus I have avoided stating whether I connect with the word "suppressed" another sense than with the word "repressed." It has been made clear only that the latter emphasizes more than the former the relation to the unconscious. I have not entered into the cognate problem why the dream thoughts also experience distortion by the censor when they abandon the progressive continuation to consciousness and choose the path of regression. I have been above all anxious to awaken an interest in the problems to which the further analysis of the dreamwork leads and to indicate the other themes which meet these on the way. It was not always easy to decide just where the pursuit should be discontinued. That I have not treated exhaustively the part played in the dream by the psychosexual life and have avoided the interpretation of dreams of an obvious sexual content is due to a special reason which may not come up to the reader's expectation. To be sure, it is very far from my ideas and the principles expressed by me in neuropathology to regard the sexual life as a "pudendum" which should be left unconsidered by the physician and the scientific investigator. I also consider ludicrous the moral indignation which prompted the translator of Artemidoros of Daldis to keep from the reader's knowledge the chapter on sexual dreams contained in the Symbolism of the Dreams. As for myself, I have been actuated solely by the conviction that in the explanation of sexual dreams I should be bound to entangle myself deeply in the still unexplained problems of perversion and bisexuality; and for that reason I have reserved this material for another connection.
+      content: `“Mr. Emerson, go and find tennis balls.” She opened the book. Cecil
+must have his reading and anything else that he liked. But her
+attention wandered to George’s mother, who—according to Mr. Eager—had
+been murdered in the sight of God and—according to her son—had seen as
+far as Hindhead.
 
-IX
+“Am I really to go?” asked George.
 
-THE UNCONSCIOUS AND CONSCIOUSNESS— REALITY
+“No, of course not really,” she answered.
 
-On closer inspection we find that it is not the existence of two systems near the motor end of the apparatus but of two kinds of processes or modes of emotional discharge, the assumption of which was explained in the psychological discussions of the previous chapter. This can make no difference for us, for we must always be ready to drop our auxiliary ideas whenever we deem ourselves in position to replace them by something else approaching more closely to the unknown reality. Let us now try to correct some views which might be erroneously formed as long as we regarded the two systems in the crudest and most obvious sense as two localities within the psychic apparatus, views which have left their traces in the terms "repression" and "penetration." Thus, when we say that an unconscious idea strives for transference into the foreconscious in order later to penetrate consciousness, we do not mean that a second idea is to be formed situated in a new locality like an interlineation near which the original continues to remain; also, when we speak of penetration into consciousness, we wish carefully to avoid any idea of change of locality. When we say that a foreconscious idea is repressed and subsequently taken up by the unconscious, we might be tempted by these figures, borrowed from the idea of a struggle over a territory, to assume that an arrangement is really broken up in one psychic locality and replaced by a new one in the other locality. For these comparisons we substitute what would seem to correspond better with the real state of affairs by saying that an energy occupation is displaced to or withdrawn from a certain arrangement so that the psychic formation falls under the domination of a system or is withdrawn from the same. Here again we replace a topical mode of presentation by a dynamic; it is not the psychic formation that appears to us as the moving factor but the innervation of the same.
+“Chapter two,” said Cecil, yawning. “Find me chapter two, if it isn’t
+bothering you.”
 
-I deem it appropriate and justifiable, however, to apply ourselves still further to the illustrative conception of the two systems. We shall avoid any misapplication of this manner of representation if we remember that presentations, thoughts, and psychic formations should generally not be localized in the organic elements of the nervous system, but, so to speak, between them, where resistances and paths form the correlate corresponding to them. Everything that can become an object of our internal perception is virtual, like the image in the telescope produced by the passage of the rays of light. But we are justified in assuming the existence of the systems, which have nothing psychic in themselves and which never become accessible to our psychic perception, corresponding to the lenses of the telescope which design the image. If we continue this comparison, we may say that the censor between two systems corresponds to the refraction of rays during their passage into a new medium.
+Chapter two was found, and she glanced at its opening sentences.
 
-Thus far we have made psychology on our own responsibility; it is now time to examine the theoretical opinions governing present-day psychology and to test their relation to our theories. The question of the unconscious, in psychology is, according to the authoritative words of Lipps, less a psychological question than the question of psychology. As long as psychology settled this question with the verbal explanation that the "psychic" is the "conscious" and that "unconscious psychic occurrences" are an obvious contradiction, a psychological estimate of the observations gained by the physician from abnormal mental states was precluded. The physician and the philosopher agree only when both acknowledge that unconscious psychic processes are "the appropriate and well-justified expression for an established fact." The physician cannot but reject with a shrug of his shoulders the assertion that "consciousness is the indispensable quality of the psychic"; he may assume, if his respect for the utterings of the philosophers still be strong enough, that he and they do not treat the same subject and do not pursue the same science. For a single intelligent observation of the psychic life of a neurotic, a single analysis of a dream must force upon him the unalterable conviction that the most complicated and correct mental operations, to which no one will refuse the name of psychic occurrences, may take place without exciting the consciousness of the person. It is true that the physician does not learn of these unconscious processes until they have exerted such an effect on consciousness as to admit communication or observation. But this effect of consciousness may show a psychic character widely differing from the unconscious process, so that the internal perception cannot possibly recognize the one as a substitute for the other. The physician must reserve for himself the right to penetrate, by a process of deduction, from the effect on consciousness to the unconscious psychic process; he learns in this way that the effect on consciousness is only a remote psychic product of the unconscious process and that the latter has not become conscious as such; that it has been in existence and operative without betraying itself in any way to consciousness.`
+She thought she had gone mad.
+
+“Here—hand me the book.”
+
+She heard her voice saying: “It isn’t worth reading—it’s too silly to
+read—I never saw such rubbish—it oughtn’t to be allowed to be printed.”
+
+He took the book from her.
+
+“‘Leonora,’” he read, “‘sat pensive and alone. Before her lay the rich
+champaign of Tuscany, dotted over with many a smiling village. The
+season was spring.’”
+
+Miss Lavish knew, somehow, and had printed the past in draggled prose,
+for Cecil to read and for George to hear.
+
+“‘A golden haze,’” he read. He read: “‘Afar off the towers of Florence,
+while the bank on which she sat was carpeted with violets. All
+unobserved Antonio stole up behind her—’”
+
+Lest Cecil should see her face she turned to George and saw his face.
+
+He read: “‘There came from his lips no wordy protestation such as
+formal lovers use. No eloquence was his, nor did he suffer from the
+lack of it. He simply enfolded her in his manly arms.’”
+
+“This isn’t the passage I wanted,” he informed them, “there is another
+much funnier, further on.” He turned over the leaves.
+
+“Should we go in to tea?” said Lucy, whose voice remained steady.
+
+She led the way up the garden, Cecil following her, George last. She
+thought a disaster was averted. But when they entered the shrubbery it
+came. The book, as if it had not worked mischief enough, had been
+forgotten, and Cecil must go back for it; and George, who loved
+passionately, must blunder against her in the narrow path.
+
+“No—” she gasped, and, for the second time, was kissed by him.
+
+As if no more was possible, he slipped back; Cecil rejoined her; they
+reached the upper lawn alone.
+
+Chapter XVI
+ Lying to George
+
+But Lucy had developed since the spring. That is to say, she was now
+better able to stifle the emotions of which the conventions and the
+world disapprove. Though the danger was greater, she was not shaken by
+deep sobs. She said to Cecil, “I am not coming in to tea—tell mother—I
+must write some letters,” and went up to her room. Then she prepared
+for action. Love felt and returned, love which our bodies exact and our
+hearts have transfigured, love which is the most real thing that we
+shall ever meet, reappeared now as the world’s enemy, and she must
+stifle it.
+
+She sent for Miss Bartlett.
+
+The contest lay not between love and duty. Perhaps there never is such
+a contest. It lay between the real and the pretended, and Lucy’s first
+aim was to defeat herself. As her brain clouded over, as the memory of
+the views grew dim and the words of the book died away, she returned to
+her old shibboleth of nerves. She “conquered her breakdown.” Tampering
+with the truth, she forgot that the truth had ever been. Remembering
+that she was engaged to Cecil, she compelled herself to confused
+remembrances of George; he was nothing to her; he never had been
+anything; he had behaved abominably; she had never encouraged him. The
+armour of falsehood is subtly wrought out of darkness, and hides a man
+not only from others, but from his own soul. In a few moments Lucy was
+equipped for battle.
+
+“Something too awful has happened,” she began, as soon as her cousin
+arrived. “Do you know anything about Miss Lavish’s novel?”
+
+Miss Bartlett looked surprised, and said that she had not read the
+book, nor known that it was published; Eleanor was a reticent woman at
+heart.
+
+“There is a scene in it. The hero and heroine make love. Do you know
+about that?”
+
+“Dear—?”
+
+“Do you know about it, please?” she repeated. “They are on a hillside,
+and Florence is in the distance.”
+
+“My good Lucia, I am all at sea. I know nothing about it whatever.”
+
+“There are violets. I cannot believe it is a coincidence. Charlotte,
+ Charlotte, how _could_ you have told her? I have thought before
+speaking; it _must_ be you.”
+
+“Told her what?” she asked, with growing agitation.
+
+“About that dreadful afternoon in February.”
+
+Miss Bartlett was genuinely moved. “Oh, Lucy, dearest girl—she hasn’t
+put that in her book?”
+
+Lucy nodded.
+
+“Not so that one could recognize it. Yes.”
+
+“Then never—never—never more shall Eleanor Lavish be a friend of mine.”
+
+“So you did tell?”
+
+“I did just happen—when I had tea with her at Rome—in the course of
+conversation—”
+
+“But Charlotte—what about the promise you gave me when we were packing?
+ Why did you tell Miss Lavish, when you wouldn’t even let me tell
+mother?”
+
+“I will never forgive Eleanor. She has betrayed my confidence.”
+
+“Why did you tell her, though? This is a most serious thing.”
+
+Why does any one tell anything? The question is eternal, and it was not
+surprising that Miss Bartlett should only sigh faintly in response. She
+had done wrong—she admitted it, she only hoped that she had not done
+harm; she had told Eleanor in the strictest confidence.
+
+Lucy stamped with irritation.
+
+“Cecil happened to read out the passage aloud to me and to Mr. Emerson;
+it upset Mr. Emerson and he insulted me again. Behind Cecil’s back.
+ Ugh! Is it possible that men are such brutes? Behind Cecil’s back as we
+were walking up the garden.”
+
+Miss Bartlett burst into self-accusations and regrets.
+
+“What is to be done now? Can you tell me?”
+
+“Oh, Lucy—I shall never forgive myself, never to my dying day. Fancy if
+your prospects—”
+
+“I know,” said Lucy, wincing at the word. “I see now why you wanted me
+to tell Cecil, and what you meant by ‘some other source.’ You knew that
+you had told Miss Lavish, and that she was not reliable.”
+
+It was Miss Bartlett’s turn to wince. “However,” said the girl,
+despising her cousin’s shiftiness, “What’s done’s done. You have put me
+in a most awkward position. How am I to get out of it?”
+
+Miss Bartlett could not think. The days of her energy were over. She
+was a visitor, not a chaperon, and a discredited visitor at that. She
+stood with clasped hands while the girl worked herself into the
+necessary rage.
+
+“He must—that man must have such a setting down that he won’t forget.
+ And who’s to give it him? I can’t tell mother now—owing to you. Nor
+ Cecil, Charlotte, owing to you. I am caught up every way. I think I
+shall go mad. I have no one to help me. That’s why I’ve sent for you.
+ What’s wanted is a man with a whip.”
+
+Miss Bartlett agreed: one wanted a man with a whip.
+
+“Yes—but it’s no good agreeing. What’s to be _done?_ We women go
+maundering on. What _does_ a girl do when she comes across a cad?”
+
+“I always said he was a cad, dear. Give me credit for that, at all
+events. From the very first moment—when he said his father was having a
+bath.”
+
+“Oh, bother the credit and who’s been right or wrong! We’ve both made a
+muddle of it. George Emerson is still down the garden there, and is he
+to be left unpunished, or isn’t he? I want to know.”
+
+Miss Bartlett was absolutely helpless. Her own exposure had unnerved
+her, and thoughts were colliding painfully in her brain. She moved
+feebly to the window, and tried to detect the cad’s white flannels
+among the laurels.
+
+“You were ready enough at the Bertolini when you rushed me off to Rome.
+ Can’t you speak again to him now?”
+
+“Willingly would I move heaven and earth—”
+
+“I want something more definite,” said Lucy contemptuously. “Will you
+speak to him? It is the least you can do, surely, considering it all
+happened because you broke your word.”
+
+“Never again shall Eleanor Lavish be a friend of mine.”
+
+Really, Charlotte was outdoing herself.
+
+“Yes or no, please; yes or no.”`
     },
     {
       id: "section-39",
       title: "Section 39",
-      content: `A reaction from the over-estimation of the quality of consciousness becomes the indispensable preliminary condition for any correct insight into the behavior of the psychic. In the words of Lipps, the unconscious must be accepted as the general basis of the psychic life. The unconscious is the larger circle which includes within itself the smaller circle of the conscious; everything conscious has its preliminary step in the unconscious, whereas the unconscious may stop with this step and still claim full value as a psychic activity. Properly speaking, the unconscious is the real psychic; its inner nature is just as unknown to us as the reality of the external world, and it is just as imperfectly reported to us through the data of consciousness as is the external world through the indications of our sensory organs.
+      content: `“It is the kind of thing that only a gentleman can settle.” George
+ Emerson was coming up the garden with a tennis ball in his hand.
 
-A series of dream problems which have intensely occupied older authors will be laid aside when the old opposition between conscious life and dream life is abandoned and the unconscious psychic assigned to its proper place.
+“Very well,” said Lucy, with an angry gesture. “No one will help me. I
+will speak to him myself.” And immediately she realized that this was
+what her cousin had intended all along.
 
-Thus many of the activities whose performances in the dream have excited our admiration are now no longer to be attributed to the dream but to unconscious thinking, which is also active during the day. If, according to Scherner, the dream seems to play with a symboling representation of the body, we know that this is the work of certain unconscious phantasies which have probably given in to sexual emotions, and that these phantasies come to expression not only in dreams but also in hysterical phobias and in other symptoms. If the dream continues and settles activities of the day and even brings to light valuable inspirations, we have only to subtract from it the dream disguise as a feat of dream-work and a mark of assistance from obscure forces in the depth of the mind (cf. the devil in Tartini's sonata dream). The intellectual task as such must be attributed to the same psychic forces which perform all such tasks during the day. We are probably far too much inclined to over-estimate the conscious character even of intellectual and artistic productions. From the communications of some of the most highly productive persons, such as Goethe and Helmholtz, we learn, indeed, that the most essential and original parts in their creations came to them in the form of inspirations and reached their perceptions almost finished. There is nothing strange about the assistance of the conscious activity in other cases where there was a concerted effort of all the psychic forces. But it is a much abused privilege of the conscious activity that it is allowed to hide from us all other activities wherever it participates.
+“Hullo, Emerson!” called Freddy from below. “Found the lost ball? Good
+man! Want any tea?” And there was an irruption from the house on to the
+terrace.
 
-It will hardly be worth while to take up the historical significance of dreams as a special subject. Where, for instance, a chieftain has been urged through a dream to engage in a bold undertaking the success of which has had the effect of changing history, a new problem results only so long as the dream, regarded as a strange power, is contrasted with other more familiar psychic forces; the problem, however, disappears when we regard the dream as a form of expression for feelings which are burdened with resistance during the day and which can receive reinforcements at night from deep emotional sources. But the great respect shown by the ancients for the dream is based on a correct psychological surmise. It is a homage paid to the unsubdued and indestructible in the human mind, and to the demoniacal which furnishes the dream-wish and which we find again in our unconscious.
+“Oh, Lucy, but that is brave of you! I admire you—”
 
-Not inadvisedly do I use the expression "in our unconscious," for what we so designate does not coincide with the unconscious of the philosophers, nor with the unconscious of Lipps. In the latter uses it is intended to designate only the opposite of conscious. That there are also unconscious psychic processes beside the conscious ones is the hotly contested and energetically defended issue. Lipps gives us the more far-reaching theory that everything psychic exists as unconscious, but that some of it may exist also as conscious. But it was not to prove this theory that we have adduced the phenomena of the dream and of the hysterical symptom formation; the observation of normal life alone suffices to establish its correctness beyond any doubt. The new fact that we have learned from the analysis of the psychopathological formations, and indeed from their first member, viz. dreams, is that the unconscious—hence the psychic—occurs as a function of two separate systems and that it occurs as such even in normal psychic life. Consequently there are two kinds of unconscious, which we do not as yet find distinguished by the psychologists. Both are unconscious in the psychological sense; but in our sense the first, which we call Unc., is likewise incapable of consciousness, whereas the second we term "Forec." because its emotions, after the observance of certain rules, can reach consciousness, perhaps not before they have again undergone censorship, but still regardless of the Unc. system. The fact that in order to attain consciousness the emotions must traverse an unalterable series of events or succession of instances, as is betrayed through their alteration by the censor, has helped us to draw a comparison from spatiality. We described the relations of the two systems to each other and to consciousness by saying that the system Forec. is like a screen between the system Unc. and consciousness. The system Forec. not only bars access to consciousness, but also controls the entrance to voluntary motility and is capable of sending out a sum of mobile energy, a portion of which is familiar to us as attention.
+They had gathered round George, who beckoned, she felt, over the
+rubbish, the sloppy thoughts, the furtive yearnings that were beginning
+to cumber her soul. Her anger faded at the sight of him. Ah! The
+ Emersons were fine people in their way. She had to subdue a rush in her
+blood before saying:
 
-We must also steer clear of the distinctions superconscious and subconscious which have found so much favor in the more recent literature on the psychoneuroses, for just such a distinction seems to emphasize the equivalence of the psychic and the conscious.
+“Freddy has taken him into the dining-room. The others are going down
+the garden. Come. Let us get this over quickly. Come. I want you in the
+room, of course.”
 
-What part now remains in our description of the once all-powerful and all-overshadowing consciousness? None other than that of a sensory organ for the perception of psychic qualities. According to the fundamental idea of schematic undertaking we can conceive the conscious perception only as the particular activity of an independent system for which the abbreviated designation "Cons." commends itself. This system we conceive to be similar in its mechanical characteristics to the perception system P, hence excitable by qualities and incapable of retaining the trace of changes, i.e. it is devoid of memory. The psychic apparatus which, with the sensory organs of the P- system, is turned to the outer world, is itself the outer world for the sensory organ of Cons.; the teleological justification of which rests on this relationship. We are here once more confronted with the principle of the succession of instances which seems to dominate the structure of the apparatus. The material under excitement flows to the Cons, sensory organ from two sides, firstly from the P-system whose excitement, qualitatively determined, probably experiences a new elaboration until it comes to conscious perception; and, secondly, from the interior of the apparatus itself, the quantitative processes of which are perceived as a qualitative series of pleasure and pain as soon as they have undergone certain changes.
+“Lucy, do you mind doing it?”
 
-The philosophers, who have learned that correct and highly complicated`
+“How can you ask such a ridiculous question?”
+
+“Poor Lucy—” She stretched out her hand. “I seem to bring nothing but
+misfortune wherever I go.” Lucy nodded. She remembered their last
+evening at Florence—the packing, the candle, the shadow of Miss
+ Bartlett’s toque on the door. She was not to be trapped by pathos a
+second time. Eluding her cousin’s caress, she led the way downstairs.
+
+“Try the jam,” Freddy was saying. “The jam’s jolly good.”
+
+George, looking big and dishevelled, was pacing up and down the
+dining-room. As she entered he stopped, and said:
+
+“No—nothing to eat.”
+
+“You go down to the others,” said Lucy; “Charlotte and I will give Mr.
+ Emerson all he wants. Where’s mother?”
+
+“She’s started on her Sunday writing. She’s in the drawing-room.”
+
+“That’s all right. You go away.”
+
+He went off singing.
+
+Lucy sat down at the table. Miss Bartlett, who was thoroughly
+frightened, took up a book and pretended to read.
+
+She would not be drawn into an elaborate speech. She just said: “I
+can’t have it, Mr. Emerson. I cannot even talk to you. Go out of this
+house, and never come into it again as long as I live here—” flushing
+as she spoke and pointing to the door. “I hate a row. Go please.”
+
+“What—”
+
+“No discussion.”
+
+“But I can’t—”
+
+She shook her head. “Go, please. I do not want to call in Mr. Vyse.”
+
+“You don’t mean,” he said, absolutely ignoring Miss Bartlett—“you don’t
+mean that you are going to marry that man?”
+
+The line was unexpected.
+
+She shrugged her shoulders, as if his vulgarity wearied her. “You are
+merely ridiculous,” she said quietly.
+
+Then his words rose gravely over hers: “You cannot live with Vyse. He’s
+only for an acquaintance. He is for society and cultivated talk. He
+should know no one intimately, least of all a woman.”
+
+It was a new light on Cecil’s character.
+
+“Have you ever talked to Vyse without feeling tired?”
+
+“I can scarcely discuss—”
+
+“No, but have you ever? He is the sort who are all right so long as
+they keep to things—books, pictures—but kill when they come to people.
+ That’s why I’ll speak out through all this muddle even now. It’s
+shocking enough to lose you in any case, but generally a man must deny
+himself joy, and I would have held back if your Cecil had been a
+different person. I would never have let myself go. But I saw him first
+in the National Gallery, when he winced because my father mispronounced
+the names of great painters. Then he brings us here, and we find it is
+to play some silly trick on a kind neighbour. That is the man all
+over—playing tricks on people, on the most sacred form of life that he
+can find. Next, I meet you together, and find him protecting and
+teaching you and your mother to be shocked, when it was for _you_ to
+settle whether you were shocked or no. Cecil all over again. He daren’t
+let a woman decide. He’s the type who’s kept Europe back for a thousand
+years. Every moment of his life he’s forming you, telling you what’s
+charming or amusing or ladylike, telling you what a man thinks womanly;
+and you, you of all women, listen to his voice instead of to your own.
+ So it was at the Rectory, when I met you both again; so it has been the
+whole of this afternoon. Therefore—not ‘therefore I kissed you,’
+because the book made me do that, and I wish to goodness I had more
+self-control. I’m not ashamed. I don’t apologize. But it has frightened
+you, and you may not have noticed that I love you. Or would you have
+told me to go, and dealt with a tremendous thing so lightly? But
+therefore—therefore I settled to fight him.”
+
+Lucy thought of a very good remark.
+
+“You say Mr. Vyse wants me to listen to him, Mr. Emerson. Pardon me for
+suggesting that you have caught the habit.”
+
+And he took the shoddy reproof and touched it into immortality. He
+said:
+
+“Yes, I have,” and sank down as if suddenly weary. “I’m the same kind
+of brute at bottom. This desire to govern a woman—it lies very deep,
+and men and women must fight it together before they shall enter the
+garden. But I do love you surely in a better way than he does.” He
+thought. “Yes—really in a better way. I want you to have your own
+thoughts even when I hold you in my arms.” He stretched them towards
+her. “Lucy, be quick—there’s no time for us to talk now—come to me as
+you came in the spring, and afterwards I will be gentle and explain. I
+have cared for you since that man died. I cannot live without you, ‘No
+good,’ I thought; ‘she is marrying someone else’; but I meet you again
+when all the world is glorious water and sun. As you came through the
+wood I saw that nothing else mattered. I called. I wanted to live and
+have my chance of joy.”
+
+“And Mr. Vyse?” said Lucy, who kept commendably calm. “Does he not
+matter? That I love Cecil and shall be his wife shortly? A detail of no
+importance, I suppose?”
+
+But he stretched his arms over the table towards her.
+
+“May I ask what you intend to gain by this exhibition?”
+
+He said: “It is our last chance. I shall do all that I can.” And as if
+he had done all else, he turned to Miss Bartlett, who sat like some
+portent against the skies of the evening. “You wouldn’t stop us this
+second time if you understood,” he said. “I have been into the dark,
+and I am going back into it, unless you will try to understand.”
+
+Her long, narrow head drove backwards and forwards, as though
+demolishing some invisible obstacle. She did not answer.
+
+“It is being young,” he said quietly, picking up his racquet from the
+floor and preparing to go. “It is being certain that Lucy cares for me
+really. It is that love and youth matter intellectually.”
+
+In silence the two women watched him. His last remark, they knew, was
+nonsense, but was he going after it or not? Would not he, the cad, the
+charlatan, attempt a more dramatic finish? No. He was apparently
+content. He left them, carefully closing the front door; and when they
+looked through the hall window, they saw him go up the drive and begin
+to climb the slopes of withered fern behind the house. Their tongues
+were loosed, and they burst into stealthy rejoicings.
+
+“Oh, Lucia—come back here—oh, what an awful man!”
+
+Lucy had no reaction—at least, not yet. “Well, he amuses me,” she said.
+“Either I’m mad, or else he is, and I’m inclined to think it’s the
+latter. One more fuss through with you, Charlotte. Many thanks. I
+think, though, that this is the last. My admirer will hardly trouble me
+again.”
+
+And Miss Bartlett, too, essayed the roguish:
+
+“Well, it isn’t everyone who could boast such a conquest, dearest, is
+it? Oh, one oughtn’t to laugh, really. It might have been very serious.
+ But you were so sensible and brave—so unlike the girls of my day.”
+
+“Let’s go down to them.”`
     },
     {
       id: "section-40",
       title: "Section 40",
-      content: `thought structures are possible even without the co?peration of consciousness, have found it difficult to attribute any function to consciousness; it has appeared to them a superfluous mirroring of the perfected psychic process. The analogy of our Cons. system with the systems of perception relieves us of this embarrassment. We see that perception through our sensory organs results in directing the occupation of attention to those paths on which the incoming sensory excitement is diffused; the qualitative excitement of the P-system serves the mobile quantity of the psychic apparatus as a regulator for its discharge. We may claim the same function for the overlying sensory organ of the Cons. system. By assuming new qualities, it furnishes a new contribution toward the guidance and suitable distribution of the mobile occupation quantities. By means of the perceptions of pleasure and pain, it influences the course of the occupations within the psychic apparatus, which normally operates unconsciously and through the displacement of quantities. It is probable that the principle of pain first regulates the displacements of occupation automatically, but it is quite possible that the consciousness of these qualities adds a second and more subtle regulation which may even oppose the first and perfect the working capacity of the apparatus by placing it in a position contrary to its original design for occupying and developing even that which is connected with the liberation of pain. We learn from neuropsychology that an important part in the functional activity of the apparatus is attributed to such regulations through the qualitative excitation of the sensory organs. The automatic control of the primary principle of pain and the restriction of mental capacity connected with it are broken by the sensible regulations, which in their turn are again automatisms. We learn that the repression which, though originally expedient, terminates nevertheless in a harmful rejection of inhibition and of psychic domination, is so much more easily accomplished with reminiscences than with perceptions, because in the former there is no increase in occupation through the excitement of the psychic sensory organs. When an idea to be rejected has once failed to become conscious because it has succumbed to repression, it can be repressed on other occasions only because it has been withdrawn from conscious perception on other grounds.
+      content: `But, once in the open air, she paused. Some emotion—pity, terror, love,
+but the emotion was strong—seized her, and she was aware of autumn.
+ Summer was ending, and the evening brought her odours of decay, the
+more pathetic because they were reminiscent of spring. That something
+or other mattered intellectually? A leaf, violently agitated, danced
+past her, while other leaves lay motionless. That the earth was
+hastening to re-enter darkness, and the shadows of those trees over
+ Windy Corner?
 
-These are hints employed by therapy in order to bring about a retrogression of accomplished repressions.
+“Hullo, Lucy! There’s still light enough for another set, if you two’ll
+hurry.”
 
-The value of the over-occupation which is produced by the regulating influence of the Cons. sensory organ on the mobile quantity, is demonstrated
+“Mr. Emerson has had to go.”
 
-in the teleological connection by nothing more clearly than by the creation of a new series of qualities and consequently a new regulation which constitutes the precedence of man over the animals. For the mental processes are in themselves devoid of quality except for the excitements of pleasure and pain accompanying them, which, as we know, are to be held in check as possible disturbances of thought. In order to endow them with a quality, they are associated in man with verbal memories, the qualitative remnants of which suffice to draw upon them the attention of consciousness which in turn endows thought with a new mobile energy.
+“What a nuisance! That spoils the four. I say, Cecil, do play, do,
+there’s a good chap. It’s Floyd’s last day. Do play tennis with us,
+just this once.”
 
-The manifold problems of consciousness in their entirety can be examined only through an analysis of the hysterical mental process. From this analysis we receive the impression that the transition from the foreconscious to the occupation of consciousness is also connected with a censorship similar to the one between the Unc. and the Forec. This censorship, too, begins to act only with the reaching of a certain quantitative degree, so that few intense thought formations escape it. Every possible case of detention from consciousness, as well as of penetration to consciousness, under restriction is found included within the picture of the psychoneurotic phenomena; every case points to the intimate and twofold connection between the censor and consciousness. I shall conclude these psychological discussions with the report of two such occurrences.
+Cecil’s voice came: “My dear Freddy, I am no athlete. As you well
+remarked this very morning, ‘There are some chaps who are no good for
+anything but books’; I plead guilty to being such a chap, and will not
+inflict myself on you.”
 
-On the occasion of a consultation a few years ago the subject was an intelligent and innocent-looking girl. Her attire was strange; whereas a woman's garb is usually groomed to the last fold, she had one of her stockings hanging down and two of her waist buttons opened. She complained of pains in one of her legs, and exposed her leg unrequested. Her chief complaint, however, was in her own words as follows: She had a feeling in her body as if something was stuck into it which moved to and fro and made her tremble through and through. This sometimes made her whole body stiff. On hearing this, my colleague in consultation looked at me; the complaint was quite plain to him. To both of us it seemed peculiar that the patient's mother thought nothing of the matter; of course she herself must have been repeatedly in the situation described by her child. As for the girl, she had no idea of the import of her words or she would never have allowed them to pass her lips. Here the censor had been deceived so successfully that under the mask of an innocent complaint a phantasy was admitted to consciousness which otherwise would have remained in the foreconscious.
+The scales fell from Lucy’s eyes. How had she stood Cecil for a moment?
+ He was absolutely intolerable, and the same evening she broke off her
+engagement.
 
-Another example: I began the psychoanalytic treatment of a boy of fourteen years who was suffering from tic convulsif, hysterical vomiting, headache, &c., by assuring him that, after closing his eyes, he would see pictures or have ideas, which I requested him to communicate to me. He answered by describing pictures. The last impression he had received before coming to me was visually revived in his memory. He had played a game of checkers with his uncle, and now saw the checkerboard before him. He commented on various positions that were favorable or unfavorable, on moves that were not safe to make. He then saw a dagger lying on the checker-board, an object belonging to his father, but transferred to the checker-board by his phantasy. Then a sickle was lying on the board; next a scythe was added; and, finally, he beheld the likeness of an old peasant
+Chapter XVII
+ Lying to Cecil
 
-mowing the grass in front of the boy's distant parental home. A few days later I discovered the meaning of this series of pictures. Disagreeable family relations had made the boy nervous. It was the case of a strict and crabbed father who lived unhappily with his mother, and whose educational methods consisted in threats; of the separation of his father from his tender and delicate mother, and the remarrying of his father, who one day brought home a young woman as his new mamma. The illness of the fourteen-year-old boy broke out a few days later. It was the suppressed anger against his father that had composed these pictures into intelligible allusions. The material was furnished by a reminiscence from mythology, The sickle was the one with which Zeus castrated his father; the scythe and the likeness of the peasant represented Kronos, the violent old man who eats his children and upon whom Zeus wreaks vengeance in so unfilial a manner. The marriage of the father gave the boy an opportunity to return the reproaches and threats of his father—which had previously been made because the child played with his genitals (the checkerboard; the prohibitive moves; the dagger with which a person may be killed). We have here long repressed memories and their unconscious remnants which, under the guise of senseless pictures have slipped into consciousness by devious paths left open to them.`
+He was bewildered. He had nothing to say. He was not even angry, but
+stood, with a glass of whiskey between his hands, trying to think what
+had led her to such a conclusion.
+
+She had chosen the moment before bed, when, in accordance with their
+bourgeois habit, she always dispensed drinks to the men. Freddy and Mr.
+ Floyd were sure to retire with their glasses, while Cecil invariably
+lingered, sipping at his while she locked up the sideboard.
+
+“I am very sorry about it,” she said; “I have carefully thought things
+over. We are too different. I must ask you to release me, and try to
+forget that there ever was such a foolish girl.”
+
+It was a suitable speech, but she was more angry than sorry, and her
+voice showed it.
+
+“Different—how—how—”
+
+“I haven’t had a really good education, for one thing,” she continued,
+still on her knees by the sideboard. “My Italian trip came too late,
+and I am forgetting all that I learnt there. I shall never be able to
+talk to your friends, or behave as a wife of yours should.”
+
+“I don’t understand you. You aren’t like yourself. You’re tired, Lucy.”
+
+“Tired!” she retorted, kindling at once. “That is exactly like you. You
+always think women don’t mean what they say.”
+
+“Well, you sound tired, as if something has worried you.”
+
+“What if I do? It doesn’t prevent me from realizing the truth. I can’t
+marry you, and you will thank me for saying so some day.”
+
+“You had that bad headache yesterday—All right”—for she had exclaimed
+indignantly: “I see it’s much more than headaches. But give me a
+moment’s time.” He closed his eyes. “You must excuse me if I say stupid
+things, but my brain has gone to pieces. Part of it lives three minutes
+back, when I was sure that you loved me, and the other part—I find it
+difficult—I am likely to say the wrong thing.”
+
+It struck her that he was not behaving so badly, and her irritation
+increased. She again desired a struggle, not a discussion. To bring on
+the crisis, she said:
+
+“There are days when one sees clearly, and this is one of them. Things
+must come to a breaking-point some time, and it happens to be to-day.
+ If you want to know, quite a little thing decided me to speak to
+you—when you wouldn’t play tennis with Freddy.”
+
+“I never do play tennis,” said Cecil, painfully bewildered; “I never
+could play. I don’t understand a word you say.”
+
+“You can play well enough to make up a four. I thought it abominably
+selfish of you.”
+
+“No, I can’t—well, never mind the tennis. Why couldn’t you—couldn’t you
+have warned me if you felt anything wrong? You talked of our wedding at
+lunch—at least, you let me talk.”
+
+“I knew you wouldn’t understand,” said Lucy quite crossly. “I might
+have known there would have been these dreadful explanations. Of
+course, it isn’t the tennis—that was only the last straw to all I have
+been feeling for weeks. Surely it was better not to speak until I felt
+certain.” She developed this position. “Often before I have wondered if
+ I was fitted for your wife—for instance, in London; and are you fitted
+to be my husband? I don’t think so. You don’t like Freddy, nor my
+mother. There was always a lot against our engagement, Cecil, but all
+our relations seemed pleased, and we met so often, and it was no good
+mentioning it until—well, until all things came to a point. They have
+to-day. I see clearly. I must speak. That’s all.”
+
+“I cannot think you were right,” said Cecil gently. “I cannot tell why,
+but though all that you say sounds true, I feel that you are not
+treating me fairly. It’s all too horrible.”
+
+“What’s the good of a scene?”
+
+“No good. But surely I have a right to hear a little more.”
+
+He put down his glass and opened the window. From where she knelt,
+jangling her keys, she could see a slit of darkness, and, peering into
+it, as if it would tell him that “little more,” his long, thoughtful
+face.
+
+“Don’t open the window; and you’d better draw the curtain, too; Freddy
+or any one might be outside.” He obeyed. “I really think we had better
+go to bed, if you don’t mind. I shall only say things that will make me
+unhappy afterwards. As you say it is all too horrible, and it is no
+good talking.”
+
+But to Cecil, now that he was about to lose her, she seemed each moment
+more desirable. He looked at her, instead of through her, for the first
+time since they were engaged. From a Leonardo she had become a living
+woman, with mysteries and forces of her own, with qualities that even
+eluded art. His brain recovered from the shock, and, in a burst of
+genuine devotion, he cried: “But I love you, and I did think you loved
+me!”
+
+“I did not,” she said. “I thought I did at first. I am sorry, and ought
+to have refused you this last time, too.”
+
+He began to walk up and down the room, and she grew more and more vexed
+at his dignified behaviour. She had counted on his being petty. It
+would have made things easier for her. By a cruel irony she was drawing
+out all that was finest in his disposition.
+
+“You don’t love me, evidently. I dare say you are right not to. But it
+would hurt a little less if I knew why.”
+
+“Because”—a phrase came to her, and she accepted it—“you’re the sort
+who can’t know any one intimately.”
+
+A horrified look came into his eyes.
+
+“I don’t mean exactly that. But you will question me, though I beg you
+not to, and I must say something. It is that, more or less. When we
+were only acquaintances, you let me be myself, but now you’re always
+protecting me.” Her voice swelled. “I won’t be protected. I will choose
+for myself what is ladylike and right. To shield me is an insult. Can’t
+ I be trusted to face the truth but I must get it second-hand through
+you? A woman’s place! You despise my mother—I know you do—because she’s
+conventional and bothers over puddings; but, oh goodness!”—she rose to
+her feet—“conventional, Cecil, you’re that, for you may understand
+beautiful things, but you don’t know how to use them; and you wrap
+yourself up in art and books and music, and would try to wrap up me. I
+won’t be stifled, not by the most glorious music, for people are more
+glorious, and you hide them from me. That’s why I break off my
+engagement. You were all right as long as you kept to things, but when
+you came to people—” She stopped.
+
+There was a pause. Then Cecil said with great emotion:
+
+“It is true.”
+
+“True on the whole,” she corrected, full of some vague shame.
+
+“True, every word. It is a revelation. It is—I.”
+
+“Anyhow, those are my reasons for not being your wife.”`
     },
     {
       id: "section-41",
       title: "Section 41",
-      content: `I should then expect to find the theoretical value of the study of dreams in its contribution to psychological knowledge and in its preparation for an understanding of neuroses. Who can foresee the importance of a thorough knowledge of the structure and activities of the psychic apparatus when even our present state of knowledge produces a happy therapeutic influence in the curable forms of the psychoneuroses? What about the practical value of such study some one may ask, for psychic knowledge and for the discovering of the secret peculiarities of individual character? Have not the unconscious feelings revealed by the dream the value of real forces in the psychic life? Should we take lightly the ethical significance of the suppressed wishes which, as they now create dreams, may some day create other things?
+      content: `He repeated: “‘The sort that can know no one intimately.’ It is true. I
+fell to pieces the very first day we were engaged. I behaved like a cad
+to Beebe and to your brother. You are even greater than I thought.” She
+withdrew a step. “I’m not going to worry you. You are far too good to
+me. I shall never forget your insight; and, dear, I only blame you for
+this: you might have warned me in the early stages, before you felt you
+wouldn’t marry me, and so have given me a chance to improve. I have
+never known you till this evening. I have just used you as a peg for my
+silly notions of what a woman should be. But this evening you are a
+different person: new thoughts—even a new voice—”
 
-I do not feel justified in answering these questions. I have not thought further upon this side of the dream problem. I believe, however, that at all events the Roman Emperor was in the wrong who ordered one of his subjects executed because the latter dreamt that he had killed the Emperor. He should first have endeavored to discover the significance of the dream; most probably it was not what it seemed to be. And even if a dream of different content had the significance of this offense against majesty, it would still have been in place to remember the words of Plato, that the virtuous man contents himself with dreaming that which the wicked man does in actual life. I am therefore of the opinion that it is best to accord freedom to dreams. Whether any reality is to be attributed to the unconscious wishes, and in what sense, I am not prepared to say offhand. Reality must naturally be denied to all transition—and intermediate thoughts. If we had before us the unconscious wishes, brought to their last and truest expression, we should still do well to remember that more than one single form of existence must be ascribed to the psychic reality. Action and the conscious expression of thought mostly suffice for the practical need of judging a man's character.
+“What do you mean by a new voice?” she asked, seized with
+incontrollable anger.
 
-Action, above all, merits to be placed in the first rank; for many of the impulses penetrating consciousness are neutralized by real forces of the psychic life before they are converted into action; indeed, the reason why they frequently do not encounter any psychic obstacle on their way is because the unconscious is certain of their meeting with resistances later. In any case it is instructive to become familiar with the much raked-up soil from which our virtues proudly arise. For the complication of human character moving dynamically in all directions very rarely accommodates itself to adjustment through a simple alternative, as our antiquated moral philosophy would have it.
+“I mean that a new person seems speaking through you,” said he.
 
-And how about the value of the dream for a knowledge of the future? That, of course, we cannot consider. One feels inclined to substitute: "for a knowledge of the past." For the dream originates from the past in every sense. To be sure the ancient belief that the dream reveals the future is not entirely devoid of truth. By representing to us a wish as fulfilled the dream certainly leads us into the future; but this future, taken by the dreamer as present, has been formed into the likeness of that past by the indestructible wish.`
+Then she lost her balance. She cried: “If you think I am in love with
+some one else, you are very much mistaken.”
+
+“Of course I don’t think that. You are not that kind, Lucy.”
+
+“Oh, yes, you do think it. It’s your old idea, the idea that has kept
+ Europe back—I mean the idea that women are always thinking of men. If a
+girl breaks off her engagement, everyone says: ‘Oh, she had someone
+else in her mind; she hopes to get someone else.’ It’s disgusting,
+brutal! As if a girl can’t break it off for the sake of freedom.”
+
+He answered reverently: “I may have said that in the past. I shall
+never say it again. You have taught me better.”
+
+She began to redden, and pretended to examine the windows again.
+
+“Of course, there is no question of ‘someone else’ in this, no
+‘jilting’ or any such nauseous stupidity. I beg your pardon most humbly
+if my words suggested that there was. I only meant that there was a
+force in you that I hadn’t known of up till now.”
+
+“All right, Cecil, that will do. Don’t apologize to me. It was my
+mistake.”
+
+“It is a question between ideals, yours and mine—pure abstract ideals,
+and yours are the nobler. I was bound up in the old vicious notions,
+and all the time you were splendid and new.” His voice broke. “I must
+actually thank you for what you have done—for showing me what I really
+am. Solemnly, I thank you for showing me a true woman. Will you shake
+hands?”
+
+“Of course I will,” said Lucy, twisting up her other hand in the
+curtains. “Good-night, Cecil. Good-bye. That’s all right. I’m sorry
+about it. Thank you very much for your gentleness.”
+
+“Let me light your candle, shall I?”
+
+They went into the hall.
+
+“Thank you. Good-night again. God bless you, Lucy!”
+
+“Good-bye, Cecil.”
+
+She watched him steal up-stairs, while the shadows from three banisters
+passed over her face like the beat of wings. On the landing he paused
+strong in his renunciation, and gave her a look of memorable beauty.
+ For all his culture, Cecil was an ascetic at heart, and nothing in his
+love became him like the leaving of it.
+
+She could never marry. In the tumult of her soul, that stood firm.
+ Cecil believed in her; she must some day believe in herself. She must
+be one of the women whom she had praised so eloquently, who care for
+liberty and not for men; she must forget that George loved her, that
+ George had been thinking through her and gained her this honourable
+release, that George had gone away into—what was it?—the darkness.
+
+She put out the lamp.
+
+It did not do to think, nor, for the matter of that, to feel. She gave
+up trying to understand herself, and joined the vast armies of the
+benighted, who follow neither the heart nor the brain, and march to
+their destiny by catch-words. The armies are full of pleasant and pious
+folk. But they have yielded to the only enemy that matters—the enemy
+within. They have sinned against passion and truth, and vain will be
+their strife after virtue. As the years pass, they are censured. Their
+pleasantry and their piety show cracks, their wit becomes cynicism,
+their unselfishness hypocrisy; they feel and produce discomfort
+wherever they go. They have sinned against Eros and against Pallas
+ Athene, and not by any heavenly intervention, but by the ordinary
+course of nature, those allied deities will be avenged.
+
+Lucy entered this army when she pretended to George that she did not
+love him, and pretended to Cecil that she loved no one. The night
+received her, as it had received Miss Bartlett thirty years before.
+
+Chapter XVIII
+ Lying to Mr. Beebe, Mrs. Honeychurch, Freddy, and The Servants
+
+Windy Corner lay, not on the summit of the ridge, but a few hundred
+feet down the southern slope, at the springing of one of the great
+buttresses that supported the hill. On either side of it was a shallow
+ravine, filled with ferns and pine-trees, and down the ravine on the
+left ran the highway into the Weald.
+
+Whenever Mr. Beebe crossed the ridge and caught sight of these noble
+dispositions of the earth, and, poised in the middle of them, Windy
+ Corner,—he laughed. The situation was so glorious, the house so
+commonplace, not to say impertinent. The late Mr. Honeychurch had
+affected the cube, because it gave him the most accommodation for his
+money, and the only addition made by his widow had been a small turret,
+shaped like a rhinoceros’ horn, where she could sit in wet weather and
+watch the carts going up and down the road. So impertinent—and yet the
+house “did,” for it was the home of people who loved their surroundings
+honestly. Other houses in the neighborhood had been built by expensive
+architects, over others their inmates had fidgeted sedulously, yet all
+these suggested the accidental, the temporary; while Windy Corner
+seemed as inevitable as an ugliness of Nature’s own creation. One might
+laugh at the house, but one never shuddered. Mr. Beebe was bicycling
+over this Monday afternoon with a piece of gossip. He had heard from
+the Miss Alans. These admirable ladies, since they could not go to
+ Cissie Villa, had changed their plans. They were going to Greece
+instead.
+
+“Since Florence did my poor sister so much good,” wrote Miss Catharine,
+“we do not see why we should not try Athens this winter. Of course,
+ Athens is a plunge, and the doctor has ordered her special digestive
+bread; but, after all, we can take that with us, and it is only getting
+first into a steamer and then into a train. But is there an English
+ Church?” And the letter went on to say: “I do not expect we shall go
+any further than Athens, but if you knew of a really comfortable
+pension at Constantinople, we should be so grateful.”
+
+Lucy would enjoy this letter, and the smile with which Mr. Beebe
+greeted Windy Corner was partly for her. She would see the fun of it,
+and some of its beauty, for she must see some beauty. Though she was
+hopeless about pictures, and though she dressed so unevenly—oh, that
+cerise frock yesterday at church!—she must see some beauty in life, or
+she could not play the piano as she did. He had a theory that musicians
+are incredibly complex, and know far less than other artists what they
+want and what they are; that they puzzle themselves as well as their
+friends; that their psychology is a modern development, and has not yet
+been understood. This theory, had he known it, had possibly just been
+illustrated by facts. Ignorant of the events of yesterday he was only
+riding over to get some tea, to see his niece, and to observe whether
+ Miss Honeychurch saw anything beautiful in the desire of two old ladies
+to visit Athens.`
+    },
+    {
+      id: "section-42",
+      title: "Section 42",
+      content: `A carriage was drawn up outside Windy Corner, and just as he caught
+sight of the house it started, bowled up the drive, and stopped
+abruptly when it reached the main road. Therefore it must be the horse,
+who always expected people to walk up the hill in case they tired him.
+ The door opened obediently, and two men emerged, whom Mr. Beebe
+recognized as Cecil and Freddy. They were an odd couple to go driving;
+but he saw a trunk beside the coachman’s legs. Cecil, who wore a
+bowler, must be going away, while Freddy (a cap)—was seeing him to the
+station. They walked rapidly, taking the short cuts, and reached the
+summit while the carriage was still pursuing the windings of the road.
+
+They shook hands with the clergyman, but did not speak.
+
+“So you’re off for a minute, Mr. Vyse?” he asked.
+
+Cecil said, “Yes,” while Freddy edged away.
+
+“I was coming to show you this delightful letter from those friends of
+ Miss Honeychurch.” He quoted from it. “Isn’t it wonderful? Isn’t it
+romance? Most certainly they will go to Constantinople. They are taken
+in a snare that cannot fail. They will end by going round the world.”
+
+Cecil listened civilly, and said he was sure that Lucy would be amused
+and interested.
+
+“Isn’t Romance capricious! I never notice it in you young people; you
+do nothing but play lawn tennis, and say that romance is dead, while
+the Miss Alans are struggling with all the weapons of propriety against
+the terrible thing. ‘A really comfortable pension at Constantinople!’
+ So they call it out of decency, but in their hearts they want a pension
+with magic windows opening on the foam of perilous seas in fairyland
+forlorn! No ordinary view will content the Miss Alans. They want the
+ Pension Keats.”
+
+“I’m awfully sorry to interrupt, Mr. Beebe,” said Freddy, “but have you
+any matches?”
+
+“I have,” said Cecil, and it did not escape Mr. Beebe’s notice that he
+spoke to the boy more kindly.
+
+“You have never met these Miss Alans, have you, Mr. Vyse?”
+
+“Never.”
+
+“Then you don’t see the wonder of this Greek visit. I haven’t been to
+ Greece myself, and don’t mean to go, and I can’t imagine any of my
+friends going. It is altogether too big for our little lot. Don’t you
+think so? Italy is just about as much as we can manage. Italy is
+heroic, but Greece is godlike or devilish—I am not sure which, and in
+either case absolutely out of our suburban focus. All right, Freddy—I
+am not being clever, upon my word I am not—I took the idea from another
+fellow; and give me those matches when you’ve done with them.” He lit a
+cigarette, and went on talking to the two young men. “I was saying, if
+our poor little Cockney lives must have a background, let it be
+ Italian. Big enough in all conscience. The ceiling of the Sistine
+ Chapel for me. There the contrast is just as much as I can realize. But
+not the Parthenon, not the frieze of Phidias at any price; and here
+comes the victoria.”
+
+“You’re quite right,” said Cecil. “Greece is not for our little lot”;
+and he got in. Freddy followed, nodding to the clergyman, whom he
+trusted not to be pulling one’s leg, really. And before they had gone a
+dozen yards he jumped out, and came running back for Vyse’s match-box,
+which had not been returned. As he took it, he said: “I’m so glad you
+only talked about books. Cecil’s hard hit. Lucy won’t marry him. If
+you’d gone on about her, as you did about them, he might have broken
+down.”
+
+“But when—”
+
+“Late last night. I must go.”
+
+“Perhaps they won’t want me down there.”
+
+“No—go on. Good-bye.”
+
+“Thank goodness!” exclaimed Mr. Beebe to himself, and struck the saddle
+of his bicycle approvingly, “It was the one foolish thing she ever did.
+ Oh, what a glorious riddance!” And, after a little thought, he
+negotiated the slope into Windy Corner, light of heart. The house was
+again as it ought to be—cut off forever from Cecil’s pretentious world.
+
+He would find Miss Minnie down in the garden.
+
+In the drawing-room Lucy was tinkling at a Mozart Sonata. He hesitated
+a moment, but went down the garden as requested. There he found a
+mournful company. It was a blustering day, and the wind had taken and
+broken the dahlias. Mrs. Honeychurch, who looked cross, was tying them
+up, while Miss Bartlett, unsuitably dressed, impeded her with offers of
+assistance. At a little distance stood Minnie and the “garden-child,” a
+minute importation, each holding either end of a long piece of bass.
+
+“Oh, how do you do, Mr. Beebe? Gracious what a mess everything is! Look
+at my scarlet pompoms, and the wind blowing your skirts about, and the
+ground so hard that not a prop will stick in, and then the carriage
+having to go out, when I had counted on having Powell, who—give
+everyone their due—does tie up dahlias properly.”
+
+Evidently Mrs. Honeychurch was shattered.
+
+“How do you do?” said Miss Bartlett, with a meaning glance, as though
+conveying that more than dahlias had been broken off by the autumn
+gales.
+
+“Here, Lennie, the bass,” cried Mrs. Honeychurch. The garden-child, who
+did not know what bass was, stood rooted to the path with horror.
+ Minnie slipped to her uncle and whispered that everyone was very
+disagreeable to-day, and that it was not her fault if dahlia-strings
+would tear longways instead of across.
+
+“Come for a walk with me,” he told her. “You have worried them as much
+as they can stand. Mrs. Honeychurch, I only called in aimlessly. I
+shall take her up to tea at the Beehive Tavern, if I may.”
+
+“Oh, must you? Yes do.—Not the scissors, thank you, Charlotte, when
+both my hands are full already—I’m perfectly certain that the orange
+cactus will go before I can get to it.”
+
+Mr. Beebe, who was an adept at relieving situations, invited Miss
+ Bartlett to accompany them to this mild festivity.
+
+“Yes, Charlotte, I don’t want you—do go; there’s nothing to stop about
+for, either in the house or out of it.”
+
+Miss Bartlett said that her duty lay in the dahlia bed, but when she
+had exasperated everyone, except Minnie, by a refusal, she turned round
+and exasperated Minnie by an acceptance. As they walked up the garden,
+the orange cactus fell, and Mr. Beebe’s last vision was of the
+garden-child clasping it like a lover, his dark head buried in a wealth
+of blossom.
+
+“It is terrible, this havoc among the flowers,” he remarked.
+
+“It is always terrible when the promise of months is destroyed in a
+moment,” enunciated Miss Bartlett.
+
+“Perhaps we ought to send Miss Honeychurch down to her mother. Or will
+she come with us?”
+
+“I think we had better leave Lucy to herself, and to her own pursuits.”
+
+“They’re angry with Miss Honeychurch because she was late for
+breakfast,” whispered Minnie, “and Floyd has gone, and Mr. Vyse has
+gone, and Freddy won’t play with me. In fact, Uncle Arthur, the house
+is not _at all_ what it was yesterday.”
+
+“Don’t be a prig,” said her Uncle Arthur. “Go and put on your boots.”
+
+He stepped into the drawing-room, where Lucy was still attentively
+pursuing the Sonatas of Mozart. She stopped when he entered.
+
+“How do you do? Miss Bartlett and Minnie are coming with me to tea at
+the Beehive. Would you come too?”
+
+“I don’t think I will, thank you.”
+
+“No, I didn’t suppose you would care to much.”
+
+Lucy turned to the piano and struck a few chords.
+
+“How delicate those Sonatas are!” said Mr. Beebe, though at the bottom
+of his heart, he thought them silly little things.
+
+Lucy passed into Schumann.
+
+“Miss Honeychurch!”
+
+“Yes.”
+
+“I met them on the hill. Your brother told me.”
+
+“Oh he did?” She sounded annoyed. Mr. Beebe felt hurt, for he had
+thought that she would like him to be told.
+
+“I needn’t say that it will go no further.”
+
+“Mother, Charlotte, Cecil, Freddy, you,” said Lucy, playing a note for
+each person who knew, and then playing a sixth note.
+
+“If you’ll let me say so, I am very glad, and I am certain that you
+have done the right thing.”
+
+“So I hoped other people would think, but they don’t seem to.”
+
+“I could see that Miss Bartlett thought it unwise.”`
+    },
+    {
+      id: "section-43",
+      title: "Section 43",
+      content: `“So does mother. Mother minds dreadfully.”
+
+“I am very sorry for that,” said Mr. Beebe with feeling.
+
+Mrs. Honeychurch, who hated all changes, did mind, but not nearly as
+much as her daughter pretended, and only for the minute. It was really
+a ruse of Lucy’s to justify her despondency—a ruse of which she was not
+herself conscious, for she was marching in the armies of darkness.
+
+“And Freddy minds.”
+
+“Still, Freddy never hit it off with Vyse much, did he? I gathered that
+he disliked the engagement, and felt it might separate him from you.”
+
+“Boys are so odd.”
+
+Minnie could be heard arguing with Miss Bartlett through the floor. Tea
+at the Beehive apparently involved a complete change of apparel. Mr.
+ Beebe saw that Lucy—very properly—did not wish to discuss her action,
+so after a sincere expression of sympathy, he said, “I have had an
+absurd letter from Miss Alan. That was really what brought me over. I
+thought it might amuse you all.”
+
+“How delightful!” said Lucy, in a dull voice.
+
+For the sake of something to do, he began to read her the letter. After
+a few words her eyes grew alert, and soon she interrupted him with
+“Going abroad? When do they start?”
+
+“Next week, I gather.”
+
+“Did Freddy say whether he was driving straight back?”
+
+“No, he didn’t.”
+
+“Because I do hope he won’t go gossiping.”
+
+So she did want to talk about her broken engagement. Always
+complaisant, he put the letter away. But she, at once exclaimed in a
+high voice, “Oh, do tell me more about the Miss Alans! How perfectly
+splendid of them to go abroad!”
+
+“I want them to start from Venice, and go in a cargo steamer down the
+ Illyrian coast!”
+
+She laughed heartily. “Oh, delightful! I wish they’d take me.”
+
+“Has Italy filled you with the fever of travel? Perhaps George Emerson
+is right. He says that ‘Italy is only an euphuism for Fate.’”
+
+“Oh, not Italy, but Constantinople. I have always longed to go to
+ Constantinople. Constantinople is practically Asia, isn’t it?”
+
+Mr. Beebe reminded her that Constantinople was still unlikely, and that
+the Miss Alans only aimed at Athens, “with Delphi, perhaps, if the
+roads are safe.” But this made no difference to her enthusiasm. She had
+always longed to go to Greece even more, it seemed. He saw, to his
+surprise, that she was apparently serious.
+
+“I didn’t realize that you and the Miss Alans were still such friends,
+after Cissie Villa.”
+
+“Oh, that’s nothing; I assure you Cissie Villa’s nothing to me; I would
+give anything to go with them.”
+
+“Would your mother spare you again so soon? You have scarcely been home
+three months.”
+
+“She _must_ spare me!” cried Lucy, in growing excitement. “I simply
+_must_ go away. I have to.” She ran her fingers hysterically through
+her hair. “Don’t you see that I _have_ to go away? I didn’t realize at
+the time—and of course I want to see Constantinople so particularly.”
+
+“You mean that since you have broken off your engagement you feel—”
+
+“Yes, yes. I knew you’d understand.”
+
+Mr. Beebe did not quite understand. Why could not Miss Honeychurch
+repose in the bosom of her family? Cecil had evidently taken up the
+dignified line, and was not going to annoy her. Then it struck him that
+her family itself might be annoying. He hinted this to her, and she
+accepted the hint eagerly.
+
+“Yes, of course; to go to Constantinople until they are used to the
+idea and everything has calmed down.”
+
+“I am afraid it has been a bothersome business,” he said gently.
+
+“No, not at all. Cecil was very kind indeed; only—I had better tell you
+the whole truth, since you have heard a little—it was that he is so
+masterful. I found that he wouldn’t let me go my own way. He would
+improve me in places where I can’t be improved. Cecil won’t let a woman
+decide for herself—in fact, he daren’t. What nonsense I do talk! But
+that is the kind of thing.”
+
+“It is what I gathered from my own observation of Mr. Vyse; it is what
+ I gather from all that I have known of you. I do sympathize and agree
+most profoundly. I agree so much that you must let me make one little
+criticism: Is it worth while rushing off to Greece?”
+
+“But I must go somewhere!” she cried. “I have been worrying all the
+morning, and here comes the very thing.” She struck her knees with
+clenched fists, and repeated: “I must! And the time I shall have with
+mother, and all the money she spent on me last spring. You all think
+much too highly of me. I wish you weren’t so kind.” At this moment Miss
+ Bartlett entered, and her nervousness increased. “I must get away, ever
+so far. I must know my own mind and where I want to go.”
+
+“Come along; tea, tea, tea,” said Mr. Beebe, and bustled his guests out
+of the front-door. He hustled them so quickly that he forgot his hat.
+ When he returned for it he heard, to his relief and surprise, the
+tinkling of a Mozart Sonata.
+
+“She is playing again,” he said to Miss Bartlett.
+
+“Lucy can always play,” was the acid reply.
+
+“One is very thankful that she has such a resource. She is evidently
+much worried, as, of course, she ought to be. I know all about it. The
+marriage was so near that it must have been a hard struggle before she
+could wind herself up to speak.”
+
+Miss Bartlett gave a kind of wriggle, and he prepared for a discussion.
+ He had never fathomed Miss Bartlett. As he had put it to himself at
+ Florence, “she might yet reveal depths of strangeness, if not of
+meaning.” But she was so unsympathetic that she must be reliable. He
+assumed that much, and he had no hesitation in discussing Lucy with
+her. Minnie was fortunately collecting ferns.
+
+She opened the discussion with: “We had much better let the matter
+drop.”
+
+“I wonder.”
+
+“It is of the highest importance that there should be no gossip in
+ Summer Street. It would be _death_ to gossip about Mr. Vyse’s dismissal
+at the present moment.”
+
+Mr. Beebe raised his eyebrows. Death is a strong word—surely too
+strong. There was no question of tragedy. He said: “Of course, Miss
+ Honeychurch will make the fact public in her own way, and when she
+chooses. Freddy only told me because he knew she would not mind.”
+
+“I know,” said Miss Bartlett civilly. “Yet Freddy ought not to have
+told even you. One cannot be too careful.”
+
+“Quite so.”
+
+“I do implore absolute secrecy. A chance word to a chattering friend,
+and—”
+
+“Exactly.” He was used to these nervous old maids and to the
+exaggerated importance that they attach to words. A rector lives in a
+web of petty secrets, and confidences and warnings, and the wiser he is
+the less he will regard them. He will change the subject, as did Mr.
+ Beebe, saying cheerfully: “Have you heard from any Bertolini people
+lately? I believe you keep up with Miss Lavish. It is odd how we of
+that pension, who seemed such a fortuitous collection, have been
+working into one another’s lives. Two, three, four, six of us—no,
+eight; I had forgotten the Emersons—have kept more or less in touch. We
+must really give the Signora a testimonial.”
+
+And, Miss Bartlett not favouring the scheme, they walked up the hill in
+a silence which was only broken by the rector naming some fern. On the
+summit they paused. The sky had grown wilder since he stood there last
+hour, giving to the land a tragic greatness that is rare in Surrey.
+ Grey clouds were charging across tissues of white, which stretched and
+shredded and tore slowly, until through their final layers there
+gleamed a hint of the disappearing blue. Summer was retreating. The
+wind roared, the trees groaned, yet the noise seemed insufficient for
+those vast operations in heaven. The weather was breaking up, breaking,
+broken, and it is a sense of the fit rather than of the supernatural
+that equips such crises with the salvos of angelic artillery. Mr.
+ Beebe’s eyes rested on Windy Corner, where Lucy sat, practising Mozart.
+ No smile came to his lips, and, changing the subject again, he said:
+“We shan’t have rain, but we shall have darkness, so let us hurry on.
+ The darkness last night was appalling.”`
+    },
+    {
+      id: "section-44",
+      title: "Section 44",
+      content: `They reached the Beehive Tavern at about five o’clock. That amiable
+hostelry possesses a verandah, in which the young and the unwise do
+dearly love to sit, while guests of more mature years seek a pleasant
+sanded room, and have tea at a table comfortably. Mr. Beebe saw that
+ Miss Bartlett would be cold if she sat out, and that Minnie would be
+dull if she sat in, so he proposed a division of forces. They would
+hand the child her food through the window. Thus he was incidentally
+enabled to discuss the fortunes of Lucy.
+
+“I have been thinking, Miss Bartlett,” he said, “and, unless you very
+much object, I would like to reopen that discussion.” She bowed.
+“Nothing about the past. I know little and care less about that; I am
+absolutely certain that it is to your cousin’s credit. She has acted
+loftily and rightly, and it is like her gentle modesty to say that we
+think too highly of her. But the future. Seriously, what do you think
+of this Greek plan?” He pulled out the letter again. “I don’t know
+whether you overheard, but she wants to join the Miss Alans in their
+mad career. It’s all—I can’t explain—it’s wrong.”
+
+Miss Bartlett read the letter in silence, laid it down, seemed to
+hesitate, and then read it again.
+
+“I can’t see the point of it myself.”
+
+To his astonishment, she replied: “There I cannot agree with you. In it
+ I spy Lucy’s salvation.”
+
+“Really. Now, why?”
+
+“She wanted to leave Windy Corner.”
+
+“I know—but it seems so odd, so unlike her, so—I was going to
+say—selfish.”
+
+“It is natural, surely—after such painful scenes—that she should desire
+a change.”
+
+Here, apparently, was one of those points that the male intellect
+misses. Mr. Beebe exclaimed: “So she says herself, and since another
+lady agrees with her, I must own that I am partially convinced. Perhaps
+she must have a change. I have no sisters or—and I don’t understand
+these things. But why need she go as far as Greece?”
+
+“You may well ask that,” replied Miss Bartlett, who was evidently
+interested, and had almost dropped her evasive manner. “Why Greece?
+(What is it, Minnie dear—jam?) Why not Tunbridge Wells? Oh, Mr. Beebe!
+ I had a long and most unsatisfactory interview with dear Lucy this
+morning. I cannot help her. I will say no more. Perhaps I have already
+said too much. I am not to talk. I wanted her to spend six months with
+me at Tunbridge Wells, and she refused.”
+
+Mr. Beebe poked at a crumb with his knife.
+
+“But my feelings are of no importance. I know too well that I get on
+ Lucy’s nerves. Our tour was a failure. She wanted to leave Florence,
+and when we got to Rome she did not want to be in Rome, and all the
+time I felt that I was spending her mother’s money—.”
+
+“Let us keep to the future, though,” interrupted Mr. Beebe. “I want
+your advice.”
+
+“Very well,” said Charlotte, with a choky abruptness that was new to
+him, though familiar to Lucy. “I for one will help her to go to Greece.
+ Will you?”
+
+Mr. Beebe considered.
+
+“It is absolutely necessary,” she continued, lowering her veil and
+whispering through it with a passion, an intensity, that surprised him.
+“I know—I _know_.” The darkness was coming on, and he felt that this
+odd woman really did know. “She must not stop here a moment, and we
+must keep quiet till she goes. I trust that the servants know nothing.
+ Afterwards—but I may have said too much already. Only, Lucy and I are
+helpless against Mrs. Honeychurch alone. If you help we may succeed.
+ Otherwise—”
+
+“Otherwise—?”
+
+“Otherwise,” she repeated as if the word held finality.
+
+“Yes, I will help her,” said the clergyman, setting his jaw firm.
+“Come, let us go back now, and settle the whole thing up.”
+
+Miss Bartlett burst into florid gratitude. The tavern sign—a beehive
+trimmed evenly with bees—creaked in the wind outside as she thanked
+him. Mr. Beebe did not quite understand the situation; but then, he did
+not desire to understand it, nor to jump to the conclusion of “another
+man” that would have attracted a grosser mind. He only felt that Miss
+ Bartlett knew of some vague influence from which the girl desired to be
+delivered, and which might well be clothed in the fleshly form. Its
+very vagueness spurred him into knight-errantry. His belief in
+celibacy, so reticent, so carefully concealed beneath his tolerance and
+culture, now came to the surface and expanded like some delicate
+flower. “They that marry do well, but they that refrain do better.” So
+ran his belief, and he never heard that an engagement was broken off
+but with a slight feeling of pleasure. In the case of Lucy, the feeling
+was intensified through dislike of Cecil; and he was willing to go
+further—to place her out of danger until she could confirm her
+resolution of virginity. The feeling was very subtle and quite
+undogmatic, and he never imparted it to any other of the characters in
+this entanglement. Yet it existed, and it alone explains his action
+subsequently, and his influence on the action of others. The compact
+that he made with Miss Bartlett in the tavern, was to help not only
+ Lucy, but religion also.
+
+They hurried home through a world of black and grey. He conversed on
+indifferent topics: the Emersons’ need of a housekeeper; servants;
+ Italian servants; novels about Italy; novels with a purpose; could
+literature influence life? Windy Corner glimmered. In the garden, Mrs.
+ Honeychurch, now helped by Freddy, still wrestled with the lives of her
+flowers.
+
+“It gets too dark,” she said hopelessly. “This comes of putting off. We
+might have known the weather would break up soon; and now Lucy wants to
+go to Greece. I don’t know what the world’s coming to.”
+
+“Mrs. Honeychurch,” he said, “go to Greece she must. Come up to the
+house and let’s talk it over. Do you, in the first place, mind her
+breaking with Vyse?”
+
+“Mr. Beebe, I’m thankful—simply thankful.”
+
+“So am I,” said Freddy.
+
+“Good. Now come up to the house.”
+
+They conferred in the dining-room for half an hour.
+
+Lucy would never have carried the Greek scheme alone. It was expensive
+and dramatic—both qualities that her mother loathed. Nor would
+ Charlotte have succeeded. The honours of the day rested with Mr. Beebe.
+ By his tact and common sense, and by his influence as a clergyman—for a
+clergyman who was not a fool influenced Mrs. Honeychurch greatly—he
+bent her to their purpose, “I don’t see why Greece is necessary,” she
+said; “but as you do, I suppose it is all right. It must be something I
+can’t understand. Lucy! Let’s tell her. Lucy!”
+
+“She is playing the piano,” Mr. Beebe said. He opened the door, and
+heard the words of a song:
+
+“Look not thou on beauty’s charming.”
+
+“I didn’t know that Miss Honeychurch sang, too.”
+
+“Sit thou still when kings are arming,
+ Taste not when the wine-cup glistens——”
+
+“It’s a song that Cecil gave her. How odd girls are!”
+
+“What’s that?” called Lucy, stopping short.
+
+“All right, dear,” said Mrs. Honeychurch kindly. She went into the
+drawing-room, and Mr. Beebe heard her kiss Lucy and say: “I am sorry I
+was so cross about Greece, but it came on the top of the dahlias.”
+
+Rather a hard voice said: “Thank you, mother; that doesn’t matter a
+bit.”
+
+“And you are right, too—Greece will be all right; you can go if the
+ Miss Alans will have you.”
+
+“Oh, splendid! Oh, thank you!”
+
+Mr. Beebe followed. Lucy still sat at the piano with her hands over the
+keys. She was glad, but he had expected greater gladness. Her mother
+bent over her. Freddy, to whom she had been singing, reclined on the
+floor with his head against her, and an unlit pipe between his lips.
+ Oddly enough, the group was beautiful. Mr. Beebe, who loved the art of
+the past, was reminded of a favourite theme, the _Santa Conversazione_,
+in which people who care for one another are painted chatting together
+about noble things—a theme neither sensual nor sensational, and
+therefore ignored by the art of to-day. Why should Lucy want either to
+marry or to travel when she had such friends at home?`
+    },
+    {
+      id: "section-45",
+      title: "Section 45",
+      content: `“Taste not when the wine-cup glistens,
+ Speak not when the people listens,”
+
+she continued.
+
+“Here’s Mr. Beebe.”
+
+“Mr. Beebe knows my rude ways.”
+
+“It’s a beautiful song and a wise one,” said he. “Go on.”
+
+“It isn’t very good,” she said listlessly. “I forget why—harmony or
+something.”
+
+“I suspected it was unscholarly. It’s so beautiful.”
+
+“The tune’s right enough,” said Freddy, “but the words are rotten. Why
+throw up the sponge?”
+
+“How stupidly you talk!” said his sister. The _Santa Conversazione_ was
+broken up. After all, there was no reason that Lucy should talk about
+ Greece or thank him for persuading her mother, so he said good-bye.
+
+Freddy lit his bicycle lamp for him in the porch, and with his usual
+felicity of phrase, said: “This has been a day and a half.”
+
+“Stop thine ear against the singer—”
+
+“Wait a minute; she is finishing.”
+
+“From the red gold keep thy finger;
+ Vacant heart and hand and eye
+ Easy live and quiet die.”
+
+“I love weather like this,” said Freddy.
+
+Mr. Beebe passed into it.
+
+The two main facts were clear. She had behaved splendidly, and he had
+helped her. He could not expect to master the details of so big a
+change in a girl’s life. If here and there he was dissatisfied or
+puzzled, he must acquiesce; she was choosing the better part.
+
+“Vacant heart and hand and eye—”
+
+Perhaps the song stated “the better part” rather too strongly. He half
+fancied that the soaring accompaniment—which he did not lose in the
+shout of the gale—really agreed with Freddy, and was gently criticizing
+the words that it adorned:
+
+“Vacant heart and hand and eye
+ Easy live and quiet die.”
+
+However, for the fourth time Windy Corner lay poised below him—now as a
+beacon in the roaring tides of darkness.
+
+Chapter XIX
+ Lying to Mr. Emerson
+
+The Miss Alans were found in their beloved temperance hotel near
+ Bloomsbury—a clean, airless establishment much patronized by provincial
+ England. They always perched there before crossing the great seas, and
+for a week or two would fidget gently over clothes, guide-books,
+mackintosh squares, digestive bread, and other Continental necessaries.
+ That there are shops abroad, even in Athens, never occurred to them,
+for they regarded travel as a species of warfare, only to be undertaken
+by those who have been fully armed at the Haymarket Stores. Miss
+ Honeychurch, they trusted, would take care to equip herself duly.
+ Quinine could now be obtained in tabloids; paper soap was a great help
+towards freshening up one’s face in the train. Lucy promised, a little
+depressed.
+
+“But, of course, you know all about these things, and you have Mr. Vyse
+to help you. A gentleman is such a stand-by.”
+
+Mrs. Honeychurch, who had come up to town with her daughter, began to
+drum nervously upon her card-case.
+
+“We think it so good of Mr. Vyse to spare you,” Miss Catharine
+continued. “It is not every young man who would be so unselfish. But
+perhaps he will come out and join you later on.”
+
+“Or does his work keep him in London?” said Miss Teresa, the more acute
+and less kindly of the two sisters.
+
+“However, we shall see him when he sees you off. I do so long to see
+him.”
+
+“No one will see Lucy off,” interposed Mrs. Honeychurch. “She doesn’t
+like it.”
+
+“No, I hate seeings-off,” said Lucy.
+
+“Really? How funny! I should have thought that in this case—”
+
+“Oh, Mrs. Honeychurch, you aren’t going? It is such a pleasure to have
+met you!”
+
+They escaped, and Lucy said with relief: “That’s all right. We just got
+through that time.”
+
+But her mother was annoyed. “I should be told, dear, that I am
+unsympathetic. But I cannot see why you didn’t tell your friends about
+ Cecil and be done with it. There all the time we had to sit fencing,
+and almost telling lies, and be seen through, too, I dare say, which is
+most unpleasant.”
+
+Lucy had plenty to say in reply. She described the Miss Alans’
+character: they were such gossips, and if one told them, the news would
+be everywhere in no time.
+
+“But why shouldn’t it be everywhere in no time?”
+
+“Because I settled with Cecil not to announce it until I left England.
+ I shall tell them then. It’s much pleasanter. How wet it is! Let’s turn
+in here.”
+
+“Here” was the British Museum. Mrs. Honeychurch refused. If they must
+take shelter, let it be in a shop. Lucy felt contemptuous, for she was
+on the tack of caring for Greek sculpture, and had already borrowed a
+mythical dictionary from Mr. Beebe to get up the names of the goddesses
+and gods.
+
+“Oh, well, let it be shop, then. Let’s go to Mudie’s. I’ll buy a
+guide-book.”
+
+“You know, Lucy, you and Charlotte and Mr. Beebe all tell me I’m so
+stupid, so I suppose I am, but I shall never understand this
+hole-and-corner work. You’ve got rid of Cecil—well and good, and I’m
+thankful he’s gone, though I did feel angry for the minute. But why not
+announce it? Why this hushing up and tip-toeing?”
+
+“It’s only for a few days.”
+
+“But why at all?”
+
+Lucy was silent. She was drifting away from her mother. It was quite
+easy to say, “Because George Emerson has been bothering me, and if he
+hears I’ve given up Cecil may begin again”—quite easy, and it had the
+incidental advantage of being true. But she could not say it. She
+disliked confidences, for they might lead to self-knowledge and to that
+king of terrors—Light. Ever since that last evening at Florence she had
+deemed it unwise to reveal her soul.
+
+Mrs. Honeychurch, too, was silent. She was thinking, “My daughter won’t
+answer me; she would rather be with those inquisitive old maids than
+with Freddy and me. Any rag, tag, and bobtail apparently does if she
+can leave her home.” And as in her case thoughts never remained
+unspoken long, she burst out with: “You’re tired of Windy Corner.”
+
+This was perfectly true. Lucy had hoped to return to Windy Corner when
+she escaped from Cecil, but she discovered that her home existed no
+longer. It might exist for Freddy, who still lived and thought
+straight, but not for one who had deliberately warped the brain. She
+did not acknowledge that her brain was warped, for the brain itself
+must assist in that acknowledgment, and she was disordering the very
+instruments of life. She only felt, “I do not love George; I broke off
+my engagement because I did not love George; I must go to Greece
+because I do not love George; it is more important that I should look
+up gods in the dictionary than that I should help my mother; everyone
+else is behaving very badly.” She only felt irritable and petulant, and
+anxious to do what she was not expected to do, and in this spirit she
+proceeded with the conversation.
+
+“Oh, mother, what rubbish you talk! Of course I’m not tired of Windy
+ Corner.”
+
+“Then why not say so at once, instead of considering half an hour?”
+
+She laughed faintly, “Half a _minute_ would be nearer.”
+
+“Perhaps you would like to stay away from your home altogether?”
+
+“Hush, mother! People will hear you”; for they had entered Mudie’s. She
+bought Baedeker, and then continued: “Of course I want to live at home;
+but as we are talking about it, I may as well say that I shall want to
+be away in the future more than I have been. You see, I come into my
+money next year.”
+
+Tears came into her mother’s eyes.
+
+Driven by nameless bewilderment, by what is in older people termed
+“eccentricity,” Lucy determined to make this point clear. “I’ve seen
+the world so little—I felt so out of things in Italy. I have seen so
+little of life; one ought to come up to London more—not a cheap ticket
+like to-day, but to stop. I might even share a flat for a little with
+some other girl.”`
+    },
+    {
+      id: "section-46",
+      title: "Section 46",
+      content: `“And mess with typewriters and latch-keys,” exploded Mrs. Honeychurch.
+“And agitate and scream, and be carried off kicking by the police. And
+call it a Mission—when no one wants you! And call it Duty—when it means
+that you can’t stand your own home! And call it Work—when thousands of
+men are starving with the competition as it is! And then to prepare
+yourself, find two doddering old ladies, and go abroad with them.”
+
+“I want more independence,” said Lucy lamely; she knew that she wanted
+something, and independence is a useful cry; we can always say that we
+have not got it. She tried to remember her emotions in Florence: those
+had been sincere and passionate, and had suggested beauty rather than
+short skirts and latch-keys. But independence was certainly her cue.
+
+“Very well. Take your independence and be gone. Rush up and down and
+round the world, and come back as thin as a lath with the bad food.
+ Despise the house that your father built and the garden that he
+planted, and our dear view—and then share a flat with another girl.”
+
+Lucy screwed up her mouth and said: “Perhaps I spoke hastily.”
+
+“Oh, goodness!” her mother flashed. “How you do remind me of Charlotte
+ Bartlett!”
+
+“_Charlotte?_” flashed Lucy in her turn, pierced at last by a vivid
+pain.
+
+“More every moment.”
+
+“I don’t know what you mean, mother; Charlotte and I are not the very
+least alike.”
+
+“Well, I see the likeness. The same eternal worrying, the same taking
+back of words. You and Charlotte trying to divide two apples among
+three people last night might be sisters.”
+
+“What rubbish! And if you dislike Charlotte so, it’s rather a pity you
+asked her to stop. I warned you about her; I begged you, implored you
+not to, but of course it was not listened to.”
+
+“There you go.”
+
+“I beg your pardon?”
+
+“Charlotte again, my dear; that’s all; her very words.”
+
+Lucy clenched her teeth. “My point is that you oughtn’t to have asked
+ Charlotte to stop. I wish you would keep to the point.” And the
+conversation died off into a wrangle.
+
+She and her mother shopped in silence, spoke little in the train,
+little again in the carriage, which met them at Dorking Station. It had
+poured all day and as they ascended through the deep Surrey lanes
+showers of water fell from the over-hanging beech-trees and rattled on
+the hood. Lucy complained that the hood was stuffy. Leaning forward,
+she looked out into the steaming dusk, and watched the carriage-lamp
+pass like a search-light over mud and leaves, and reveal nothing
+beautiful. “The crush when Charlotte gets in will be abominable,” she
+remarked. For they were to pick up Miss Bartlett at Summer Street,
+where she had been dropped as the carriage went down, to pay a call on
+ Mr. Beebe’s old mother. “We shall have to sit three a side, because the
+trees drop, and yet it isn’t raining. Oh, for a little air!” Then she
+listened to the horse’s hoofs—“He has not told—he has not told.” That
+melody was blurred by the soft road. “_Can’t_ we have the hood down?”
+she demanded, and her mother, with sudden tenderness, said: “Very well,
+old lady, stop the horse.” And the horse was stopped, and Lucy and
+ Powell wrestled with the hood, and squirted water down Mrs.
+ Honeychurch’s neck. But now that the hood was down, she did see
+something that she would have missed—there were no lights in the
+windows of Cissie Villa, and round the garden gate she fancied she saw
+a padlock.
+
+“Is that house to let again, Powell?” she called.
+
+“Yes, miss,” he replied.
+
+“Have they gone?”
+
+“It is too far out of town for the young gentleman, and his father’s
+rheumatism has come on, so he can’t stop on alone, so they are trying
+to let furnished,” was the answer.
+
+“They have gone, then?”
+
+“Yes, miss, they have gone.”
+
+Lucy sank back. The carriage stopped at the Rectory. She got out to
+call for Miss Bartlett. So the Emersons had gone, and all this bother
+about Greece had been unnecessary. Waste! That word seemed to sum up
+the whole of life. Wasted plans, wasted money, wasted love, and she had
+wounded her mother. Was it possible that she had muddled things away?
+ Quite possible. Other people had. When the maid opened the door, she
+was unable to speak, and stared stupidly into the hall.
+
+Miss Bartlett at once came forward, and after a long preamble asked a
+great favour: might she go to church? Mr. Beebe and his mother had
+already gone, but she had refused to start until she obtained her
+hostess’s full sanction, for it would mean keeping the horse waiting a
+good ten minutes more.
+
+“Certainly,” said the hostess wearily. “I forgot it was Friday. Let’s
+all go. Powell can go round to the stables.”
+
+“Lucy dearest—”
+
+“No church for me, thank you.”
+
+A sigh, and they departed. The church was invisible, but up in the
+darkness to the left there was a hint of colour. This was a stained
+window, through which some feeble light was shining, and when the door
+opened Lucy heard Mr. Beebe’s voice running through the litany to a
+minute congregation. Even their church, built upon the slope of the
+hill so artfully, with its beautiful raised transept and its spire of
+silvery shingle—even their church had lost its charm; and the thing one
+never talked about—religion—was fading like all the other things.
+
+She followed the maid into the Rectory.
+
+Would she object to sitting in Mr. Beebe’s study? There was only that
+one fire.
+
+She would not object.
+
+Some one was there already, for Lucy heard the words: “A lady to wait,
+sir.”
+
+Old Mr. Emerson was sitting by the fire, with his foot upon a
+gout-stool.
+
+“Oh, Miss Honeychurch, that you should come!” he quavered; and Lucy saw
+an alteration in him since last Sunday.
+
+Not a word would come to her lips. George she had faced, and could have
+faced again, but she had forgotten how to treat his father.
+
+“Miss Honeychurch, dear, we are so sorry! George is so sorry! He
+thought he had a right to try. I cannot blame my boy, and yet I wish he
+had told me first. He ought not to have tried. I knew nothing about it
+at all.”
+
+If only she could remember how to behave!
+
+He held up his hand. “But you must not scold him.”
+
+Lucy turned her back, and began to look at Mr. Beebe’s books.
+
+“I taught him,” he quavered, “to trust in love. I said: ‘When love
+comes, that is reality.’ I said: ‘Passion does not blind. No. Passion
+is sanity, and the woman you love, she is the only person you will ever
+really understand.’” He sighed: “True, everlastingly true, though my
+day is over, and though there is the result. Poor boy! He is so sorry!
+ He said he knew it was madness when you brought your cousin in; that
+whatever you felt you did not mean. Yet”—his voice gathered strength:
+he spoke out to make certain—“Miss Honeychurch, do you remember Italy?”
+
+Lucy selected a book—a volume of Old Testament commentaries. Holding it
+up to her eyes, she said: “I have no wish to discuss Italy or any
+subject connected with your son.”
+
+“But you do remember it?”
+
+“He has misbehaved himself from the first.”
+
+“I only was told that he loved you last Sunday. I never could judge
+behaviour. I—I—suppose he has.”
+
+Feeling a little steadier, she put the book back and turned round to
+him. His face was drooping and swollen, but his eyes, though they were
+sunken deep, gleamed with a child’s courage.
+
+“Why, he has behaved abominably,” she said. “I am glad he is sorry. Do
+you know what he did?”
+
+“Not ‘abominably,’” was the gentle correction. “He only tried when he
+should not have tried. You have all you want, Miss Honeychurch: you are
+going to marry the man you love. Do not go out of George’s life saying
+he is abominable.”
+
+“No, of course,” said Lucy, ashamed at the reference to Cecil.
+“‘Abominable’ is much too strong. I am sorry I used it about your son.
+ I think I will go to church, after all. My mother and my cousin have
+gone. I shall not be so very late—”
+
+“Especially as he has gone under,” he said quietly.
+
+“What was that?”`
+    },
+    {
+      id: "section-47",
+      title: "Section 47",
+      content: `“Gone under naturally.” He beat his palms together in silence; his head
+fell on his chest.
+
+“I don’t understand.”
+
+“As his mother did.”
+
+“But, Mr. Emerson—_Mr. Emerson_—what are you talking about?”
+
+“When I wouldn’t have George baptized,” said he.
+
+Lucy was frightened.
+
+“And she agreed that baptism was nothing, but he caught that fever when
+he was twelve and she turned round. She thought it a judgement.” He
+shuddered. “Oh, horrible, when we had given up that sort of thing and
+broken away from her parents. Oh, horrible—worst of all—worse than
+death, when you have made a little clearing in the wilderness, planted
+your little garden, let in your sunlight, and then the weeds creep in
+again! A judgement! And our boy had typhoid because no clergyman had
+dropped water on him in church! Is it possible, Miss Honeychurch? Shall
+we slip back into the darkness for ever?”
+
+“I don’t know,” gasped Lucy. “I don’t understand this sort of thing. I
+was not meant to understand it.”
+
+“But Mr. Eager—he came when I was out, and acted according to his
+principles. I don’t blame him or any one... but by the time George was
+well she was ill. He made her think about sin, and she went under
+thinking about it.”
+
+It was thus that Mr. Emerson had murdered his wife in the sight of God.
+
+“Oh, how terrible!” said Lucy, forgetting her own affairs at last.
+
+“He was not baptized,” said the old man. “I did hold firm.” And he
+looked with unwavering eyes at the rows of books, as if—at what
+cost!—he had won a victory over them. “My boy shall go back to the
+earth untouched.”
+
+She asked whether young Mr. Emerson was ill.
+
+“Oh—last Sunday.” He started into the present. “George last Sunday—no,
+not ill: just gone under. He is never ill. But he is his mother’s son.
+ Her eyes were his, and she had that forehead that I think so beautiful,
+and he will not think it worth while to live. It was always touch and
+go. He will live; but he will not think it worth while to live. He will
+never think anything worth while. You remember that church at
+ Florence?”
+
+Lucy did remember, and how she had suggested that George should collect
+postage stamps.
+
+“After you left Florence—horrible. Then we took the house here, and he
+goes bathing with your brother, and became better. You saw him
+bathing?”
+
+“I am so sorry, but it is no good discussing this affair. I am deeply
+sorry about it.”
+
+“Then there came something about a novel. I didn’t follow it at all; I
+had to hear so much, and he minded telling me; he finds me too old. Ah,
+well, one must have failures. George comes down to-morrow, and takes me
+up to his London rooms. He can’t bear to be about here, and I must be
+where he is.”
+
+“Mr. Emerson,” cried the girl, “don’t leave at least, not on my
+account. I am going to Greece. Don’t leave your comfortable house.”
+
+It was the first time her voice had been kind and he smiled. “How good
+everyone is! And look at Mr. Beebe housing me—came over this morning
+and heard I was going! Here I am so comfortable with a fire.”
+
+“Yes, but you won’t go back to London. It’s absurd.”
+
+“I must be with George; I must make him care to live, and down here he
+can’t. He says the thought of seeing you and of hearing about you—I am
+not justifying him: I am only saying what has happened.”
+
+“Oh, Mr. Emerson”—she took hold of his hand—“you mustn’t. I’ve been
+bother enough to the world by now. I can’t have you moving out of your
+house when you like it, and perhaps losing money through it—all on my
+account. You must stop! I am just going to Greece.”
+
+“All the way to Greece?”
+
+Her manner altered.
+
+“To Greece?”
+
+“So you must stop. You won’t talk about this business, I know. I can
+trust you both.”
+
+“Certainly you can. We either have you in our lives, or leave you to
+the life that you have chosen.”
+
+“I shouldn’t want—”
+
+“I suppose Mr. Vyse is very angry with George? No, it was wrong of
+ George to try. We have pushed our beliefs too far. I fancy that we
+deserve sorrow.”
+
+She looked at the books again—black, brown, and that acrid theological
+blue. They surrounded the visitors on every side; they were piled on
+the tables, they pressed against the very ceiling. To Lucy who could
+not see that Mr. Emerson was profoundly religious, and differed from
+ Mr. Beebe chiefly by his acknowledgment of passion—it seemed dreadful
+that the old man should crawl into such a sanctum, when he was unhappy,
+and be dependent on the bounty of a clergyman.
+
+More certain than ever that she was tired, he offered her his chair.
+
+“No, please sit still. I think I will sit in the carriage.”
+
+“Miss Honeychurch, you do sound tired.”
+
+“Not a bit,” said Lucy, with trembling lips.
+
+“But you are, and there’s a look of George about you. And what were you
+saying about going abroad?”
+
+She was silent.
+
+“Greece”—and she saw that he was thinking the word over—“Greece; but
+you were to be married this year, I thought.”
+
+“Not till January, it wasn’t,” said Lucy, clasping her hands. Would she
+tell an actual lie when it came to the point?
+
+“I suppose that Mr. Vyse is going with you. I hope—it isn’t because
+ George spoke that you are both going?”
+
+“No.”
+
+“I hope that you will enjoy Greece with Mr. Vyse.”
+
+“Thank you.”
+
+At that moment Mr. Beebe came back from church. His cassock was covered
+with rain. “That’s all right,” he said kindly. “I counted on you two
+keeping each other company. It’s pouring again. The entire
+congregation, which consists of your cousin, your mother, and my
+mother, stands waiting in the church, till the carriage fetches it. Did
+ Powell go round?”
+
+“I think so; I’ll see.”
+
+“No—of course, I’ll see. How are the Miss Alans?”
+
+“Very well, thank you.”
+
+“Did you tell Mr. Emerson about Greece?”
+
+“I—I did.”
+
+“Don’t you think it very plucky of her, Mr. Emerson, to undertake the
+two Miss Alans? Now, Miss Honeychurch, go back—keep warm. I think three
+is such a courageous number to go travelling.” And he hurried off to
+the stables.
+
+“He is not going,” she said hoarsely. “I made a slip. Mr. Vyse does
+stop behind in England.”
+
+Somehow it was impossible to cheat this old man. To George, to Cecil,
+she would have lied again; but he seemed so near the end of things, so
+dignified in his approach to the gulf, of which he gave one account,
+and the books that surrounded him another, so mild to the rough paths
+that he had traversed, that the true chivalry—not the worn-out chivalry
+of sex, but the true chivalry that all the young may show to all the
+old—awoke in her, and, at whatever risk, she told him that Cecil was
+not her companion to Greece. And she spoke so seriously that the risk
+became a certainty, and he, lifting his eyes, said: “You are leaving
+him? You are leaving the man you love?”
+
+“I—I had to.”
+
+“Why, Miss Honeychurch, why?”
+
+Terror came over her, and she lied again. She made the long, convincing
+speech that she had made to Mr. Beebe, and intended to make to the
+world when she announced that her engagement was no more. He heard her
+in silence, and then said: “My dear, I am worried about you. It seems
+to me”—dreamily; she was not alarmed—“that you are in a muddle.”
+
+She shook her head.`
+    },
+    {
+      id: "section-48",
+      title: "Section 48",
+      content: `“Take an old man’s word; there’s nothing worse than a muddle in all the
+world. It is easy to face Death and Fate, and the things that sound so
+dreadful. It is on my muddles that I look back with horror—on the
+things that I might have avoided. We can help one another but little. I
+used to think I could teach young people the whole of life, but I know
+better now, and all my teaching of George has come down to this: beware
+of muddle. Do you remember in that church, when you pretended to be
+annoyed with me and weren’t? Do you remember before, when you refused
+the room with the view? Those were muddles—little, but ominous—and I am
+fearing that you are in one now.” She was silent. “Don’t trust me, Miss
+ Honeychurch. Though life is very glorious, it is difficult.” She was
+still silent. “‘Life’ wrote a friend of mine, ‘is a public performance
+on the violin, in which you must learn the instrument as you go along.’
+ I think he puts it well. Man has to pick up the use of his functions as
+he goes along—especially the function of Love.” Then he burst out
+excitedly; “That’s it; that’s what I mean. You love George!” And after
+his long preamble, the three words burst against Lucy like waves from
+the open sea.
+
+“But you do,” he went on, not waiting for contradiction. “You love the
+boy body and soul, plainly, directly, as he loves you, and no other
+word expresses it. You won’t marry the other man for his sake.”
+
+“How dare you!” gasped Lucy, with the roaring of waters in her ears.
+“Oh, how like a man!—I mean, to suppose that a woman is always thinking
+about a man.”
+
+“But you are.”
+
+She summoned physical disgust.
+
+“You’re shocked, but I mean to shock you. It’s the only hope at times.
+ I can reach you no other way. You must marry, or your life will be
+wasted. You have gone too far to retreat. I have no time for the
+tenderness, and the comradeship, and the poetry, and the things that
+really matter, and _for which_ you marry. I know that, with George, you
+will find them, and that you love him. Then be his wife. He is already
+part of you. Though you fly to Greece, and never see him again, or
+forget his very name, George will work in your thoughts till you die.
+ It isn’t possible to love and to part. You will wish that it was. You
+can transmute love, ignore it, muddle it, but you can never pull it out
+of you. I know by experience that the poets are right: love is
+eternal.”
+
+Lucy began to cry with anger, and though her anger passed away soon,
+her tears remained.
+
+“I only wish poets would say this, too: love is of the body; not the
+body, but of the body. Ah! the misery that would be saved if we
+confessed that! Ah! for a little directness to liberate the soul! Your
+soul, dear Lucy! I hate the word now, because of all the cant with
+which superstition has wrapped it round. But we have souls. I cannot
+say how they came nor whither they go, but we have them, and I see you
+ruining yours. I cannot bear it. It is again the darkness creeping in;
+it is hell.” Then he checked himself. “What nonsense I have talked—how
+abstract and remote! And I have made you cry! Dear girl, forgive my
+prosiness; marry my boy. When I think what life is, and how seldom love
+is answered by love—Marry him; it is one of the moments for which the
+world was made.”
+
+She could not understand him; the words were indeed remote. Yet as he
+spoke the darkness was withdrawn, veil after veil, and she saw to the
+bottom of her soul.
+
+“Then, Lucy—”
+
+“You’ve frightened me,” she moaned. “Cecil—Mr. Beebe—the ticket’s
+bought—everything.” She fell sobbing into the chair. “I’m caught in the
+tangle. I must suffer and grow old away from him. I cannot break the
+whole of life for his sake. They trusted me.”
+
+A carriage drew up at the front-door.
+
+“Give George my love—once only. Tell him ‘muddle.’” Then she arranged
+her veil, while the tears poured over her cheeks inside.
+
+“Lucy—”
+
+“No—they are in the hall—oh, please not, Mr. Emerson—they trust me—”
+
+“But why should they, when you have deceived them?”
+
+Mr. Beebe opened the door, saying: “Here’s my mother.”
+
+“You’re not worthy of their trust.”
+
+“What’s that?” said Mr. Beebe sharply.
+
+“I was saying, why should you trust her when she deceived you?”
+
+“One minute, mother.” He came in and shut the door.
+
+“I don’t follow you, Mr. Emerson. To whom do you refer? Trust whom?”
+
+“I mean she has pretended to you that she did not love George. They
+have loved one another all along.”
+
+Mr. Beebe looked at the sobbing girl. He was very quiet, and his white
+face, with its ruddy whiskers, seemed suddenly inhuman. A long black
+column, he stood and awaited her reply.
+
+“I shall never marry him,” quavered Lucy.
+
+A look of contempt came over him, and he said, “Why not?”
+
+“Mr. Beebe—I have misled you—I have misled myself—”
+
+“Oh, rubbish, Miss Honeychurch!”
+
+“It is not rubbish!” said the old man hotly. “It’s the part of people
+that you don’t understand.”
+
+Mr. Beebe laid his hand on the old man’s shoulder pleasantly.
+
+“Lucy! Lucy!” called voices from the carriage.
+
+“Mr. Beebe, could you help me?”
+
+He looked amazed at the request, and said in a low, stern voice: “I am
+more grieved than I can possibly express. It is lamentable,
+lamentable—incredible.”
+
+“What’s wrong with the boy?” fired up the other again.
+
+“Nothing, Mr. Emerson, except that he no longer interests me. Marry
+ George, Miss Honeychurch. He will do admirably.”
+
+He walked out and left them. They heard him guiding his mother
+up-stairs.
+
+“Lucy!” the voices called.
+
+She turned to Mr. Emerson in despair. But his face revived her. It was
+the face of a saint who understood.
+
+“Now it is all dark. Now Beauty and Passion seem never to have existed.
+ I know. But remember the mountains over Florence and the view. Ah,
+dear, if I were George, and gave you one kiss, it would make you brave.
+ You have to go cold into a battle that needs warmth, out into the
+muddle that you have made yourself; and your mother and all your
+friends will despise you, oh, my darling, and rightly, if it is ever
+right to despise. George still dark, all the tussle and the misery
+without a word from him. Am I justified?” Into his own eyes tears came.
+“Yes, for we fight for more than Love or Pleasure; there is Truth.
+ Truth counts, Truth does count.”
+
+“You kiss me,” said the girl. “You kiss me. I will try.”
+
+He gave her a sense of deities reconciled, a feeling that, in gaining
+the man she loved, she would gain something for the whole world.
+ Throughout the squalor of her homeward drive—she spoke at once—his
+salutation remained. He had robbed the body of its taint, the world’s
+taunts of their sting; he had shown her the holiness of direct desire.
+ She “never exactly understood,” she would say in after years, “how he
+managed to strengthen her. It was as if he had made her see the whole
+of everything at once.”
+
+Chapter XX
+ The End of the Middle Ages
+
+The Miss Alans did go to Greece, but they went by themselves. They
+alone of this little company will double Malea and plough the waters of
+the Saronic gulf. They alone will visit Athens and Delphi, and either
+shrine of intellectual song—that upon the Acropolis, encircled by blue
+seas; that under Parnassus, where the eagles build and the bronze
+charioteer drives undismayed towards infinity. Trembling, anxious,
+cumbered with much digestive bread, they did proceed to Constantinople,
+they did go round the world. The rest of us must be contented with a
+fair, but a less arduous, goal. Italiam petimus: we return to the
+ Pension Bertolini.
+
+George said it was his old room.
+
+“No, it isn’t,” said Lucy; “because it is the room I had, and I had
+your father’s room. I forget why; Charlotte made me, for some reason.”
+
+He knelt on the tiled floor, and laid his face in her lap.
+
+“George, you baby, get up.”
+
+“Why shouldn’t I be a baby?” murmured George.`
+    },
+    {
+      id: "section-49",
+      title: "Section 49",
+      content: `Unable to answer this question, she put down his sock, which she was
+trying to mend, and gazed out through the window. It was evening and
+again the spring.
+
+“Oh, bother Charlotte,” she said thoughtfully. “What can such people be
+made of?”
+
+“Same stuff as parsons are made of.”
+
+“Nonsense!”
+
+“Quite right. It is nonsense.”
+
+“Now you get up off the cold floor, or you’ll be starting rheumatism
+next, and you stop laughing and being so silly.”
+
+“Why shouldn’t I laugh?” he asked, pinning her with his elbows, and
+advancing his face to hers. “What’s there to cry at? Kiss me here.” He
+indicated the spot where a kiss would be welcome.
+
+He was a boy after all. When it came to the point, it was she who
+remembered the past, she into whose soul the iron had entered, she who
+knew whose room this had been last year. It endeared him to her
+strangely that he should be sometimes wrong.
+
+“Any letters?” he asked.
+
+“Just a line from Freddy.”
+
+“Now kiss me here; then here.”
+
+Then, threatened again with rheumatism, he strolled to the window,
+opened it (as the English will), and leant out. There was the parapet,
+there the river, there to the left the beginnings of the hills. The
+cab-driver, who at once saluted him with the hiss of a serpent, might
+be that very Phaethon who had set this happiness in motion twelve
+months ago. A passion of gratitude—all feelings grow to passions in the
+ South—came over the husband, and he blessed the people and the things
+who had taken so much trouble about a young fool. He had helped
+himself, it is true, but how stupidly!
+
+All the fighting that mattered had been done by others—by Italy, by his
+father, by his wife.
+
+“Lucy, you come and look at the cypresses; and the church, whatever its
+name is, still shows.”
+
+“San Miniato. I’ll just finish your sock.”
+
+“Signorino, domani faremo uno giro,” called the cabman, with engaging
+certainty.
+
+George told him that he was mistaken; they had no money to throw away
+on driving.
+
+And the people who had not meant to help—the Miss Lavishes, the Cecils,
+the Miss Bartletts! Ever prone to magnify Fate, George counted up the
+forces that had swept him into this contentment.
+
+“Anything good in Freddy’s letter?”
+
+“Not yet.”
+
+His own content was absolute, but hers held bitterness: the
+ Honeychurches had not forgiven them; they were disgusted at her past
+hypocrisy; she had alienated Windy Corner, perhaps for ever.
+
+“What does he say?”
+
+“Silly boy! He thinks he’s being dignified. He knew we should go off in
+the spring—he has known it for six months—that if mother wouldn’t give
+her consent we should take the thing into our own hands. They had fair
+warning, and now he calls it an elopement. Ridiculous boy—”
+
+“Signorino, domani faremo uno giro—”
+
+“But it will all come right in the end. He has to build us both up from
+the beginning again. I wish, though, that Cecil had not turned so
+cynical about women. He has, for the second time, quite altered. Why
+will men have theories about women? I haven’t any about men. I wish,
+too, that Mr. Beebe—”
+
+“You may well wish that.”
+
+“He will never forgive us—I mean, he will never be interested in us
+again. I wish that he did not influence them so much at Windy Corner. I
+wish he hadn’t—But if we act the truth, the people who really love us
+are sure to come back to us in the long run.”
+
+“Perhaps.” Then he said more gently: “Well, I acted the truth—the only
+thing I did do—and you came back to me. So possibly you know.” He
+turned back into the room. “Nonsense with that sock.” He carried her to
+the window, so that she, too, saw all the view. They sank upon their
+knees, invisible from the road, they hoped, and began to whisper one
+another’s names. Ah! it was worth while; it was the great joy that they
+had expected, and countless little joys of which they had never dreamt.
+ They were silent.
+
+“Signorino, domani faremo—”
+
+“Oh, bother that man!”
+
+But Lucy remembered the vendor of photographs and said, “No, don’t be
+rude to him.” Then with a catching of her breath, she murmured: “Mr.
+ Eager and Charlotte, dreadful frozen Charlotte. How cruel she would be
+to a man like that!”
+
+“Look at the lights going over the bridge.”
+
+“But this room reminds me of Charlotte. How horrible to grow old in
+ Charlotte’s way! To think that evening at the rectory that she
+shouldn’t have heard your father was in the house. For she would have
+stopped me going in, and he was the only person alive who could have
+made me see sense. You couldn’t have made me. When I am very happy”—she
+kissed him—“I remember on how little it all hangs. If Charlotte had
+only known, she would have stopped me going in, and I should have gone
+to silly Greece, and become different for ever.”
+
+“But she did know,” said George; “she did see my father, surely. He
+said so.”
+
+“Oh, no, she didn’t see him. She was upstairs with old Mrs. Beebe,
+don’t you remember, and then went straight to the church. She said so.”
+
+George was obstinate again. “My father,” said he, “saw her, and I
+prefer his word. He was dozing by the study fire, and he opened his
+eyes, and there was Miss Bartlett. A few minutes before you came in.
+ She was turning to go as he woke up. He didn’t speak to her.”
+
+Then they spoke of other things—the desultory talk of those who have
+been fighting to reach one another, and whose reward is to rest quietly
+in each other’s arms. It was long ere they returned to Miss Bartlett,
+but when they did her behaviour seemed more interesting. George, who
+disliked any darkness, said: “It’s clear that she knew. Then, why did
+she risk the meeting? She knew he was there, and yet she went to
+church.”
+
+They tried to piece the thing together.
+
+As they talked, an incredible solution came into Lucy’s mind. She
+rejected it, and said: “How like Charlotte to undo her work by a feeble
+muddle at the last moment.” But something in the dying evening, in the
+roar of the river, in their very embrace warned them that her words
+fell short of life, and George whispered: “Or did she mean it?”
+
+“Mean what?”
+
+“Signorino, domani faremo uno giro—”
+
+Lucy bent forward and said with gentleness: “Lascia, prego, lascia.
+ Siamo sposati.”
+
+“Scusi tanto, signora,” he replied in tones as gentle and whipped up
+his horse.
+
+“Buona sera—e grazie.”
+
+“Niente.”
+
+The cabman drove away singing.
+
+“Mean what, George?”
+
+He whispered: “Is it this? Is this possible? I’ll put a marvel to you.
+ That your cousin has always hoped. That from the very first moment we
+met, she hoped, far down in her mind, that we should be like this—of
+course, very far down. That she fought us on the surface, and yet she
+hoped. I can’t explain her any other way. Can you? Look how she kept me
+alive in you all the summer; how she gave you no peace; how month after
+month she became more eccentric and unreliable. The sight of us haunted
+her—or she couldn’t have described us as she did to her friend. There
+are details—it burnt. I read the book afterwards. She is not frozen,
+ Lucy, she is not withered up all through. She tore us apart twice, but
+in the rectory that evening she was given one more chance to make us
+happy. We can never make friends with her or thank her. But I do
+believe that, far down in her heart, far below all speech and
+behaviour, she is glad.”
+
+“It is impossible,” murmured Lucy, and then, remembering the
+experiences of her own heart, she said: “No—it is just possible.”
+
+Youth enwrapped them; the song of Phaethon announced passion requited,
+love attained. But they were conscious of a love more mysterious than
+this. The song died away; they heard the river, bearing down the snows
+of winter into the Mediterranean.`
     }
   ]
 };
