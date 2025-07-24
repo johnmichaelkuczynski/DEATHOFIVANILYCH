@@ -1,24 +1,21 @@
 export const bookContent: BookContent = {
   title: "A Room With A View",
-  author: "Zhi Systems",
+  author: "E.M. Forster",
   sections: [
     {
       id: "section-1",
       title: "Section 1",
-      content: `By E. M. Forster
-
-CONTENTS
-
-Part One.
+      content: `CONTENTS
+ Part One.
  Chapter I. The Bertolini
  Chapter II. In Santa Croce with No Baedeker
  Chapter III. Music, Violets, and the Letter “S”
  Chapter IV. Fourth Chapter
  Chapter V. Possibilities of a Pleasant Outing
- Chapter VI. The Reverend Arthur Beebe, the Reverend Cuthbert Eager, Mr. Emerson, Mr. George Emerson, Miss Eleanor Lavish, Miss Charlotte Bartlett, and Miss Lucy Honeychurch Drive Out in Carriages to See a View; Italians Drive Them
+ Chapter VI. The Reverend Arthur Beebe, the Reverend Cuthbert Eager, Mr.   Emerson, Mr. George Emerson, Miss Eleanor Lavish, Miss Charlotte Bartlett,  and Miss Lucy Honeychurch Drive Out in Carriages to See a View; Italians Drive Them
  Chapter VII. They Return
 
-Part Two.
+ Part Two.
  Chapter VIII. Medieval
  Chapter IX. Lucy As a Work of Art
  Chapter X. Cecil as a Humourist
