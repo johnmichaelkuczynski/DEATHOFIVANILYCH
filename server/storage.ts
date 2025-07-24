@@ -4,8 +4,8 @@ import { eq, desc } from "drizzle-orm";
 
 export interface IStorage {
   createChatMessage(message: InsertChatMessage): Promise<ChatMessage>;
-  getChatMessages(): Promise<ChatMessage[]>;
-  clearChatMessages(): Promise<void>;
+  getChatMessages(sessionKey: string): Promise<ChatMessage[]>;
+  clearChatMessages(sessionKey: string): Promise<void>;
   createInstruction(instruction: InsertInstruction): Promise<Instruction>;
   getInstructions(): Promise<Instruction[]>;
   createRewrite(rewrite: InsertRewrite): Promise<Rewrite>;
@@ -49,6 +49,7 @@ export interface IStorage {
 
 export class MemStorage implements IStorage {
   private chatMessages: Map<number, ChatMessage>;
+  private chatMessagesBySession: Map<string, ChatMessage[]>;
   private instructions: Map<number, Instruction>;
   private rewrites: Map<number, Rewrite>;
   private quizzes: Map<number, Quiz>;
@@ -69,6 +70,7 @@ export class MemStorage implements IStorage {
 
   constructor() {
     this.chatMessages = new Map();
+    this.chatMessagesBySession = new Map();
     this.instructions = new Map();
     this.rewrites = new Map();
     this.quizzes = new Map();
@@ -96,16 +98,30 @@ export class MemStorage implements IStorage {
       timestamp: new Date(),
     };
     this.chatMessages.set(id, message);
+    
+    // Also store by session key for efficient retrieval
+    const sessionKey = message.sessionKey;
+    if (!this.chatMessagesBySession.has(sessionKey)) {
+      this.chatMessagesBySession.set(sessionKey, []);
+    }
+    this.chatMessagesBySession.get(sessionKey)!.push(message);
+    
     return message;
   }
 
-  async getChatMessages(): Promise<ChatMessage[]> {
-    return Array.from(this.chatMessages.values())
-      .sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime());
+  async getChatMessages(sessionKey: string): Promise<ChatMessage[]> {
+    const messages = this.chatMessagesBySession.get(sessionKey) || [];
+    return messages.sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime());
   }
 
-  async clearChatMessages(): Promise<void> {
-    this.chatMessages.clear();
+  async clearChatMessages(sessionKey: string): Promise<void> {
+    const messages = this.chatMessagesBySession.get(sessionKey) || [];
+    // Remove from main map
+    for (const message of messages) {
+      this.chatMessages.delete(message.id);
+    }
+    // Clear session-specific messages
+    this.chatMessagesBySession.set(sessionKey, []);
   }
 
   async createInstruction(insertInstruction: InsertInstruction): Promise<Instruction> {
@@ -330,12 +346,14 @@ export class DatabaseStorage implements IStorage {
     return message;
   }
 
-  async getChatMessages(): Promise<ChatMessage[]> {
-    return await db.select().from(chatMessages).orderBy(desc(chatMessages.timestamp));
+  async getChatMessages(sessionKey: string): Promise<ChatMessage[]> {
+    return await db.select().from(chatMessages)
+      .where(eq(chatMessages.sessionKey, sessionKey))
+      .orderBy(chatMessages.timestamp);
   }
 
-  async clearChatMessages(): Promise<void> {
-    await db.delete(chatMessages);
+  async clearChatMessages(sessionKey: string): Promise<void> {
+    await db.delete(chatMessages).where(eq(chatMessages.sessionKey, sessionKey));
   }
 
   async createInstruction(insertInstruction: InsertInstruction): Promise<Instruction> {

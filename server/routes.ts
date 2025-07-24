@@ -285,8 +285,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const { message, model } = chatRequestSchema.parse(req.body);
       const user = await getCurrentUser(req);
       
-      // Get conversation history for context
-      const chatHistory = await storage.getChatMessages();
+      // Get conversation history for context using book-specific session key
+      const sessionKey = `aroomwithaview_chat_${req.session.id}`;
+      const chatHistory = await storage.getChatMessages(sessionKey);
       
       const fullResponse = await generateAIResponse(model, message, false, chatHistory);
       
@@ -308,6 +309,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         message,
         response: fullResponse,
         model,
+        sessionKey,
         context: { documentContext: true }
       });
       
@@ -359,7 +361,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Get chat history
   app.get("/api/chat/history", async (req, res) => {
     try {
-      const messages = await storage.getChatMessages();
+      const sessionKey = `aroomwithaview_chat_${req.session.id}`;
+      const messages = await storage.getChatMessages(sessionKey);
       res.json(messages);
     } catch (error) {
       console.error("Chat history error:", error);
@@ -370,7 +373,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Clear chat history
   app.delete("/api/chat/clear", async (req, res) => {
     try {
-      await storage.clearChatMessages();
+      const sessionKey = `aroomwithaview_chat_${req.session.id}`;
+      await storage.clearChatMessages(sessionKey);
       res.json({ success: true });
     } catch (error) {
       console.error("Clear chat error:", error);

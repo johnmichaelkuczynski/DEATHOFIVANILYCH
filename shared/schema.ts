@@ -7,6 +7,7 @@ export const chatMessages = pgTable("chat_messages", {
   message: text("message").notNull(),
   response: text("response").notNull(),
   model: text("model").notNull(),
+  sessionKey: text("session_key").notNull(),
   timestamp: timestamp("timestamp").defaultNow().notNull(),
   context: jsonb("context"),
 });
@@ -108,6 +109,7 @@ export const insertChatMessageSchema = createInsertSchema(chatMessages).pick({
   message: true,
   response: true,
   model: true,
+  sessionKey: true,
   context: true,
 });
 
