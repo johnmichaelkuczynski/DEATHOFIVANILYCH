@@ -5,30 +5,30 @@ import { bookContent as paperContent } from "@shared/book-content";
 const createTableOfContents = () => {
   const tableOfContents: Array<{ id: string; title: string; level: number }> = [
     // Part One
-    { id: "section-1", title: "Part One", level: 0 },
-    { id: "section-1", title: "Chapter I. The Bertolini", level: 1 },
-    { id: "section-1", title: "Chapter II. In Santa Croce with No Baedeker", level: 1 },
-    { id: "section-1", title: "Chapter III. Music, Violets, and the Letter \"S\"", level: 1 },
-    { id: "section-1", title: "Chapter IV. Fourth Chapter", level: 1 },
-    { id: "section-1", title: "Chapter V. Possibilities of a Pleasant Outing", level: 1 },
-    { id: "section-1", title: "Chapter VI. The Reverend Arthur Beebe, the Reverend Cuthbert Eager, Mr. Emerson, Mr. George Emerson, Miss Eleanor Lavish, Miss Charlotte Bartlett, and Miss Lucy Honeychurch Drive Out in Carriages to See a View; Italians Drive Them", level: 1 },
-    { id: "section-1", title: "Chapter VII. They Return", level: 1 },
+    { id: "part-one", title: "Part One", level: 0 },
+    { id: "chapter-1", title: "Chapter I. The Bertolini", level: 1 },
+    { id: "chapter-2", title: "Chapter II. In Santa Croce with No Baedeker", level: 1 },
+    { id: "chapter-3", title: "Chapter III. Music, Violets, and the Letter \"S\"", level: 1 },
+    { id: "chapter-4", title: "Chapter IV. Fourth Chapter", level: 1 },
+    { id: "chapter-5", title: "Chapter V. Possibilities of a Pleasant Outing", level: 1 },
+    { id: "chapter-6", title: "Chapter VI. The Reverend Arthur Beebe, the Reverend Cuthbert Eager, Mr. Emerson, Mr. George Emerson, Miss Eleanor Lavish, Miss Charlotte Bartlett, and Miss Lucy Honeychurch Drive Out in Carriages to See a View; Italians Drive Them", level: 1 },
+    { id: "chapter-7", title: "Chapter VII. They Return", level: 1 },
     
     // Part Two
-    { id: "section-1", title: "Part Two", level: 0 },
-    { id: "section-1", title: "Chapter VIII. Medieval", level: 1 },
-    { id: "section-1", title: "Chapter IX. Lucy As a Work of Art", level: 1 },
-    { id: "section-1", title: "Chapter X. Cecil as a Humourist", level: 1 },
-    { id: "section-1", title: "Chapter XI. In Mrs. Vyse's Well-Appointed Flat", level: 1 },
-    { id: "section-1", title: "Chapter XII. Twelfth Chapter", level: 1 },
-    { id: "section-1", title: "Chapter XIII. How Miss Bartlett's Boiler Was So Tiresome", level: 1 },
-    { id: "section-1", title: "Chapter XIV. How Lucy Faced the External Situation Bravely", level: 1 },
-    { id: "section-1", title: "Chapter XV. The Disaster Within", level: 1 },
-    { id: "section-1", title: "Chapter XVI. Lying to George", level: 1 },
-    { id: "section-1", title: "Chapter XVII. Lying to Cecil", level: 1 },
-    { id: "section-1", title: "Chapter XVIII. Lying to Mr. Beebe, Mrs. Honeychurch, Freddy, and The Servants", level: 1 },
-    { id: "section-1", title: "Chapter XIX. Lying to Mr. Emerson", level: 1 },
-    { id: "section-1", title: "Chapter XX. The End of the Middle Ages", level: 1 }
+    { id: "part-two", title: "Part Two", level: 0 },
+    { id: "chapter-8", title: "Chapter VIII. Medieval", level: 1 },
+    { id: "chapter-9", title: "Chapter IX. Lucy As a Work of Art", level: 1 },
+    { id: "chapter-10", title: "Chapter X. Cecil as a Humourist", level: 1 },
+    { id: "chapter-11", title: "Chapter XI. In Mrs. Vyse's Well-Appointed Flat", level: 1 },
+    { id: "chapter-12", title: "Chapter XII. Twelfth Chapter", level: 1 },
+    { id: "chapter-13", title: "Chapter XIII. How Miss Bartlett's Boiler Was So Tiresome", level: 1 },
+    { id: "chapter-14", title: "Chapter XIV. How Lucy Faced the External Situation Bravely", level: 1 },
+    { id: "chapter-15", title: "Chapter XV. The Disaster Within", level: 1 },
+    { id: "chapter-16", title: "Chapter XVI. Lying to George", level: 1 },
+    { id: "chapter-17", title: "Chapter XVII. Lying to Cecil", level: 1 },
+    { id: "chapter-18", title: "Chapter XVIII. Lying to Mr. Beebe, Mrs. Honeychurch, Freddy, and The Servants", level: 1 },
+    { id: "chapter-19", title: "Chapter XIX. Lying to Mr. Emerson", level: 1 },
+    { id: "chapter-20", title: "Chapter XX. The End of the Middle Ages", level: 1 }
   ];
   
   return tableOfContents;

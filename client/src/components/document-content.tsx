@@ -9,6 +9,15 @@ import ChunkingModal from "@/components/chunking-modal";
 import { bookContent as paperContent } from "@shared/book-content";
 import { Copy, Lock } from "lucide-react";
 
+// Helper function to convert Roman numerals to Arabic numbers
+const romanToArabic = (roman: string): number => {
+  const romanMap: { [key: string]: number } = {
+    'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8, 'IX': 9, 'X': 10,
+    'XI': 11, 'XII': 12, 'XIII': 13, 'XIV': 14, 'XV': 15, 'XVI': 16, 'XVII': 17, 'XVIII': 18, 'XIX': 19, 'XX': 20
+  };
+  return romanMap[roman] || 1;
+};
+
 interface DocumentContentProps {
   mathMode?: boolean;
   onTextSelectedForChat?: (text: string) => void;
@@ -166,6 +175,33 @@ export default function DocumentContent({
         .split('\n\n')
         .map(paragraph => {
           if (!paragraph.trim()) return '';
+          
+          // Special handling for table of contents section
+          if (paragraph.includes('CONTENTS') && paragraph.includes('Part One') && paragraph.includes('Chapter')) {
+            const lines = paragraph.split('\n');
+            return lines.map(line => {
+              const trimmedLine = line.trim();
+              if (!trimmedLine) return '';
+              
+              if (trimmedLine === 'CONTENTS') {
+                return `<h2 class="text-xl font-semibold mb-4 mt-8 text-slate-900 dark:text-slate-100">${trimmedLine}</h2>`;
+              } else if (trimmedLine.startsWith('Part ')) {
+                const partId = trimmedLine.toLowerCase().includes('one') ? 'part-one' : 'part-two';
+                return `<div id="${partId}" class="font-semibold text-slate-900 dark:text-slate-100 mt-4 mb-2">${trimmedLine}</div>`;
+              } else if (trimmedLine.startsWith(' Chapter ')) {
+                // Extract chapter number for ID
+                const chapterMatch = trimmedLine.match(/Chapter ([IVXLC]+)\./);
+                let chapterId = '';
+                if (chapterMatch) {
+                  const romanNum = chapterMatch[1];
+                  const arabicNum = romanToArabic(romanNum);
+                  chapterId = `chapter-${arabicNum}`;
+                }
+                return `<div id="${chapterId}" class="pl-4 text-slate-800 dark:text-slate-200 mb-1">${trimmedLine}</div>`;
+              }
+              return `<div class="text-slate-800 dark:text-slate-200 mb-1">${trimmedLine}</div>`;
+            }).join('');
+          }
           
           // Check if this is a heading for Dream Psychology content - look for ALL CAPS chapter titles
           if (paragraph.match(/^[A-Z][A-Z\s]+$/)) {
