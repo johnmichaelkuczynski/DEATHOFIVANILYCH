@@ -262,7 +262,7 @@ export default function ChatInterface({ selectedModel, mathMode = true, selected
   };
 
   return (
-    <aside className="w-[550px] bg-card border-l border-border sticky top-16 h-[calc(100vh-100px)]">
+    <aside className="w-full bg-card border-l border-border sticky top-16 h-[calc(100vh-100px)]">
       <div className="flex flex-col h-full overflow-hidden">
         {/* Chat Header */}
         <div className="bg-muted px-4 py-3 border-b border-border">
