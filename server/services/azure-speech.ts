@@ -7,25 +7,32 @@ interface AzureSpeechConfig {
 }
 
 export class AzureSpeechService {
-  private config: AzureSpeechConfig;
+  private config: AzureSpeechConfig | null = null;
 
   constructor() {
     const key = process.env.AZURE_SPEECH_KEY;
     const region = process.env.AZURE_SPEECH_REGION;
     
-    if (!key || !region) {
-      throw new Error('Azure Speech Service credentials not configured. Please set AZURE_SPEECH_KEY and AZURE_SPEECH_REGION environment variables.');
+    if (key && region) {
+      // Build endpoint from region
+      const endpoint = `https://${region}.tts.speech.microsoft.com`;
+      console.log(`Azure Speech Service initialized with region: ${region}, endpoint: ${endpoint}`);
+      this.config = { endpoint, key, region };
+    } else {
+      console.log('Azure Speech Service not configured - podcast audio generation will be disabled');
+      this.config = null;
     }
+  }
 
-    // Build endpoint from region
-    const endpoint = `https://${region}.tts.speech.microsoft.com`;
-
-    console.log(`Azure Speech Service initialized with region: ${region}, endpoint: ${endpoint}`);
-
-    this.config = { endpoint, key, region };
+  isConfigured(): boolean {
+    return this.config !== null;
   }
 
   async synthesizeSpeech(text: string, voice: string = 'en-US-JennyNeural'): Promise<Buffer> {
+    if (!this.config) {
+      throw new Error('Azure Speech Service not configured. Please set AZURE_SPEECH_KEY and AZURE_SPEECH_REGION environment variables.');
+    }
+
     const ssml = `
       <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
         <voice name="${voice}">
@@ -68,6 +75,10 @@ export class AzureSpeechService {
   }
 
   async generatePodcastAudio(script: string): Promise<Buffer> {
+    if (!this.config) {
+      throw new Error('Azure Speech Service not configured. Please set AZURE_SPEECH_KEY and AZURE_SPEECH_REGION environment variables.');
+    }
+
     // Split long text into manageable chunks for better speech synthesis
     const chunks = this.splitTextIntoChunks(script, 5000); // Azure has limits
     const audioBuffers: Buffer[] = [];

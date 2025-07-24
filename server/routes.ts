@@ -1254,6 +1254,13 @@ FEEDBACK: [explanation focusing on content accuracy]`;
         });
       }
 
+      // Check if Azure Speech Service is configured
+      if (!azureSpeechService.isConfigured()) {
+        return res.status(503).json({ 
+          error: "Audio generation service not configured. Please contact administrator." 
+        });
+      }
+
       // Generate audio using Azure Speech Service
       const audioBuffer = await azureSpeechService.generatePodcastAudio(script);
       
@@ -1293,6 +1300,13 @@ FEEDBACK: [explanation focusing on content accuracy]`;
 
       // Generate script with custom instructions if provided  
       const script = await podcastGeneratorService.generatePodcastScript(text, model, customInstructions || undefined);
+      
+      // Check if Azure Speech Service is configured
+      if (!azureSpeechService.isConfigured()) {
+        return res.status(503).json({ 
+          error: "Audio generation service not configured. Please contact administrator." 
+        });
+      }
       
       // Generate audio directly
       const audioBuffer = await azureSpeechService.generatePodcastAudio(script);
