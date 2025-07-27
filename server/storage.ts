@@ -55,6 +55,7 @@ export class MemStorage implements IStorage {
   private quizzes: Map<number, Quiz>;
   private studyGuides: Map<number, StudyGuide>;
   private studentTests: Map<number, StudentTest>;
+  private testResults: Map<number, TestResult>;
   private users: Map<number, User>;
   private usersByUsername: Map<string, User>;
   private sessions: Map<string, Session>;
@@ -65,6 +66,7 @@ export class MemStorage implements IStorage {
   private currentQuizId: number;
   private currentStudyGuideId: number;
   private currentStudentTestId: number;
+  private currentTestResultId: number;
   private currentUserId: number;
   private currentPurchaseId: number;
 
@@ -73,6 +75,7 @@ export class MemStorage implements IStorage {
     this.chatMessagesBySession = new Map();
     this.instructions = new Map();
     this.rewrites = new Map();
+    this.testResults = new Map();
     this.quizzes = new Map();
     this.studyGuides = new Map();
     this.studentTests = new Map();
@@ -86,6 +89,7 @@ export class MemStorage implements IStorage {
     this.currentQuizId = 1;
     this.currentStudyGuideId = 1;
     this.currentStudentTestId = 1;
+    this.currentTestResultId = 1;
     this.currentUserId = 1;
     this.currentPurchaseId = 1;
   }
@@ -96,6 +100,7 @@ export class MemStorage implements IStorage {
       ...insertMessage,
       id,
       timestamp: new Date(),
+      context: insertMessage.context || null,
     };
     this.chatMessages.set(id, message);
     
@@ -146,6 +151,8 @@ export class MemStorage implements IStorage {
       ...insertRewrite,
       id,
       timestamp: new Date(),
+      chunkIndex: insertRewrite.chunkIndex ?? null,
+      parentRewriteId: insertRewrite.parentRewriteId ?? null,
     };
     this.rewrites.set(id, rewrite);
     return rewrite;
@@ -166,6 +173,7 @@ export class MemStorage implements IStorage {
       ...insertQuiz,
       id,
       timestamp: new Date(),
+      chunkIndex: insertQuiz.chunkIndex ?? null,
     };
     this.quizzes.set(id, quiz);
     return quiz;
@@ -186,6 +194,7 @@ export class MemStorage implements IStorage {
       ...insertStudyGuide,
       id,
       timestamp: new Date(),
+      chunkIndex: insertStudyGuide.chunkIndex ?? null,
     };
     this.studyGuides.set(id, studyGuide);
     return studyGuide;
@@ -206,6 +215,7 @@ export class MemStorage implements IStorage {
       ...insertStudentTest,
       id,
       timestamp: new Date(),
+      chunkIndex: insertStudentTest.chunkIndex ?? null,
     };
     this.studentTests.set(id, studentTest);
     return studentTest;
@@ -231,6 +241,7 @@ export class MemStorage implements IStorage {
       credits,
       createdAt: new Date(),
       lastLogin: null,
+      email: insertUser.email ?? null,
     };
     this.users.set(id, user);
     this.usersByUsername.set(user.username, user);
@@ -316,6 +327,8 @@ export class MemStorage implements IStorage {
       ...insertPurchase,
       id,
       createdAt: new Date(),
+      status: insertPurchase.status ?? "pending",
+      paypalOrderId: insertPurchase.paypalOrderId ?? null,
     };
     this.purchases.set(id, purchase);
     return purchase;
@@ -333,6 +346,30 @@ export class MemStorage implements IStorage {
       const updatedPurchase = { ...purchase, status };
       this.purchases.set(purchaseId, updatedPurchase);
     }
+  }
+
+  // Test result management methods
+  async createTestResult(insertTestResult: InsertTestResult): Promise<TestResult> {
+    const id = this.currentTestResultId++;
+    const testResult: TestResult = {
+      ...insertTestResult,
+      id,
+      completedAt: new Date(),
+    };
+    this.testResults.set(id, testResult);
+    return testResult;
+  }
+
+  async getTestResultsByUserId(userId: number): Promise<TestResult[]> {
+    return Array.from(this.testResults.values())
+      .filter(result => result.userId === userId)
+      .sort((a, b) => b.completedAt.getTime() - a.completedAt.getTime());
+  }
+
+  async getTestResultsByStudentTestId(studentTestId: number): Promise<TestResult[]> {
+    return Array.from(this.testResults.values())
+      .filter(result => result.studentTestId === studentTestId)
+      .sort((a, b) => b.completedAt.getTime() - a.completedAt.getTime());
   }
 }
 
@@ -433,6 +470,8 @@ export class DatabaseStorage implements IStorage {
     const [studentTest] = await db.select().from(studentTests).where(eq(studentTests.id, id));
     return studentTest || null;
   }
+
+
 
   // User management methods with admin support
   async createUser(insertUser: InsertUser): Promise<User> {

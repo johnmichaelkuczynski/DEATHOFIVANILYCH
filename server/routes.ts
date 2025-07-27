@@ -1372,8 +1372,8 @@ Write in an engaging, academic tone suitable for literature students. Focus on c
       const report = await generateAIResponse(model, prompt, []);
       
       // Deduct credits (2 credits for literary analysis)
-      if (user && !isAdmin(user.username, user.email || '')) {
-        await storage.updateUserCredits(user.id, -2);
+      if (user && !isAdmin(user)) {
+        await storage.updateUserCredits(user.id, user.credits - 2);
       }
 
       res.json({ report });
@@ -1438,8 +1438,8 @@ Write in conversational but scholarly tone, as if speaking to literature student
       const audioUrl = `data:audio/mpeg;base64,${audioBase64}`;
       
       // Deduct credits (4 total: script + audio generation for literary analysis)
-      if (user && !isAdmin(user.username, user.email || '')) {
-        await storage.updateUserCredits(user.id, -4);
+      if (user && !isAdmin(user)) {
+        await storage.updateUserCredits(user.id, user.credits - 4);
       }
 
       res.json({ audioUrl, script });
