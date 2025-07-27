@@ -505,15 +505,15 @@ ${includeAnswerKey ? 'Please provide both the test questions AND a separate answ
   }
 }
 
-export async function generateStudyGuide(model: AIModel, sourceText: string, instructions: string): Promise<{ guideContent: string }> {
+export async function generateStudyGuide(model: AIModel, sourceText: string, instructions: string): Promise<string> {
   const paperContext = getPaperContext();
   
   const systemPrompt = `${paperContext}
 
-You are helping create a comprehensive study guide based on the Dictionary of Analytic Philosophy content. Follow the user's specific instructions for study guide format, structure, and requirements.
+You are helping create a comprehensive study guide based on "The Death of Ivan Ilych" by Leo Tolstoy. Follow the user's specific instructions for study guide format, structure, and requirements.
 
 STUDY GUIDE GENERATION INSTRUCTIONS:
-- Create study materials that help understand the philosophical concepts and definitions
+- Create study materials that help understand the literary themes, character development, and philosophical insights
 - Follow the user's specific format requirements (outlines, summaries, key points, etc.)
 - Ensure content is academically rigorous and promotes genuine comprehension
 - Make information clear, well-organized, and study-friendly
@@ -559,7 +559,7 @@ Please provide a well-structured study guide that helps students understand and 
     
     // Clean the result
     const cleanedResult = cleanRewriteText(result);
-    return { guideContent: cleanedResult };
+    return cleanedResult;
   } catch (error) {
     const modelName = getModelDisplayName(model);
     console.error(`Error generating study guide with ${modelName}:`, error);
@@ -570,7 +570,7 @@ Please provide a well-structured study guide that helps students understand and 
       try {
         const fallbackResult = await generateOpenAIResponse(fullPrompt, systemPrompt);
         const cleanedResult = cleanRewriteText(fallbackResult);
-        return { guideContent: cleanedResult };
+        return cleanedResult;
       } catch (fallbackError) {
         console.error("AI2 fallback also failed:", fallbackError);
         throw new Error("Unable to generate study guide. Please try again with a different model.");
