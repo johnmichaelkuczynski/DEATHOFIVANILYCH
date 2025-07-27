@@ -1332,6 +1332,124 @@ FEEDBACK: [explanation focusing on content accuracy]`;
     }
   });
 
+  // Literary Report generation endpoint
+  app.post("/api/generate-literary-report", async (req, res) => {
+    try {
+      const { text, contextText, model } = req.body;
+      
+      if (!text || !contextText || !model) {
+        return res.status(400).json({ error: "Missing required fields: text, contextText, model" });
+      }
+
+      const user = await getCurrentUser(req);
+      
+      // Check if user can access feature
+      if (!canAccessFeature(user)) {
+        return res.status(403).json({ 
+          error: "Insufficient credits. Please register and purchase credits to access this feature." 
+        });
+      }
+
+      // Generate literary report
+      const prompt = `You are a literary analysis expert. Create a comprehensive literary analysis report (300-500 words) for the following passage from "A Room With A View" by E.M. Forster.
+
+SELECTED PASSAGE:
+${text}
+
+SURROUNDING CONTEXT (±300 words):
+${contextText}
+
+Provide a scholarly literary analysis that covers:
+- Literary techniques used (symbolism, imagery, characterization, narrative voice)
+- Themes and their development
+- Historical/social context of the Edwardian period
+- Character development and relationships
+- Style and language analysis
+- Significance within the broader narrative
+
+Write in an engaging, academic tone suitable for literature students. Focus on close reading and textual evidence.`;
+
+      const report = await generateAIResponse(model, prompt, []);
+      
+      // Deduct credits (2 credits for literary analysis)
+      if (user && !isAdmin(user.username, user.email || '')) {
+        await storage.updateUserCredits(user.id, -2);
+      }
+
+      res.json({ report });
+
+    } catch (error) {
+      console.error("Literary report generation error:", error);
+      res.status(500).json({ error: error instanceof Error ? error.message : "Failed to generate literary report" });
+    }
+  });
+
+  // Literary Podcast generation endpoint
+  app.post("/api/generate-literary-podcast", async (req, res) => {
+    try {
+      const { text, contextText, model } = req.body;
+      
+      if (!text || !contextText || !model) {
+        return res.status(400).json({ error: "Missing required fields: text, contextText, model" });
+      }
+
+      const user = await getCurrentUser(req);
+      
+      // Check if user can access feature
+      if (!canAccessFeature(user)) {
+        return res.status(403).json({ 
+          error: "Insufficient credits. Please register and purchase credits to access this feature." 
+        });
+      }
+
+      // Generate podcast script
+      const scriptPrompt = `Create a 5-minute literary analysis podcast script about this passage from "A Room With A View" by E.M. Forster.
+
+SELECTED PASSAGE:
+${text}
+
+SURROUNDING CONTEXT (±300 words):
+${contextText}
+
+Format as a single-speaker podcast script that includes:
+- Engaging introduction
+- Close reading of the passage
+- Analysis of Forster's writing techniques
+- Discussion of themes (class, society, personal growth)
+- Historical context of Edwardian England
+- Conclusion connecting to broader work
+
+Write in conversational but scholarly tone, as if speaking to literature students. Include natural speech patterns and transitions.`;
+
+      const script = await generateAIResponse(model, scriptPrompt, []);
+      
+      // Check if Azure Speech Service is configured
+      if (!azureSpeechService.isConfigured()) {
+        return res.status(503).json({ 
+          error: "Audio generation service not configured. Please contact administrator." 
+        });
+      }
+      
+      // Generate audio from script
+      const audioBuffer = await azureSpeechService.generatePodcastAudio(script);
+      
+      // Create blob URL for audio
+      const audioBase64 = audioBuffer.toString('base64');
+      const audioUrl = `data:audio/mpeg;base64,${audioBase64}`;
+      
+      // Deduct credits (4 total: script + audio generation for literary analysis)
+      if (user && !isAdmin(user.username, user.email || '')) {
+        await storage.updateUserCredits(user.id, -4);
+      }
+
+      res.json({ audioUrl, script });
+
+    } catch (error) {
+      console.error("Literary podcast generation error:", error);
+      res.status(500).json({ error: error instanceof Error ? error.message : "Failed to generate literary podcast" });
+    }
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }
