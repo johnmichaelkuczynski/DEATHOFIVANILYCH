@@ -1351,7 +1351,7 @@ FEEDBACK: [explanation focusing on content accuracy]`;
       }
 
       // Generate literary report
-      const prompt = `You are a literary analysis expert. Create a comprehensive literary analysis report (300-500 words) for the following passage from "A Room With A View" by E.M. Forster.
+      const prompt = `You are a literary analysis expert. Create a comprehensive literary analysis report (300-500 words) for the following passage from "The Death of Ivan Ilych" by Leo Tolstoy.
 
 SELECTED PASSAGE:
 ${text}
@@ -1362,7 +1362,7 @@ ${contextText}
 Provide a scholarly literary analysis that covers:
 - Literary techniques used (symbolism, imagery, characterization, narrative voice)
 - Themes and their development
-- Historical/social context of the Edwardian period
+- Historical/social context of 19th century Russian society
 - Character development and relationships
 - Style and language analysis
 - Significance within the broader narrative
@@ -1403,7 +1403,7 @@ Write in an engaging, academic tone suitable for literature students. Focus on c
       }
 
       // Generate podcast script
-      const scriptPrompt = `Create a 5-minute literary analysis podcast script about this passage from "A Room With A View" by E.M. Forster.
+      const scriptPrompt = `Create a 5-minute literary analysis podcast script about this passage from "The Death of Ivan Ilych" by Leo Tolstoy.
 
 SELECTED PASSAGE:
 ${text}
@@ -1414,9 +1414,9 @@ ${contextText}
 Format as a single-speaker podcast script that includes:
 - Engaging introduction
 - Close reading of the passage
-- Analysis of Forster's writing techniques
+- Analysis of Tolstoy's writing techniques
 - Discussion of themes (class, society, personal growth)
-- Historical context of Edwardian England
+- Historical context of 19th century Russia
 - Conclusion connecting to broader work
 
 Write in conversational but scholarly tone, as if speaking to literature students. Include natural speech patterns and transitions.`;
