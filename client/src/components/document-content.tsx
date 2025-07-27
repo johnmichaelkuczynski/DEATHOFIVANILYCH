@@ -227,24 +227,8 @@ export default function DocumentContent({
           
 
           
-          // Check if this is a heading for Dream Psychology content - look for ALL CAPS chapter titles
-          if (paragraph.match(/^[A-Z][A-Z\s]+$/)) {
-            let headingId = '';
-            const text = paragraph.trim();
-            
-            // Dream Psychology 9 chapters mapping based on exact content
-            if (text.includes('DREAMS HAVE A MEANING')) headingId = 'section-1';
-            else if (text.includes('THE DREAM MECHANISM') || text.includes('DREAM MECHANISM')) headingId = 'section-2';
-            else if (text.includes('WHY THE DREAM DISGUISES') || text.includes('DISGUISES THE DESIRES')) headingId = 'section-3';
-            else if (text.includes('DREAM ANALYSIS')) headingId = 'section-4';
-            else if (text.includes('SEX IN DREAMS')) headingId = 'section-5';
-            else if (text.includes('THE WISH IN DREAMS') || text.includes('WISH IN DREAMS')) headingId = 'section-6';
-            else if (text.includes('THE FUNCTION OF THE DREAM') || text.includes('FUNCTION OF THE DREAM')) headingId = 'section-7';
-            else if (text.includes('PRIMARY AND SECONDARY PROCESS') || text.includes('REGRESSION')) headingId = 'section-8';
-            else if (text.includes('THE UNCONSCIOUS AND CONSCIOUSNESS') || text.includes('REALITY')) headingId = 'section-9';
-            
-            return `<h2 id="${headingId}" class="text-xl font-semibold mb-4 mt-8 text-slate-900 dark:text-slate-100">${text}</h2>`;
-          }
+          // Skip heading detection for now - we'll add section IDs differently
+          // This content doesn't have clear headings to map to
           
           // Check if this is a subheading (shorter titles)
           if (paragraph.match(/^[A-Z][^.]{5,50}$/) && !paragraph.includes('|') && !paragraph.includes('=')) {
