@@ -134,7 +134,7 @@ export class PodcastGeneratorService {
   }
 
   private createPodcastPrompt(text: string): string {
-    return `You are creating a podcast script about a specific passage from "A Room With A View" by E. M. Forster. Your task is to create an engaging, informative podcast episode that follows this exact structure:
+    return `You are creating a podcast script about a specific passage from "The Death of Ivan Ilych" by Leo Tolstoy. Your task is to create an engaging, informative podcast episode that follows this exact structure:
 
 SELECTED PASSAGE:
 "${text}"
@@ -145,7 +145,7 @@ Create a podcast script that follows this EXACT format:
 [Provide a clear, engaging summary of the selected passage in 2-3 sentences]
 
 **ANALYSIS OF STRENGTHS**
-[Discuss what makes this passage valuable, insightful, or well-written. What does Forster do particularly well here?]
+[Discuss what makes this passage valuable, insightful, or well-written. What does Tolstoy do particularly well here?]
 
 **ANALYSIS OF WEAKNESSES** 
 [Identify any limitations, dated social attitudes, or areas where modern readers might find the perspectives outdated. Be fair but critical.]
@@ -158,8 +158,8 @@ Create a podcast script that follows this EXACT format:
 
 IMPORTANT GUIDELINES:
 - Write in a conversational podcast style, as if speaking directly to listeners
-- Keep the tone engaging but respectful to Forster's literary achievements
-- Focus specifically on the selected passage, not general information about Forster
+- Keep the tone engaging but respectful to Tolstoy's literary achievements
+- Focus specifically on the selected passage, not general information about Tolstoy
 - Make the content accessible to general audiences interested in literature
 - Each section should be substantial but concise (2-4 sentences each)
 - The quotations MUST be exact excerpts from the provided passage
@@ -169,7 +169,7 @@ Generate a complete podcast script now:`;
   }
 
   private createCustomPodcastPrompt(text: string, customInstructions: string): string {
-    return `You are creating a podcast script about a specific passage from "A Room With A View" by E. M. Forster based on custom user instructions.
+    return `You are creating a podcast script about a specific passage from "The Death of Ivan Ilych" by Leo Tolstoy based on custom user instructions.
 
 SELECTED PASSAGE:
 "${text}"
@@ -182,7 +182,7 @@ Create a podcast script following the user's instructions. Write in a conversati
 IMPORTANT GUIDELINES:
 - Write in conversational podcast style
 - Make content accessible to general audiences interested in literature  
-- Focus specifically on the selected passage, not general information about Forster
+- Focus specifically on the selected passage, not general information about Tolstoy
 - Do not use any markdown formatting - write in plain text only
 - Follow the user's specific instructions for content structure and focus
 

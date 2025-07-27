@@ -36,26 +36,26 @@ function getModelDisplayName(model: AIModel): string {
 function getPaperContext(): string {
   const fullContent = getFullDocumentContent();
   
-  return `You are an AI assistant for an academic learning platform focused on "A Room With A View" by E. M. Forster.
+  return `You are an AI assistant for an academic learning platform focused on "The Death of Ivan Ilych" by Leo Tolstoy.
 
-This document is Forster's celebrated Edwardian novel exploring themes of social conventions, personal freedom, and the clash between Victorian propriety and authentic human emotion set in Italy and England.
+This document is Tolstoy's profound novella exploring themes of mortality, the meaning of life, and the hypocrisy of bourgeois society through the story of a dying judge in 19th century Russia.
 
 CURRENT DOCUMENT CONTENT:
 ${fullContent}
 
 You should help users understand:
-- Forster's critique of Edwardian social conventions and class structures
-- The symbolism of Italy vs. England as representing freedom vs. constraint
-- Character development and psychological insights, particularly Lucy Honeychurch's journey
-- The novel's exploration of romance, passion, and authentic human connection
-- Social commentary on tourism, cultural prejudices, and British attitudes abroad
-- Literary techniques including irony, symbolism, and narrative perspective
-- The significance of "views" both literal and metaphorical throughout the novel
-- Themes of personal growth, self-discovery, and breaking free from social expectations
-- The role of minor characters in reflecting different attitudes and worldviews
-- Forster's humanistic philosophy and belief in personal relationships over social conventions
+- Tolstoy's critique of bourgeois society and its empty pursuit of status and materialism
+- The philosophical exploration of death, suffering, and the search for authentic existence
+- Character development and psychological insights, particularly Ivan Ilych's spiritual awakening
+- The contrast between authentic compassion (Gerasim) and social pretense (family and colleagues)
+- Themes of isolation, denial, and the universal human condition of mortality
+- Religious and existential themes about the meaning of life and redemption
+- Literary techniques including psychological realism and moral allegory
+- The significance of Ivan's illness as both physical suffering and spiritual crisis
+- Social commentary on the Russian bureaucratic class and professional ambition
+- Tolstoy's moral philosophy about what constitutes a meaningful life
 
-Answer questions about the novel's themes, characters, plot, and literary significance. Provide clear explanations of Forster's social commentary and help users develop their understanding of early 20th century English literature and social criticism.`;
+Answer questions about the novella's themes, characters, plot, and philosophical significance. Provide clear explanations of Tolstoy's moral vision and help users develop their understanding of Russian literature and existential themes.`;
 }
 
 // Helper function to clean markdown and improve formatting
@@ -298,7 +298,7 @@ export async function generateAIResponse(model: AIModel, prompt: string, isInstr
   }
   
   const systemPrompt = isInstruction 
-    ? `${paperContext}\n\nYou are helping analyze, modify, or explain the Dream Psychology content by Sigmund Freud. Follow the user's instructions precisely while staying true to the psychoanalytic concepts and theories presented. Keep responses concise unless the user specifically asks for elaboration.
+    ? `${paperContext}\n\nYou are helping analyze, modify, or explain "The Death of Ivan Ilych" by Leo Tolstoy. Follow the user's instructions precisely while staying true to the philosophical themes and literary insights presented. Keep responses concise unless the user specifically asks for elaboration.
 
 CRITICAL FORMATTING RULES:
 - Write in plain text format ONLY
@@ -306,7 +306,7 @@ CRITICAL FORMATTING RULES:
 - Use natural paragraph breaks to separate ideas (double line breaks)
 - Write as if for publication in a book or formal document
 - No bullet points, numbered lists, or formatting markup of any kind`
-    : `${paperContext}${conversationContext}\n\nIMPORTANT: This is a conversation about Dream Psychology by Sigmund Freud. Reference our previous discussion when relevant. Provide informative, helpful responses that fully answer questions about dream analysis, the unconscious mind, wish fulfillment, and psychoanalytic concepts presented in this work. Be clear and thorough while staying focused on the document content.
+    : `${paperContext}${conversationContext}\n\nIMPORTANT: This is a conversation about "The Death of Ivan Ilych" by Leo Tolstoy. Reference our previous discussion when relevant. Provide informative, helpful responses that fully answer questions about mortality, bourgeois society, spiritual awakening, and the philosophical themes presented in this profound novella. Be clear and thorough while staying focused on the document content.
 
 CRITICAL FORMATTING RULES:
 - Write in plain text format ONLY
@@ -415,10 +415,10 @@ export async function generateQuiz(model: AIModel, sourceText: string, instructi
   
   const systemPrompt = `${paperContext}
 
-You are helping create a comprehensive quiz/test/exam based on the Dictionary of Analytic Philosophy content. Follow the user's specific instructions for test format, question types, and requirements.
+You are helping create a comprehensive quiz/test/exam based on "The Death of Ivan Ilych" by Leo Tolstoy. Follow the user's specific instructions for test format, question types, and requirements.
 
 QUIZ GENERATION INSTRUCTIONS:
-- Create questions that test understanding of the philosophical concepts and definitions
+- Create questions that test understanding of the literary themes, character development, and philosophical insights
 - Follow the user's specific format requirements (multiple choice, essay, short answer, etc.)
 - Ensure questions are academically rigorous and test genuine comprehension
 - Make questions clear, specific, and well-structured

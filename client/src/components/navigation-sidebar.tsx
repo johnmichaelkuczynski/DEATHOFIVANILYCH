@@ -1,34 +1,27 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { bookContent as paperContent } from "@shared/book-content";
 
-// Create a table of contents based on the actual book content structure
+// Create a table of contents based on "The Death of Ivan Ilych" structure  
 const createTableOfContents = () => {
   const tableOfContents: Array<{ id: string; title: string; level: number }> = [
-    // Part One
-    { id: "part-one", title: "Part One", level: 0 },
-    { id: "chapter-1", title: "Chapter I. The Bertolini", level: 1 },
-    { id: "chapter-2", title: "Chapter II. In Santa Croce with No Baedeker", level: 1 },
-    { id: "chapter-3", title: "Chapter III. Music, Violets, and the Letter \"S\"", level: 1 },
-    { id: "chapter-4", title: "Chapter IV. Fourth Chapter", level: 1 },
-    { id: "chapter-5", title: "Chapter V. Possibilities of a Pleasant Outing", level: 1 },
-    { id: "chapter-6", title: "Chapter VI. The Reverend Arthur Beebe, the Reverend Cuthbert Eager, Mr. Emerson, Mr. George Emerson, Miss Eleanor Lavish, Miss Charlotte Bartlett, and Miss Lucy Honeychurch Drive Out in Carriages to See a View; Italians Drive Them", level: 1 },
-    { id: "chapter-7", title: "Chapter VII. They Return", level: 1 },
-    
-    // Part Two
-    { id: "part-two", title: "Part Two", level: 0 },
-    { id: "chapter-8", title: "Chapter VIII. Medieval", level: 1 },
-    { id: "chapter-9", title: "Chapter IX. Lucy As a Work of Art", level: 1 },
-    { id: "chapter-10", title: "Chapter X. Cecil as a Humourist", level: 1 },
-    { id: "chapter-11", title: "Chapter XI. In Mrs. Vyse's Well-Appointed Flat", level: 1 },
-    { id: "chapter-12", title: "Chapter XII. Twelfth Chapter", level: 1 },
-    { id: "chapter-13", title: "Chapter XIII. How Miss Bartlett's Boiler Was So Tiresome", level: 1 },
-    { id: "chapter-14", title: "Chapter XIV. How Lucy Faced the External Situation Bravely", level: 1 },
-    { id: "chapter-15", title: "Chapter XV. The Disaster Within", level: 1 },
-    { id: "chapter-16", title: "Chapter XVI. Lying to George", level: 1 },
-    { id: "chapter-17", title: "Chapter XVII. Lying to Cecil", level: 1 },
-    { id: "chapter-18", title: "Chapter XVIII. Lying to Mr. Beebe, Mrs. Honeychurch, Freddy, and The Servants", level: 1 },
-    { id: "chapter-19", title: "Chapter XIX. Lying to Mr. Emerson", level: 1 },
-    { id: "chapter-20", title: "Chapter XX. The End of the Middle Ages", level: 1 }
+    // All 17 sections matching the actual book content
+    { id: "section-1", title: "I. The News of Death", level: 0 },
+    { id: "section-2", title: "II. The Funeral and Friends", level: 0 },
+    { id: "section-3", title: "III. The Pension Discussion", level: 0 },
+    { id: "section-4", title: "IV. Ivan's Early Life", level: 0 },
+    { id: "section-5", title: "V. Career and Marriage", level: 0 },
+    { id: "section-6", title: "VI. The Move to Petersburg", level: 0 },
+    { id: "section-7", title: "VII. The Accident", level: 0 },
+    { id: "section-8", title: "VIII. The Illness Develops", level: 0 },
+    { id: "section-9", title: "IX. Family Reactions", level: 0 },
+    { id: "section-10", title: "X. The Growing Pain", level: 0 },
+    { id: "section-11", title: "XI. Medical Consultations", level: 0 },
+    { id: "section-12", title: "XII. Gerasim's Compassion", level: 0 },
+    { id: "section-13", title: "XIII. Morning Routine", level: 0 },
+    { id: "section-14", title: "XIV. The Specialist", level: 0 },
+    { id: "section-15", title: "XV. Family's Evening Out", level: 0 },
+    { id: "section-16", title: "XVI. The Final Days", level: 0 },
+    { id: "section-17", title: "XVII. Death and Revelation", level: 0 }
   ];
   
   return tableOfContents;
