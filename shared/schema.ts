@@ -100,6 +100,15 @@ export const testResults = pgTable("test_results", {
   completedAt: timestamp("completed_at").defaultNow().notNull(),
 });
 
+export const literaryReports = pgTable("literary_reports", {
+  id: serial("id").primaryKey(),
+  sourceText: text("source_text").notNull(),
+  contextText: text("context_text").notNull(),
+  report: text("report").notNull(),
+  model: text("model").notNull(),
+  timestamp: timestamp("timestamp").defaultNow().notNull(),
+});
+
 
 
 
@@ -183,6 +192,13 @@ export const insertTestResultSchema = createInsertSchema(testResults).pick({
   correctCount: true,
 });
 
+export const insertLiteraryReportSchema = createInsertSchema(literaryReports).pick({
+  sourceText: true,
+  contextText: true,
+  report: true,
+  model: true,
+});
+
 
 
 
@@ -208,6 +224,8 @@ export type Purchase = typeof purchases.$inferSelect;
 export type InsertPurchase = z.infer<typeof insertPurchaseSchema>;
 export type TestResult = typeof testResults.$inferSelect;
 export type InsertTestResult = z.infer<typeof insertTestResultSchema>;
+export type LiteraryReport = typeof literaryReports.$inferSelect;
+export type InsertLiteraryReport = z.infer<typeof insertLiteraryReportSchema>;
 
 
 
@@ -287,6 +305,18 @@ export const purchaseRequestSchema = z.object({
   amount: z.string(), // PayPal amount as string
   credits: z.number().min(1),
   currency: z.string().default("USD"),
+});
+
+export const literaryReportRequestSchema = z.object({
+  text: z.string(),
+  contextText: z.string(),
+  model: z.enum(["deepseek", "openai", "anthropic", "perplexity"]),
+});
+
+export const literaryPodcastRequestSchema = z.object({
+  text: z.string(),
+  contextText: z.string(),
+  model: z.enum(["deepseek", "openai", "anthropic", "perplexity"]),
 });
 
 

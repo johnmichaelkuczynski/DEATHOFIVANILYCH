@@ -26,6 +26,8 @@ interface DocumentContentProps {
   onCreateStudyGuide?: (text: string) => void;
   onTestMe?: (text: string) => void;
   onPodcastSummary?: (text: string) => void;
+  onLiteraryReport?: (text: string, contextText: string) => void;
+  onLiteraryPodcast?: (text: string, contextText: string) => void;
 }
 
 export default function DocumentContent({ 
@@ -35,7 +37,9 @@ export default function DocumentContent({
   onPassageDiscussion, 
   onCreateStudyGuide,
   onTestMe,
-  onPodcastSummary
+  onPodcastSummary,
+  onLiteraryReport,
+  onLiteraryPodcast
 }: DocumentContentProps) {
   const { selection, isSelecting, clearSelection, highlightSelection, removeHighlights } = useTextSelection();
   const [showChunkingModal, setShowChunkingModal] = useState(false);
@@ -114,6 +118,51 @@ export default function DocumentContent({
   const handlePodcastSummary = (text: string) => {
     if (onPodcastSummary) {
       onPodcastSummary(text);
+    }
+    // Don't clear selection - let user choose other actions if needed
+  };
+
+  // Function to extract context around selected text (~300 words before and after)
+  const extractContext = (selectedText: string): string => {
+    const fullDocumentText = paperContent.sections.map((section: any) => 
+      `${section.title}\n\n${section.content}`
+    ).join('\n\n');
+    
+    const selectedIndex = fullDocumentText.indexOf(selectedText);
+    if (selectedIndex === -1) return selectedText; // Fallback if text not found
+    
+    const words = fullDocumentText.split(/\s+/);
+    const selectedWords = selectedText.split(/\s+/);
+    
+    // Find the starting word index of the selected text
+    let startWordIndex = 0;
+    for (let i = 0; i < words.length - selectedWords.length + 1; i++) {
+      const segment = words.slice(i, i + selectedWords.length).join(' ');
+      if (segment.includes(selectedWords[0]) && segment.includes(selectedWords[selectedWords.length - 1])) {
+        startWordIndex = i;
+        break;
+      }
+    }
+    
+    // Extract ~300 words before and after
+    const contextStart = Math.max(0, startWordIndex - 300);
+    const contextEnd = Math.min(words.length, startWordIndex + selectedWords.length + 300);
+    
+    return words.slice(contextStart, contextEnd).join(' ');
+  };
+
+  const handleLiteraryReport = (text: string) => {
+    if (onLiteraryReport) {
+      const contextText = extractContext(text);
+      onLiteraryReport(text, contextText);
+    }
+    // Don't clear selection - let user choose other actions if needed
+  };
+
+  const handleLiteraryPodcast = (text: string) => {
+    if (onLiteraryPodcast) {
+      const contextText = extractContext(text);
+      onLiteraryPodcast(text, contextText);
     }
     // Don't clear selection - let user choose other actions if needed
   };
@@ -324,6 +373,8 @@ export default function DocumentContent({
           onCreateStudyGuide={handleCreateStudyGuide}
           onTestMe={handleTestMe}
           onPodcastSummary={handlePodcastSummary}
+          onLiteraryReport={handleLiteraryReport}
+          onLiteraryPodcast={handleLiteraryPodcast}
           onHighlight={handleHighlight}
           onClear={clearSelection}
         />

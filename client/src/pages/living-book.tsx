@@ -13,6 +13,8 @@ import QuizModal from "@/components/quiz-modal";
 import StudyGuideModal from "@/components/study-guide-modal";
 import StudentTestModal from "@/components/student-test-modal";
 import PodcastModal from "@/components/podcast-modal";
+import LiteraryReportModal from "@/components/literary-report-modal";
+import LiteraryPodcastModal from "@/components/literary-podcast-modal";
 
 import ChunkingModal from "@/components/chunking-modal";
 import AuthModal from "@/components/auth-modal";
@@ -59,6 +61,14 @@ export default function LivingBook() {
   // Podcast state
   const [podcastSummaryModalOpen, setPodcastSummaryModalOpen] = useState(false);
   const [podcastSummaryText, setPodcastSummaryText] = useState("");
+
+  // Literary analysis state
+  const [literaryReportModalOpen, setLiteraryReportModalOpen] = useState(false);
+  const [literaryReportText, setLiteraryReportText] = useState("");
+  const [literaryReportContext, setLiteraryReportContext] = useState("");
+  const [literaryPodcastModalOpen, setLiteraryPodcastModalOpen] = useState(false);
+  const [literaryPodcastText, setLiteraryPodcastText] = useState("");
+  const [literaryPodcastContext, setLiteraryPodcastContext] = useState("");
 
 
 
@@ -168,6 +178,18 @@ export default function LivingBook() {
       setPodcastSummaryText(text);
       setPodcastSummaryModalOpen(true);
     }
+  };
+
+  const handleLiteraryReportFromSelection = (text: string, contextText: string) => {
+    setLiteraryReportText(text);
+    setLiteraryReportContext(contextText);
+    setLiteraryReportModalOpen(true);
+  };
+
+  const handleLiteraryPodcastFromSelection = (text: string, contextText: string) => {
+    setLiteraryPodcastText(text);
+    setLiteraryPodcastContext(contextText);
+    setLiteraryPodcastModalOpen(true);
   };
 
   const handleStudyGuideModalClose = () => {
@@ -359,6 +381,8 @@ export default function LivingBook() {
             onCreateStudyGuide={handleCreateStudyGuideFromSelection}
             onTestMe={handleTestMeFromSelection}
             onPodcastSummary={handlePodcastSummaryFromSelection}
+            onLiteraryReport={handleLiteraryReportFromSelection}
+            onLiteraryPodcast={handleLiteraryPodcastFromSelection}
           />
         </main>
 
@@ -450,6 +474,24 @@ export default function LivingBook() {
         isOpen={podcastSummaryModalOpen}
         onClose={() => setPodcastSummaryModalOpen(false)}
         selectedText={podcastSummaryText}
+        selectedModel={selectedModel}
+      />
+
+      {/* Literary Report Modal */}
+      <LiteraryReportModal
+        isOpen={literaryReportModalOpen}
+        onClose={() => setLiteraryReportModalOpen(false)}
+        selectedText={literaryReportText}
+        contextText={literaryReportContext}
+        selectedModel={selectedModel}
+      />
+
+      {/* Literary Podcast Modal */}
+      <LiteraryPodcastModal
+        isOpen={literaryPodcastModalOpen}
+        onClose={() => setLiteraryPodcastModalOpen(false)}
+        selectedText={literaryPodcastText}
+        contextText={literaryPodcastContext}
         selectedModel={selectedModel}
       />
 

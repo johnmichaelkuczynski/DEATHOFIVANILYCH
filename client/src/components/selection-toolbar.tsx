@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Highlighter, X, MessageSquare, Edit3, FileText, BookOpen, GraduationCap, Headphones } from "lucide-react";
+import { MessageCircle, Highlighter, X, MessageSquare, Edit3, FileText, BookOpen, GraduationCap, Headphones, ScrollText, Mic } from "lucide-react";
 import { useState } from "react";
 
 interface SelectionToolbarProps {
@@ -10,6 +10,8 @@ interface SelectionToolbarProps {
   onCreateStudyGuide: (text: string) => void;
   onTestMe: (text: string) => void;
   onPodcastSummary: (text: string) => void;
+  onLiteraryReport: (text: string) => void;
+  onLiteraryPodcast: (text: string) => void;
   onHighlight: () => void;
   onClear: () => void;
   position?: { x: number; y: number };
@@ -23,6 +25,8 @@ export default function SelectionToolbar({
   onCreateStudyGuide,
   onTestMe,
   onPodcastSummary,
+  onLiteraryReport,
+  onLiteraryPodcast,
   onHighlight, 
   onClear, 
   position 
@@ -60,6 +64,16 @@ export default function SelectionToolbar({
 
   const handlePodcastSummary = () => {
     onPodcastSummary(selectedText);
+    // Keep toolbar visible so user can try other actions
+  };
+
+  const handleLiteraryReport = () => {
+    onLiteraryReport(selectedText);
+    // Keep toolbar visible so user can try other actions
+  };
+
+  const handleLiteraryPodcast = () => {
+    onLiteraryPodcast(selectedText);
     // Keep toolbar visible so user can try other actions
   };
 
@@ -162,7 +176,25 @@ export default function SelectionToolbar({
         <span className="text-xs">Podcast</span>
       </Button>
 
+      <Button
+        size="sm"
+        variant="outline"
+        onClick={handleLiteraryReport}
+        className="flex items-center space-x-1 text-purple-600 border-purple-200 hover:bg-purple-50"
+      >
+        <ScrollText className="w-3 h-3" />
+        <span className="text-xs">Literary Report</span>
+      </Button>
 
+      <Button
+        size="sm"
+        variant="outline"
+        onClick={handleLiteraryPodcast}
+        className="flex items-center space-x-1 text-pink-600 border-pink-200 hover:bg-pink-50"
+      >
+        <Mic className="w-3 h-3" />
+        <span className="text-xs">Literary Podcast</span>
+      </Button>
       
       <Button
         size="sm"
